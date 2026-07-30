@@ -1,17 +1,17 @@
 [
   {
     "file": "hardware_commonality_report.docx",
-    "bytes": 2463764,
-    "sha256": "42915b91839fea515f3a17a29b93cfdee8011abe964b26c34d6560ae6acda8b2"
+    "bytes": 2516862,
+    "sha256": "1d9b9510f717350c2b65a228cf5aaba34fc7bc833c0fb5806c0bb7df576523cb"
   },
   {
     "file": "hardware_commonality_report.md",
-    "bytes": 29354,
-    "sha256": "d23972701192c484036cb177e9f877cb94d9f3a9ca5970b15202ea70083a1ef4"
+    "bytes": 29509,
+    "sha256": "8f9251d6ac32875a811aa1d0002a0430b15ecac0db4f7288e4e9efd6e094f9f8"
   },
   {
     "file": "hardware_commonality_report.pdf",
-    "bytes": 2244296,
-    "sha256": "6d8e2ef9641c65b2b3711d9abc7e3719ad4f4fe34b97a44d5dda54f9d156f132"
+    "bytes": 2308693,
+    "sha256": "5dc1ca03475abde91789b26c36959dc80020df9f79c6a6836ca818afdfd40887"
   }
 ]

@@ -1,7 +1,7 @@
 ﻿category,normalized_part_number,charger_description,chrysler_300_description,charger_catalog_number,chrysler_300_catalog_number,status
 air-bags,5057792AH,Kneeblocker,Kneeblocker,5057792AH,5057792AH,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
 air-bags,56054085AA,Acceleration Sensor | Front,Acceleration Sensor | Sensor,56054085AA,56054085AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
-air-bags,5LB70DX9AH,Module | Steering Column Module,Module | Steering Column Module,5LB70DX9AH,5LB70DX9AH,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+air-bags,5LB70DX9AH,Module | Steering Column Module,Steering Column Module,5LB70DX9AH,5LB70DX9AH,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
 air-bags,5LB71DX9AI,Module | Steering Column Module,Module | Steering Column Module,5LB71DX9AI,5LB71DX9AI,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
 air-bags,5LB72DX9AH,Module | Steering Column Module,Module | Steering Column Module,5LB72DX9AH,5LB72DX9AH,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
 air-bags,6102132AA,Hex Head Screw | Screw,Hex Head Screw | Screw,6102132AA,6102132AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
@@ -50,6 +50,25 @@ instrument-panel,68335585AD,Instrument Panel Closeout Panel Right | Panel,Instru
 instrument-panel,68335586AC,Instrument Panel Closeout Panel Left | Left,Instrument Panel Closeout Panel Left,68335586AC,68335586AC,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
 instrument-panel,68335587AC,Instrument Panel Closeout Panel Left | Left,Instrument Panel Closeout Panel Left,68335587AC,68335587AC,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
 instrument-panel,68346615AC,Instrument Panel Reinforcement | Reinforcement,Instrument Panel Reinforcement,68346615AC,68346615AC,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,1TV15DX9AA,Close-Out Cover | Cover,Close-Out Cover | Cover,1TV15DX9AA,1TV15DX9AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,1UR14DX9AA,Close-Out Cover | Cover,Close-Out Cover | Cover,1UR14DX9AA,1UR14DX9AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,1UR18DX9AA,Close-Out Cover,Close-Out Cover,1UR18DX9AA,1UR18DX9AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,1VL64DX9AA,Assist Strap | Strap,Assist Strap | Strap,1VL64DX9AA,1VL64DX9AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,4628848AB,Seat Back Latch Striker | Striker,Seat Back Latch Striker | Striker,4628848AB,4628848AB,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,4645939AB,Retainer | Seat Cushion Retainer,Retainer | Seat Cushion Retainer,4645939AB,4645939AB,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,6101712,Nut | U Nut,Nut | U Nut,6101712,6101712,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,6502724,Hex Flange Nut | Nut,Hex Flange Nut | Nut,6502724,6502724,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,6506220AA,Hex Flange Head Screw,Hex Flange Head Screw,6506220AA,6506220AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,68104422AB,"Rear Seat Back Panel, Right | Right","Rear Seat Back Panel, Right | Right",68104422AB,68104422AB,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,68104423AB,"Left | Rear Seat Back Panel, Left","Left | Rear Seat Back Panel, Left",68104423AB,68104423AB,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,68104425AA,Bracket,Bracket,68104425AA,68104425AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,68104426AA,Bushing,Bushing,68104426AA,68104426AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,68110212AA,Bracket | Seat Bracket,Bracket | Seat Bracket,68110212AA,68110212AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,68110213AA,Bracket | Seat Bracket,Bracket | Seat Bracket,68110213AA,68110213AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,68110214AA,Bracket | Seat Bracket,Bracket | Seat Bracket,68110214AA,68110214AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,68110232AA,Latch | Seat Latch,Latch | Seat Latch,68110232AA,68110232AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,68110233AA,Bushing,Bushing,68110233AA,68110233AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+rear-seat-adjusters,68193479AA,Lock Nut | Nut,Lock Nut | Nut,68193479AA,68193479AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
 rear-seats-second-row,1DL16DX9AA,"Headrest Sleeve, Locking | Locking","Headrest Sleeve, Locking | Locking",1DL16DX9AA,1DL16DX9AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
 rear-seats-second-row,1UY04DX9AB,"Headrest Sleeve, Non-Locking | Non-locking","Headrest Sleeve, Non-Locking | Non-locking",1UY04DX9AB,1UY04DX9AB,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
 rear-seats-second-row,5SB021V5AB,"Seat Bolster, Right","Right | Seat Bolster, Right",5SB021V5AB,5SB021V5AB,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
@@ -65,6 +84,7 @@ rear-seats-second-row,68104699AA,"Heater Pad, Left | Left","Heater Pad, Left | L
 rear-seats-second-row,68104700AA,"Heater Pad, Right | Right","Heater Pad, Right | Right",68104700AA,68104700AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
 rear-seats-second-row,68159129AA,Frame | Rear Seat Cushion Frame,Frame | Rear Seat Cushion Frame,68159129AA,68159129AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
 rear-seats-second-row,68159140AA,Foam | Seat Cushion Foam,Foam | Seat Cushion Foam,68159140AA,68159140AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
+seat-belts,1HZ05DX9AI,Left,Left,1HZ05DX9AI,1HZ05DX9AI,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
 seat-belts,1HZ06DX9AI,"Front Outer Seat Belt, Right | Right","Front Outer Seat Belt, Right | Right",1HZ06DX9AI,1HZ06DX9AI,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
 seat-belts,5135197AA,Seat Belt Extender,Seat Belt Extender,5135197AA,5135197AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration
 seat-belts,6105124AA,Pan Head Screw,Pan Head Screw,06105124AA,06105124AA,COMMON CATALOG CANDIDATE — not proof of VIN-installed configuration

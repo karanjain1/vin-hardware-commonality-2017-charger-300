@@ -4,11 +4,5 @@
     "category": "front-seats-first-row",
     "stage": "assembly_parse",
     "error": "no assembly selectors found"
-  },
-  {
-    "vin": "2C3CCAEG4HH586472",
-    "category": "rear-seat-adjusters",
-    "stage": "assembly_parse",
-    "error": "no assembly selectors found"
   }
 ]

@@ -4,24 +4,24 @@
     "url": "https://www.legislation.gov.au/F2006L01362/latest/text",
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2006L01362/latest/text",
-    "bytes": 79184,
-    "retrieved": "2026-07-30T22:46:37.365440+00:00"
+    "bytes": 79175,
+    "retrieved": "2026-07-30T23:13:42.005177+00:00"
   },
   {
     "adr": "3/03",
     "url": "https://www.legislation.gov.au/F2006L01377/latest/text",
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2006L01377/latest/text",
-    "bytes": 76341,
-    "retrieved": "2026-07-30T22:46:37.987862+00:00"
+    "bytes": 76345,
+    "retrieved": "2026-07-30T23:13:42.665713+00:00"
   },
   {
     "adr": "4/05",
     "url": "https://www.legislation.gov.au/F2012L00468/latest/text",
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2012L00468/latest/text",
-    "bytes": 79384,
-    "retrieved": "2026-07-30T22:46:38.611953+00:00"
+    "bytes": 79393,
+    "retrieved": "2026-07-30T23:13:43.289670+00:00"
   },
   {
     "adr": "5/05",
@@ -29,15 +29,15 @@
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2006L01386/latest/text",
     "bytes": 76788,
-    "retrieved": "2026-07-30T22:46:39.307613+00:00"
+    "retrieved": "2026-07-30T23:13:43.921284+00:00"
   },
   {
     "adr": "8/01",
     "url": "https://www.legislation.gov.au/F2005L03908/latest/text",
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2005L03908/latest/text",
-    "bytes": 79655,
-    "retrieved": "2026-07-30T22:46:39.927246+00:00"
+    "bytes": 79659,
+    "retrieved": "2026-07-30T23:13:44.568634+00:00"
   },
   {
     "adr": "10/02",
@@ -45,23 +45,23 @@
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2008L02387/latest/text",
     "bytes": 79012,
-    "retrieved": "2026-07-30T22:46:40.598085+00:00"
+    "retrieved": "2026-07-30T23:13:45.190779+00:00"
   },
   {
     "adr": "11/00",
     "url": "https://www.legislation.gov.au/F2006L01785/latest/text",
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2006L01785/latest/text",
-    "bytes": 79563,
-    "retrieved": "2026-07-30T22:46:41.210424+00:00"
+    "bytes": 79589,
+    "retrieved": "2026-07-30T23:13:45.848905+00:00"
   },
   {
     "adr": "14/02",
     "url": "https://www.legislation.gov.au/F2006L02663/latest/text",
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2006L02663/latest/text",
-    "bytes": 77215,
-    "retrieved": "2026-07-30T22:46:41.872517+00:00"
+    "bytes": 77211,
+    "retrieved": "2026-07-30T23:13:46.462083+00:00"
   },
   {
     "adr": "18/03",
@@ -69,54 +69,86 @@
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2006L01392/latest/text",
     "bytes": 77174,
-    "retrieved": "2026-07-30T22:46:42.602957+00:00"
+    "retrieved": "2026-07-30T23:13:47.081736+00:00"
   },
   {
     "adr": "21/00",
     "url": "https://www.legislation.gov.au/F2006L01786/latest/text",
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2006L01786/latest/text",
-    "bytes": 78758,
-    "retrieved": "2026-07-30T22:46:43.262408+00:00"
+    "bytes": 78749,
+    "retrieved": "2026-07-30T23:13:47.703668+00:00"
   },
   {
     "adr": "22/00",
     "url": "https://www.legislation.gov.au/F2006L01410/latest/text",
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2006L01410/latest/text",
-    "bytes": 79529,
-    "retrieved": "2026-07-30T22:46:43.924358+00:00"
+    "bytes": 79533,
+    "retrieved": "2026-07-30T23:13:48.345004+00:00"
+  },
+  {
+    "adr": "25/02",
+    "url": "https://www.legislation.gov.au/F2006L02664/latest/text",
+    "status_code": 200,
+    "final_url": "https://www.legislation.gov.au/F2006L02664/latest/text",
+    "bytes": 77164,
+    "retrieved": "2026-07-30T23:13:48.971680+00:00"
+  },
+  {
+    "adr": "29/00",
+    "url": "https://www.legislation.gov.au/F2006L01429/latest/text",
+    "status_code": 200,
+    "final_url": "https://www.legislation.gov.au/F2006L01429/latest/text",
+    "bytes": 79595,
+    "retrieved": "2026-07-30T23:13:49.624281+00:00"
   },
   {
     "adr": "34/02",
     "url": "https://www.legislation.gov.au/F2012L00703/latest/text",
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2012L00703/latest/text",
-    "bytes": 81248,
-    "retrieved": "2026-07-30T22:46:44.551833+00:00"
+    "bytes": 81257,
+    "retrieved": "2026-07-30T23:13:50.257420+00:00"
+  },
+  {
+    "adr": "42/04",
+    "url": "https://www.legislation.gov.au/F2005L03996/latest/text",
+    "status_code": 200,
+    "final_url": "https://www.legislation.gov.au/F2005L03996/latest/text",
+    "bytes": 77268,
+    "retrieved": "2026-07-30T23:13:50.866505+00:00"
   },
   {
     "adr": "69/00",
     "url": "https://www.legislation.gov.au/F2006L01455/latest/text",
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2006L01455/latest/text",
-    "bytes": 81501,
-    "retrieved": "2026-07-30T22:46:45.168037+00:00"
+    "bytes": 81488,
+    "retrieved": "2026-07-30T23:13:51.481291+00:00"
   },
   {
     "adr": "72/00",
     "url": "https://www.legislation.gov.au/F2005L03992/latest/text",
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2005L03992/latest/text",
-    "bytes": 77451,
-    "retrieved": "2026-07-30T22:46:45.770925+00:00"
+    "bytes": 77438,
+    "retrieved": "2026-07-30T23:13:52.088177+00:00"
   },
   {
     "adr": "73/00",
     "url": "https://www.legislation.gov.au/F2005L03990/latest/text",
     "status_code": 200,
     "final_url": "https://www.legislation.gov.au/F2005L03990/latest/text",
-    "bytes": 83302,
-    "retrieved": "2026-07-30T22:46:46.386425+00:00"
+    "bytes": 83311,
+    "retrieved": "2026-07-30T23:13:52.706160+00:00"
+  },
+  {
+    "adr": "85/00",
+    "url": "https://www.legislation.gov.au/F2015L02109/latest/text",
+    "status_code": 200,
+    "final_url": "https://www.legislation.gov.au/F2015L02109/latest/text",
+    "bytes": 80020,
+    "retrieved": "2026-07-30T23:13:53.322978+00:00"
   }
 ]

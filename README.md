@@ -3,17 +3,18 @@
 This repository/branch contains the public, AI-readable evidence packet for comparing catalogued interior and occupant-protection hardware for:
 
 - `2C3CDXGJ2HH530684` — 2017 Dodge Charger R/T 392 / MoparAmerica R/T Scat Pack 6.4L V8 Gas
-- `2C3CCAEG4HH586472` — 2017 Chrysler 300C 3.6L V6 RWD / MoparAmerica C 3.6L V6 Flex
+- `2C3CCAEG4HH586472` — 2017 Chrysler 300C 3.6L V6 RWD / MoparAmerica C 3.6L V6 Gas
 
 ## Start here
 
-- `report/hardware_commonality_report.pdf` — 52-page human-readable report with 45 exploded drawings and tables
+- `report/hardware_commonality_report.pdf` — human-readable report with 46 exploded drawings and tables
 - `report/hardware_commonality_report.docx` — editable Word version
 - `report/hardware_commonality_report.md` — AI-readable narrative and image register
-- `extracted/comparison/adr_critical_common_catalog_parts.csv` — 63 common ADR-critical catalog candidates
-- `extracted/comparison/common_catalog_parts.csv` — all 86 common catalog candidates
-- `extracted/comparison/catalog_parts_deduplicated.csv` — 606 VIN/category candidate rows
-- `extracted/mopar/parts.csv` — 1,435 raw diagram-page part rows
+- `extracted/comparison/direct_safety_hardware_common_candidates.csv` — 51 conservative direct-safety common candidates
+- `extracted/comparison/adr_relevance_keyword_candidates.csv` — 76 broad ADR-relevance keyword candidates
+- `extracted/comparison/common_catalog_parts.csv` — all 106 common catalog candidates
+- `extracted/comparison/catalog_parts_deduplicated.csv` — 635 VIN/category candidate rows
+- `extracted/mopar/parts.csv` — 1,485 raw diagram-page part rows
 - `extracted/mopar/assemblies.csv` — diagram register and source URLs
 - `extracted/adr/adr_scope_matrix.csv` — ADR relevance/applicability matrix
 - `evidence/mopar/illustrations/` — downloaded public catalog illustrations

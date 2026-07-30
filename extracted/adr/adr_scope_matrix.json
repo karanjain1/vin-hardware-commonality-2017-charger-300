@@ -51,7 +51,7 @@
     "critical_hardware": "Belt anchorage bolts, brackets, anchor points and related seat/floor interfaces",
     "mopar_categories": "seat-belts; front-seat-adjusters",
     "evidence_use": "Catalog data may identify common attaching hardware; structural anchorage performance remains unproven.",
-    "applicability_status": "LIKELY BUILD-APPLICABLE.",
+    "applicability_status": "ADR 5 is likely relevant; exact edition requires model-lineage/acceptable-prior-rule confirmation.",
     "official_url": "https://www.legislation.gov.au/F2006L01386/latest/text",
     "corpus_path": "corpus/au/adr/raw_html/ADR_5_05__F2006L01386.html",
     "corpus_sha256": "f1084924edf46ee30cfdfcd7841d255dae4dd93d159c23ca4120370487e15e19",
@@ -165,6 +165,36 @@
     "current_source_check": "HTTP 200; retrieved 2026-07-31; final=https://www.legislation.gov.au/F2006L01410/latest/text"
   },
   {
+    "adr": "25/02",
+    "title": "Anti-Theft Lock",
+    "relevance_tier": "ancillary interior",
+    "critical_hardware": "Steering lock/ignition interlock and controls",
+    "mopar_categories": "steering-column; instrument-panel",
+    "evidence_use": "Catalog matching may support common architecture; lock/interlock performance remains unproven.",
+    "applicability_status": "LIKELY BUILD-APPLICABLE; no direct lock-system comparison completed.",
+    "official_url": "https://www.legislation.gov.au/F2006L02664/latest/text",
+    "corpus_path": "corpus/au/adr/raw_html/ADR_25_02__F2006L02664.html",
+    "corpus_sha256": "c131aa008e5222a2233f1feb5c9f7ff85d84902ec1df364dcb76250fcc30b80b",
+    "corpus_status": "downloaded",
+    "corpus_commit": "b2903c330bdd5ef38248709aed9a77dc64d71bf5",
+    "current_source_check": "HTTP 200; retrieved 2026-07-31; final=https://www.legislation.gov.au/F2006L02664/latest/text"
+  },
+  {
+    "adr": "29/00",
+    "title": "Side Door Strength",
+    "relevance_tier": "system-level/body",
+    "critical_hardware": "Door beams, latches, hinges and side structure",
+    "mopar_categories": "Not collected",
+    "evidence_use": "No same-component claim is supported by this packet; structural/test evidence is required.",
+    "applicability_status": "LIKELY BUILD-APPLICABLE.",
+    "official_url": "https://www.legislation.gov.au/F2006L01429/latest/text",
+    "corpus_path": "corpus/au/adr/raw_html/ADR_29_00__F2006L01429.html",
+    "corpus_sha256": "c47cab5aad3b930d2f2b27c4adaaffc07a25796e2a132a9a7eef3c96409b8f83",
+    "corpus_status": "downloaded",
+    "corpus_commit": "b2903c330bdd5ef38248709aed9a77dc64d71bf5",
+    "current_source_check": "HTTP 200; retrieved 2026-07-31; final=https://www.legislation.gov.au/F2006L01429/latest/text"
+  },
+  {
     "adr": "34/02",
     "title": "Child Restraint Anchorages and Child Restraint Anchor Fittings",
     "relevance_tier": "core",
@@ -178,6 +208,21 @@
     "corpus_status": "downloaded",
     "corpus_commit": "b2903c330bdd5ef38248709aed9a77dc64d71bf5",
     "current_source_check": "HTTP 200; retrieved 2026-07-31; final=https://www.legislation.gov.au/F2012L00703/latest/text"
+  },
+  {
+    "adr": "42/04",
+    "title": "General Safety Requirements",
+    "relevance_tier": "system-level/general",
+    "critical_hardware": "Interior fittings, controls, projections and general construction requirements",
+    "mopar_categories": "instrument-panel; steering wheel; seats",
+    "evidence_use": "Shared parts may support architecture commonality only; clause-specific inspection remains necessary.",
+    "applicability_status": "LIKELY BUILD-APPLICABLE.",
+    "official_url": "https://www.legislation.gov.au/F2005L03996/latest/text",
+    "corpus_path": "corpus/au/adr/raw_html/ADR_42_04__F2005L03996.html",
+    "corpus_sha256": "4ba2178a20719e4ca52aaec61d8fbb5304e53d77d1dafe6a8bbd6c61f3c38b6f",
+    "corpus_status": "downloaded",
+    "corpus_commit": "b2903c330bdd5ef38248709aed9a77dc64d71bf5",
+    "current_source_check": "HTTP 200; retrieved 2026-07-31; final=https://www.legislation.gov.au/F2005L03996/latest/text"
   },
   {
     "adr": "69/00",
@@ -223,5 +268,20 @@
     "corpus_status": "downloaded",
     "corpus_commit": "b2903c330bdd5ef38248709aed9a77dc64d71bf5",
     "current_source_check": "HTTP 200; retrieved 2026-07-31; final=https://www.legislation.gov.au/F2005L03990/latest/text"
+  },
+  {
+    "adr": "85/00",
+    "title": "Pole Side Impact Performance",
+    "relevance_tier": "system-level",
+    "critical_hardware": "Side-curtain and seat-mounted airbags, sensors and side structure",
+    "mopar_categories": "air-bags; seats",
+    "evidence_use": "Component commonality is supporting architecture evidence only; no performance claim is supported.",
+    "applicability_status": "PROBABLY NOT MANDATORY for these 2017 vehicles; confirm exact build date and regulatory new-model history.",
+    "official_url": "https://www.legislation.gov.au/F2015L02109/latest/text",
+    "corpus_path": "corpus/au/adr/raw_html/ADR_85_00__F2015L02109.html",
+    "corpus_sha256": "47029e5649c31adb766f4cc7d60338fb5afaf9ecb3363f535dc9cf3726885048",
+    "corpus_status": "downloaded",
+    "corpus_commit": "b2903c330bdd5ef38248709aed9a77dc64d71bf5",
+    "current_source_check": "HTTP 200; retrieved 2026-07-31; final=https://www.legislation.gov.au/F2015L02109/latest/text"
   }
 ]
