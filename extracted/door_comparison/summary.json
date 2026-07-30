@@ -1,0 +1,14 @@
+{
+  "variants_screened": 7,
+  "challenger_variants": 4,
+  "charger_variants": 3,
+  "front_door_catalog_rows": 613,
+  "direct_latch_hinge_rows": 52,
+  "common_exact_core_part_numbers": 0,
+  "common_exact_related_handle_part_numbers": 26,
+  "functional_crosswalk_rows": 4,
+  "functional_passing_variant_pairs": 12,
+  "variant_pairs": 12,
+  "assemblies": 21,
+  "errors": 0
+}

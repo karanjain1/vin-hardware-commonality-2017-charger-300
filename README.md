@@ -19,6 +19,18 @@ This repository/branch contains the public, AI-readable evidence packet for comp
 - `extracted/adr/adr_scope_matrix.csv` — ADR relevance/applicability matrix
 - `evidence/mopar/illustrations/` — downloaded public catalog illustrations
 
+## ADR 2/01 side-door supplement
+
+- `report/adr2_side_door_similarity_supplement.pdf` — Challenger-versus-Charger latch/hinge similarity report with representative diagrams
+- `report/adr2_side_door_similarity_supplement.docx` — editable Word version
+- `report/adr2_side_door_similarity_supplement.md` — AI-readable version
+- `extracted/door_comparison/functional_latch_hinge_crosswalk.csv` — left/right latch and lower-hinge functional crosswalk
+- `extracted/door_comparison/common_related_front_door_parts.csv` — 26 exact shared exterior-handle/door-control part numbers
+- `extracted/door_comparison/variant_pair_summary.csv` — all 12 mixed Challenger/Charger trim pairs
+- `evidence/mopar/door_variants/illustrations/` — 21 front-door exploded-diagram images
+
+The broad user-defined similarity criterion passes all 12 screened variant pairs at the component-class/function level. No exact common core latch or lower-hinge service part number was established, so this is an architecture-similarity result—not exact core-part identity or ADR 2/01 compliance proof.
+
 ## Determination
 
 **CONDITIONAL:** the catalog routes show substantial commonality, including seat tracks/adjusters, frames, brackets/fasteners, belt components, airbag-related hardware and steering components. This is useful architecture/commonality evidence.

@@ -1,0 +1,13 @@
+﻿challenger_variant,charger_variant,challenger_direct_candidates,charger_direct_candidates,common_exact_core_part_numbers,common_core_part_numbers,functional_component_match,status
+SXT 3.6L,R/T 5.7L,7,8,0,,front door latch left; front door latch right; lower door hinge left; lower door hinge right,FUNCTIONAL-ARCHITECTURE PASS — core service part numbers differ
+SXT 3.6L,R/T Scat Pack 6.4L,7,8,0,,front door latch left; front door latch right; lower door hinge left; lower door hinge right,FUNCTIONAL-ARCHITECTURE PASS — core service part numbers differ
+SXT 3.6L,SRT 392 6.4L,7,8,0,,front door latch left; front door latch right; lower door hinge left; lower door hinge right,FUNCTIONAL-ARCHITECTURE PASS — core service part numbers differ
+R/T 5.7L,R/T 5.7L,7,8,0,,front door latch left; front door latch right; lower door hinge left; lower door hinge right,FUNCTIONAL-ARCHITECTURE PASS — core service part numbers differ
+R/T 5.7L,R/T Scat Pack 6.4L,7,8,0,,front door latch left; front door latch right; lower door hinge left; lower door hinge right,FUNCTIONAL-ARCHITECTURE PASS — core service part numbers differ
+R/T 5.7L,SRT 392 6.4L,7,8,0,,front door latch left; front door latch right; lower door hinge left; lower door hinge right,FUNCTIONAL-ARCHITECTURE PASS — core service part numbers differ
+R/T Scat Pack 6.4L,R/T 5.7L,7,8,0,,front door latch left; front door latch right; lower door hinge left; lower door hinge right,FUNCTIONAL-ARCHITECTURE PASS — core service part numbers differ
+R/T Scat Pack 6.4L,R/T Scat Pack 6.4L,7,8,0,,front door latch left; front door latch right; lower door hinge left; lower door hinge right,FUNCTIONAL-ARCHITECTURE PASS — core service part numbers differ
+R/T Scat Pack 6.4L,SRT 392 6.4L,7,8,0,,front door latch left; front door latch right; lower door hinge left; lower door hinge right,FUNCTIONAL-ARCHITECTURE PASS — core service part numbers differ
+SRT 392 6.4L,R/T 5.7L,7,8,0,,front door latch left; front door latch right; lower door hinge left; lower door hinge right,FUNCTIONAL-ARCHITECTURE PASS — core service part numbers differ
+SRT 392 6.4L,R/T Scat Pack 6.4L,7,8,0,,front door latch left; front door latch right; lower door hinge left; lower door hinge right,FUNCTIONAL-ARCHITECTURE PASS — core service part numbers differ
+SRT 392 6.4L,SRT 392 6.4L,7,8,0,,front door latch left; front door latch right; lower door hinge left; lower door hinge right,FUNCTIONAL-ARCHITECTURE PASS — core service part numbers differ
