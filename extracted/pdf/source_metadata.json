@@ -1,0 +1,112 @@
+{
+  "source_file": "source/STARPARTS_LD_050_Interior_Trim.pdf",
+  "sha256": "db26573eb7d1b671eb41eeefe0bd1c6db30903c754033f0c3baa532f525bea1d",
+  "bytes": 1316980,
+  "pages": 13,
+  "pdf_metadata": {
+    "format": "PDF 1.4",
+    "title": "Aries Aero Mail - Fw: STARPARTS: Parts List(2023 - LD) 050 - Interior Trim / 900 - Front Seats - Adjusters, Recliners, Shields and Risers / 910.01 - Adjusters, Recliners, Shields and Risers - Passenger Seat, power",
+    "author": "",
+    "subject": "",
+    "keywords": "",
+    "creator": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+    "producer": "Skia/PDF m150",
+    "creationDate": "D:20260730213521+00'00'",
+    "modDate": "D:20260730213521+00'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "page_records": [
+    {
+      "page": 1,
+      "text_chars": 2017,
+      "images": 5,
+      "render_file": "extracted/pdf/pages/page-01.png",
+      "render_sha256": "da3d0f2fa2f1c610dc20a89be3b07e5db32883aba31620a30828ee567f8da64a"
+    },
+    {
+      "page": 2,
+      "text_chars": 358,
+      "images": 0,
+      "render_file": "extracted/pdf/pages/page-02.png",
+      "render_sha256": "61fabc9693c7b3182eae86e017be3f90ee406a86d1bcbc49d6123ad7267c34a5"
+    },
+    {
+      "page": 3,
+      "text_chars": 358,
+      "images": 1,
+      "render_file": "extracted/pdf/pages/page-03.png",
+      "render_sha256": "5e6683a19c89e23a2fcd198005c8f14a8d153221bf27946d1f29152c6bea3f38"
+    },
+    {
+      "page": 4,
+      "text_chars": 2087,
+      "images": 1,
+      "render_file": "extracted/pdf/pages/page-04.png",
+      "render_sha256": "5b5b8aa7fc6618700818d37cec417bd5ef483f55d083e64cfbf8c287e1a78b2b"
+    },
+    {
+      "page": 5,
+      "text_chars": 2369,
+      "images": 0,
+      "render_file": "extracted/pdf/pages/page-05.png",
+      "render_sha256": "2e4a23165ca9356d8bb83f27ea70d0eec9514960c08dd3cc21d403cc21b3e110"
+    },
+    {
+      "page": 6,
+      "text_chars": 2468,
+      "images": 0,
+      "render_file": "extracted/pdf/pages/page-06.png",
+      "render_sha256": "a1c9f3856d03f96d76151989b1789b0c5fb779bbfd16968f8394749d897ef270"
+    },
+    {
+      "page": 7,
+      "text_chars": 2588,
+      "images": 0,
+      "render_file": "extracted/pdf/pages/page-07.png",
+      "render_sha256": "f5a447ea4d615facdc98e4f3699aab4cfd9982a01886bd5dfe77450c342a31c4"
+    },
+    {
+      "page": 8,
+      "text_chars": 2466,
+      "images": 0,
+      "render_file": "extracted/pdf/pages/page-08.png",
+      "render_sha256": "fd3c9aa6b29ed8f1ac2d04ef796bfbf930e97ed8d17643d5626e74d60ff1a9d0"
+    },
+    {
+      "page": 9,
+      "text_chars": 2635,
+      "images": 0,
+      "render_file": "extracted/pdf/pages/page-09.png",
+      "render_sha256": "4876be4c9b3ee55a352a21cc364a51e9b2d4a167fc0b52d0d05be551411e09cc"
+    },
+    {
+      "page": 10,
+      "text_chars": 2706,
+      "images": 0,
+      "render_file": "extracted/pdf/pages/page-10.png",
+      "render_sha256": "7faecbf5050566f4873408bac6a7f9a0f37b8c9f6c5c7143a2a4729ccaac6a13"
+    },
+    {
+      "page": 11,
+      "text_chars": 2385,
+      "images": 0,
+      "render_file": "extracted/pdf/pages/page-11.png",
+      "render_sha256": "882f447acd45c5a7a90f374718952b3397028c67f002c496957ddd7884dee6c9"
+    },
+    {
+      "page": 12,
+      "text_chars": 2381,
+      "images": 0,
+      "render_file": "extracted/pdf/pages/page-12.png",
+      "render_sha256": "6afb7c156185be66db5b1872967bfec50413a88b51d7dfc756d9bee5c384d103"
+    },
+    {
+      "page": 13,
+      "text_chars": 1487,
+      "images": 1,
+      "render_file": "extracted/pdf/pages/page-13.png",
+      "render_sha256": "5da6ad285d9034e756070827745b69c2a1e1b10ba48f12a54b459c2b33e31bae"
+    }
+  ]
+}

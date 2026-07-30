@@ -1,0 +1,16 @@
+﻿item_number,description,part_numbers,unique_part_count,variant_rows,source_pages
+1,"PANEL, Front Seat Back",1UY02DX9AC,1,30,"4,5"
+2,"FRAME, Front Seat Back",68159139AA | 68593541AA | 68593544AA,3,18,5
+3,"ADJUSTER, Power Seat",68193460AC | 68193462AC,2,23,"5,6"
+4,"COVER, Track, Rear",1UV50DX9AA,1,23,"6,7"
+5,"COVER, Track, Front",1UV51DX9AA,1,23,"7,8"
+6,"SCREW, Hex Head, M14x1.5x109.0, Adjuster To Floor",06507594AA,1,1,8
+7,"BRACKET, Seat, Side Shield Attaching",68157098AA,1,14,8
+8,"SHIELD, Seat Adjuster",1UZ62DX9AC,1,27,"8,9"
+9,"COVER, Front Seat Anchor Bolt",1UV75DX9AA | 1UV75DX9AB,2,32,"9,10,11"
+10,"CHUTE, Airbag",68102980AA | 68103691AA,2,14,11
+-11,"BLOWER, Seat Back",55057389AD,1,12,"11,12"
+-12,"BLOWER, Seat Cushion",68306763AA,1,12,12
+-13,"BRACKET, Module, Heated Seat Module, (NOT SERVICED)",,0,0,12
+-14,"BOLT, Seat, Seat Back to Cushion",68104960AA,1,14,"12,13"
+-15,"NUT, M6x1.00, Air Bag Attaching",68104961AA,1,14,13

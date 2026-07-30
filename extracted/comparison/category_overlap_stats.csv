@@ -1,0 +1,10 @@
+﻿category,charger_candidates,chrysler_300_candidates,common_candidates,union_candidates,jaccard,status
+air-bags,12,27,9,30,0.3,CATALOG-LEVEL ONLY; option qualifiers unresolved
+front-seat-adjusters,36,37,28,45,0.6222,CATALOG-LEVEL ONLY; option qualifiers unresolved
+front-seats-first-row,0,86,0,86,0.0,CATALOG-LEVEL ONLY; option qualifiers unresolved
+instrument-panel,54,71,14,111,0.1261,CATALOG-LEVEL ONLY; option qualifiers unresolved
+rear-seat-adjusters,21,0,0,21,0.0,CATALOG-LEVEL ONLY; option qualifiers unresolved
+rear-seats-second-row,85,88,15,158,0.0949,CATALOG-LEVEL ONLY; option qualifiers unresolved
+seat-belts,17,21,10,28,0.3571,CATALOG-LEVEL ONLY; option qualifiers unresolved
+steering-column,10,12,7,15,0.4667,CATALOG-LEVEL ONLY; option qualifiers unresolved
+steering-wheel,13,16,3,26,0.1154,CATALOG-LEVEL ONLY; option qualifiers unresolved

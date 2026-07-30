@@ -1,0 +1,39 @@
+﻿source_item,source_description,source_2023_part_number,normalized_part_number,vin,catalog_match,matched_categories,catalog_descriptions,interpretation
+1,"PANEL, Front Seat Back",1UY02DX9AC,1UY02DX9AC,2C3CDXGJ2HH530684,YES,front-seat-adjusters,2011-2021 Mopar Front Seat Back Panel | Panel,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+1,"PANEL, Front Seat Back",1UY02DX9AC,1UY02DX9AC,2C3CCAEG4HH586472,YES,front-seat-adjusters,2011-2021 Mopar Front Seat Back Panel | Panel,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+2,"FRAME, Front Seat Back",68159139AA,68159139AA,2C3CDXGJ2HH530684,YES,front-seat-adjusters,Frame | Front Seat Back Frame,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+2,"FRAME, Front Seat Back",68159139AA,68159139AA,2C3CCAEG4HH586472,YES,front-seat-adjusters,Frame | Front Seat Back Frame,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+2,"FRAME, Front Seat Back",68593541AA,68593541AA,2C3CDXGJ2HH530684,NO,,,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+2,"FRAME, Front Seat Back",68593541AA,68593541AA,2C3CCAEG4HH586472,NO,,,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+2,"FRAME, Front Seat Back",68593544AA,68593544AA,2C3CDXGJ2HH530684,NO,,,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+2,"FRAME, Front Seat Back",68593544AA,68593544AA,2C3CCAEG4HH586472,NO,,,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+3,"ADJUSTER, Power Seat",68193460AC,68193460AC,2C3CDXGJ2HH530684,YES,front-seat-adjusters,Adjuster | Power Seat Adjuster,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+3,"ADJUSTER, Power Seat",68193460AC,68193460AC,2C3CCAEG4HH586472,YES,front-seat-adjusters,Adjuster | Power Seat Adjuster,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+3,"ADJUSTER, Power Seat",68193462AC,68193462AC,2C3CDXGJ2HH530684,YES,front-seat-adjusters,2013-2020 Mopar Power Seat Adjuster | Adjuster,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+3,"ADJUSTER, Power Seat",68193462AC,68193462AC,2C3CCAEG4HH586472,YES,front-seat-adjusters,2013-2020 Mopar Power Seat Adjuster | Adjuster,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+4,"COVER, Track, Rear",1UV50DX9AA,1UV50DX9AA,2C3CDXGJ2HH530684,YES,front-seat-adjusters,Cover | Track Cover,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+4,"COVER, Track, Rear",1UV50DX9AA,1UV50DX9AA,2C3CCAEG4HH586472,YES,front-seat-adjusters,Rear | Track Cover,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+5,"COVER, Track, Front",1UV51DX9AA,1UV51DX9AA,2C3CDXGJ2HH530684,YES,front-seat-adjusters,Cover | Track Cover,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+5,"COVER, Track, Front",1UV51DX9AA,1UV51DX9AA,2C3CCAEG4HH586472,YES,front-seat-adjusters,Front | Track Cover,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+6,"SCREW, Hex Head, M14x1.5x109.0, Adjuster To Floor",06507594AA,6507594AA,2C3CDXGJ2HH530684,YES,front-seat-adjusters,Hex Head Screw | Screw,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+6,"SCREW, Hex Head, M14x1.5x109.0, Adjuster To Floor",06507594AA,6507594AA,2C3CCAEG4HH586472,YES,front-seat-adjusters,Hex Head Screw,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+7,"BRACKET, Seat, Side Shield Attaching",68157098AA,68157098AA,2C3CDXGJ2HH530684,YES,front-seat-adjusters,Bracket | Seat Bracket,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+7,"BRACKET, Seat, Side Shield Attaching",68157098AA,68157098AA,2C3CCAEG4HH586472,YES,front-seat-adjusters,Bracket | Seat Bracket,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+8,"SHIELD, Seat Adjuster",1UZ62DX9AC,1UZ62DX9AC,2C3CDXGJ2HH530684,YES,front-seat-adjusters,2011-2021 Mopar Seat Adjuster Shield | Shield,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+8,"SHIELD, Seat Adjuster",1UZ62DX9AC,1UZ62DX9AC,2C3CCAEG4HH586472,YES,front-seat-adjusters,2011-2021 Mopar Seat Adjuster Shield | Shield,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+9,"COVER, Front Seat Anchor Bolt",1UV75DX9AA,1UV75DX9AA,2C3CDXGJ2HH530684,NO,,,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+9,"COVER, Front Seat Anchor Bolt",1UV75DX9AA,1UV75DX9AA,2C3CCAEG4HH586472,NO,,,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+9,"COVER, Front Seat Anchor Bolt",1UV75DX9AB,1UV75DX9AB,2C3CDXGJ2HH530684,YES,front-seat-adjusters,Cover | Front Seat Anchor Bolt Cover,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+9,"COVER, Front Seat Anchor Bolt",1UV75DX9AB,1UV75DX9AB,2C3CCAEG4HH586472,YES,front-seat-adjusters,Cover | Front Seat Anchor Bolt Cover,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+10,"CHUTE, Airbag",68102980AA,68102980AA,2C3CDXGJ2HH530684,YES,front-seat-adjusters,Airbag Chute | Chute,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+10,"CHUTE, Airbag",68102980AA,68102980AA,2C3CCAEG4HH586472,YES,front-seat-adjusters,Airbag Chute,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+10,"CHUTE, Airbag",68103691AA,68103691AA,2C3CDXGJ2HH530684,YES,front-seat-adjusters,Airbag Chute | Chute,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+10,"CHUTE, Airbag",68103691AA,68103691AA,2C3CCAEG4HH586472,YES,front-seat-adjusters,Airbag Chute,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+-11,"BLOWER, Seat Back",55057389AD,55057389AD,2C3CDXGJ2HH530684,YES,front-seat-adjusters,Blower | Seat Back Blower,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+-11,"BLOWER, Seat Back",55057389AD,55057389AD,2C3CCAEG4HH586472,YES,front-seat-adjusters,Blower | Seat Back Blower,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+-12,"BLOWER, Seat Cushion",68306763AA,68306763AA,2C3CDXGJ2HH530684,YES,front-seat-adjusters,Blower | Seat Cushion Blower,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+-12,"BLOWER, Seat Cushion",68306763AA,68306763AA,2C3CCAEG4HH586472,YES,front-seat-adjusters,Blower | Seat Cushion Blower,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+-14,"BOLT, Seat, Seat Back to Cushion",68104960AA,68104960AA,2C3CDXGJ2HH530684,YES,front-seat-adjusters,Seat Bolt,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+-14,"BOLT, Seat, Seat Back to Cushion",68104960AA,68104960AA,2C3CCAEG4HH586472,NO,,,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+-15,"NUT, M6x1.00, Air Bag Attaching",68104961AA,68104961AA,2C3CDXGJ2HH530684,YES,front-seat-adjusters,Nut,Cross-year catalog candidate match only; 2023 source is not VIN-specific
+-15,"NUT, M6x1.00, Air Bag Attaching",68104961AA,68104961AA,2C3CCAEG4HH586472,NO,,,Cross-year catalog candidate match only; 2023 source is not VIN-specific

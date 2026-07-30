@@ -1,0 +1,14 @@
+.venv/
+source/
+evidence/*_access-denied.html
+evidence/*_jina.txt
+evidence/mopar/raw/
+extracted/google_*.html
+extracted/*_search.txt
+extracted/*_vehicle_page.txt
+extracted/mopar_jina_test.txt
+extracted/mopar_sitemap.txt
+report/verification/
+scripts/
+__pycache__/
+*.pyc

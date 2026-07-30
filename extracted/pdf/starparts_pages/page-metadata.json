@@ -1,0 +1,182 @@
+{
+  "pages": 13,
+  "metadata": {
+    "format": "PDF 1.4",
+    "title": "Aries Aero Mail - Fw: STARPARTS: Parts List(2023 - LD) 050 - Interior Trim / 900 - Front Seats - Adjusters, Recliners, Shields and Risers / 910.01 - Adjusters, Recliners, Shields and Risers - Passenger Seat, power",
+    "author": "",
+    "subject": "",
+    "keywords": "",
+    "creator": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+    "producer": "Skia/PDF m150",
+    "creationDate": "D:20260730213521+00'00'",
+    "modDate": "D:20260730213521+00'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "page_info": [
+    {
+      "page": 1,
+      "width": 841.9,
+      "height": 595.0,
+      "text_chars": 2017,
+      "image_count": 5,
+      "images": [
+        {
+          "xref": 7,
+          "width": 154,
+          "height": 36,
+          "bpc": 8,
+          "colorspace": "ICCBased"
+        },
+        {
+          "xref": 12,
+          "width": 207,
+          "height": 92,
+          "bpc": 8,
+          "colorspace": "ICCBased"
+        },
+        {
+          "xref": 13,
+          "width": 94,
+          "height": 94,
+          "bpc": 8,
+          "colorspace": "ICCBased"
+        },
+        {
+          "xref": 14,
+          "width": 121,
+          "height": 96,
+          "bpc": 8,
+          "colorspace": "ICCBased"
+        },
+        {
+          "xref": 16,
+          "width": 109,
+          "height": 40,
+          "bpc": 8,
+          "colorspace": "ICCBased"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "width": 841.9,
+      "height": 595.0,
+      "text_chars": 358,
+      "image_count": 0,
+      "images": []
+    },
+    {
+      "page": 3,
+      "width": 841.9,
+      "height": 595.0,
+      "text_chars": 358,
+      "image_count": 1,
+      "images": [
+        {
+          "xref": 38,
+          "width": 1400,
+          "height": 1700,
+          "bpc": 8,
+          "colorspace": "ICCBased"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "width": 841.9,
+      "height": 595.0,
+      "text_chars": 2087,
+      "image_count": 1,
+      "images": [
+        {
+          "xref": 38,
+          "width": 1400,
+          "height": 1700,
+          "bpc": 8,
+          "colorspace": "ICCBased"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "width": 841.9,
+      "height": 595.0,
+      "text_chars": 2369,
+      "image_count": 0,
+      "images": []
+    },
+    {
+      "page": 6,
+      "width": 841.9,
+      "height": 595.0,
+      "text_chars": 2468,
+      "image_count": 0,
+      "images": []
+    },
+    {
+      "page": 7,
+      "width": 841.9,
+      "height": 595.0,
+      "text_chars": 2588,
+      "image_count": 0,
+      "images": []
+    },
+    {
+      "page": 8,
+      "width": 841.9,
+      "height": 595.0,
+      "text_chars": 2466,
+      "image_count": 0,
+      "images": []
+    },
+    {
+      "page": 9,
+      "width": 841.9,
+      "height": 595.0,
+      "text_chars": 2635,
+      "image_count": 0,
+      "images": []
+    },
+    {
+      "page": 10,
+      "width": 841.9,
+      "height": 595.0,
+      "text_chars": 2706,
+      "image_count": 0,
+      "images": []
+    },
+    {
+      "page": 11,
+      "width": 841.9,
+      "height": 595.0,
+      "text_chars": 2385,
+      "image_count": 0,
+      "images": []
+    },
+    {
+      "page": 12,
+      "width": 841.9,
+      "height": 595.0,
+      "text_chars": 2381,
+      "image_count": 0,
+      "images": []
+    },
+    {
+      "page": 13,
+      "width": 841.9,
+      "height": 595.0,
+      "text_chars": 1487,
+      "image_count": 1,
+      "images": [
+        {
+          "xref": 60,
+          "width": 1,
+          "height": 1,
+          "bpc": 8,
+          "colorspace": "ICCBased"
+        }
+      ]
+    }
+  ]
+}

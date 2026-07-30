@@ -1,0 +1,17 @@
+[
+  {
+    "file": "hardware_commonality_report.docx",
+    "bytes": 2463764,
+    "sha256": "42915b91839fea515f3a17a29b93cfdee8011abe964b26c34d6560ae6acda8b2"
+  },
+  {
+    "file": "hardware_commonality_report.md",
+    "bytes": 29354,
+    "sha256": "d23972701192c484036cb177e9f877cb94d9f3a9ca5970b15202ea70083a1ef4"
+  },
+  {
+    "file": "hardware_commonality_report.pdf",
+    "bytes": 2244296,
+    "sha256": "6d8e2ef9641c65b2b3711d9abc7e3719ad4f4fe34b97a44d5dda54f9d156f132"
+  }
+]

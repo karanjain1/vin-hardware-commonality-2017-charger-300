@@ -1,0 +1,9 @@
+{
+  "catalog_rows_raw": 1435,
+  "catalog_parts_deduplicated": 606,
+  "common_catalog_candidates": 86,
+  "adr_critical_common_candidates": 63,
+  "source_pdf_match_rows": 38,
+  "identical_illustration_pairs": 0,
+  "categories": 9
+}
