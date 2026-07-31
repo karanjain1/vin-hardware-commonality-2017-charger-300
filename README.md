@@ -41,7 +41,7 @@ The broad user-defined similarity criterion passes all 12 screened variant pairs
 - `extracted/expanded_adr_comparison/all_category_common_parts.csv` — all 93 exact category-level common part numbers
 - `evidence/mopar/expanded_adrs/illustrations/` — 22 representative exploded drawings
 
-Under the same broad mixed-variant/trim criterion, all 13 screened areas pass the similarity screen: seven exact-direct component passes, one exact-supporting pass and five functional-architecture passes. The result is catalog/component similarity only and is not an ADR compliance, fitted-vehicle or performance determination.
+Under the same broad mixed-variant/trim criterion, all 13 screened areas pass the similarity screen: six exact-direct component passes, two exact-supporting passes and five functional-architecture passes. Of 112 attempted route/category jobs, 94 produced catalog rows and 18 were zero-row coverage gaps. The result is catalog/component similarity only and is not an ADR compliance, fitted-vehicle or performance determination.
 
 ## Determination
 

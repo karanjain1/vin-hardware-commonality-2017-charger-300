@@ -1,15 +1,17 @@
 {
   "variants": 7,
   "categories": 16,
-  "variant_category_jobs": 112,
+  "variant_category_jobs_attempted": 112,
+  "variant_category_jobs_populated": 94,
+  "variant_category_zero_row_jobs": 18,
   "catalog_rows": 2253,
   "common_category_parts": 93,
   "adrs_screened": 13,
-  "exact_direct_passes": 7,
-  "exact_supporting_passes": 1,
+  "exact_direct_passes": 6,
+  "exact_supporting_passes": 2,
   "functional_passes": 5,
   "catalog_scope_gaps": 0,
-  "direct_common_rows": 89,
+  "direct_common_rows": 88,
   "representative_drawings": 22,
   "errors": 0
 }

@@ -1,30 +1,30 @@
 [
   {
     "file": "report/expanded_unresolved_adr_similarity_supplement.md",
-    "bytes": 16572,
-    "sha256": "5dabd5cbedad01bf70c28b543a231819179798efb113b5abd0a826e516682eb0",
-    "sha256_lf_normalized": "3938cabe1282425771539ea1af400ec8d263ed1b208bf2f318c47e3bea99c073"
+    "bytes": 16774,
+    "sha256": "3ebd8ad05c596f793c0c55ff82ce2f34f752544f125dc82f64449d43e3a0c282",
+    "sha256_lf_normalized": "7e8b6811c202d9338686a1298480f44603bafec755601e588c47f2527ffadd24"
   },
   {
     "file": "report/expanded_unresolved_adr_similarity_supplement.docx",
-    "bytes": 642297,
-    "sha256": "9391e37cdbbf4d829492e24b3e0a322ebcac022bd9cefc3d4f27cfe9166b7dae"
+    "bytes": 642380,
+    "sha256": "c5ce9f9c82c5215520b2fa5e388e7bd48aca926e64cfe0493e7653f8698265f1"
   },
   {
     "file": "report/expanded_unresolved_adr_similarity_supplement.pdf",
-    "bytes": 715438,
-    "sha256": "017bc997471c91263711a33399480dd19675381c3cde44b2eb384882f5d7ec2d"
+    "bytes": 720333,
+    "sha256": "bc91132970b43822abaeac5163de5dc30372a1f77aefe56d505cc50a9a58fcaf"
   },
   {
     "file": "extracted/expanded_adr_comparison/curated_adr_match_summary.csv",
-    "bytes": 10215,
-    "sha256": "3b57ebff8ab4c41cc40578e4a4d4d1acd385cba6bec9dee37c1b53f434ffab0a",
-    "sha256_lf_normalized": "e4261bc08dbfa9a7c4115a691a65089c86ee7ac89dc86572a3b5928893db279b"
+    "bytes": 10254,
+    "sha256": "bcb50705ea9db48ddedf82f21a65d7c4604c1d0f951c81b7241c96e4f31e263f",
+    "sha256_lf_normalized": "f02b7e2c6a09ea2887363ab9749aa550fbda4fc4475a1091a7cf585b0831f64a"
   },
   {
     "file": "extracted/expanded_adr_comparison/curated_adr_match_summary.json",
-    "bytes": 13510,
-    "sha256": "4064f94c436bf125329f3eb69301dba6a90a4f68327586d1e7784818bf8d0288",
-    "sha256_lf_normalized": "82be0c0830d9b24359e80586fd6bba2fb21ba5dd48405321b0a6fd8862d75670"
+    "bytes": 13547,
+    "sha256": "5f5c9828bc7dff7a94a1b8d33d9cfd585e857c486226193dc406f330b3243668",
+    "sha256_lf_normalized": "72188c9559c3a7ef6a10a44e77fc3bc711d275f66cba6425931a154407ee962f"
   }
 ]

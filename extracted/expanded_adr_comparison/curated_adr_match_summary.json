@@ -57,11 +57,11 @@
   {
     "adr": "25/02",
     "title": "Anti-Theft Lock",
-    "assessment": "EXACT-DIRECT PART MATCH PASS",
+    "assessment": "EXACT-SUPPORTING PART MATCH PASS",
     "selected_exact_part_numbers": "68404422AA",
     "selected_descriptions": "68404422AA \u2014 Ignition Switch Trim Ring",
     "variant_routes": "Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L",
-    "controlled_similarity_statement": "Exact common ignition-switch trim ring supports a shared ignition-control interface; it does not establish steering-lock or immobilizer identity.",
+    "controlled_similarity_statement": "Exact common ignition-switch trim ring is supporting interface evidence only; it does not establish anti-theft lock, steering-lock or immobilizer identity.",
     "regulatory_limit": "Similarity/catalog evidence only; does not prove ADR compliance, installed VIN configuration or test performance.",
     "official_adr_url": "https://www.legislation.gov.au/F2006L02664/latest/text"
   },
@@ -78,7 +78,7 @@
   },
   {
     "adr": "34/02",
-    "title": "Child Restraint Anchorages and Fittings",
+    "title": "Child Restraint Anchorages and Child Restraint Anchor Fittings",
     "assessment": "EXACT-SUPPORTING PART MATCH PASS",
     "selected_exact_part_numbers": "4628848AB | 68110232AA | 68110212AA | 68110213AA | 68110214AA",
     "selected_descriptions": "4628848AB \u2014 Seat Back Latch Striker | 68110232AA \u2014 Seat Latch | 68110212AA \u2014 Seat Bracket | 68110213AA \u2014 Seat Bracket | 68110214AA \u2014 Seat Bracket",

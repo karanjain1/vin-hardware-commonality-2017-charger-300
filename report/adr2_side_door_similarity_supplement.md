@@ -4,9 +4,9 @@
 **Status:** FUNCTIONAL-ARCHITECTURE PASS under broad variant/trim criterion; exact core latch/hinge part-number equivalence not established
 
 ## Executive determination
-- **PASS — functional similarity:** all 12 screened Challenger/Charger variant-pair combinations contain corresponding left/right front-door latch architecture; lower left/right hinge pairs were also identified by OEM part listings.
+- **PASS — functional similarity:** all 12 screened Challenger/Charger variant-pair combinations contain corresponding left/right front-door latch architecture; lower left/right hinge pairs were identified from genuine-Mopar parts retailer fitment listings.
 - **VERIFIED:** 613 front-door catalog rows, 52 direct latch/attaching-hardware rows, 21 exploded-diagram records and zero scraper errors.
-- **VERIFIED:** 26 exact shared exterior-handle part numbers support common door-control architecture.
+- **VERIFIED:** 26 exact shared exterior-handle part numbers show ancillary door-control commonality only; they do not support latch/hinge identity or performance.
 - **LIMIT:** no exact common OEM service part number was established for the core Challenger-versus-Charger latch or lower-hinge assemblies. The coupes and sedans use different core service numbers.
 - **ADR LIMIT:** this supports an ADR 2/01 component-architecture similarity argument only. It does not prove latch/hinge strength, longitudinal/transverse load performance, installed configuration, or ADR compliance.
 
@@ -18,8 +18,10 @@ At the user’s direction, variants and trims may be mixed. A pair passes if a C
 |---|---|---|---|---|
 | Front door latch — right | 68174640AH | 04589916AH | same OEM component class, side and function; different service part number | FUNCTIONAL-SIMILARITY PASS |
 | Front door latch — left | 68174641AH | 04589913AI | same OEM component class, side and function; different service part number | FUNCTIONAL-SIMILARITY PASS |
-| Front lower door hinge — right | 68026642AC | 68148514AB | same OEM component class, side and lower-hinge function; different service part number | FUNCTIONAL-SIMILARITY PASS |
-| Front lower door hinge — left | 68026643AC | 68148515AB | same OEM component class, side and lower-hinge function; different service part number | FUNCTIONAL-SIMILARITY PASS |
+| Front lower door hinge — right | 68026642AC | 68148514AB | same genuine-Mopar component class, side and lower-hinge function from retailer fitment listings; different service part number | FUNCTIONAL-SIMILARITY PASS |
+| Front lower door hinge — left | 68026643AC | 68148515AB | same genuine-Mopar component class, side and lower-hinge function from retailer fitment listings; different service part number | FUNCTIONAL-SIMILARITY PASS |
+
+**Source control note:** hinge fitment pages are third-party genuine-Mopar parts retailer listings. Local snapshots and SHA-256 values are recorded in `extracted/door_comparison/hinge_source_capture_manifest.csv`; they are not represented as OEM-controlled engineering evidence.
 
 ## Variant-pair results
 | Challenger variant | Charger variant | Exact core PN matches | Functional match | Status |
@@ -38,7 +40,7 @@ At the user’s direction, variants and trims may be mixed. A pair passes if a C
 | SRT 392 6.4L | SRT 392 6.4L | 0 | front door latch left; front door latch right; lower door hinge left; lower door hinge right | FUNCTIONAL-ARCHITECTURE PASS — core service part numbers differ |
 
 ## Exact shared related front-door parts
-These are exterior-handle/door-control parts. They support architecture similarity but are not latch/hinge retention components.
+These are exterior-handle/door-control parts. They show ancillary door-control commonality only and are not latch/hinge retention components or evidence of latch/hinge performance.
 | Part number | Description | Challenger variants | Charger variants |
 |---|---|---|---|
 | 1MZ84DX8AM | 2013-2021 Mopar Front Door Exterior Handle Right \| Right | R/T 5.7L \| R/T Scat Pack 6.4L \| SRT 392 6.4L \| SXT 3.6L | R/T 5.7L \| R/T Scat Pack 6.4L \| SRT 392 6.4L |
@@ -68,7 +70,8 @@ These are exterior-handle/door-control parts. They support architecture similari
 | 1MZ85RY4AM | Front Door Exterior Handle, Left \| Left | R/T 5.7L \| R/T Scat Pack 6.4L \| SRT 392 6.4L \| SXT 3.6L | R/T 5.7L \| R/T Scat Pack 6.4L \| SRT 392 6.4L |
 | 1MZ85ZR3AM | 2013-2021 Mopar Front Door Exterior Handle Left \| Left | R/T 5.7L \| R/T Scat Pack 6.4L \| SRT 392 6.4L \| SXT 3.6L | R/T 5.7L \| R/T Scat Pack 6.4L \| SRT 392 6.4L |
 
-## Representative MoparAmerica diagrams
+## Representative MoparAmerica catalog diagrams
+These catalog diagrams provide contextual front-door references. Most do not directly depict the compared lower hinges or prove latch/hinge equivalence.
 ### Challenger R/T Scat Pack 6.4L — diagram 1: Door Handle Bracket, Right
 Source: https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/doors-door-mirrors-and-related-parts--front-door?assembly=1
 ![Door Handle Bracket, Right](../evidence/mopar/door_variants/illustrations/Challenger_R-T_Scat_Pack_6.4L/assembly-01.png)
@@ -94,7 +97,7 @@ Source: https://www.moparamerica.com/v-2017-dodge-charger--r-t-scat-pack--6-4l-v
 ![Door Lock Cylinder](../evidence/mopar/door_variants/illustrations/Charger_R-T_Scat_Pack_6.4L/assembly-03.png)
 
 ## Controlled conclusion
-**Broad-criterion result: PASS.** Challenger and Charger variants demonstrate corresponding front-door latch and lower-hinge architecture, and 26 exact common exterior-handle service numbers support shared door-control design. The core latch and lower-hinge service numbers differ, so the evidence must be described as functional/component-class similarity—not exact latch/hinge identity and not ADR 2/01 compliance.
+**Broad-criterion result: PASS.** Challenger and Charger variants demonstrate corresponding front-door latch and lower-hinge component classes. The 26 exact common exterior-handle service numbers show ancillary door-control commonality only. The core latch and lower-hinge service numbers differ, so the evidence must be described as functional/component-class similarity—not exact latch/hinge identity and not ADR 2/01 compliance.
 
 ## Evidence needed for a compliance-grade conclusion
 1. VIN-specific build records and fitted part labels.

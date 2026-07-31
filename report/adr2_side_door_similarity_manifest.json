@@ -1,17 +1,18 @@
 [
   {
     "file": "adr2_side_door_similarity_supplement.md",
-    "bytes": 12733,
-    "sha256": "8bfabaa5b82110e48c6ede495aedc365ae4fe1ec276185c33a27ebb0b30138ec"
+    "bytes": 13412,
+    "sha256": "98b8e88e023209ae763e3630675113157d18a954beccf7d886300fe6aeb527f9",
+    "sha256_lf_normalized": "2e3f9c4e56157c7bf8f1e298f6c5cd21ab5ffc78a10dfc40adafc321ad64afe7"
   },
   {
     "file": "adr2_side_door_similarity_supplement.docx",
-    "bytes": 377658,
-    "sha256": "6414b361544d46ce71be0704bcdc21ef3c19a71a57732b2a6672b539196fa9fa"
+    "bytes": 377701,
+    "sha256": "8872c0209f0cef0893616967ee9cdc6b1f052df78e3d5c69b86c53303acab42b"
   },
   {
     "file": "adr2_side_door_similarity_supplement.pdf",
-    "bytes": 413755,
-    "sha256": "1f6f42512f17860401a8feb74ebf507bdcec77cbd03e5d50053dc01812939387"
+    "bytes": 414041,
+    "sha256": "161331ec880dbb2a196b70ff23a732069d2bc5c920fd115a68ed67c9c1b2c24b"
   }
 ]
