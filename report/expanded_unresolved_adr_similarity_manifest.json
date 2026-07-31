@@ -2,7 +2,8 @@
   {
     "file": "report/expanded_unresolved_adr_similarity_supplement.md",
     "bytes": 16572,
-    "sha256": "5dabd5cbedad01bf70c28b543a231819179798efb113b5abd0a826e516682eb0"
+    "sha256": "5dabd5cbedad01bf70c28b543a231819179798efb113b5abd0a826e516682eb0",
+    "sha256_lf_normalized": "3938cabe1282425771539ea1af400ec8d263ed1b208bf2f318c47e3bea99c073"
   },
   {
     "file": "report/expanded_unresolved_adr_similarity_supplement.docx",
@@ -17,11 +18,13 @@
   {
     "file": "extracted/expanded_adr_comparison/curated_adr_match_summary.csv",
     "bytes": 10215,
-    "sha256": "3b57ebff8ab4c41cc40578e4a4d4d1acd385cba6bec9dee37c1b53f434ffab0a"
+    "sha256": "3b57ebff8ab4c41cc40578e4a4d4d1acd385cba6bec9dee37c1b53f434ffab0a",
+    "sha256_lf_normalized": "e4261bc08dbfa9a7c4115a691a65089c86ee7ac89dc86572a3b5928893db279b"
   },
   {
     "file": "extracted/expanded_adr_comparison/curated_adr_match_summary.json",
     "bytes": 13510,
-    "sha256": "4064f94c436bf125329f3eb69301dba6a90a4f68327586d1e7784818bf8d0288"
+    "sha256": "4064f94c436bf125329f3eb69301dba6a90a4f68327586d1e7784818bf8d0288",
+    "sha256_lf_normalized": "82be0c0830d9b24359e80586fd6bba2fb21ba5dd48405321b0a6fd8862d75670"
   }
 ]
