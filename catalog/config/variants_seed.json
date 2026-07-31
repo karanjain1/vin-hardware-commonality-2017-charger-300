@@ -1,0 +1,41 @@
+{
+  "scope": {
+    "year": 2017,
+    "source": "MoparAmerica public OEM catalogue",
+    "models": ["Dodge Charger", "Chrysler 300"],
+    "confidence": "vehicle-family catalogue candidates; not VIN-confirmed installation"
+  },
+  "crawl": {
+    "minimum_delay_seconds": 10,
+    "renderer_prefix": "https://r.jina.ai/http://www.moparamerica.com/",
+    "download_images": true
+  },
+  "candidates": [
+    {"model":"Dodge Charger","trim":"Daytona","engine":"5.7L V8 Gas","route_slug":"v-2017-dodge-charger--daytona--5-7l-v8-gas"},
+    {"model":"Dodge Charger","trim":"Daytona 392","engine":"6.4L V8 Gas","route_slug":"v-2017-dodge-charger--daytona-392--6-4l-v8-gas"},
+    {"model":"Dodge Charger","trim":"R/T","engine":"5.7L V8 Gas","route_slug":"v-2017-dodge-charger--r-t--5-7l-v8-gas"},
+    {"model":"Dodge Charger","trim":"R/T 392","engine":"6.4L V8 Gas","route_slug":"v-2017-dodge-charger--r-t-392--6-4l-v8-gas"},
+    {"model":"Dodge Charger","trim":"R/T Scat Pack","engine":"6.4L V8 Gas","route_slug":"v-2017-dodge-charger--r-t-scat-pack--6-4l-v8-gas"},
+    {"model":"Dodge Charger","trim":"SE","engine":"3.6L V6 Gas","route_slug":"v-2017-dodge-charger--se--3-6l-v6-gas"},
+    {"model":"Dodge Charger","trim":"SE","engine":"3.6L V6 Flex","route_slug":"v-2017-dodge-charger--se--3-6l-v6-flex"},
+    {"model":"Dodge Charger","trim":"SRT 392","engine":"6.4L V8 Gas","route_slug":"v-2017-dodge-charger--srt-392--6-4l-v8-gas"},
+    {"model":"Dodge Charger","trim":"SRT Hellcat","engine":"6.2L V8 Gas","route_slug":"v-2017-dodge-charger--srt-hellcat--6-2l-v8-gas"},
+    {"model":"Dodge Charger","trim":"SXT","engine":"3.6L V6 Gas","route_slug":"v-2017-dodge-charger--sxt--3-6l-v6-gas"},
+    {"model":"Dodge Charger","trim":"SXT","engine":"3.6L V6 Flex","route_slug":"v-2017-dodge-charger--sxt--3-6l-v6-flex"},
+    {"model":"Dodge Charger","trim":"SXT Plus","engine":"3.6L V6 Gas","route_slug":"v-2017-dodge-charger--sxt-plus--3-6l-v6-gas"},
+    {"model":"Dodge Charger","trim":"SXT Plus","engine":"3.6L V6 Flex","route_slug":"v-2017-dodge-charger--sxt-plus--3-6l-v6-flex"},
+    {"model":"Dodge Charger","trim":"Police","engine":"3.6L V6 Gas","route_slug":"v-2017-dodge-charger--police--3-6l-v6-gas"},
+    {"model":"Dodge Charger","trim":"Police","engine":"5.7L V8 Gas","route_slug":"v-2017-dodge-charger--police--5-7l-v8-gas"},
+    {"model":"Chrysler 300","trim":"C","engine":"3.6L V6 Gas","route_slug":"v-2017-chrysler-300--c--3-6l-v6-gas"},
+    {"model":"Chrysler 300","trim":"C","engine":"3.6L V6 Flex","route_slug":"v-2017-chrysler-300--c--3-6l-v6-flex"},
+    {"model":"Chrysler 300","trim":"C","engine":"5.7L V8 Gas","route_slug":"v-2017-chrysler-300--c--5-7l-v8-gas"},
+    {"model":"Chrysler 300","trim":"C Platinum","engine":"3.6L V6 Gas","route_slug":"v-2017-chrysler-300--c-platinum--3-6l-v6-gas"},
+    {"model":"Chrysler 300","trim":"C Platinum","engine":"3.6L V6 Flex","route_slug":"v-2017-chrysler-300--c-platinum--3-6l-v6-flex"},
+    {"model":"Chrysler 300","trim":"C Platinum","engine":"5.7L V8 Gas","route_slug":"v-2017-chrysler-300--c-platinum--5-7l-v8-gas"},
+    {"model":"Chrysler 300","trim":"Limited","engine":"3.6L V6 Gas","route_slug":"v-2017-chrysler-300--limited--3-6l-v6-gas"},
+    {"model":"Chrysler 300","trim":"Limited","engine":"3.6L V6 Flex","route_slug":"v-2017-chrysler-300--limited--3-6l-v6-flex"},
+    {"model":"Chrysler 300","trim":"S","engine":"3.6L V6 Gas","route_slug":"v-2017-chrysler-300--s--3-6l-v6-gas"},
+    {"model":"Chrysler 300","trim":"S","engine":"3.6L V6 Flex","route_slug":"v-2017-chrysler-300--s--3-6l-v6-flex"},
+    {"model":"Chrysler 300","trim":"S","engine":"5.7L V8 Gas","route_slug":"v-2017-chrysler-300--s--5-7l-v8-gas"}
+  ]
+}

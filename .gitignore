@@ -18,5 +18,12 @@ extracted/pdf/starparts_pages/
 extracted/*_adjusters.txt
 extracted/*_seatbelts.txt
 scripts/
+!scripts/
+scripts/*
+!scripts/mopar_catalog.py
 __pycache__/
 *.pyc
+catalog/raw/
+catalog/logs/
+catalog/*.sqlite3-wal
+catalog/*.sqlite3-shm

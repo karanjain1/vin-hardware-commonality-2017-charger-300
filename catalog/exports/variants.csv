@@ -1,0 +1,27 @@
+﻿model,trim,engine,route_slug,valid,validation_state,source_url,retrieved_at,error
+Chrysler 300,C,3.6L V6 Flex,v-2017-chrysler-300--c--3-6l-v6-flex,1,valid,https://www.moparamerica.com/v-2017-chrysler-300--c--3-6l-v6-flex,2026-07-31T21:48:57+00:00,
+Chrysler 300,C,3.6L V6 Gas,v-2017-chrysler-300--c--3-6l-v6-gas,1,valid,https://www.moparamerica.com/v-2017-chrysler-300--c--3-6l-v6-gas,2026-07-31T21:54:57+00:00,
+Chrysler 300,C,5.7L V8 Gas,v-2017-chrysler-300--c--5-7l-v8-gas,1,valid,https://www.moparamerica.com/v-2017-chrysler-300--c--5-7l-v8-gas,2026-07-31T21:49:17+00:00,
+Chrysler 300,C Platinum,3.6L V6 Flex,v-2017-chrysler-300--c-platinum--3-6l-v6-flex,1,valid,https://www.moparamerica.com/v-2017-chrysler-300--c-platinum--3-6l-v6-flex,2026-07-31T21:49:27+00:00,
+Chrysler 300,C Platinum,3.6L V6 Gas,v-2017-chrysler-300--c-platinum--3-6l-v6-gas,1,valid,https://www.moparamerica.com/v-2017-chrysler-300--c-platinum--3-6l-v6-gas,2026-07-31T21:49:37+00:00,
+Chrysler 300,C Platinum,5.7L V8 Gas,v-2017-chrysler-300--c-platinum--5-7l-v8-gas,1,valid,https://www.moparamerica.com/v-2017-chrysler-300--c-platinum--5-7l-v8-gas,2026-07-31T21:49:46+00:00,
+Chrysler 300,Limited,3.6L V6 Flex,v-2017-chrysler-300--limited--3-6l-v6-flex,1,valid,https://www.moparamerica.com/v-2017-chrysler-300--limited--3-6l-v6-flex,2026-07-31T21:49:57+00:00,
+Chrysler 300,Limited,3.6L V6 Gas,v-2017-chrysler-300--limited--3-6l-v6-gas,1,valid,https://www.moparamerica.com/v-2017-chrysler-300--limited--3-6l-v6-gas,2026-07-31T21:50:06+00:00,
+Chrysler 300,S,3.6L V6 Flex,v-2017-chrysler-300--s--3-6l-v6-flex,1,valid,https://www.moparamerica.com/v-2017-chrysler-300--s--3-6l-v6-flex,2026-07-31T21:50:16+00:00,
+Chrysler 300,S,3.6L V6 Gas,v-2017-chrysler-300--s--3-6l-v6-gas,1,valid,https://www.moparamerica.com/v-2017-chrysler-300--s--3-6l-v6-gas,2026-07-31T21:50:28+00:00,
+Chrysler 300,S,5.7L V8 Gas,v-2017-chrysler-300--s--5-7l-v8-gas,1,valid,https://www.moparamerica.com/v-2017-chrysler-300--s--5-7l-v8-gas,2026-07-31T21:50:36+00:00,
+Dodge Charger,Daytona,5.7L V8 Gas,v-2017-dodge-charger--daytona--5-7l-v8-gas,1,valid,https://www.moparamerica.com/v-2017-dodge-charger--daytona--5-7l-v8-gas,2026-07-31T21:50:46+00:00,
+Dodge Charger,Daytona 392,6.4L V8 Gas,v-2017-dodge-charger--daytona-392--6-4l-v8-gas,1,valid,https://www.moparamerica.com/v-2017-dodge-charger--daytona-392--6-4l-v8-gas,2026-07-31T21:50:56+00:00,
+Dodge Charger,Police,3.6L V6 Gas,v-2017-dodge-charger--police--3-6l-v6-gas,0,invalid,https://www.moparamerica.com/v-2017-dodge-charger--police--3-6l-v6-gas,2026-07-31T21:51:06+00:00,categories=0 http=200
+Dodge Charger,Police,5.7L V8 Gas,v-2017-dodge-charger--police--5-7l-v8-gas,0,invalid,https://www.moparamerica.com/v-2017-dodge-charger--police--5-7l-v8-gas,2026-07-31T21:51:19+00:00,categories=0 http=200
+Dodge Charger,R/T,5.7L V8 Gas,v-2017-dodge-charger--r-t--5-7l-v8-gas,1,valid,https://www.moparamerica.com/v-2017-dodge-charger--r-t--5-7l-v8-gas,2026-07-31T21:51:22+00:00,
+Dodge Charger,R/T 392,6.4L V8 Gas,v-2017-dodge-charger--r-t-392--6-4l-v8-gas,0,invalid,https://www.moparamerica.com/v-2017-dodge-charger--r-t-392--6-4l-v8-gas,2026-07-31T21:51:37+00:00,categories=1 http=200
+Dodge Charger,R/T Scat Pack,6.4L V8 Gas,v-2017-dodge-charger--r-t-scat-pack--6-4l-v8-gas,1,valid,https://www.moparamerica.com/v-2017-dodge-charger--r-t-scat-pack--6-4l-v8-gas,2026-07-31T21:51:46+00:00,
+Dodge Charger,SE,3.6L V6 Flex,v-2017-dodge-charger--se--3-6l-v6-flex,1,valid,https://www.moparamerica.com/v-2017-dodge-charger--se--3-6l-v6-flex,2026-07-31T21:51:56+00:00,
+Dodge Charger,SE,3.6L V6 Gas,v-2017-dodge-charger--se--3-6l-v6-gas,0,invalid,https://www.moparamerica.com/v-2017-dodge-charger--se--3-6l-v6-gas,2026-07-31T21:52:05+00:00,categories=0 http=200
+Dodge Charger,SRT 392,6.4L V8 Gas,v-2017-dodge-charger--srt-392--6-4l-v8-gas,1,valid,https://www.moparamerica.com/v-2017-dodge-charger--srt-392--6-4l-v8-gas,2026-07-31T21:52:16+00:00,
+Dodge Charger,SRT Hellcat,6.2L V8 Gas,v-2017-dodge-charger--srt-hellcat--6-2l-v8-gas,1,valid,https://www.moparamerica.com/v-2017-dodge-charger--srt-hellcat--6-2l-v8-gas,2026-07-31T21:52:27+00:00,
+Dodge Charger,SXT,3.6L V6 Flex,v-2017-dodge-charger--sxt--3-6l-v6-flex,1,valid,https://www.moparamerica.com/v-2017-dodge-charger--sxt--3-6l-v6-flex,2026-07-31T21:52:36+00:00,
+Dodge Charger,SXT,3.6L V6 Gas,v-2017-dodge-charger--sxt--3-6l-v6-gas,0,invalid,https://www.moparamerica.com/v-2017-dodge-charger--sxt--3-6l-v6-gas,2026-07-31T21:52:46+00:00,categories=0 http=200
+Dodge Charger,SXT Plus,3.6L V6 Flex,v-2017-dodge-charger--sxt-plus--3-6l-v6-flex,0,invalid,https://www.moparamerica.com/v-2017-dodge-charger--sxt-plus--3-6l-v6-flex,2026-07-31T21:52:56+00:00,categories=0 http=200
+Dodge Charger,SXT Plus,3.6L V6 Gas,v-2017-dodge-charger--sxt-plus--3-6l-v6-gas,0,invalid,https://www.moparamerica.com/v-2017-dodge-charger--sxt-plus--3-6l-v6-gas,2026-07-31T21:53:07+00:00,categories=0 http=200

@@ -19,6 +19,20 @@ This repository/branch contains the public, AI-readable evidence packet for comp
 - `extracted/adr/adr_scope_matrix.csv` — ADR relevance/applicability matrix
 - `evidence/mopar/illustrations/` — downloaded public catalog illustrations
 
+## Searchable all-variant MoparAmerica catalogue
+
+A resumable catalogue project is now being populated across every validated 2017 Dodge Charger and Chrysler 300/300C trim/engine route. Its declared target is every exposed category, all listed part numbers and all exploded assembly images; current completion is controlled only by `catalog/exports/status.json` and `coverage.csv`:
+
+- `catalog/README.md` — search commands, schema and completeness contract
+- `catalog/mopar_catalog.sqlite3` — normalized SQLite/FTS5 database
+- `catalog/exports/status.json` — live completeness counts; never infer completeness from filenames
+- `catalog/exports/coverage.csv` — per-variant/per-category crawl state
+- `catalog/exports/part_offerings.csv` — searchable model/trim/engine/category part records
+- `catalog/exports/assemblies.csv` — image URLs, local hash paths and SHA-256 values
+- `scripts/mopar_catalog.py` — resumable discover/crawl/export/search tool
+
+Images and the SQLite database are stored through Git LFS. The index labels records as vehicle-family catalogue candidates, not VIN-confirmed installation or ADR compliance evidence.
+
 ## ADR 2/01 side-door supplement
 
 - `report/adr2_side_door_similarity_supplement.pdf` — Challenger-versus-Charger latch/hinge similarity report with representative diagrams
