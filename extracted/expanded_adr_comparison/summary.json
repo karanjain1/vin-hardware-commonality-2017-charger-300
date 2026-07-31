@@ -1,0 +1,15 @@
+{
+  "variants": 7,
+  "categories": 16,
+  "variant_category_jobs": 112,
+  "catalog_rows": 2253,
+  "common_category_parts": 93,
+  "adrs_screened": 13,
+  "exact_direct_passes": 7,
+  "exact_supporting_passes": 1,
+  "functional_passes": 5,
+  "catalog_scope_gaps": 0,
+  "direct_common_rows": 89,
+  "representative_drawings": 22,
+  "errors": 0
+}

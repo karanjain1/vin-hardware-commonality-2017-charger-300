@@ -1,0 +1,145 @@
+[
+  {
+    "adr": "8/01",
+    "title": "Safety Glazing Material",
+    "assessment": "FUNCTIONAL-ARCHITECTURE PASS",
+    "selected_exact_part_numbers": "[none \u2014 functional comparison]",
+    "selected_descriptions": "[none]",
+    "variant_routes": "Multiple 2017 Challenger and Charger variants; see source matrix",
+    "controlled_similarity_statement": "Both models expose windscreen/door/quarter-glass catalog architecture; no exact glazing service number was established.",
+    "regulatory_limit": "Similarity/catalog evidence only; does not prove ADR compliance, installed VIN configuration or test performance.",
+    "official_adr_url": "https://www.legislation.gov.au/F2005L03908/latest/text"
+  },
+  {
+    "adr": "11/00",
+    "title": "Internal Sun Visors",
+    "assessment": "FUNCTIONAL-ARCHITECTURE PASS",
+    "selected_exact_part_numbers": "[none \u2014 functional comparison]",
+    "selected_descriptions": "[none]",
+    "variant_routes": "Multiple 2017 Challenger and Charger variants; see source matrix",
+    "controlled_similarity_statement": "Both models expose visor assemblies and attachments; the sole exact category overlap is an audio microphone, not a visor.",
+    "regulatory_limit": "Similarity/catalog evidence only; does not prove ADR compliance, installed VIN configuration or test performance.",
+    "official_adr_url": "https://www.legislation.gov.au/F2006L01785/latest/text"
+  },
+  {
+    "adr": "14/02",
+    "title": "Rear Vision Mirrors",
+    "assessment": "FUNCTIONAL-ARCHITECTURE PASS",
+    "selected_exact_part_numbers": "[none \u2014 functional comparison]",
+    "selected_descriptions": "[none]",
+    "variant_routes": "Multiple 2017 Challenger and Charger variants; see source matrix",
+    "controlled_similarity_statement": "Both models expose interior/exterior mirror systems; no exact mirror assembly or glass number was established.",
+    "regulatory_limit": "Similarity/catalog evidence only; does not prove ADR compliance, installed VIN configuration or test performance.",
+    "official_adr_url": "https://www.legislation.gov.au/F2006L02663/latest/text"
+  },
+  {
+    "adr": "18/03",
+    "title": "Instrumentation",
+    "assessment": "FUNCTIONAL-ARCHITECTURE PASS",
+    "selected_exact_part_numbers": "[none \u2014 functional comparison]",
+    "selected_descriptions": "[none]",
+    "variant_routes": "Multiple 2017 Challenger and Charger variants; see source matrix",
+    "controlled_similarity_statement": "Both models expose instrument-cluster and display architecture; no exact cluster service number was established.",
+    "regulatory_limit": "Similarity/catalog evidence only; does not prove ADR compliance, installed VIN configuration or test performance.",
+    "official_adr_url": "https://www.legislation.gov.au/F2006L01392/latest/text"
+  },
+  {
+    "adr": "21/00",
+    "title": "Instrument Panel",
+    "assessment": "EXACT-DIRECT PART MATCH PASS",
+    "selected_exact_part_numbers": "1QF13DX9AP | 68110649AA | 68110650AA",
+    "selected_descriptions": "1QF13DX9AP \u2014 2011 2021 Mopar Instrument Panel Glove Box | 68110649AA \u2014 Glove Box Door Dampener | 68110650AA \u2014 Glove Box Door Latch Striker",
+    "variant_routes": "Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L",
+    "controlled_similarity_statement": "Exact common glove-box, dampener and latch-striker components support shared instrument-panel architecture.",
+    "regulatory_limit": "Similarity/catalog evidence only; does not prove ADR compliance, installed VIN configuration or test performance.",
+    "official_adr_url": "https://www.legislation.gov.au/F2006L01786/latest/text"
+  },
+  {
+    "adr": "25/02",
+    "title": "Anti-Theft Lock",
+    "assessment": "EXACT-DIRECT PART MATCH PASS",
+    "selected_exact_part_numbers": "68404422AA",
+    "selected_descriptions": "68404422AA \u2014 Ignition Switch Trim Ring",
+    "variant_routes": "Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L",
+    "controlled_similarity_statement": "Exact common ignition-switch trim ring supports a shared ignition-control interface; it does not establish steering-lock or immobilizer identity.",
+    "regulatory_limit": "Similarity/catalog evidence only; does not prove ADR compliance, installed VIN configuration or test performance.",
+    "official_adr_url": "https://www.legislation.gov.au/F2006L02664/latest/text"
+  },
+  {
+    "adr": "29/00",
+    "title": "Side Door Strength",
+    "assessment": "FUNCTIONAL-ARCHITECTURE PASS",
+    "selected_exact_part_numbers": "1MZ84DX8AM | 1MZ85KBXAM",
+    "selected_descriptions": "1MZ84DX8AM \u2014 2013 2021 Mopar Front Door Exterior Handle Right | 1MZ85KBXAM \u2014 2013 2018 Mopar Front Door Exterior Handle Left",
+    "variant_routes": "Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L",
+    "controlled_similarity_statement": "Shared front-door handles plus corresponding door/aperture categories support functional body-side architecture; no exact intrusion beam or door-strength structure was established.",
+    "regulatory_limit": "Similarity/catalog evidence only; does not prove ADR compliance, installed VIN configuration or test performance.",
+    "official_adr_url": "https://www.legislation.gov.au/F2006L01429/latest/text"
+  },
+  {
+    "adr": "34/02",
+    "title": "Child Restraint Anchorages and Fittings",
+    "assessment": "EXACT-SUPPORTING PART MATCH PASS",
+    "selected_exact_part_numbers": "4628848AB | 68110232AA | 68110212AA | 68110213AA | 68110214AA",
+    "selected_descriptions": "4628848AB \u2014 Seat Back Latch Striker | 68110232AA \u2014 Seat Latch | 68110212AA \u2014 Seat Bracket | 68110213AA \u2014 Seat Bracket | 68110214AA \u2014 Seat Bracket",
+    "variant_routes": "Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L",
+    "controlled_similarity_statement": "Exact common rear-seat latch/striker and seat-bracket parts support rear-seat architecture; no exact child-tether anchorage service number was identified.",
+    "regulatory_limit": "Similarity/catalog evidence only; does not prove ADR compliance, installed VIN configuration or test performance.",
+    "official_adr_url": "https://www.legislation.gov.au/F2012L00703/latest/text"
+  },
+  {
+    "adr": "42/04",
+    "title": "General Safety Requirements",
+    "assessment": "EXACT-DIRECT PART MATCH PASS",
+    "selected_exact_part_numbers": "1MZ84DX8AM | 1MZ85KBXAM | 6AD80DX9AA | 6AD81DX9AA",
+    "selected_descriptions": "1MZ84DX8AM \u2014 2013 2021 Mopar Front Door Exterior Handle Right | 1MZ85KBXAM \u2014 2013 2018 Mopar Front Door Exterior Handle Left | 6AD80DX9AA \u2014 Steering Wheel | 6AD81DX9AA \u2014 Steering Wheel",
+    "variant_routes": "Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L",
+    "controlled_similarity_statement": "Exact door-handle and steering-wheel components support common general-safety control architecture.",
+    "regulatory_limit": "Similarity/catalog evidence only; does not prove ADR compliance, installed VIN configuration or test performance.",
+    "official_adr_url": "https://www.legislation.gov.au/F2005L03996/latest/text"
+  },
+  {
+    "adr": "69/00",
+    "title": "Full Frontal Impact Occupant Protection",
+    "assessment": "EXACT-DIRECT PART MATCH PASS",
+    "selected_exact_part_numbers": "56054085AA | 6ET081X9AB | 6ET091X9AB | 68140569AG | 68259474AD | 6AD80DX9AA",
+    "selected_descriptions": "56054085AA \u2014 Acceleration Sensor | 6ET081X9AB \u2014 Front Inner Seat Belt Right | 6ET091X9AB \u2014 Front Inner Seat Belt Left | 68140569AG \u2014 2014 2021 Mopar Steering Column | 68259474AD \u2014 2014 2021 Mopar Steering Column | 6AD80DX9AA \u2014 Steering Wheel",
+    "variant_routes": "Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L",
+    "controlled_similarity_statement": "Exact acceleration sensor, front inner belts, steering columns and steering-wheel components support common frontal-restraint architecture.",
+    "regulatory_limit": "Similarity/catalog evidence only; does not prove ADR compliance, installed VIN configuration or test performance.",
+    "official_adr_url": "https://www.legislation.gov.au/F2006L01455/latest/text"
+  },
+  {
+    "adr": "72/00",
+    "title": "Dynamic Side Impact Occupant Protection",
+    "assessment": "EXACT-DIRECT PART MATCH PASS",
+    "selected_exact_part_numbers": "56054085AA | 6ET081X9AB | 6ET091X9AB",
+    "selected_descriptions": "56054085AA \u2014 Acceleration Sensor | 6ET081X9AB \u2014 Front Inner Seat Belt Right | 6ET091X9AB \u2014 Front Inner Seat Belt Left",
+    "variant_routes": "Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L",
+    "controlled_similarity_statement": "Exact acceleration sensor and front inner belt components support common side-impact restraint architecture.",
+    "regulatory_limit": "Similarity/catalog evidence only; does not prove ADR compliance, installed VIN configuration or test performance.",
+    "official_adr_url": "https://www.legislation.gov.au/F2005L03992/latest/text"
+  },
+  {
+    "adr": "73/00",
+    "title": "Offset Frontal Impact Occupant Protection",
+    "assessment": "EXACT-DIRECT PART MATCH PASS",
+    "selected_exact_part_numbers": "56054085AA | 6ET081X9AB | 6ET091X9AB | 68140569AG | 68259474AD",
+    "selected_descriptions": "56054085AA \u2014 Acceleration Sensor | 6ET081X9AB \u2014 Front Inner Seat Belt Right | 6ET091X9AB \u2014 Front Inner Seat Belt Left | 68140569AG \u2014 2014 2021 Mopar Steering Column | 68259474AD \u2014 2014 2021 Mopar Steering Column",
+    "variant_routes": "Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L || Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L",
+    "controlled_similarity_statement": "Exact sensor, belt and steering-column components support common offset-frontal restraint architecture.",
+    "regulatory_limit": "Similarity/catalog evidence only; does not prove ADR compliance, installed VIN configuration or test performance.",
+    "official_adr_url": "https://www.legislation.gov.au/F2005L03990/latest/text"
+  },
+  {
+    "adr": "85/00",
+    "title": "Pole Side Impact Performance",
+    "assessment": "EXACT-DIRECT PART MATCH PASS",
+    "selected_exact_part_numbers": "56054085AA",
+    "selected_descriptions": "56054085AA \u2014 Acceleration Sensor",
+    "variant_routes": "Challenger: R/T 5.7L | R/T Scat Pack 6.4L | SRT 392 6.4L | SXT 3.6L / Charger: R/T 5.7L | SRT 392 6.4L",
+    "controlled_similarity_statement": "Exact acceleration-sensor commonality supports side-impact sensing architecture; applicability is probably not mandatory for these 2017 vehicles and remains conditional.",
+    "regulatory_limit": "Similarity/catalog evidence only; does not prove ADR compliance, installed VIN configuration or test performance.",
+    "official_adr_url": "https://www.legislation.gov.au/F2015L02109/latest/text"
+  }
+]

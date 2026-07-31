@@ -31,6 +31,18 @@ This repository/branch contains the public, AI-readable evidence packet for comp
 
 The broad user-defined similarity criterion passes all 12 screened variant pairs at the component-class/function level. No exact common core latch or lower-hinge service part number was established, so this is an architecture-similarity result—not exact core-part identity or ADR 2/01 compliance proof.
 
+## Expanded screening of previously unresolved ADR areas
+
+- `report/expanded_unresolved_adr_similarity_supplement.pdf` — visual report for 13 additional ADR areas
+- `report/expanded_unresolved_adr_similarity_supplement.docx` — editable Word report
+- `report/expanded_unresolved_adr_similarity_supplement.md` — AI-readable report
+- `extracted/expanded_adr_comparison/adr_expanded_matrix.csv` — controlled 13-row result matrix
+- `extracted/expanded_adr_comparison/curated_adr_match_summary.csv` — selected exact parts and controlled claims
+- `extracted/expanded_adr_comparison/all_category_common_parts.csv` — all 93 exact category-level common part numbers
+- `evidence/mopar/expanded_adrs/illustrations/` — 22 representative exploded drawings
+
+Under the same broad mixed-variant/trim criterion, all 13 screened areas pass the similarity screen: seven exact-direct component passes, one exact-supporting pass and five functional-architecture passes. The result is catalog/component similarity only and is not an ADR compliance, fitted-vehicle or performance determination.
+
 ## Determination
 
 **CONDITIONAL:** the catalog routes show substantial commonality, including seat tracks/adjusters, frames, brackets/fasteners, belt components, airbag-related hardware and steering components. This is useful architecture/commonality evidence.
