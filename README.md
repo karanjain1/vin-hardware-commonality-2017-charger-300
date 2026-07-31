@@ -43,6 +43,20 @@ The broad user-defined similarity criterion passes all 12 screened variant pairs
 
 Under the same broad mixed-variant/trim criterion, all 13 screened areas pass the similarity screen: six exact-direct component passes, two exact-supporting passes and five functional-architecture passes. Of 112 attempted route/category jobs, 94 produced catalog rows and 18 were zero-row coverage gaps. The result is catalog/component similarity only and is not an ADR compliance, fitted-vehicle or performance determination.
 
+## Pure image-only ADR screen
+
+The separate image-only review excludes part-number identity, descriptions, applicability, dimensions, materials, fitment and compliance evidence from the similarity decision. It inventoried 89 Challenger, Charger and Chrysler 300 catalog drawings, pixel-scored 2,628 cross-model pairs, and manually reviewed the strongest same-category pairs across 12 component classes.
+
+- `report/image_only_adr_similarity_screen.pdf` — 12-page image-only report and selected visual pairs
+- `report/image_only_adr_similarity_screen.docx` — editable report
+- `report/image_only_adr_similarity_screen.md` — AI-readable report
+- `extracted/image_similarity/image_only_adr_pass_list.csv` — the nine user-defined image-similarity passes
+- `extracted/image_similarity/image_only_adr_matrix.csv` — all 19 pass/partial/insufficient outcomes
+- `extracted/image_similarity/all_cross_model_image_pairs.csv` — all 2,628 pixel-only pair scores
+- `evidence/image_similarity/selected_pairs/` — selected side-by-side image pairs
+
+The nine image-similarity passes are ADR 3/03, 4/05, 10/02, 11/00, 21/00, 22/00, 42/04, 69/00 and 73/00. ADR 69/00 and 73/00 are depicted-hardware screens only. None of these outcomes establishes part identity, fitted configuration, engineering equivalence, dynamic performance or ADR compliance.
+
 ## Determination
 
 **CONDITIONAL:** the catalog routes show substantial commonality, including seat tracks/adjusters, frames, brackets/fasteners, belt components, airbag-related hardware and steering components. This is useful architecture/commonality evidence.

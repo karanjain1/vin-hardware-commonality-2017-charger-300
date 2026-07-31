@@ -1,0 +1,803 @@
+[
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Challenger_R-T_5.7L/assembly-01.png",
+    "model": "Challenger",
+    "category": "front-door",
+    "sha256": "54d59cc0020cc1afe07f24bed3b3f14fdacf6611013c496511ef07c9254c5ff1",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.2279052734375
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Challenger_R-T_5.7L/assembly-02.png",
+    "model": "Challenger",
+    "category": "front-door",
+    "sha256": "73af1756d26f390a97e5e5000c29df66728666c17f3bde87c9819a70cf895039",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.20703125
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Challenger_R-T_5.7L/assembly-03.png",
+    "model": "Challenger",
+    "category": "front-door",
+    "sha256": "73ca05979c2f38140ac0dbc42c886ce30c326546162478667420627d450e64e8",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.07318115234375
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Challenger_R-T_Scat_Pack_6.4L/assembly-01.png",
+    "model": "Challenger",
+    "category": "front-door",
+    "sha256": "54d59cc0020cc1afe07f24bed3b3f14fdacf6611013c496511ef07c9254c5ff1",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.2279052734375
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Challenger_R-T_Scat_Pack_6.4L/assembly-02.png",
+    "model": "Challenger",
+    "category": "front-door",
+    "sha256": "73af1756d26f390a97e5e5000c29df66728666c17f3bde87c9819a70cf895039",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.20703125
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Challenger_R-T_Scat_Pack_6.4L/assembly-03.png",
+    "model": "Challenger",
+    "category": "front-door",
+    "sha256": "73ca05979c2f38140ac0dbc42c886ce30c326546162478667420627d450e64e8",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.07318115234375
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Challenger_SRT_392_6.4L/assembly-01.png",
+    "model": "Challenger",
+    "category": "front-door",
+    "sha256": "54d59cc0020cc1afe07f24bed3b3f14fdacf6611013c496511ef07c9254c5ff1",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.2279052734375
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Challenger_SRT_392_6.4L/assembly-02.png",
+    "model": "Challenger",
+    "category": "front-door",
+    "sha256": "73af1756d26f390a97e5e5000c29df66728666c17f3bde87c9819a70cf895039",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.20703125
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Challenger_SRT_392_6.4L/assembly-03.png",
+    "model": "Challenger",
+    "category": "front-door",
+    "sha256": "73ca05979c2f38140ac0dbc42c886ce30c326546162478667420627d450e64e8",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.07318115234375
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Challenger_SXT_3.6L/assembly-01.png",
+    "model": "Challenger",
+    "category": "front-door",
+    "sha256": "54d59cc0020cc1afe07f24bed3b3f14fdacf6611013c496511ef07c9254c5ff1",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.2279052734375
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Challenger_SXT_3.6L/assembly-02.png",
+    "model": "Challenger",
+    "category": "front-door",
+    "sha256": "73af1756d26f390a97e5e5000c29df66728666c17f3bde87c9819a70cf895039",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.20703125
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Challenger_SXT_3.6L/assembly-03.png",
+    "model": "Challenger",
+    "category": "front-door",
+    "sha256": "73ca05979c2f38140ac0dbc42c886ce30c326546162478667420627d450e64e8",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.07318115234375
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Charger_R-T_5.7L/assembly-01.png",
+    "model": "Charger",
+    "category": "front-door",
+    "sha256": "d1a16e15150ce71caf000e4d7602deb72d3050e9adb6d7875286d1ff6dfe634d",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.239013671875
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Charger_R-T_5.7L/assembly-02.png",
+    "model": "Charger",
+    "category": "front-door",
+    "sha256": "a03073289134a7cf64d277e356a5118d6d05d6f3c47c1af0a08be1762eee2bad",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.25469970703125
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Charger_R-T_5.7L/assembly-03.png",
+    "model": "Charger",
+    "category": "front-door",
+    "sha256": "e6c67f7607e7b095a1f8607c84a936fb48811d8ca02674b5d6ebde52c49d09b2",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.07489013671875
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Charger_R-T_Scat_Pack_6.4L/assembly-01.png",
+    "model": "Charger",
+    "category": "front-door",
+    "sha256": "d1a16e15150ce71caf000e4d7602deb72d3050e9adb6d7875286d1ff6dfe634d",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.239013671875
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Charger_R-T_Scat_Pack_6.4L/assembly-02.png",
+    "model": "Charger",
+    "category": "front-door",
+    "sha256": "a03073289134a7cf64d277e356a5118d6d05d6f3c47c1af0a08be1762eee2bad",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.25469970703125
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Charger_R-T_Scat_Pack_6.4L/assembly-03.png",
+    "model": "Charger",
+    "category": "front-door",
+    "sha256": "e6c67f7607e7b095a1f8607c84a936fb48811d8ca02674b5d6ebde52c49d09b2",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.07489013671875
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Charger_SRT_392_6.4L/assembly-01.png",
+    "model": "Charger",
+    "category": "front-door",
+    "sha256": "d1a16e15150ce71caf000e4d7602deb72d3050e9adb6d7875286d1ff6dfe634d",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.239013671875
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Charger_SRT_392_6.4L/assembly-02.png",
+    "model": "Charger",
+    "category": "front-door",
+    "sha256": "a03073289134a7cf64d277e356a5118d6d05d6f3c47c1af0a08be1762eee2bad",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.25469970703125
+  },
+  {
+    "path": "evidence/mopar/door_variants/illustrations/Charger_SRT_392_6.4L/assembly-03.png",
+    "model": "Charger",
+    "category": "front-door",
+    "sha256": "e6c67f7607e7b095a1f8607c84a936fb48811d8ca02674b5d6ebde52c49d09b2",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.07489013671875
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Challenger/air-bags/assembly-01.png",
+    "model": "Challenger",
+    "category": "air-bags",
+    "sha256": "9ead02bda1153d540d4fa2c58efe40a5ea765527ae5891c3f2186cba15719a56",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.2213134765625
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Challenger/air-bags/assembly-02.png",
+    "model": "Challenger",
+    "category": "air-bags",
+    "sha256": "b6cc76fda745a73b8ecd0afcf930c936d4e165917bac9ab665a2e7a4fb9751d2",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.20745849609375
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Challenger/aperture-pillars/assembly-01.png",
+    "model": "Challenger",
+    "category": "aperture-pillars",
+    "sha256": "b0a0d36644c7824eb12fc4321302d9b740fca0168b23ed056c6b2220819ef87a",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.171630859375
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Challenger/aperture-pillars/assembly-02.png",
+    "model": "Challenger",
+    "category": "aperture-pillars",
+    "sha256": "854f5d1d6eaafa684caa5e36c6fcc53509f3fca898264c52f8f9900073f7c877",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.13458251953125
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Challenger/floor-pans/assembly-01.png",
+    "model": "Challenger",
+    "category": "floor-pans",
+    "sha256": "11286deddf28eceaa2c91c036d768a1353c1363291c83ca6c97d6bc837fa29ce",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.18670654296875
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Challenger/floor-pans/assembly-02.png",
+    "model": "Challenger",
+    "category": "floor-pans",
+    "sha256": "6f70cc6daa3a9f68740d7e28f331b9cf6273c78178ac9eac39c65a3c79eb1a59",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.1141357421875
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Challenger/front-door/assembly-01.png",
+    "model": "Challenger",
+    "category": "front-door",
+    "sha256": "54d59cc0020cc1afe07f24bed3b3f14fdacf6611013c496511ef07c9254c5ff1",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.2279052734375
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Challenger/front-door/assembly-02.png",
+    "model": "Challenger",
+    "category": "front-door",
+    "sha256": "73af1756d26f390a97e5e5000c29df66728666c17f3bde87c9819a70cf895039",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.20703125
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Challenger/headliners-visors/assembly-01.png",
+    "model": "Challenger",
+    "category": "headliners-visors",
+    "sha256": "4727fe172d5553562c5f3c17b728e8540ff1186d66dbbb9d0440cf3f6e29e6b2",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.22625732421875
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Challenger/headliners-visors/assembly-02.png",
+    "model": "Challenger",
+    "category": "headliners-visors",
+    "sha256": "510c4afd5f6b7f48fb5bf1ef2e0020f0dee708d4c07b5f71e5968ec4b2f7ba50",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.21820068359375
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Challenger/seat-belts/assembly-01.png",
+    "model": "Challenger",
+    "category": "seat-belts",
+    "sha256": "2acb2272bbf5d00e728589c361f242db2c51a3ffd5be19d78d922951aed46426",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.0570068359375
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Challenger/seat-belts/assembly-02.png",
+    "model": "Challenger",
+    "category": "seat-belts",
+    "sha256": "1cf84d706541fc6baf6762f5d9d0eaf53f72a1027cf18396c1ec36e280a11615",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.10223388671875
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Challenger/steering-wheel/assembly-01.png",
+    "model": "Challenger",
+    "category": "steering-wheel",
+    "sha256": "bcd7bc46048354fed4c83129c41587559f976bb1f23d595b6b5f3712839b80bf",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.20233154296875
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Challenger/steering-wheel/assembly-02.png",
+    "model": "Challenger",
+    "category": "steering-wheel",
+    "sha256": "84b8b11cc43f5c1afec67806f728d378faad3e75e192c76520224cc386b7f192",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.1409912109375
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Charger/aperture-pillars/assembly-01.png",
+    "model": "Charger",
+    "category": "aperture-pillars",
+    "sha256": "8c1875b926a57b4b10b5f56ee9db841d462042252bc3f24de140cd2db1081122",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.16448974609375
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Charger/aperture-pillars/assembly-02.png",
+    "model": "Charger",
+    "category": "aperture-pillars",
+    "sha256": "e55864391b0d7138dc3330984b81ce177a51b3cb01427f0f165cb9613a9d4dd1",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.143798828125
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Charger/floor-pans/assembly-01.png",
+    "model": "Charger",
+    "category": "floor-pans",
+    "sha256": "6a45b31a85d324d2773d9d31123067daf5824c836e4183e8cfd667f2ae22aaec",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.1195068359375
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Charger/floor-pans/assembly-02.png",
+    "model": "Charger",
+    "category": "floor-pans",
+    "sha256": "ebc1f5c25030f5e492aa2910e9b7daad00c07376368f4cb58441c1fda80df9ea",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.21551513671875
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Charger/front-door/assembly-01.png",
+    "model": "Charger",
+    "category": "front-door",
+    "sha256": "d1a16e15150ce71caf000e4d7602deb72d3050e9adb6d7875286d1ff6dfe634d",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.239013671875
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Charger/front-door/assembly-02.png",
+    "model": "Charger",
+    "category": "front-door",
+    "sha256": "a03073289134a7cf64d277e356a5118d6d05d6f3c47c1af0a08be1762eee2bad",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.25469970703125
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Charger/headliners-visors/assembly-01.png",
+    "model": "Charger",
+    "category": "headliners-visors",
+    "sha256": "5995bd964803d7732cafe84c9ec1e5517ddfe11ed2af59e8e9ee3b3422c82bc9",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.20513916015625
+  },
+  {
+    "path": "evidence/mopar/expanded_adrs/illustrations/Charger/headliners-visors/assembly-02.png",
+    "model": "Charger",
+    "category": "headliners-visors",
+    "sha256": "d00d132d47b9a0b973d5e8756866c3dde390fd4fc927ca12fa2ab264cb5345db",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.302490234375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/air-bags__assembly-01.png",
+    "model": "Chrysler 300",
+    "category": "air-bags",
+    "sha256": "979485852b6e79bca48448b84f256b68956781e0aa4bd4b86fe02a039d014c5c",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.19537353515625
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/air-bags__assembly-02.png",
+    "model": "Chrysler 300",
+    "category": "air-bags",
+    "sha256": "4261430c99e5f967ae6982130c0628450f053f4c7f2eaa04ecc82d9912222502",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.1708984375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/air-bags__assembly-03.png",
+    "model": "Chrysler 300",
+    "category": "air-bags",
+    "sha256": "15ccc80b2f8b292cf0ddf9874a93ec15f7f70a26f7eec3cf47e7ef081e074de1",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.117431640625
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/front-seat-adjusters__assembly-01.png",
+    "model": "Chrysler 300",
+    "category": "front-seat-adjusters",
+    "sha256": "e63f1c0d060a250d8be7bbd7a0de284b304bf70e217accdcaf3f5830d6241c35",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.19183349609375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/front-seat-adjusters__assembly-02.png",
+    "model": "Chrysler 300",
+    "category": "front-seat-adjusters",
+    "sha256": "fc52644bd23505e0f63a72f98b0b5c45a31f4cc779687dbc7ac8c0809cdf9b7c",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.21282958984375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/front-seat-adjusters__assembly-03.png",
+    "model": "Chrysler 300",
+    "category": "front-seat-adjusters",
+    "sha256": "57cfc8f841f8bc6fc96ee0c99cfa276fe08931f44b05b928e33cb39c98be3b25",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.2274169921875
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/front-seats-first-row__assembly-01.png",
+    "model": "Chrysler 300",
+    "category": "front-seats-first-row",
+    "sha256": "a991c64180eb65dcff7d381daf3707b003ae339af65e2157e85895454069b882",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.16650390625
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/front-seats-first-row__assembly-02.png",
+    "model": "Chrysler 300",
+    "category": "front-seats-first-row",
+    "sha256": "d471352dd249c3538c89e0862751f00c2f43d67f39ea3bd7bae2169add63a241",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.16650390625
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/front-seats-first-row__assembly-03.png",
+    "model": "Chrysler 300",
+    "category": "front-seats-first-row",
+    "sha256": "039350fb0af956258a39b4956a5f8fe434bada8823e5fe7727a3c031f76f6d16",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.19781494140625
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/front-seats-first-row__assembly-04.png",
+    "model": "Chrysler 300",
+    "category": "front-seats-first-row",
+    "sha256": "1c40686ea815243f73ecb2770cbfedcac0790d65970a54d77c05b86eee2fbaaf",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.19781494140625
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/front-seats-first-row__assembly-05.png",
+    "model": "Chrysler 300",
+    "category": "front-seats-first-row",
+    "sha256": "16465cbaf1e495bb0263d7c08833341e70e4675dbdcdbf0a1cbf6555855b9298",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.19781494140625
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/front-seats-first-row__assembly-06.png",
+    "model": "Chrysler 300",
+    "category": "front-seats-first-row",
+    "sha256": "6cc7a82da5a18f5efa59e6accc8cb7bb1a67bc7e1b444e15636554aeb3dbcb35",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.19781494140625
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/front-seats-first-row__assembly-07.png",
+    "model": "Chrysler 300",
+    "category": "front-seats-first-row",
+    "sha256": "590ea15bf065bcaafd9a46e9fe04a4ea0c45e9bc9d4e25f5cec129bb6524b74e",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.1578369140625
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/instrument-panel__assembly-01.png",
+    "model": "Chrysler 300",
+    "category": "instrument-panel",
+    "sha256": "a016a297c7c29d537e79df51d1c92b80efc951ef5cacd8c2772723e9efefc8d8",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.22723388671875
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/rear-seat-adjusters__assembly-01.png",
+    "model": "Chrysler 300",
+    "category": "rear-seat-adjusters",
+    "sha256": "fc5d5b0a985518361649e8b5d9960736f2b1c9491a9c5e20f0c3c2064f13a46a",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.22247314453125
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/rear-seats-second-row__assembly-01.png",
+    "model": "Chrysler 300",
+    "category": "rear-seats-second-row",
+    "sha256": "873e5422475f94d68681b897d8ef747f31c89d34fa4582109fb810553342e571",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.2081298828125
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/rear-seats-second-row__assembly-02.png",
+    "model": "Chrysler 300",
+    "category": "rear-seats-second-row",
+    "sha256": "7d10cd6de394fa73222d7442a53949c9d64a0fb883f1262608a097b489cacb14",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.216552734375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/rear-seats-second-row__assembly-03.png",
+    "model": "Chrysler 300",
+    "category": "rear-seats-second-row",
+    "sha256": "4b6d8ea7d919be6cdb20e5b678c3bb8b7d0951815d9abdc15530149f8279c9c2",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.216552734375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/rear-seats-second-row__assembly-04.png",
+    "model": "Chrysler 300",
+    "category": "rear-seats-second-row",
+    "sha256": "f8a2d3fca87fa893fe0c3deb63efaf7fafcd8711385f4451a9ef9c323876b49d",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.216552734375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/rear-seats-second-row__assembly-05.png",
+    "model": "Chrysler 300",
+    "category": "rear-seats-second-row",
+    "sha256": "b21d787b9cc4f99e226160f6252a423a3dfa18ea0f4c67d4d17fd620f9f044ce",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.19921875
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/rear-seats-second-row__assembly-06.png",
+    "model": "Chrysler 300",
+    "category": "rear-seats-second-row",
+    "sha256": "e8430285352d95e0c8ce9ec9bdf86d9dc5a145c87705922e0ca3afab39a7f40b",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.216552734375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/rear-seats-second-row__assembly-07.png",
+    "model": "Chrysler 300",
+    "category": "rear-seats-second-row",
+    "sha256": "deef1e3215c32989704b966dd90437c0ccbf084495851d74cd50f3ee1306c7f6",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.1834716796875
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/rear-seats-second-row__assembly-08.png",
+    "model": "Chrysler 300",
+    "category": "rear-seats-second-row",
+    "sha256": "13b5f52a7d34748e591ce9575e3a1196dedda596932deab3b4de649e6552408f",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.216552734375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/rear-seats-second-row__assembly-09.png",
+    "model": "Chrysler 300",
+    "category": "rear-seats-second-row",
+    "sha256": "482f2629633f8dfaa143f6730dbd692c68074b2bb8dcca419c5583b0dc5f98ad",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.216552734375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/rear-seats-second-row__assembly-10.png",
+    "model": "Chrysler 300",
+    "category": "rear-seats-second-row",
+    "sha256": "1593f03d12ac711af31db584e9cdcea0805a6c248e38ef21661fcaf52d084f80",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.1834716796875
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/seat-belts__assembly-01.png",
+    "model": "Chrysler 300",
+    "category": "seat-belts",
+    "sha256": "442a58dcf7f089219c54f5b0f4be00d34487bd46f04ba42380eaafa71d0499df",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.0439453125
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/seat-belts__assembly-02.png",
+    "model": "Chrysler 300",
+    "category": "seat-belts",
+    "sha256": "b41752c0206ee09dbcf03ee9da0c89f4796d954e978acaceadbf978f7e20b598",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.0831298828125
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/steering-column__assembly-01.png",
+    "model": "Chrysler 300",
+    "category": "steering-column",
+    "sha256": "ee52568ce7894570f8907540c1317dee376a0c23fa626062706b6cb28b25729c",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.097900390625
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/steering-wheel__assembly-01.png",
+    "model": "Chrysler 300",
+    "category": "steering-wheel",
+    "sha256": "6e6f454a15cd174448533c05c6866ae0750485a615f39951693f806dc7309e2d",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.11480712890625
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CCAEG4HH586472/steering-wheel__assembly-02.png",
+    "model": "Chrysler 300",
+    "category": "steering-wheel",
+    "sha256": "acc65af7b4ec98e0f85e25692bd8bf16b83a1be2f24e2a9afba8a78badf2c43c",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.15911865234375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/air-bags__assembly-01.png",
+    "model": "Charger",
+    "category": "air-bags",
+    "sha256": "f2a075c131aecca44808efa7a543f5e8cfc68805ed4d0e2c42ffbc28b69bc8ef",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.083984375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/air-bags__assembly-02.png",
+    "model": "Charger",
+    "category": "air-bags",
+    "sha256": "0219ed86ade847975b4f5b50c615ef6590be022ccd496f2d518c3a5ea87f7225",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.04632568359375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/air-bags__assembly-03.png",
+    "model": "Charger",
+    "category": "air-bags",
+    "sha256": "1eb0bb6ccc32747f38f981e0ba63ca468dbb95a6d26ee48d6aa1f3143918ee4f",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.12158203125
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/front-seat-adjusters__assembly-01.png",
+    "model": "Charger",
+    "category": "front-seat-adjusters",
+    "sha256": "770401fd0145125ea93a7856ad37254ffaa0c7921ea99e44aa8e6cfb3b9886fd",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.20941162109375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/front-seat-adjusters__assembly-02.png",
+    "model": "Charger",
+    "category": "front-seat-adjusters",
+    "sha256": "d59a9d20079d1c738e9336fb6b61d3aa883cf566e367eac4c4899ba1d03ec3f4",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.26995849609375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/front-seat-adjusters__assembly-03.png",
+    "model": "Charger",
+    "category": "front-seat-adjusters",
+    "sha256": "db07cd2b60382aa44332db42e3c791adea0f1eb00628256ba1a0242c576c1ee9",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.2740478515625
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/instrument-panel__assembly-01.png",
+    "model": "Charger",
+    "category": "instrument-panel",
+    "sha256": "e3653daa1939e03b84b25d2de305b6c238e070667ad9fff33f0078ac576ba7ca",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.25323486328125
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/rear-seat-adjusters__assembly-01.png",
+    "model": "Charger",
+    "category": "rear-seat-adjusters",
+    "sha256": "817a4021764c4ec492422383b62fc908d471170f7d4a2c686e765fdff3068e26",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.19512939453125
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/rear-seats-second-row__assembly-01.png",
+    "model": "Charger",
+    "category": "rear-seats-second-row",
+    "sha256": "0abd519d6262caca74f249940354edeaaf14c5e66bdef042edf98d6443f6e154",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.21075439453125
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/rear-seats-second-row__assembly-02.png",
+    "model": "Charger",
+    "category": "rear-seats-second-row",
+    "sha256": "d7d4ea90f8fae41ea596e147477dae1424f3f3e49fccf0d88a193f32482f8399",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.08160400390625
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/rear-seats-second-row__assembly-03.png",
+    "model": "Charger",
+    "category": "rear-seats-second-row",
+    "sha256": "78ecfa91fe7c9e70c4db7072629d3aa5c907f3658b5c4f0158544c70a0c34e6d",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.1934814453125
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/seat-belts__assembly-01.png",
+    "model": "Charger",
+    "category": "seat-belts",
+    "sha256": "bd8b72d2d1393896debafc4fe431419093a929ecc2a6645d3c00d6b92e286d0b",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.0677490234375
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/seat-belts__assembly-02.png",
+    "model": "Charger",
+    "category": "seat-belts",
+    "sha256": "82bb1ff401db3b79d040da88f25623a6ff2fe84e79cdd86749e204669ae15d04",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.10223388671875
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/steering-column__assembly-01.png",
+    "model": "Charger",
+    "category": "steering-column",
+    "sha256": "f0a10455e686141cf8c918c830661f89d41a4a7dcb4b4d722b3abc142019b4cf",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.14776611328125
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/steering-wheel__assembly-01.png",
+    "model": "Charger",
+    "category": "steering-wheel",
+    "sha256": "eb31c5d39307edd8e98c082b7830cec7996885cd8bea6c9ff05e377feec5f871",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.10504150390625
+  },
+  {
+    "path": "evidence/mopar/illustrations/2C3CDXGJ2HH530684/steering-wheel__assembly-02.png",
+    "model": "Charger",
+    "category": "steering-wheel",
+    "sha256": "18875f0c2cbfbb7403c860f2ac6f1e22096e94d77c3ed5dab818f46c62e1a66c",
+    "width": 485,
+    "height": 589,
+    "ink_fraction": 0.13336181640625
+  }
+]

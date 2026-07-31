@@ -1,0 +1,173 @@
+[
+  {
+    "adr": "2/01",
+    "title": "Side Door Latches and Hinges",
+    "image_only_outcome": "INSUFFICIENT / NO IMAGE-ONLY PASS",
+    "visual_component_classes": "front-door",
+    "image_only_basis": "Direct latch/hinge geometry is not comparably shown; only a small lock-cylinder component family looks similar.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2006L01362/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "3/03",
+    "title": "Seats and Seat Anchorages",
+    "image_only_outcome": "IMAGE-SIMILARITY PASS",
+    "visual_component_classes": "front-seat-adjusters | rear-seat-adjusters",
+    "image_only_basis": "Direct seat frame, track/adjuster and seat-back structures are highly similar or similar with visible differences.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2006L01377/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "4/05",
+    "title": "Seatbelts",
+    "image_only_outcome": "IMAGE-SIMILARITY PASS",
+    "visual_component_classes": "seat-belts",
+    "image_only_basis": "Direct restraint assemblies are near-identical in the strongest mixed-model pair.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2012L00468/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "5/05",
+    "title": "Anchorages for Seatbelts",
+    "image_only_outcome": "PARTIAL / NO IMAGE-ONLY PASS",
+    "visual_component_classes": "seat-belts | front-seat-adjusters",
+    "image_only_basis": "Belts and seat frames look similar, but the vehicle structural anchorage points are not comparably exposed.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2006L01386/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "8/01",
+    "title": "Safety Glazing Material",
+    "image_only_outcome": "INSUFFICIENT COMPARABLE IMAGE",
+    "visual_component_classes": "none",
+    "image_only_basis": "No comparable glazing image pair was captured.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2005L03908/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "10/02",
+    "title": "Steering Column",
+    "image_only_outcome": "IMAGE-SIMILARITY PASS",
+    "visual_component_classes": "steering-column | steering-wheel | air-bags",
+    "image_only_basis": "Steering column geometry is highly similar and steering-wheel/airbag interfaces are visibly similar.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2008L02387/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "11/00",
+    "title": "Internal Sun Visors",
+    "image_only_outcome": "IMAGE-SIMILARITY PASS",
+    "visual_component_classes": "headliners-visors",
+    "image_only_basis": "The roof-liner/visor attachment architecture is similar with visible differences.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2006L01785/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "14/02",
+    "title": "Rear Vision Mirrors",
+    "image_only_outcome": "INSUFFICIENT COMPARABLE IMAGE",
+    "visual_component_classes": "none",
+    "image_only_basis": "No comparable mirror assembly pair was captured.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2006L02663/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "18/03",
+    "title": "Instrumentation",
+    "image_only_outcome": "INSUFFICIENT / NO IMAGE-ONLY PASS",
+    "visual_component_classes": "instrument-panel",
+    "image_only_basis": "Dashboard shells are comparable, but direct cluster/tell-tale geometry is not comparably depicted.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2006L01392/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "21/00",
+    "title": "Instrument Panel",
+    "image_only_outcome": "IMAGE-SIMILARITY PASS",
+    "visual_component_classes": "instrument-panel",
+    "image_only_basis": "Full dashboard shells show similar visible architecture with substantial local differences.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2006L01786/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "22/00",
+    "title": "Head Restraints",
+    "image_only_outcome": "IMAGE-SIMILARITY PASS",
+    "visual_component_classes": "rear-seats-second-row | front-seat-adjusters",
+    "image_only_basis": "Head restraints, guides and seat-back families are visibly similar with configuration differences.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2006L01410/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "25/02",
+    "title": "Anti-Theft Lock",
+    "image_only_outcome": "INSUFFICIENT / NO IMAGE-ONLY PASS",
+    "visual_component_classes": "steering-column | instrument-panel",
+    "image_only_basis": "The direct steering/ignition lock or immobilizer mechanism is not visibly isolated for comparison.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2006L02664/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "29/00",
+    "title": "Side Door Strength",
+    "image_only_outcome": "VISUALLY DIFFERENT / NO IMAGE-ONLY PASS",
+    "visual_component_classes": "front-door | aperture-pillars | floor-pans",
+    "image_only_basis": "Door/body structural views show major two-door/four-door geometry and segmentation differences.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2006L01429/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "34/02",
+    "title": "Child Restraint Anchorages and Child Restraint Anchor Fittings",
+    "image_only_outcome": "INSUFFICIENT / NO IMAGE-ONLY PASS",
+    "visual_component_classes": "rear-seats-second-row | rear-seat-adjusters",
+    "image_only_basis": "Rear-seat architecture looks similar, but child-restraint anchors are not visibly isolated or comparable.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2012L00703/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "42/04",
+    "title": "General Safety Requirements",
+    "image_only_outcome": "IMAGE-SIMILARITY PASS",
+    "visual_component_classes": "instrument-panel | steering-wheel | seats | headliners-visors",
+    "image_only_basis": "Several directly depicted interior assemblies show similar visible geometry across mixed models.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2005L03996/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "69/00",
+    "title": "Full Frontal Impact Occupant Protection",
+    "image_only_outcome": "IMAGE-SIMILARITY PASS \u2014 DEPICTED HARDWARE ONLY",
+    "visual_component_classes": "air-bags | seat-belts | front-seat-adjusters | steering-column | steering-wheel",
+    "image_only_basis": "Multiple frontal-restraint hardware classes are highly similar or visibly similar; no crash-performance inference is made.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2006L01455/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "72/00",
+    "title": "Dynamic Side Impact Occupant Protection",
+    "image_only_outcome": "PARTIAL / NO IMAGE-ONLY PASS",
+    "visual_component_classes": "air-bags | seat-belts | front-door | aperture-pillars",
+    "image_only_basis": "Belts look similar, but direct side-airbag and side-structure coverage is insufficient and body structures visibly differ.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2005L03992/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "73/00",
+    "title": "Offset Frontal Impact Occupant Protection",
+    "image_only_outcome": "IMAGE-SIMILARITY PASS \u2014 DEPICTED HARDWARE ONLY",
+    "visual_component_classes": "air-bags | seat-belts | front-seat-adjusters | steering-column | steering-wheel",
+    "image_only_basis": "Multiple frontal-restraint hardware classes are highly similar or visibly similar; occupant-cell/crash performance is not addressed.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2005L03990/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  },
+  {
+    "adr": "85/00",
+    "title": "Pole Side Impact Performance",
+    "image_only_outcome": "INSUFFICIENT / NO IMAGE-ONLY PASS",
+    "visual_component_classes": "air-bags | front-door | aperture-pillars",
+    "image_only_basis": "Direct pole-side restraint/structure coverage is insufficient; body-side structures visibly differ. Probably not mandatory for these 2017 vehicles, but applicability is separate from this image screen.",
+    "official_url_for_adr_identity_only": "https://www.legislation.gov.au/F2015L02109/latest/text",
+    "limitation": "User-defined image-similarity screen only; not part identity, fitment, interchangeability, engineering equivalence or ADR compliance."
+  }
+]

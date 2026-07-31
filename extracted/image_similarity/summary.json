@@ -1,0 +1,17 @@
+{
+  "images": 89,
+  "models": [
+    "Challenger",
+    "Charger",
+    "Chrysler 300"
+  ],
+  "cross_model_pairs": 2628,
+  "exact_matches": 0,
+  "near_identical": 1,
+  "strong_structural": 2,
+  "moderate": 1,
+  "contact_sheets": 5,
+  "method": "pixel-only automated screening; filenames/categories applied only after scores for ADR routing",
+  "same_category_classes": 12,
+  "same_category_review_pairs": 30
+}

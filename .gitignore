@@ -11,6 +11,7 @@ extracted/mopar_jina_test.txt
 extracted/mopar_sitemap.txt
 report/verification/
 report/verification-*/
+extracted/image_similarity/contact_sheets/
 extracted/pdf/pages/
 extracted/pdf/source.txt
 extracted/pdf/starparts_pages/

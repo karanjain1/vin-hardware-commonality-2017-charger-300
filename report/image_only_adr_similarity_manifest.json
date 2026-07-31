@@ -1,0 +1,87 @@
+[
+  {
+    "file": "report/image_only_adr_similarity_screen.md",
+    "bytes": 14797,
+    "sha256": "147d77ad9c4a914753e206191d6f7da32af4ac3a390b965bc628ca8c8384e63d",
+    "sha256_lf_normalized": "147d77ad9c4a914753e206191d6f7da32af4ac3a390b965bc628ca8c8384e63d"
+  },
+  {
+    "file": "report/image_only_adr_similarity_screen.docx",
+    "bytes": 1779316,
+    "sha256": "f2c9bff83ea65a92ff49617344a34f6334d40815e07d6f9ca5639b97737f140d"
+  },
+  {
+    "file": "report/image_only_adr_similarity_screen.pdf",
+    "bytes": 1948357,
+    "sha256": "ee6011df10bfb799b45e57d08ff7939553461dfcb9b5d7c3a3286eeb156449f7"
+  },
+  {
+    "file": "extracted/image_similarity/image_only_category_review.csv",
+    "bytes": 6961,
+    "sha256": "5211953154e8bcd9a54db237a9f7d3241ff2deb6d928386b4ce6921a192b0f74",
+    "sha256_lf_normalized": "69978d48ada72da5369594e283415445df2b3c81bcc5953414a4698fa3634c15"
+  },
+  {
+    "file": "extracted/image_similarity/image_only_adr_matrix.csv",
+    "bytes": 7622,
+    "sha256": "96968cd8d2af338cd8625af485b59dd1d14a5446fc34e539ce779574faad77fc",
+    "sha256_lf_normalized": "4bdfad8ab3d7ee94d812bd232adb9a1188b57135cca86531b6f704b6b3a6fc0c"
+  },
+  {
+    "file": "extracted/image_similarity/image_only_adr_pass_list.csv",
+    "bytes": 3696,
+    "sha256": "49a12550af125b1b94a3e7523383ff038c1b3f864547fb77bfadf22bbd8310e2",
+    "sha256_lf_normalized": "1845e51e1b3fb1bc5747222dcb2672eb44c370097dc5750b94a17cc04888bead"
+  },
+  {
+    "file": "extracted/image_similarity/image_only_adr_matrix.json",
+    "bytes": 11315,
+    "sha256": "4ee4fd7b2566cd2f133970fb7ce7ae07a96c677ac8a87143282ca8465cdb34c0",
+    "sha256_lf_normalized": "721af25aefe90a535e078f62fec1d27e8ad1e8a07c07a471379b890994eedb9c"
+  },
+  {
+    "file": "evidence/image_similarity/selected_pairs/01-seat-belts.png",
+    "bytes": 66586,
+    "sha256": "6bd286d938ef16be1c237fdf616e0ded8ab7934135c0ba4d50b8f2d8a3b9ccfa"
+  },
+  {
+    "file": "evidence/image_similarity/selected_pairs/02-front-seat-adjusters.png",
+    "bytes": 341779,
+    "sha256": "4f7cb755736dd2e1eb15379ed1b75bb752219087112d83bf6de15d97ac8d738f"
+  },
+  {
+    "file": "evidence/image_similarity/selected_pairs/03-rear-seat-adjusters.png",
+    "bytes": 224109,
+    "sha256": "7baf23be7b74f5acde943d20b9f2f1447d3ab890e0082f98b24e374b6d11f04f"
+  },
+  {
+    "file": "evidence/image_similarity/selected_pairs/04-steering-column.png",
+    "bytes": 112506,
+    "sha256": "3a92b2c4c6255c097864f35cbddaa87cc8ac7af5ab902b298de90ce11881e8cc"
+  },
+  {
+    "file": "evidence/image_similarity/selected_pairs/05-steering-wheel.png",
+    "bytes": 172139,
+    "sha256": "b0308262a4ddfa3f71d0b5cf71754e70d49ce7904fbf6b94497cf4fbd0b10a95"
+  },
+  {
+    "file": "evidence/image_similarity/selected_pairs/06-air-bags.png",
+    "bytes": 109246,
+    "sha256": "ceef52a864a02b5476ca9fab112856aec52767158c579db5ef835e15ef6f5ef7"
+  },
+  {
+    "file": "evidence/image_similarity/selected_pairs/07-headliners-visors.png",
+    "bytes": 241852,
+    "sha256": "3204862e6b7a30523dd666f2196c8670013ffd6ddc3210821aa5cf4a7eeaa1ff"
+  },
+  {
+    "file": "evidence/image_similarity/selected_pairs/08-instrument-panel.png",
+    "bytes": 356814,
+    "sha256": "61acf1f5b679554984c9552787f214c049ad02ed3caac32d9d6f96c6f1c39ce5"
+  },
+  {
+    "file": "evidence/image_similarity/selected_pairs/09-rear-seats-second-row.png",
+    "bytes": 271327,
+    "sha256": "51df01c1faa9bdbadaeb7c175a6e76783ce9b878a33d31ebfd81e52d2f388504"
+  }
+]
