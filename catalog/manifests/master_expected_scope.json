@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-07-31T23:49:35+00:00",
+  "variations": [
+    {
+      "variation_id": "challenger-rt-57-gas",
+      "source_label": "R/T / 5.7L V8 Gas",
+      "route": "https://www.moparamerica.com/v-2017-dodge-challenger--r-t--5-7l-v8-gas",
+      "validation_status": "VALIDATED",
+      "categories": 197,
+      "diagrams": 0,
+      "products": 0,
+      "qa_passed": 0,
+      "blocked": 0,
+      "nonterminal": 197
+    },
+    {
+      "variation_id": "challenger-rt-scat-pack-64-gas",
+      "source_label": "R/T Scat Pack / 6.4L V8 Gas",
+      "route": "https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas",
+      "validation_status": "VALIDATED",
+      "categories": 191,
+      "diagrams": 0,
+      "products": 0,
+      "qa_passed": 0,
+      "blocked": 0,
+      "nonterminal": 191
+    },
+    {
+      "variation_id": "challenger-sxt-36-gas",
+      "source_label": "SXT / 3.6L V6 Gas",
+      "route": "https://www.moparamerica.com/v-2017-dodge-challenger--sxt--3-6l-v6-gas",
+      "validation_status": "VALIDATED",
+      "categories": 179,
+      "diagrams": 0,
+      "products": 0,
+      "qa_passed": 0,
+      "blocked": 0,
+      "nonterminal": 179
+    },
+    {
+      "variation_id": "chrysler300-c-36-flex",
+      "source_label": "C / 3.6L V6 Flex",
+      "route": "https://www.moparamerica.com/v-2017-chrysler-300--c--3-6l-v6-flex",
+      "validation_status": "VALIDATED",
+      "categories": 172,
+      "diagrams": 0,
+      "products": 0,
+      "qa_passed": 0,
+      "blocked": 0,
+      "nonterminal": 172
+    },
+    {
+      "variation_id": "chrysler300-c-36-gas",
+      "source_label": "C / 3.6L V6 Gas",
+      "route": "https://www.moparamerica.com/v-2017-chrysler-300--c--3-6l-v6-gas",
+      "validation_status": "VALIDATED",
+      "categories": 172,
+      "diagrams": 0,
+      "products": 0,
+      "qa_passed": 0,
+      "blocked": 0,
+      "nonterminal": 172
+    },
+    {
+      "variation_id": "chrysler300-c-57-gas",
+      "source_label": "C / 5.7L V8 Gas",
+      "route": "https://www.moparamerica.com/v-2017-chrysler-300--c--5-7l-v8-gas",
+      "validation_status": "VALIDATED",
+      "categories": 170,
+      "diagrams": 0,
+      "products": 0,
+      "qa_passed": 0,
+      "blocked": 0,
+      "nonterminal": 170
+    }
+  ],
+  "totals": {
+    "leaves": 1081,
+    "records": 0,
+    "image_observations": 0,
+    "image_assets": 0,
+    "open_critical": 0,
+    "open_major": 0
+  }
+}

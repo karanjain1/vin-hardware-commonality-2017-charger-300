@@ -1,0 +1,100 @@
+{
+  "manifest_version": "1.0.0",
+  "project_scope": "2017 Mopar OEM catalogue — Chrysler 300C and Dodge Challenger",
+  "source": "MoparAmerica public OEM catalogue",
+  "confidence": "vehicle-family catalogue candidates; not VIN-confirmed installation",
+  "resolved_at": "2026-08-01T09:23:28+10:00",
+  "resolution_basis": [
+    "Existing project routes and retained source pages",
+    "Current MoparAmerica configured-route validation",
+    "Three distinct C-trim Chrysler engine/fuel catalogue routes",
+    "Three established Challenger powertrain/trim routes; R/T Scat Pack retained as the established 6.4L controlling route instead of duplicating the SRT 392 powertrain"
+  ],
+  "vehicles": [
+    {
+      "vehicle_id": "2017-chrysler-300c",
+      "year": "2017",
+      "make_source": "Chrysler",
+      "model_source": "300",
+      "project_label": "Chrysler 300C",
+      "source_label_note": "MoparAmerica labels the model Chrysler 300 and the selected trim C; 300C is the project-facing label.",
+      "variations": [
+        {
+          "variation_id": "chrysler300-c-36-gas",
+          "variation_source_label": "C / 3.6L V6 Gas",
+          "trim_source": "C",
+          "engine_source": "3.6L V6 Gas",
+          "route_slug": "v-2017-chrysler-300--c--3-6l-v6-gas",
+          "source_url": "https://www.moparamerica.com/v-2017-chrysler-300--c--3-6l-v6-gas",
+          "validation_title": "Select Parts Category - 2017 Chrysler 300",
+          "expected_category_links_at_resolution": 172,
+          "derivation_status": "EVIDENCE_SUPPORTED"
+        },
+        {
+          "variation_id": "chrysler300-c-36-flex",
+          "variation_source_label": "C / 3.6L V6 Flex",
+          "trim_source": "C",
+          "engine_source": "3.6L V6 Flex",
+          "route_slug": "v-2017-chrysler-300--c--3-6l-v6-flex",
+          "source_url": "https://www.moparamerica.com/v-2017-chrysler-300--c--3-6l-v6-flex",
+          "validation_title": "Select Parts Category - 2017 Chrysler 300",
+          "expected_category_links_at_resolution": 172,
+          "derivation_status": "EVIDENCE_SUPPORTED"
+        },
+        {
+          "variation_id": "chrysler300-c-57-gas",
+          "variation_source_label": "C / 5.7L V8 Gas",
+          "trim_source": "C",
+          "engine_source": "5.7L V8 Gas",
+          "route_slug": "v-2017-chrysler-300--c--5-7l-v8-gas",
+          "source_url": "https://www.moparamerica.com/v-2017-chrysler-300--c--5-7l-v8-gas",
+          "validation_title": "Select Parts Category - 2017 Chrysler 300",
+          "expected_category_links_at_resolution": 170,
+          "derivation_status": "EVIDENCE_SUPPORTED"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "2017-dodge-challenger",
+      "year": "2017",
+      "make_source": "Dodge",
+      "model_source": "Challenger",
+      "project_label": "Dodge Challenger",
+      "variations": [
+        {
+          "variation_id": "challenger-sxt-36-gas",
+          "variation_source_label": "SXT / 3.6L V6 Gas",
+          "trim_source": "SXT",
+          "engine_source": "3.6L V6 Gas",
+          "route_slug": "v-2017-dodge-challenger--sxt--3-6l-v6-gas",
+          "source_url": "https://www.moparamerica.com/v-2017-dodge-challenger--sxt--3-6l-v6-gas",
+          "validation_title": "Select Parts Category - 2017 Dodge Challenger",
+          "expected_category_links_at_resolution": 179,
+          "derivation_status": "EVIDENCE_SUPPORTED"
+        },
+        {
+          "variation_id": "challenger-rt-57-gas",
+          "variation_source_label": "R/T / 5.7L V8 Gas",
+          "trim_source": "R/T",
+          "engine_source": "5.7L V8 Gas",
+          "route_slug": "v-2017-dodge-challenger--r-t--5-7l-v8-gas",
+          "source_url": "https://www.moparamerica.com/v-2017-dodge-challenger--r-t--5-7l-v8-gas",
+          "validation_title": "Select Parts Category - 2017 Dodge Challenger",
+          "expected_category_links_at_resolution": 197,
+          "derivation_status": "EVIDENCE_SUPPORTED"
+        },
+        {
+          "variation_id": "challenger-rt-scat-pack-64-gas",
+          "variation_source_label": "R/T Scat Pack / 6.4L V8 Gas",
+          "trim_source": "R/T Scat Pack",
+          "engine_source": "6.4L V8 Gas",
+          "route_slug": "v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas",
+          "source_url": "https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas",
+          "validation_title": "Select Parts Category - 2017 Dodge Challenger",
+          "expected_category_links_at_resolution": 191,
+          "derivation_status": "EVIDENCE_SUPPORTED"
+        }
+      ]
+    }
+  ]
+}

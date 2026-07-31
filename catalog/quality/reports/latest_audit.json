@@ -1,0 +1,103 @@
+{
+  "status": "AUDIT FAILED",
+  "checks": {
+    "sqlite_quick_check": [
+      "ok"
+    ],
+    "foreign_key_violations": 0,
+    "variation_count": 6,
+    "validated_variations": 6,
+    "categories_by_variation": {
+      "challenger-rt-57-gas": 197,
+      "challenger-rt-scat-pack-64-gas": 191,
+      "challenger-sxt-36-gas": 179,
+      "chrysler300-c-36-flex": 172,
+      "chrysler300-c-36-gas": 172,
+      "chrysler300-c-57-gas": 170
+    },
+    "expected_categories_by_variation": {
+      "chrysler300-c-36-gas": 172,
+      "chrysler300-c-36-flex": 172,
+      "chrysler300-c-57-gas": 170,
+      "challenger-sxt-36-gas": 179,
+      "challenger-rt-57-gas": 197,
+      "challenger-rt-scat-pack-64-gas": 191
+    },
+    "nonterminal_leaves": [
+      {
+        "leaf_type": "CATEGORY_INDEX",
+        "status": "EXTRACTED",
+        "n": 1
+      },
+      {
+        "leaf_type": "CATEGORY_INDEX",
+        "status": "NOT_STARTED",
+        "n": 1080
+      },
+      {
+        "leaf_type": "DIAGRAM",
+        "status": "EXTRACTED",
+        "n": 1
+      },
+      {
+        "leaf_type": "DIAGRAM",
+        "status": "NOT_STARTED",
+        "n": 3
+      },
+      {
+        "leaf_type": "PRODUCT_DETAIL",
+        "status": "EXTRACTED",
+        "n": 1
+      },
+      {
+        "leaf_type": "PRODUCT_DETAIL",
+        "status": "NOT_STARTED",
+        "n": 4
+      }
+    ],
+    "nonterminal_batches": [
+      {
+        "stage": "CATEGORY_EXTRACTION",
+        "status": "EXTRACTED",
+        "n": 1
+      },
+      {
+        "stage": "CATEGORY_EXTRACTION",
+        "status": "NOT_STARTED",
+        "n": 1080
+      },
+      {
+        "stage": "DIAGRAM_EXTRACTION",
+        "status": "EXTRACTED",
+        "n": 1
+      },
+      {
+        "stage": "DIAGRAM_EXTRACTION",
+        "status": "NOT_STARTED",
+        "n": 3
+      },
+      {
+        "stage": "PRODUCT_DETAIL_EXTRACTION",
+        "status": "NOT_STARTED",
+        "n": 5
+      }
+    ],
+    "row_count_mismatches": 1,
+    "callout_count_mismatches": 0,
+    "required_record_gaps": {},
+    "raw_evidence_failures": 0,
+    "image_asset_failures": 0,
+    "unverified_content_images": 0,
+    "records_without_image_or_disposition": 0,
+    "unsupported_no_image_dispositions": 0,
+    "unsupported_part_number_sentinels": 0,
+    "records": 10,
+    "fts_rows": 10,
+    "duplicate_active_record_keys": 0,
+    "orphan_image_assets": 0,
+    "open_defects_before_run": {}
+  },
+  "failures": [
+    "ROW_COUNT_MISMATCH"
+  ]
+}

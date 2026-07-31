@@ -1,0 +1,104 @@
+{
+  "audit_version": "1.0.0",
+  "audited_at": "2026-08-01T09:23:28+10:00",
+  "repository": "https://github.com/karanjain1/vin-hardware-commonality-2017-charger-300",
+  "starting_branch": "public/vin-hardware-commonality-2017-charger-300",
+  "working_branch": "catalogue/2017-chrysler300c-challenger-master",
+  "starting_commit": "7272dc453d2fcc524ea8b77e524c57afe0259d4f",
+  "legacy_state": {
+    "database": "catalog/mopar_catalog.sqlite3",
+    "database_sha256_at_audit": "bb8ac91119d992db739c36797706c6585586f162f45d90259b74150193a6e04b",
+    "database_bytes": 2686976,
+    "physical_catalog_images": 287,
+    "physical_catalog_image_bytes": 10609065,
+    "valid_routes": 19,
+    "variant_category_total": 3389,
+    "complete_categories": 303,
+    "pending_categories": 3081,
+    "error_categories": 5,
+    "unique_parts": 1549,
+    "offerings": 3000,
+    "assemblies": 513,
+    "unique_images": 287,
+    "callouts": 0,
+    "fts_rows": 103
+  },
+  "classification": [
+    {
+      "path": "catalog/mopar_catalog.sqlite3",
+      "class": "CONFLICTING",
+      "reason": "Partial legacy database targets Charger plus broad Chrysler 300 routes, not the exact six-variation Chrysler 300C/Challenger scope; it must remain non-authoritative evidence."
+    },
+    {
+      "path": "catalog/images/",
+      "class": "PRESENT_REQUIRES_REVERIFICATION",
+      "reason": "287 files passed prior byte-identity checks, but associations and completeness are tied to the conflicting legacy scope. Hash-deduplicated bytes may be reused only after record-level reassociation and independent verification."
+    },
+    {
+      "path": "evidence/mopar/expanded_adrs/",
+      "class": "PARTIAL",
+      "reason": "Contains selected Challenger categories across four historical routes, not a complete catalogue and not exactly the six authoritative variations."
+    },
+    {
+      "path": "evidence/mopar/mvsa_44114_research/",
+      "class": "PARTIAL",
+      "reason": "Contains assembly-specific Challenger and Chrysler evidence for selected categories; useful parser fixtures but incomplete."
+    },
+    {
+      "path": "scripts/mopar_catalog.py",
+      "class": "INVALID",
+      "reason": "Scope is Charger/300; known false-complete parsing, omitted product/illustration images, zero callout enrichment, stale FTS during crawl, and insufficient authoritative fields/status controls."
+    },
+    {
+      "path": "scripts/scrape_expanded_adrs.py",
+      "class": "PARTIAL",
+      "reason": "Provides validated Challenger route examples and parser fixtures but screens only selected ADR categories."
+    },
+    {
+      "path": "scripts/research_adr2_adr4_44114.py",
+      "class": "PRESENT_REQUIRES_REVERIFICATION",
+      "reason": "Assembly-specific parsing is reusable as a pattern; output is selected-scope evidence and cannot be promoted wholesale."
+    },
+    {
+      "path": "catalog/exports/",
+      "class": "INVALID",
+      "reason": "Published exports represent only the initial ten-category legacy snapshot and are not authoritative for this mission."
+    },
+    {
+      "path": "catalog/manifests/variation_manifest.json",
+      "class": "VERIFIED_REUSABLE",
+      "reason": "Created from retained evidence and current source validation for the exact six-variation mission scope."
+    },
+    {
+      "path": "catalog/master_expected_scope.json",
+      "class": "MISSING",
+      "reason": "Must be generated from six validated route taxonomies."
+    },
+    {
+      "path": "catalog/authoritative_catalogue.sqlite3",
+      "class": "MISSING",
+      "reason": "Required v2 authoritative dataset does not yet exist."
+    },
+    {
+      "path": "catalog/quality/defects/",
+      "class": "MISSING",
+      "reason": "No controlled defect register exists for the master catalogue."
+    },
+    {
+      "path": "catalog/skills/",
+      "class": "MISSING",
+      "reason": "The ten required project-local skills do not exist."
+    }
+  ],
+  "known_critical_defects": [
+    "Legacy scope conflicts with the requested Chrysler 300C plus Dodge Challenger scope.",
+    "Comprehensive variant denominator was not controlled.",
+    "Some zero-row pages were falsely marked complete despite source parts or illustrations.",
+    "Product images and illustration-derived product images were not comprehensively acquired.",
+    "No comprehensive callout records exist.",
+    "Search index was stale relative to captured entities.",
+    "Raw text source hash semantics did not distinguish literal bytes from LF-normalized text.",
+    "Published GitHub state was far behind unpublished local partial state."
+  ],
+  "preservation_rule": "Do not delete or overwrite legacy work. Treat it as non-authoritative recovery evidence; build the v2 authoritative dataset alongside it and migrate only independently reverified records."
+}
