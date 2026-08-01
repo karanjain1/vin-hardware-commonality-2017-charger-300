@@ -14,6 +14,10 @@ ACCESSORY=ROOT/'catalog'/'v2'/'evidence'/'source'/'chrysler300-c-36-flex'/'categ
 RELATED=ROOT/'catalog'/'v2'/'evidence'/'source'/'chrysler300-c-36-flex'/'category_index'/'98af8f64b9a3e53508c64bc936dce38658e42085afc85f2df694a022e558a74c.md'
 MARKERLESS_LICENSE=ROOT/'catalog'/'v2'/'evidence'/'source'/'challenger-rt-57-gas'/'category_index'/'b43dde09bd16fc3b081727b5c4bdc9c3000714ebc763fe5110694bf589652f05.md'
 MARKERLESS_INTAKE=ROOT/'catalog'/'v2'/'evidence'/'source'/'challenger-rt-57-gas'/'category_index'/'3c899ddf0591776e92902d0f7895cddf0e51928518a4a8cd518e739ab6cdb741.md'
+NO_IMAGE_SELECTORS=ROOT/'catalog'/'v2'/'evidence'/'snapshots'/'669d8bcd82598c6db50f61a1dbfee7bf77a1fce630366329840fd5d8eb446d5b.md'
+ROUTE_SHELL=ROOT/'catalog'/'v2'/'evidence'/'snapshots'/'fa982007d7852e1067f63423dab318459f46285785594343e234ff98ca860ef9.md'
+BROWSER_COMPLETE=ROOT/'catalog'/'v2'/'evidence'/'snapshots'/'b6b2e045f4c0ac3ba3b5a91dc0ab259dc4dc54f672a871cec02688790630441f.md'
+CALLOUT_ALTERNATIVES=ROOT/'catalog'/'v2'/'evidence'/'snapshots'/'8da5d093388b18eb4ea556d6668248999779e9e42d9eee2eecedf83cafe9836b.md'
 HTTP_ACCESSORY=ROOT/'catalog'/'v2'/'evidence'/'source'/'challenger-rt-57-gas'/'category_index'/'fdd3a7a9968bc861c39af3904cdc6bdefad4dfca23831f9ab0e952a16e655d40.md'
 class ManifestAndSkills(unittest.TestCase):
  def test_exact_six_variations(self):
@@ -24,6 +28,22 @@ class ManifestAndSkills(unittest.TestCase):
 class ParserRegression(unittest.TestCase):
  @classmethod
  def setUpClass(cls):cls.text=DIAGRAM.read_text(encoding='utf-8')
+ def test_browser_renderer_replaces_route_shell_with_complete_category_structure(self):
+  shell=ROUTE_SHELL.read_text(encoding='utf-8');complete=BROWSER_COMPLETE.read_text(encoding='utf-8')
+  self.assertFalse(cv2.leaf_structure_complete(shell,'CATEGORY_INDEX'))
+  self.assertTrue(cv2.leaf_structure_complete(complete,'CATEGORY_INDEX'))
+  self.assertEqual(len(cv2.parse_leaf(complete,'CATEGORY_INDEX')['rows']),11)
+ def test_retrieval_headers_support_explicit_browser_renderer(self):
+  self.assertEqual(cv2.retrieval_headers(True,'browser')['X-Engine'],'browser')
+  self.assertEqual(cv2.retrieval_headers(True,'browser')['X-No-Cache'],'true')
+  self.assertEqual(cv2.retrieval_headers(True,'browser')['Accept'],'text/plain')
+ def test_no_image_assembly_selectors_remain_complete_diagram_references(self):
+  text=NO_IMAGE_SELECTORS.read_text(encoding='utf-8');selectors=cv2.assembly_selectors(text)
+  self.assertEqual([s['assembly'] for s in selectors],[1,2,3,4,5])
+  self.assertEqual([s['title'] for s in selectors],['Fascia Decal','Body Decal Kit','Body Decal Kit','Decal','Cap Nut'])
+  self.assertTrue(all(s['image_url'] is None for s in selectors))
+  self.assertEqual(aud.independent_leaf_counts(text)['selectors'],5);self.assertEqual(aud.independent_leaf_counts(text)['images'],14)
+  self.assertEqual(qa.independent_counts(text)['selectors'],5);self.assertEqual(qa.independent_counts(text)['images'],14)
  def test_duplicate_visible_callout_occurrences_are_preserved(self):
   rows=cv2.callout_rows(self.text,cv2.active_diagram(self.text,1));d=[r for r in rows if r['anchor']=='#part_row_0_4_0'];self.assertEqual(len(d),2);self.assertEqual([r['ordinal'] for r in d],[1,2])
  def test_multiple_alternatives_under_one_row_anchor_get_unique_occurrence_ordinals(self):
@@ -47,6 +67,8 @@ class ParserRegression(unittest.TestCase):
   with self.assertRaisesRegex(ValueError,'wrong assembly'):cv2.parse_leaf(self.text,'DIAGRAM',2)
  def test_every_structural_product_link_is_accounted(self):
   parsed=cv2.parse_leaf(self.text,'DIAGRAM',1);self.assertEqual(len(parsed['rows']),11);self.assertEqual(parsed['structural']['callout_markers'],6)
+ def test_extracted_callout_count_tracks_source_markers_not_alternative_rows(self):
+  parsed=cv2.parse_leaf(CALLOUT_ALTERNATIVES.read_text(encoding='utf-8'),'DIAGRAM',2);summary=[r for r in parsed['rows'] if r['section']=='CALLOUT_SUMMARY'];self.assertEqual(parsed['structural']['callout_markers'],5);self.assertEqual(len(summary),9);self.assertEqual(cv2.reconciled_callout_count(parsed),5)
  def test_partial_product_renderer_is_not_no_image_evidence(self):
   d=cv2.parse_product_detail(PARTIAL.read_text(encoding='utf-8'));self.assertFalse(d['complete']);self.assertFalse(d['images'])
  def test_complete_product_structure_and_gallery(self):
@@ -55,8 +77,28 @@ class ParserRegression(unittest.TestCase):
 class SchemaAndImage(unittest.TestCase):
  def db(self):
   td=tempfile.TemporaryDirectory();p=Path(td.name)/'x.sqlite3';c=sqlite3.connect(p);c.executescript((ROOT/'catalog'/'schema_v2.sql').read_text());return td,c
+ def test_product_browser_engine_retrieval_keeps_semantic_structure_complete(self):
+  self.assertEqual(cv2.product_structure_states(True,{'engine':'browser'}),('PRODUCT_DETAIL_COMPLETE','PRODUCT_DETAIL_COMPLETE_BROWSER_ENGINE'))
+  self.assertEqual(cv2.product_structure_states(False,{'engine':'browser'}),('PRODUCT_DETAIL_PARTIAL','PRODUCT_DETAIL_PARTIAL_BROWSER_ENGINE'))
+ def test_partial_product_batch_returns_nonzero_after_preserving_failure(self):
+  failure={'product_source_id':'product-example','error':'IMAGE_ENUMERATION_INCOMPLETE'}
+  with self.assertRaisesRegex(RuntimeError,'IMAGE_ENUMERATION_INCOMPLETE'):cv2.finalize_product_batch([failure])
+  cv2.finalize_product_batch([])
+ def test_only_exact_semantic_product_structure_is_complete_auditable_state(self):
+  self.assertTrue(aud.complete_product_structure_status('PRODUCT_DETAIL_COMPLETE'))
+  self.assertFalse(aud.complete_product_structure_status('PRODUCT_DETAIL_COMPLETE_BROWSER_ENGINE'))
+  self.assertFalse(aud.complete_product_structure_status('PRODUCT_DETAIL_COMPLETE_PARTIAL'))
+  self.assertFalse(aud.complete_product_structure_status('PRODUCT_DETAIL_PARTIAL'))
+ def test_browser_complete_zero_gallery_is_terminal_no_image_evidence(self):
+  c=sqlite3.connect(':memory:');c.execute('create table product_sources(product_source_id text,status text,no_image_disposition text,structure_status text)');c.execute('create table record_product_sources(record_id text,product_source_id text)');c.execute("insert into product_sources values('p','SOURCE_VERIFIED','NO_OEM_IMAGE_AVAILABLE','PRODUCT_DETAIL_COMPLETE')");c.execute("insert into record_product_sources values('r','p')")
+  self.assertEqual(aud.record_has_terminal_no_image(c,'r'),1)
+  c.execute("update product_sources set structure_status='PRODUCT_DETAIL_COMPLETE_UNVERIFIED'");self.assertEqual(aud.record_has_terminal_no_image(c,'r'),0);c.close()
  def test_schema_compiles(self):
   td,c=self.db();self.assertEqual(c.execute('pragma integrity_check').fetchone()[0],'ok');c.close();td.cleanup()
+ def test_export_schema_version_comes_from_authoritative_database(self):
+  c=cv2.con(True)
+  try:self.assertEqual(cv2.project_schema_version(c),'3.1')
+  finally:c.close()
  def test_context_trigger_rejects_cross_variation_taxonomy_parent(self):
   td,c=self.db();c.execute("insert into vehicles values('a',2017,'Dodge','Challenger')");c.execute("insert into variations values('v1','a','SXT / 3.6L V6 / Gas','SXT','3.6L V6','Gas','r1','u1','d','e',1,'VALIDATED',null,null)");c.execute("insert into variations values('v2','a','R/T / 5.7L V8 / Gas','R/T','5.7L V8','Gas','r2','u2','d','e',1,'VALIDATED',null,null)");c.execute("insert into taxonomy_nodes values('p','v1',null,'CATEGORY','P','P','p','u',1,'DISCOVERED',null)")
   with self.assertRaisesRegex(sqlite3.IntegrityError,'parent variation'):c.execute("insert into taxonomy_nodes values('x','v2','p','SUBCATEGORY','X','X','x','u',1,'DISCOVERED',null)")

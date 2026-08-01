@@ -39,10 +39,10 @@ try:
   else:
    # Local producer audits stop at the clean-checkpoint handoff; Agent 9 runs separately after commit/push.
    sequence=[['python','scripts/catalogue_v2.py','export'],['python','scripts/catalogue_auditors.py','source'],['python','scripts/catalogue_auditors.py','image'],['python','scripts/catalogue_auditors.py','fitment'],['python','scripts/catalogue_auditors.py','completeness'],['python','scripts/catalogue_v2.py','export'],['python','scripts/catalogue_auditors.py','integrity'],['python','scripts/catalogue_v2.py','export'],['python','scripts/catalogue_reports.py']]
-   for cmd in sequence:subprocess.run(cmd,cwd=ROOT,check=True,timeout=170,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
+   for cmd in sequence:subprocess.run(cmd,cwd=ROOT,check=True,timeout=300,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
    if not READY.exists():READY.write_text(json.dumps({'state':'READY_FOR_GIT_CHECKPOINT_AND_AGENT9'})+'\n',encoding='utf-8');print(READY.read_text(encoding='utf-8').strip())
    sys.exit(0)
- c.close();r=subprocess.run(command,cwd=ROOT,timeout=170,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE,text=True)
+ c.close();r=subprocess.run(command,cwd=ROOT,timeout=300,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE,text=True)
  if r.returncode:
   payload={'state':'WATCHDOG_BATCH_FAILED','command':command,'returncode':r.returncode,'stderr':r.stderr[-4000:]}
   if not ALERT.exists():ALERT.write_text(json.dumps(payload)+'\n',encoding='utf-8');print(json.dumps(payload))

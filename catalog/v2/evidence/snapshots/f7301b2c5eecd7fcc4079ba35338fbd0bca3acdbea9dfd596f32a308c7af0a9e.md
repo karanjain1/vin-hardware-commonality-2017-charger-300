@@ -1,0 +1,2040 @@
+Title: Moldings and Ornamentation for 2017 Dodge Challenger
+
+URL Source: http://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--moldings-and-ornamentation
+
+Markdown Content:
+[![Image 35: MoparAmerica Logo](https://cdn.revolutionparts.io/1d71f6b12285516678a8e7ec31c8735c/images/logo.png)](https://www.moparamerica.com/)
+
+[**Cart**](https://www.moparamerica.com/cart)
+
+Cart is Empty
+
+[Order Parts](https://www.moparamerica.com/v?mobilelink)[My Account](https://www.moparamerica.com/index.php?p=login)[Contact Us](https://www.moparamerica.com/contact-us)
+
+Help Menu 
+
+## Help
+
+×
+
+### Contact Us :
+
+[888-610-4996](tel:888-610-4996)[support@moparamerica.com](https://www.moparamerica.com/contact-us)
+
+*   [Facebook](https://www.moparamerica.com/www.facebook.com/332735560240486 "Visit us on Facebook")
+
+### Address :
+
+[950 NC HIGHWAY 66 S KERNERSVILLE, 27284](https://www.google.com/maps/search/?api=1&query=950+NC+HIGHWAY+66+S++KERNERSVILLE+NC+27284+US)
+
+### Policies :
+
+[Return Policy](https://www.moparamerica.com/policies/returns)[Privacy Policy](https://www.moparamerica.com/policies/privacy)
+
+[Shipping Policy](https://www.moparamerica.com/policies/shipping)[Terms & Conditions](https://www.moparamerica.com/policies/terms-and-conditions)
+
+### My Account :
+
+[My Account](https://www.moparamerica.com/account/login)[Register](https://www.moparamerica.com/account/login)
+
+[My Cart](https://www.moparamerica.com/index.php?p=cart)[My Orders](https://www.moparamerica.com/account/order-status)
+
+### Navigation :
+
+[Search by Vehicle](https://www.moparamerica.com/#)
+
+[About Us](https://www.moparamerica.com/about)[Contact Us](https://www.moparamerica.com/contact-us)
+
+[No Vehicle Selected](javascript:;)
+
+[No Vehicle Selected](javascript:openVehiclePicker();)
+
+    *   [](https://www.moparamerica.com/)
+
+*   [Clear Vehicle from Search](https://www.moparamerica.com/auto-parts/search-all-cars)
+*   [Delete All Vehicles from My Garage](https://www.moparamerica.com/auto-parts/clear-all-cars)
+*   [Add Vehicle](javascript:openVehiclePicker();)
+
+Search Bar 3 Search by Part Number(s), Keywords, or VIN
+
+[![Image 36: MoparAmerica Logo](https://cdn.revolutionparts.io/1d71f6b12285516678a8e7ec31c8735c/images/logo.png)](https://www.moparamerica.com/)
+
+*   [Home](https://www.moparamerica.com/)
+*   [About Us](https://www.moparamerica.com/about)
+*   [Order Status](https://www.moparamerica.com/redirect/order_status)
+*   [Contact Us](https://www.moparamerica.com/contact-us)
+
+**Contact Us:****888-610-4996**[support@moparamerica.com](https://www.moparamerica.com/contact-us)
+
+[Search All Vehicles](javascript:;)
+
+[Search All Vehicles](javascript:openVehiclePicker();)
+
+    *   [](https://www.moparamerica.com/)
+
+*   [Clear Vehicle from Search](https://www.moparamerica.com/auto-parts/search-all-cars)
+*   [Delete All Vehicles from My Garage](https://www.moparamerica.com/auto-parts/clear-all-cars)
+*   [Add Vehicle](javascript:openVehiclePicker();)
+
+Search Bar 5 Search by Part Number(s), Keywords, or VIN
+
+**Welcome!** My Account 
+
+[Login](https://www.moparamerica.com/account/login)[No Account? Register Now!](https://www.moparamerica.com/account/signup)
+
+*   [Order Status](https://www.moparamerica.com/account/order-status)
+
+#### My Account
+
+*   [My Profile](https://www.moparamerica.com/account/profile)
+*   [My Orders](https://www.moparamerica.com/account/open-orders)
+*   [Logout](https://www.moparamerica.com/account/logout)
+*   [My Wishlist](https://www.moparamerica.com/account/wishlist)
+
+#### My Account
+
+*   [My Orders](https://www.moparamerica.com/account/open-orders)
+*   [Logout](https://www.moparamerica.com/account/logout)
+*   [My Wishlist](https://www.moparamerica.com/account/wishlist)
+
+[**My Cart**](https://www.moparamerica.com/cart)
+
+Cart is Empty
+
+[Home](https://www.moparamerica.com/)[2017 Dodge Challenger](https://www.moparamerica.com/v-2017-dodge-challenger)[R/T Scat Pack 6.4L V8 - Gas](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas)[Moldings and Ornamentation](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--moldings-and-ornamentation)
+
+# Moldings and Ornamentation for 2017 Dodge Challenger
+
+#### My Garage
+
+2017 Dodge Challenger
+
+R/T Scat Pack 6.4L V8 - Gas
+
+[Change Vehicle](javascript:;)
+
+    *   [](https://www.moparamerica.com/)
+
+*   [Clear Vehicle from Search](https://www.moparamerica.com/auto-parts/search-all-cars)
+*   [Delete All Vehicles from My Garage](https://www.moparamerica.com/auto-parts/clear-all-cars)
+*   [Add Vehicle](javascript:openVehiclePicker();)
+
+## Categories
+
+*   [All](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas)
+*   [Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/auto-parts)
+*   [Accessories](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories)
+
+[3.6L Gas; Engine](https://www.moparamerica.com/#cat-3-6l-gas-engine-parts "3.6L Gas; Engine")
+
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/3-6l-gas-engine--engine-mounting "3.6L Gas; Engine: Engine Mounting")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/3-6l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "3.6L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+
+[5.7L Gas; Engine](https://www.moparamerica.com/#cat-5-7l-gas-engine-parts "5.7L Gas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--camshaft-and-valve "5.7L Gas; Engine: Camshaft and Valve")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "5.7L Gas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Cylinder Block](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--cylinder-block "5.7L Gas; Engine: Cylinder Block")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--engine-mounting "5.7L Gas; Engine: Engine Mounting")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "5.7L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--manifolds-and-vacuum-fittings "5.7L Gas; Engine: Manifolds and Vacuum Fittings")
+
+[5.7LGas; Engine](https://www.moparamerica.com/#cat-5-7lgas-engine-parts "5.7LGas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--camshaft-and-valve "5.7LGas; Engine: Camshaft and Valve")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "5.7LGas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--engine-mounting "5.7LGas; Engine: Engine Mounting")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--engine-oiling-oil-pan-and-indicator-dipstick "5.7LGas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--manifolds-and-vacuum-fittings "5.7LGas; Engine: Manifolds and Vacuum Fittings")
+
+[6.2L Gas; Engine](https://www.moparamerica.com/#cat-6-2l-gas-engine-parts "6.2L Gas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--camshaft-and-valve "6.2L Gas; Engine: Camshaft and Valve")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "6.2L Gas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--engine-mounting "6.2L Gas; Engine: Engine Mounting")
+*   [Engine Oil Cooler](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--engine-oil-cooler "6.2L Gas; Engine: Engine Oil Cooler")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "6.2L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--manifolds-and-vacuum-fittings "6.2L Gas; Engine: Manifolds and Vacuum Fittings")
+*   [Timing Belt/Chain and Cover and Balance Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--timing-belt-chain-and-cover-and-balance-shaft "6.2L Gas; Engine: Timing Belt/Chain and Cover and Balance Shaft")
+*   [Turbo and Super Chargers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--turbo-and-super-chargers "6.2L Gas; Engine: Turbo and Super Chargers")
+
+[6.4L Gas; Engine](https://www.moparamerica.com/#cat-6-4l-gas-engine-parts "6.4L Gas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--camshaft-and-valve "6.4L Gas; Engine: Camshaft and Valve")
+*   [Crankcase Ventilation](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--crankcase-ventilation "6.4L Gas; Engine: Crankcase Ventilation")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "6.4L Gas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Cylinder Block](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--cylinder-block "6.4L Gas; Engine: Cylinder Block")
+*   [Cylinder Head](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--cylinder-head "6.4L Gas; Engine: Cylinder Head")
+*   [Engine Identification, Service Engines & Engine Service Kits](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-identification-service-engines-and-engine-service-kits "6.4L Gas; Engine: Engine Identification, Service Engines & Engine Service Kits")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-mounting "6.4L Gas; Engine: Engine Mounting")
+*   [Engine Oil Cooler](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-oil-cooler "6.4L Gas; Engine: Engine Oil Cooler")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "6.4L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--manifolds-and-vacuum-fittings "6.4L Gas; Engine: Manifolds and Vacuum Fittings")
+*   [Timing Belt/Chain and Cover and Balance Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--timing-belt-chain-and-cover-and-balance-shaft "6.4L Gas; Engine: Timing Belt/Chain and Cover and Balance Shaft")
+
+[845RE; 8-Speed; Automatic Transmission](https://www.moparamerica.com/#cat-845re-8-speed-automatic-transmission-parts "845RE; 8-Speed; Automatic Transmission")
+
+*   [Automatic Transmission / Transaxle and Torque Converter](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--automatic-transmission-transaxle-and-torque-converter "845RE; 8-Speed; Automatic Transmission: Automatic Transmission / Transaxle and Torque Converter")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--gearshift-controls-and-related-parts "845RE; 8-Speed; Automatic Transmission: Gearshift Controls and Related Parts")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--mounting-and-skid-plate "845RE; 8-Speed; Automatic Transmission: Mounting and Skid Plate")
+*   [Oil Pump](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--oil-pump "845RE; 8-Speed; Automatic Transmission: Oil Pump")
+*   [Valve Body, Accumulator, Solenoid and Parking Sprag](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--valve-body-accumulator-solenoid-and-parking-sprag "845RE; 8-Speed; Automatic Transmission: Valve Body, Accumulator, Solenoid and Parking Sprag")
+
+[8HP70; 8-Speed; Automatic Transmission](https://www.moparamerica.com/#cat-8hp70-8-speed-automatic-transmission-parts "8HP70; 8-Speed; Automatic Transmission")
+
+*   [Automatic Transmission / Transaxle and Torque Converter](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--automatic-transmission-transaxle-and-torque-converter "8HP70; 8-Speed; Automatic Transmission: Automatic Transmission / Transaxle and Torque Converter")
+*   [Case, Extension, Oil Pan, and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--case-extension-oil-pan-and-indicator-dipstick "8HP70; 8-Speed; Automatic Transmission: Case, Extension, Oil Pan, and Indicator (Dipstick)")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--gearshift-controls-and-related-parts "8HP70; 8-Speed; Automatic Transmission: Gearshift Controls and Related Parts")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--mounting-and-skid-plate "8HP70; 8-Speed; Automatic Transmission: Mounting and Skid Plate")
+*   [Oil Pump](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--oil-pump "8HP70; 8-Speed; Automatic Transmission: Oil Pump")
+*   [Valve Body, Accumulator, Solenoid and Parking Sprag](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--valve-body-accumulator-solenoid-and-parking-sprag "8HP70; 8-Speed; Automatic Transmission: Valve Body, Accumulator, Solenoid and Parking Sprag")
+
+[8HP90; 8-Speed; Automatic Transmission](https://www.moparamerica.com/#cat-8hp90-8-speed-automatic-transmission-parts "8HP90; 8-Speed; Automatic Transmission")
+
+*   [Automatic Transmission / Transaxle and Torque Converter](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp90-8-speed-automatic-transmission--automatic-transmission-transaxle-and-torque-converter "8HP90; 8-Speed; Automatic Transmission: Automatic Transmission / Transaxle and Torque Converter")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp90-8-speed-automatic-transmission--gearshift-controls-and-related-parts "8HP90; 8-Speed; Automatic Transmission: Gearshift Controls and Related Parts")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp90-8-speed-automatic-transmission--mounting-and-skid-plate "8HP90; 8-Speed; Automatic Transmission: Mounting and Skid Plate")
+
+[Air Conditioners and Heaters](https://www.moparamerica.com/#cat-air-conditioners-and-heaters-parts "Air Conditioners and Heaters")
+
+*   [Air Conditioner and Heater Controls](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-and-heater-controls "Air Conditioners and Heaters: Air Conditioner and Heater Controls")
+*   [Air Conditioner and Heater Plumbing](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-and-heater-plumbing "Air Conditioners and Heaters: Air Conditioner and Heater Plumbing")
+*   [Air Conditioner and Heater Units](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-and-heater-units "Air Conditioners and Heaters: Air Conditioner and Heater Units")
+*   [Air Conditioner Compressor and Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-compressor-and-mounting "Air Conditioners and Heaters: Air Conditioner Compressor and Mounting")
+*   [Air Ducts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-ducts "Air Conditioners and Heaters: Air Ducts")
+
+[All Wheel Drive; Differential and Drive Line](https://www.moparamerica.com/#cat-all-wheel-drive-differential-and-drive-line-parts "All Wheel Drive; Differential and Drive Line")
+
+*   [Drive Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--drive-shaft "All Wheel Drive; Differential and Drive Line: Drive Shaft")
+*   [Front Axle Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--front-axle-assembly "All Wheel Drive; Differential and Drive Line: Front Axle Assembly")
+*   [Front Axle Drive Shafts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--front-axle-drive-shafts "All Wheel Drive; Differential and Drive Line: Front Axle Drive Shafts")
+*   [Rear Axle Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--rear-axle-assembly "All Wheel Drive; Differential and Drive Line: Rear Axle Assembly")
+*   [Rear Axle Shafts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--rear-axle-shafts "All Wheel Drive; Differential and Drive Line: Rear Axle Shafts")
+*   [Rear Axle; Housing, Differential and Vent](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--rear-axle-housing-differential-and-vent "All Wheel Drive; Differential and Drive Line: Rear Axle; Housing, Differential and Vent")
+
+[Body Sheet Metal Except Doors](https://www.moparamerica.com/#cat-body-sheet-metal-except-doors-parts "Body Sheet Metal Except Doors")
+
+*   [Aperture Panel and Pillar Supports](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--aperture-panel-and-pillar-supports "Body Sheet Metal Except Doors: Aperture Panel and Pillar Supports")
+*   [Body Structure Welds, Weatherstrips, Seals, Sealers and Adhesives](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--body-structure-welds-weatherstrips-seals-sealers-and-adhesives "Body Sheet Metal Except Doors: Body Structure Welds, Weatherstrips, Seals, Sealers and Adhesives")
+*   [Cowl and Dash Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--cowl-and-dash-panel "Body Sheet Metal Except Doors: Cowl and Dash Panel")
+*   [Deck Lid](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--deck-lid "Body Sheet Metal Except Doors: Deck Lid")
+*   [Fenders](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--fenders "Body Sheet Metal Except Doors: Fenders")
+*   [Floor Pans](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--floor-pans "Body Sheet Metal Except Doors: Floor Pans")
+*   [Hood and Hood Release](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--hood-and-hood-release "Body Sheet Metal Except Doors: Hood and Hood Release")
+*   [Plugs](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--plugs "Body Sheet Metal Except Doors: Plugs")
+*   [Roof](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--roof "Body Sheet Metal Except Doors: Roof")
+*   [Shelf Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--shelf-panel "Body Sheet Metal Except Doors: Shelf Panel")
+*   [Sunroof](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--sunroof "Body Sheet Metal Except Doors: Sunroof")
+
+[Brakes](https://www.moparamerica.com/#cat-brakes-parts "Brakes")
+
+*   [Brake Master Cylinder](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--brake-master-cylinder "Brakes: Brake Master Cylinder")
+*   [Brake Pedals](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--brake-pedals "Brakes: Brake Pedals")
+*   [Front Brakes](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--front-brakes "Brakes: Front Brakes")
+*   [Hydraulic Control Unit, Brake Tubes and Hoses](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--hydraulic-control-unit-brake-tubes-and-hoses "Brakes: Hydraulic Control Unit, Brake Tubes and Hoses")
+*   [Parking Brake Lever, Cables, and Rear Disc Park Brake Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--parking-brake-lever-cables-and-rear-disc-park-brake-assembly "Brakes: Parking Brake Lever, Cables, and Rear Disc Park Brake Assembly")
+*   [Power Brake Booster](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--power-brake-booster "Brakes: Power Brake Booster")
+*   [Rear Brakes](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--rear-brakes "Brakes: Rear Brakes")
+
+[Clutch](https://www.moparamerica.com/#cat-clutch-parts "Clutch")
+
+*   [Clutch](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch "Clutch: Clutch")
+*   [Clutch Controls](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch-controls "Clutch: Clutch Controls")
+*   [Clutch Housing](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch-housing "Clutch: Clutch Housing")
+*   [Clutch Pedals](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch-pedals "Clutch: Clutch Pedals")
+
+[Conversion and Upfit Packages](https://www.moparamerica.com/#cat-conversion-and-upfit-packages-parts "Conversion and Upfit Packages")
+
+*   [Exterior](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/conversion-and-upfit-packages--exterior "Conversion and Upfit Packages: Exterior")
+
+[Cooling](https://www.moparamerica.com/#cat-cooling-parts "Cooling")
+
+*   [Drive Belts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--drive-belts "Cooling: Drive Belts")
+*   [Engine Coolant Reservoir (Bottle)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--engine-coolant-reservoir-bottle "Cooling: Engine Coolant Reservoir (Bottle)")
+*   [Pulleys and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--pulleys-and-related-parts "Cooling: Pulleys and Related Parts")
+*   [Radiator and Related Parts; Charge Air Cooler](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--radiator-and-related-parts-charge-air-cooler "Cooling: Radiator and Related Parts; Charge Air Cooler")
+*   [Transmission Oil Cooler, and Lines](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--transmission-oil-cooler-and-lines "Cooling: Transmission Oil Cooler, and Lines")
+*   [Water Pump and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--water-pump-and-related-parts "Cooling: Water Pump and Related Parts")
+
+[Crate Engines](https://www.moparamerica.com/#cat-crate-engines-accessories "Crate Engines")
+
+*   [Engines](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-crate-engines--engines "Crate Engines: Engines")
+
+[Doors, Door Mirrors and Related Parts](https://www.moparamerica.com/#cat-doors-door-mirrors-and-related-parts-parts "Doors, Door Mirrors and Related Parts")
+
+*   [Exterior Mirror](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/doors-door-mirrors-and-related-parts--exterior-mirror "Doors, Door Mirrors and Related Parts: Exterior Mirror")
+*   [Front Door](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/doors-door-mirrors-and-related-parts--front-door "Doors, Door Mirrors and Related Parts: Front Door")
+*   [Weatherstrips and Seals](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/doors-door-mirrors-and-related-parts--weatherstrips-and-seals "Doors, Door Mirrors and Related Parts: Weatherstrips and Seals")
+
+[Drag Pak](https://www.moparamerica.com/#cat-drag-pak-accessories "Drag Pak")
+
+*   [Race Kits](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-drag-pak--race-kits "Drag Pak: Race Kits")
+
+[Electrical](https://www.moparamerica.com/#cat-electrical-parts "Electrical")
+
+*   [Battery, Battery Tray and Cables](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--battery-battery-tray-and-cables "Electrical: Battery, Battery Tray and Cables")
+*   [Generators / Alternators](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--generators-alternators "Electrical: Generators / Alternators")
+*   [Horns](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--horns "Electrical: Horns")
+*   [Ignition - Spark Plugs, Cables, Coils, and Glow Plugs](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--ignition-spark-plugs-cables-coils-and-glow-plugs "Electrical: Ignition - Spark Plugs, Cables, Coils, and Glow Plugs")
+*   [Instrument Panel Cluster](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--instrument-panel-cluster "Electrical: Instrument Panel Cluster")
+*   [Keys, Modules and Engine Controllers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--keys-modules-and-engine-controllers "Electrical: Keys, Modules and Engine Controllers")
+*   [Lamps-Interior and Exterior](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--lamps-interior-and-exterior "Electrical: Lamps-Interior and Exterior")
+*   [Park Assist](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--park-assist "Electrical: Park Assist")
+*   [Power Distribution Center, Fuse Block, Junction Block, Relays and Fuses](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--power-distribution-center-fuse-block-junction-block-relays-and-fuses "Electrical: Power Distribution Center, Fuse Block, Junction Block, Relays and Fuses")
+*   [Radio, Antenna, Speakers, DVD, and Video systems](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--radio-antenna-speakers-dvd-and-video-systems "Electrical: Radio, Antenna, Speakers, DVD, and Video systems")
+*   [Sensors](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--sensors "Electrical: Sensors")
+*   [Speed Control](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--speed-control "Electrical: Speed Control")
+*   [Starters](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--starters "Electrical: Starters")
+*   [Switches](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--switches "Electrical: Switches")
+*   [Wiper and Washer System](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiper-and-washer-system "Electrical: Wiper and Washer System")
+*   [Wiring-Body and Accessories](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-body-and-accessories "Electrical: Wiring-Body and Accessories")
+*   [Wiring-Headlamp to Dash](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-headlamp-to-dash "Electrical: Wiring-Headlamp to Dash")
+*   [Wiring-Instrument Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-instrument-panel "Electrical: Wiring-Instrument Panel")
+*   [Wiring-Powertrain](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-powertrain "Electrical: Wiring-Powertrain")
+
+[Emission Controls](https://www.moparamerica.com/#cat-emission-controls-parts "Emission Controls")
+
+*   [Emission Harness](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/emission-controls--emission-harness "Emission Controls: Emission Harness")
+*   [Vacuum Canister/Leak Detection Pump](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/emission-controls--vacuum-canister-leak-detection-pump "Emission Controls: Vacuum Canister/Leak Detection Pump")
+
+[Exhaust](https://www.moparamerica.com/#cat-exhaust-parts "Exhaust")
+
+*   [Exhaust System](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exhaust--exhaust-system "Exhaust: Exhaust System")
+
+[Exterior Accessories](https://www.moparamerica.com/#cat-exterior-accessories-accessories "Exterior Accessories")
+
+*   [Covers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--covers "Exterior Accessories: Covers")
+*   [Exterior Appearance](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--exterior-appearance "Exterior Accessories: Exterior Appearance")
+*   [License Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--license-plate "Exterior Accessories: License Plate")
+*   [Locks](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--locks "Exterior Accessories: Locks")
+*   [Protective Guards](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--protective-guards "Exterior Accessories: Protective Guards")
+*   [Splash Guards](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--splash-guards "Exterior Accessories: Splash Guards")
+*   [Wheels](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--wheels "Exterior Accessories: Wheels")
+
+[Exterior Ornamentation](https://www.moparamerica.com/#cat-exterior-ornamentation-parts "Exterior Ornamentation")
+
+*   [Decals and Tape stripes](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--decals-and-tape-stripes "Exterior Ornamentation: Decals and Tape stripes")
+*   [Grilles](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--grilles "Exterior Ornamentation: Grilles")
+*   [Moldings and Ornamentation](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--moldings-and-ornamentation "Exterior Ornamentation: Moldings and Ornamentation")
+*   [Nameplates](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--nameplates "Exterior Ornamentation: Nameplates")
+
+[Frame, Bumper and Fascia](https://www.moparamerica.com/#cat-frame-bumper-and-fascia-parts "Frame, Bumper and Fascia")
+
+*   [Frames](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/frame-bumper-and-fascia--frames "Frame, Bumper and Fascia: Frames")
+*   [Front Bumper and Fascia](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/frame-bumper-and-fascia--front-bumper-and-fascia "Frame, Bumper and Fascia: Front Bumper and Fascia")
+*   [Rear Bumper and Fascia](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/frame-bumper-and-fascia--rear-bumper-and-fascia "Frame, Bumper and Fascia: Rear Bumper and Fascia")
+
+[Front Suspension](https://www.moparamerica.com/#cat-front-suspension-parts "Front Suspension")
+
+*   [Front Stabilizer Bar](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/front-suspension--front-stabilizer-bar "Front Suspension: Front Stabilizer Bar")
+*   [Front Suspension, Strut and Cradle](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/front-suspension--front-suspension-strut-and-cradle "Front Suspension: Front Suspension, Strut and Cradle")
+
+[Fuel](https://www.moparamerica.com/#cat-fuel-parts "Fuel")
+
+*   [Accelerator Pedal](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--accelerator-pedal "Fuel: Accelerator Pedal")
+*   [Air Cleaner](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--air-cleaner "Fuel: Air Cleaner")
+*   [Fuel Lines](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-lines "Fuel: Fuel Lines")
+*   [Fuel Pump and Sending Unit](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-pump-and-sending-unit "Fuel: Fuel Pump and Sending Unit")
+*   [Fuel Rail and Injectors](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-rail-and-injectors "Fuel: Fuel Rail and Injectors")
+*   [Fuel Tank](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-tank "Fuel: Fuel Tank")
+*   [Fuel Tank Filler Tube](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-tank-filler-tube "Fuel: Fuel Tank Filler Tube")
+*   [Throttle Body](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--throttle-body "Fuel: Throttle Body")
+
+[Glass](https://www.moparamerica.com/#cat-glass-parts "Glass")
+
+*   [Glass and Interior Rear View Mirror](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/glass--glass-and-interior-rear-view-mirror "Glass: Glass and Interior Rear View Mirror")
+
+[Interior Accessories](https://www.moparamerica.com/#cat-interior-accessories-accessories "Interior Accessories")
+
+*   [Air Purification](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--air-purification "Interior Accessories: Air Purification")
+*   [Cargo Trays & Mats](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--cargo-trays-and-mats "Interior Accessories: Cargo Trays & Mats")
+*   [Floor Mats](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--floor-mats "Interior Accessories: Floor Mats")
+*   [Interior Appearance](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--interior-appearance "Interior Accessories: Interior Appearance")
+
+[Interior Trim](https://www.moparamerica.com/#cat-interior-trim-parts "Interior Trim")
+
+*   [Carpets, Floor Mats, Load Floor, and Silencers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--carpets-floor-mats-load-floor-and-silencers "Interior Trim: Carpets, Floor Mats, Load Floor, and Silencers")
+*   [Consoles](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--consoles "Interior Trim: Consoles")
+*   [Door Trim Panels-Front and Rear](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--door-trim-panels-front-and-rear "Interior Trim: Door Trim Panels-Front and Rear")
+*   [Front Seats - Adjusters, Recliners, Shields and Risers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--front-seats-adjusters-recliners-shields-and-risers "Interior Trim: Front Seats - Adjusters, Recliners, Shields and Risers")
+*   [Front Seats - First Row](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--front-seats-first-row "Interior Trim: Front Seats - First Row")
+*   [Headliners-Visors-Assist Straps](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--headliners-visors-assist-straps "Interior Trim: Headliners-Visors-Assist Straps")
+*   [Instrument Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--instrument-panel "Interior Trim: Instrument Panel")
+*   [Panels-Moldings-Scuff Plates, Pillar, Cowl, 1/4 Panel Trim and Cargo Covers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--panels-moldings-scuff-plates-pillar-cowl-1-4-panel-trim-and-cargo-covers "Interior Trim: Panels-Moldings-Scuff Plates, Pillar, Cowl, 1/4 Panel Trim and Cargo Covers")
+*   [Rear Seats - Second Row](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--rear-seats-second-row "Interior Trim: Rear Seats - Second Row")
+*   [Rear Seats - Second Row - Adjusters, Recliners, Shields and Risers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--rear-seats-second-row-adjusters-recliners-shields-and-risers "Interior Trim: Rear Seats - Second Row - Adjusters, Recliners, Shields and Risers")
+
+[Labels](https://www.moparamerica.com/#cat-labels-parts "Labels")
+
+*   [Under Hood](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/labels--under-hood "Labels: Under Hood")
+
+[Lifestyle & Off-Road Accessories](https://www.moparamerica.com/#cat-lifestyle-and-off-road-accessories-accessories "Lifestyle & Off-Road Accessories")
+
+*   [Safety Kits](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-lifestyle-and-off-road-accessories--safety-kits "Lifestyle & Off-Road Accessories: Safety Kits")
+
+[Modern Performance](https://www.moparamerica.com/#cat-modern-performance-accessories "Modern Performance")
+
+*   [Engine Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-modern-performance--engine-parts "Modern Performance: Engine Parts")
+*   [Intake & Air](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-modern-performance--intake-and-air "Modern Performance: Intake & Air")
+*   [Suspension](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-modern-performance--suspension "Modern Performance: Suspension")
+
+[Mopar Accessories - Component Parts](https://www.moparamerica.com/#cat-mopar-accessories-component-parts-parts "Mopar Accessories - Component Parts")
+
+*   [Driving Convenience](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--driving-convenience "Mopar Accessories - Component Parts: Driving Convenience")
+*   [Exterior Appearance](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--exterior-appearance "Mopar Accessories - Component Parts: Exterior Appearance")
+*   [Fog Lights & Electrical](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--fog-lights-and-electrical "Mopar Accessories - Component Parts: Fog Lights & Electrical")
+*   [Interior Protection](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--interior-protection "Mopar Accessories - Component Parts: Interior Protection")
+*   [Lighting and Electrical Accessories](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--lighting-and-electrical-accessories "Mopar Accessories - Component Parts: Lighting and Electrical Accessories")
+*   [Powertrain](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--powertrain "Mopar Accessories - Component Parts: Powertrain")
+
+[Rear Suspension](https://www.moparamerica.com/#cat-rear-suspension-parts "Rear Suspension")
+
+*   [Rear Stabilizer](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-suspension--rear-stabilizer "Rear Suspension: Rear Stabilizer")
+*   [Rear Suspension and Cradle](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-suspension--rear-suspension-and-cradle "Rear Suspension: Rear Suspension and Cradle")
+
+[Rear Wheel Drive; Differential and Drive Line](https://www.moparamerica.com/#cat-rear-wheel-drive-differential-and-drive-line-parts "Rear Wheel Drive; Differential and Drive Line")
+
+*   [Drive Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--drive-shaft "Rear Wheel Drive; Differential and Drive Line: Drive Shaft")
+*   [Rear Axle Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--rear-axle-assembly "Rear Wheel Drive; Differential and Drive Line: Rear Axle Assembly")
+*   [Rear Axle Shafts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--rear-axle-shafts "Rear Wheel Drive; Differential and Drive Line: Rear Axle Shafts")
+*   [Rear Axle; Housing, Differential and Vent](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--rear-axle-housing-differential-and-vent "Rear Wheel Drive; Differential and Drive Line: Rear Axle; Housing, Differential and Vent")
+
+[Restraints](https://www.moparamerica.com/#cat-restraints-parts "Restraints")
+
+*   [Air Bags](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/restraints--air-bags "Restraints: Air  Bags")
+*   [Seat Belts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/restraints--seat-belts "Restraints: Seat Belts")
+
+[Steering](https://www.moparamerica.com/#cat-steering-parts "Steering")
+
+*   [Power Steering Hoses](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--power-steering-hoses "Steering: Power Steering Hoses")
+*   [Steering Column and Intermediate Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--steering-column-and-intermediate-shaft "Steering: Steering Column and Intermediate Shaft")
+*   [Steering Gear](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--steering-gear "Steering: Steering Gear")
+*   [Steering Wheel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--steering-wheel "Steering: Steering Wheel")
+
+[TR6060; 6-Speed; Manual Transmission](https://www.moparamerica.com/#cat-tr6060-6-speed-manual-transmission-parts "TR6060; 6-Speed; Manual Transmission")
+
+*   [Case, and Extension](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--case-and-extension "TR6060; 6-Speed; Manual Transmission: Case, and Extension")
+*   [Fork and Rails](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--fork-and-rails "TR6060; 6-Speed; Manual Transmission: Fork and Rails")
+*   [Gear Train](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--gear-train "TR6060; 6-Speed; Manual Transmission: Gear Train")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--gearshift-controls-and-related-parts "TR6060; 6-Speed; Manual Transmission: Gearshift Controls and Related Parts")
+*   [Manual Transmission / Transaxle](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--manual-transmission-transaxle "TR6060; 6-Speed; Manual Transmission: Manual Transmission / Transaxle")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--mounting-and-skid-plate "TR6060; 6-Speed; Manual Transmission: Mounting and Skid Plate")
+
+[Vehicle Care Products](https://www.moparamerica.com/#cat-vehicle-care-products-accessories "Vehicle Care Products")
+
+*   [Mopar](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-vehicle-care-products--mopar "Vehicle Care Products: Mopar")
+*   [Touch Up Paint](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-vehicle-care-products--touch-up-paint "Vehicle Care Products: Touch Up Paint")
+
+[Wheels](https://www.moparamerica.com/#cat-wheels-parts "Wheels")
+
+*   [Emergency Kit](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--emergency-kit "Wheels: Emergency Kit")
+*   [Jack Stowage](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--jack-stowage "Wheels: Jack Stowage")
+*   [Tire Monitoring System](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--tire-monitoring-system "Wheels: Tire Monitoring System")
+*   [Wheel Covers and Center Caps](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--wheel-covers-and-center-caps "Wheels: Wheel Covers and Center Caps")
+*   [Wheel Spare](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--wheel-spare "Wheels: Wheel Spare")
+*   [Wheels, Tires and Hardware](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--wheels-tires-and-hardware "Wheels: Wheels, Tires and Hardware")
+
+[3.6L Gas; Engine](https://www.moparamerica.com/#cat-3-6l-gas-engine-parts "3.6L Gas; Engine")
+
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/3-6l-gas-engine--engine-mounting "3.6L Gas; Engine: Engine Mounting")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/3-6l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "3.6L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+
+[5.7L Gas; Engine](https://www.moparamerica.com/#cat-5-7l-gas-engine-parts "5.7L Gas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--camshaft-and-valve "5.7L Gas; Engine: Camshaft and Valve")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "5.7L Gas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Cylinder Block](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--cylinder-block "5.7L Gas; Engine: Cylinder Block")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--engine-mounting "5.7L Gas; Engine: Engine Mounting")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "5.7L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--manifolds-and-vacuum-fittings "5.7L Gas; Engine: Manifolds and Vacuum Fittings")
+
+[5.7LGas; Engine](https://www.moparamerica.com/#cat-5-7lgas-engine-parts "5.7LGas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--camshaft-and-valve "5.7LGas; Engine: Camshaft and Valve")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "5.7LGas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--engine-mounting "5.7LGas; Engine: Engine Mounting")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--engine-oiling-oil-pan-and-indicator-dipstick "5.7LGas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--manifolds-and-vacuum-fittings "5.7LGas; Engine: Manifolds and Vacuum Fittings")
+
+[6.2L Gas; Engine](https://www.moparamerica.com/#cat-6-2l-gas-engine-parts "6.2L Gas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--camshaft-and-valve "6.2L Gas; Engine: Camshaft and Valve")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "6.2L Gas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--engine-mounting "6.2L Gas; Engine: Engine Mounting")
+*   [Engine Oil Cooler](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--engine-oil-cooler "6.2L Gas; Engine: Engine Oil Cooler")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "6.2L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--manifolds-and-vacuum-fittings "6.2L Gas; Engine: Manifolds and Vacuum Fittings")
+*   [Timing Belt/Chain and Cover and Balance Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--timing-belt-chain-and-cover-and-balance-shaft "6.2L Gas; Engine: Timing Belt/Chain and Cover and Balance Shaft")
+*   [Turbo and Super Chargers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--turbo-and-super-chargers "6.2L Gas; Engine: Turbo and Super Chargers")
+
+[6.4L Gas; Engine](https://www.moparamerica.com/#cat-6-4l-gas-engine-parts "6.4L Gas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--camshaft-and-valve "6.4L Gas; Engine: Camshaft and Valve")
+*   [Crankcase Ventilation](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--crankcase-ventilation "6.4L Gas; Engine: Crankcase Ventilation")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "6.4L Gas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Cylinder Block](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--cylinder-block "6.4L Gas; Engine: Cylinder Block")
+*   [Cylinder Head](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--cylinder-head "6.4L Gas; Engine: Cylinder Head")
+*   [Engine Identification, Service Engines & Engine Service Kits](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-identification-service-engines-and-engine-service-kits "6.4L Gas; Engine: Engine Identification, Service Engines & Engine Service Kits")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-mounting "6.4L Gas; Engine: Engine Mounting")
+*   [Engine Oil Cooler](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-oil-cooler "6.4L Gas; Engine: Engine Oil Cooler")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "6.4L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--manifolds-and-vacuum-fittings "6.4L Gas; Engine: Manifolds and Vacuum Fittings")
+*   [Timing Belt/Chain and Cover and Balance Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--timing-belt-chain-and-cover-and-balance-shaft "6.4L Gas; Engine: Timing Belt/Chain and Cover and Balance Shaft")
+
+[845RE; 8-Speed; Automatic Transmission](https://www.moparamerica.com/#cat-845re-8-speed-automatic-transmission-parts "845RE; 8-Speed; Automatic Transmission")
+
+*   [Automatic Transmission / Transaxle and Torque Converter](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--automatic-transmission-transaxle-and-torque-converter "845RE; 8-Speed; Automatic Transmission: Automatic Transmission / Transaxle and Torque Converter")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--gearshift-controls-and-related-parts "845RE; 8-Speed; Automatic Transmission: Gearshift Controls and Related Parts")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--mounting-and-skid-plate "845RE; 8-Speed; Automatic Transmission: Mounting and Skid Plate")
+*   [Oil Pump](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--oil-pump "845RE; 8-Speed; Automatic Transmission: Oil Pump")
+*   [Valve Body, Accumulator, Solenoid and Parking Sprag](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--valve-body-accumulator-solenoid-and-parking-sprag "845RE; 8-Speed; Automatic Transmission: Valve Body, Accumulator, Solenoid and Parking Sprag")
+
+[8HP70; 8-Speed; Automatic Transmission](https://www.moparamerica.com/#cat-8hp70-8-speed-automatic-transmission-parts "8HP70; 8-Speed; Automatic Transmission")
+
+*   [Automatic Transmission / Transaxle and Torque Converter](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--automatic-transmission-transaxle-and-torque-converter "8HP70; 8-Speed; Automatic Transmission: Automatic Transmission / Transaxle and Torque Converter")
+*   [Case, Extension, Oil Pan, and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--case-extension-oil-pan-and-indicator-dipstick "8HP70; 8-Speed; Automatic Transmission: Case, Extension, Oil Pan, and Indicator (Dipstick)")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--gearshift-controls-and-related-parts "8HP70; 8-Speed; Automatic Transmission: Gearshift Controls and Related Parts")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--mounting-and-skid-plate "8HP70; 8-Speed; Automatic Transmission: Mounting and Skid Plate")
+*   [Oil Pump](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--oil-pump "8HP70; 8-Speed; Automatic Transmission: Oil Pump")
+*   [Valve Body, Accumulator, Solenoid and Parking Sprag](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--valve-body-accumulator-solenoid-and-parking-sprag "8HP70; 8-Speed; Automatic Transmission: Valve Body, Accumulator, Solenoid and Parking Sprag")
+
+[8HP90; 8-Speed; Automatic Transmission](https://www.moparamerica.com/#cat-8hp90-8-speed-automatic-transmission-parts "8HP90; 8-Speed; Automatic Transmission")
+
+*   [Automatic Transmission / Transaxle and Torque Converter](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp90-8-speed-automatic-transmission--automatic-transmission-transaxle-and-torque-converter "8HP90; 8-Speed; Automatic Transmission: Automatic Transmission / Transaxle and Torque Converter")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp90-8-speed-automatic-transmission--gearshift-controls-and-related-parts "8HP90; 8-Speed; Automatic Transmission: Gearshift Controls and Related Parts")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp90-8-speed-automatic-transmission--mounting-and-skid-plate "8HP90; 8-Speed; Automatic Transmission: Mounting and Skid Plate")
+
+[Air Conditioners and Heaters](https://www.moparamerica.com/#cat-air-conditioners-and-heaters-parts "Air Conditioners and Heaters")
+
+*   [Air Conditioner and Heater Controls](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-and-heater-controls "Air Conditioners and Heaters: Air Conditioner and Heater Controls")
+*   [Air Conditioner and Heater Plumbing](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-and-heater-plumbing "Air Conditioners and Heaters: Air Conditioner and Heater Plumbing")
+*   [Air Conditioner and Heater Units](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-and-heater-units "Air Conditioners and Heaters: Air Conditioner and Heater Units")
+*   [Air Conditioner Compressor and Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-compressor-and-mounting "Air Conditioners and Heaters: Air Conditioner Compressor and Mounting")
+*   [Air Ducts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-ducts "Air Conditioners and Heaters: Air Ducts")
+
+[All Wheel Drive; Differential and Drive Line](https://www.moparamerica.com/#cat-all-wheel-drive-differential-and-drive-line-parts "All Wheel Drive; Differential and Drive Line")
+
+*   [Drive Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--drive-shaft "All Wheel Drive; Differential and Drive Line: Drive Shaft")
+*   [Front Axle Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--front-axle-assembly "All Wheel Drive; Differential and Drive Line: Front Axle Assembly")
+*   [Front Axle Drive Shafts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--front-axle-drive-shafts "All Wheel Drive; Differential and Drive Line: Front Axle Drive Shafts")
+*   [Rear Axle Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--rear-axle-assembly "All Wheel Drive; Differential and Drive Line: Rear Axle Assembly")
+*   [Rear Axle Shafts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--rear-axle-shafts "All Wheel Drive; Differential and Drive Line: Rear Axle Shafts")
+*   [Rear Axle; Housing, Differential and Vent](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--rear-axle-housing-differential-and-vent "All Wheel Drive; Differential and Drive Line: Rear Axle; Housing, Differential and Vent")
+
+[Body Sheet Metal Except Doors](https://www.moparamerica.com/#cat-body-sheet-metal-except-doors-parts "Body Sheet Metal Except Doors")
+
+*   [Aperture Panel and Pillar Supports](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--aperture-panel-and-pillar-supports "Body Sheet Metal Except Doors: Aperture Panel and Pillar Supports")
+*   [Body Structure Welds, Weatherstrips, Seals, Sealers and Adhesives](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--body-structure-welds-weatherstrips-seals-sealers-and-adhesives "Body Sheet Metal Except Doors: Body Structure Welds, Weatherstrips, Seals, Sealers and Adhesives")
+*   [Cowl and Dash Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--cowl-and-dash-panel "Body Sheet Metal Except Doors: Cowl and Dash Panel")
+*   [Deck Lid](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--deck-lid "Body Sheet Metal Except Doors: Deck Lid")
+*   [Fenders](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--fenders "Body Sheet Metal Except Doors: Fenders")
+*   [Floor Pans](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--floor-pans "Body Sheet Metal Except Doors: Floor Pans")
+*   [Hood and Hood Release](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--hood-and-hood-release "Body Sheet Metal Except Doors: Hood and Hood Release")
+*   [Plugs](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--plugs "Body Sheet Metal Except Doors: Plugs")
+*   [Roof](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--roof "Body Sheet Metal Except Doors: Roof")
+*   [Shelf Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--shelf-panel "Body Sheet Metal Except Doors: Shelf Panel")
+*   [Sunroof](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--sunroof "Body Sheet Metal Except Doors: Sunroof")
+
+[Brakes](https://www.moparamerica.com/#cat-brakes-parts "Brakes")
+
+*   [Brake Master Cylinder](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--brake-master-cylinder "Brakes: Brake Master Cylinder")
+*   [Brake Pedals](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--brake-pedals "Brakes: Brake Pedals")
+*   [Front Brakes](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--front-brakes "Brakes: Front Brakes")
+*   [Hydraulic Control Unit, Brake Tubes and Hoses](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--hydraulic-control-unit-brake-tubes-and-hoses "Brakes: Hydraulic Control Unit, Brake Tubes and Hoses")
+*   [Parking Brake Lever, Cables, and Rear Disc Park Brake Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--parking-brake-lever-cables-and-rear-disc-park-brake-assembly "Brakes: Parking Brake Lever, Cables, and Rear Disc Park Brake Assembly")
+*   [Power Brake Booster](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--power-brake-booster "Brakes: Power Brake Booster")
+*   [Rear Brakes](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--rear-brakes "Brakes: Rear Brakes")
+
+[Clutch](https://www.moparamerica.com/#cat-clutch-parts "Clutch")
+
+*   [Clutch](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch "Clutch: Clutch")
+*   [Clutch Controls](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch-controls "Clutch: Clutch Controls")
+*   [Clutch Housing](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch-housing "Clutch: Clutch Housing")
+*   [Clutch Pedals](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch-pedals "Clutch: Clutch Pedals")
+
+[Conversion and Upfit Packages](https://www.moparamerica.com/#cat-conversion-and-upfit-packages-parts "Conversion and Upfit Packages")
+
+*   [Exterior](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/conversion-and-upfit-packages--exterior "Conversion and Upfit Packages: Exterior")
+
+[Cooling](https://www.moparamerica.com/#cat-cooling-parts "Cooling")
+
+*   [Drive Belts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--drive-belts "Cooling: Drive Belts")
+*   [Engine Coolant Reservoir (Bottle)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--engine-coolant-reservoir-bottle "Cooling: Engine Coolant Reservoir (Bottle)")
+*   [Pulleys and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--pulleys-and-related-parts "Cooling: Pulleys and Related Parts")
+*   [Radiator and Related Parts; Charge Air Cooler](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--radiator-and-related-parts-charge-air-cooler "Cooling: Radiator and Related Parts; Charge Air Cooler")
+*   [Transmission Oil Cooler, and Lines](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--transmission-oil-cooler-and-lines "Cooling: Transmission Oil Cooler, and Lines")
+*   [Water Pump and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--water-pump-and-related-parts "Cooling: Water Pump and Related Parts")
+
+[Doors, Door Mirrors and Related Parts](https://www.moparamerica.com/#cat-doors-door-mirrors-and-related-parts-parts "Doors, Door Mirrors and Related Parts")
+
+*   [Exterior Mirror](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/doors-door-mirrors-and-related-parts--exterior-mirror "Doors, Door Mirrors and Related Parts: Exterior Mirror")
+*   [Front Door](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/doors-door-mirrors-and-related-parts--front-door "Doors, Door Mirrors and Related Parts: Front Door")
+*   [Weatherstrips and Seals](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/doors-door-mirrors-and-related-parts--weatherstrips-and-seals "Doors, Door Mirrors and Related Parts: Weatherstrips and Seals")
+
+[Electrical](https://www.moparamerica.com/#cat-electrical-parts "Electrical")
+
+*   [Battery, Battery Tray and Cables](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--battery-battery-tray-and-cables "Electrical: Battery, Battery Tray and Cables")
+*   [Generators / Alternators](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--generators-alternators "Electrical: Generators / Alternators")
+*   [Horns](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--horns "Electrical: Horns")
+*   [Ignition - Spark Plugs, Cables, Coils, and Glow Plugs](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--ignition-spark-plugs-cables-coils-and-glow-plugs "Electrical: Ignition - Spark Plugs, Cables, Coils, and Glow Plugs")
+*   [Instrument Panel Cluster](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--instrument-panel-cluster "Electrical: Instrument Panel Cluster")
+*   [Keys, Modules and Engine Controllers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--keys-modules-and-engine-controllers "Electrical: Keys, Modules and Engine Controllers")
+*   [Lamps-Interior and Exterior](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--lamps-interior-and-exterior "Electrical: Lamps-Interior and Exterior")
+*   [Park Assist](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--park-assist "Electrical: Park Assist")
+*   [Power Distribution Center, Fuse Block, Junction Block, Relays and Fuses](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--power-distribution-center-fuse-block-junction-block-relays-and-fuses "Electrical: Power Distribution Center, Fuse Block, Junction Block, Relays and Fuses")
+*   [Radio, Antenna, Speakers, DVD, and Video systems](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--radio-antenna-speakers-dvd-and-video-systems "Electrical: Radio, Antenna, Speakers, DVD, and Video systems")
+*   [Sensors](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--sensors "Electrical: Sensors")
+*   [Speed Control](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--speed-control "Electrical: Speed Control")
+*   [Starters](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--starters "Electrical: Starters")
+*   [Switches](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--switches "Electrical: Switches")
+*   [Wiper and Washer System](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiper-and-washer-system "Electrical: Wiper and Washer System")
+*   [Wiring-Body and Accessories](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-body-and-accessories "Electrical: Wiring-Body and Accessories")
+*   [Wiring-Headlamp to Dash](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-headlamp-to-dash "Electrical: Wiring-Headlamp to Dash")
+*   [Wiring-Instrument Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-instrument-panel "Electrical: Wiring-Instrument Panel")
+*   [Wiring-Powertrain](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-powertrain "Electrical: Wiring-Powertrain")
+
+[Emission Controls](https://www.moparamerica.com/#cat-emission-controls-parts "Emission Controls")
+
+*   [Emission Harness](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/emission-controls--emission-harness "Emission Controls: Emission Harness")
+*   [Vacuum Canister/Leak Detection Pump](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/emission-controls--vacuum-canister-leak-detection-pump "Emission Controls: Vacuum Canister/Leak Detection Pump")
+
+[Exhaust](https://www.moparamerica.com/#cat-exhaust-parts "Exhaust")
+
+*   [Exhaust System](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exhaust--exhaust-system "Exhaust: Exhaust System")
+
+[Exterior Ornamentation](https://www.moparamerica.com/#cat-exterior-ornamentation-parts "Exterior Ornamentation")
+
+*   [Decals and Tape stripes](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--decals-and-tape-stripes "Exterior Ornamentation: Decals and Tape stripes")
+*   [Grilles](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--grilles "Exterior Ornamentation: Grilles")
+*   [Moldings and Ornamentation](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--moldings-and-ornamentation "Exterior Ornamentation: Moldings and Ornamentation")
+*   [Nameplates](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--nameplates "Exterior Ornamentation: Nameplates")
+
+[Frame, Bumper and Fascia](https://www.moparamerica.com/#cat-frame-bumper-and-fascia-parts "Frame, Bumper and Fascia")
+
+*   [Frames](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/frame-bumper-and-fascia--frames "Frame, Bumper and Fascia: Frames")
+*   [Front Bumper and Fascia](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/frame-bumper-and-fascia--front-bumper-and-fascia "Frame, Bumper and Fascia: Front Bumper and Fascia")
+*   [Rear Bumper and Fascia](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/frame-bumper-and-fascia--rear-bumper-and-fascia "Frame, Bumper and Fascia: Rear Bumper and Fascia")
+
+[Front Suspension](https://www.moparamerica.com/#cat-front-suspension-parts "Front Suspension")
+
+*   [Front Stabilizer Bar](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/front-suspension--front-stabilizer-bar "Front Suspension: Front Stabilizer Bar")
+*   [Front Suspension, Strut and Cradle](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/front-suspension--front-suspension-strut-and-cradle "Front Suspension: Front Suspension, Strut and Cradle")
+
+[Fuel](https://www.moparamerica.com/#cat-fuel-parts "Fuel")
+
+*   [Accelerator Pedal](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--accelerator-pedal "Fuel: Accelerator Pedal")
+*   [Air Cleaner](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--air-cleaner "Fuel: Air Cleaner")
+*   [Fuel Lines](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-lines "Fuel: Fuel Lines")
+*   [Fuel Pump and Sending Unit](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-pump-and-sending-unit "Fuel: Fuel Pump and Sending Unit")
+*   [Fuel Rail and Injectors](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-rail-and-injectors "Fuel: Fuel Rail and Injectors")
+*   [Fuel Tank](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-tank "Fuel: Fuel Tank")
+*   [Fuel Tank Filler Tube](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-tank-filler-tube "Fuel: Fuel Tank Filler Tube")
+*   [Throttle Body](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--throttle-body "Fuel: Throttle Body")
+
+[Glass](https://www.moparamerica.com/#cat-glass-parts "Glass")
+
+*   [Glass and Interior Rear View Mirror](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/glass--glass-and-interior-rear-view-mirror "Glass: Glass and Interior Rear View Mirror")
+
+[Interior Trim](https://www.moparamerica.com/#cat-interior-trim-parts "Interior Trim")
+
+*   [Carpets, Floor Mats, Load Floor, and Silencers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--carpets-floor-mats-load-floor-and-silencers "Interior Trim: Carpets, Floor Mats, Load Floor, and Silencers")
+*   [Consoles](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--consoles "Interior Trim: Consoles")
+*   [Door Trim Panels-Front and Rear](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--door-trim-panels-front-and-rear "Interior Trim: Door Trim Panels-Front and Rear")
+*   [Front Seats - Adjusters, Recliners, Shields and Risers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--front-seats-adjusters-recliners-shields-and-risers "Interior Trim: Front Seats - Adjusters, Recliners, Shields and Risers")
+*   [Front Seats - First Row](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--front-seats-first-row "Interior Trim: Front Seats - First Row")
+*   [Headliners-Visors-Assist Straps](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--headliners-visors-assist-straps "Interior Trim: Headliners-Visors-Assist Straps")
+*   [Instrument Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--instrument-panel "Interior Trim: Instrument Panel")
+*   [Panels-Moldings-Scuff Plates, Pillar, Cowl, 1/4 Panel Trim and Cargo Covers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--panels-moldings-scuff-plates-pillar-cowl-1-4-panel-trim-and-cargo-covers "Interior Trim: Panels-Moldings-Scuff Plates, Pillar, Cowl, 1/4 Panel Trim and Cargo Covers")
+*   [Rear Seats - Second Row](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--rear-seats-second-row "Interior Trim: Rear Seats - Second Row")
+*   [Rear Seats - Second Row - Adjusters, Recliners, Shields and Risers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--rear-seats-second-row-adjusters-recliners-shields-and-risers "Interior Trim: Rear Seats - Second Row - Adjusters, Recliners, Shields and Risers")
+
+[Labels](https://www.moparamerica.com/#cat-labels-parts "Labels")
+
+*   [Under Hood](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/labels--under-hood "Labels: Under Hood")
+
+[Mopar Accessories - Component Parts](https://www.moparamerica.com/#cat-mopar-accessories-component-parts-parts "Mopar Accessories - Component Parts")
+
+*   [Driving Convenience](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--driving-convenience "Mopar Accessories - Component Parts: Driving Convenience")
+*   [Exterior Appearance](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--exterior-appearance "Mopar Accessories - Component Parts: Exterior Appearance")
+*   [Fog Lights & Electrical](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--fog-lights-and-electrical "Mopar Accessories - Component Parts: Fog Lights & Electrical")
+*   [Interior Protection](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--interior-protection "Mopar Accessories - Component Parts: Interior Protection")
+*   [Lighting and Electrical Accessories](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--lighting-and-electrical-accessories "Mopar Accessories - Component Parts: Lighting and Electrical Accessories")
+*   [Powertrain](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--powertrain "Mopar Accessories - Component Parts: Powertrain")
+
+[Rear Suspension](https://www.moparamerica.com/#cat-rear-suspension-parts "Rear Suspension")
+
+*   [Rear Stabilizer](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-suspension--rear-stabilizer "Rear Suspension: Rear Stabilizer")
+*   [Rear Suspension and Cradle](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-suspension--rear-suspension-and-cradle "Rear Suspension: Rear Suspension and Cradle")
+
+[Rear Wheel Drive; Differential and Drive Line](https://www.moparamerica.com/#cat-rear-wheel-drive-differential-and-drive-line-parts "Rear Wheel Drive; Differential and Drive Line")
+
+*   [Drive Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--drive-shaft "Rear Wheel Drive; Differential and Drive Line: Drive Shaft")
+*   [Rear Axle Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--rear-axle-assembly "Rear Wheel Drive; Differential and Drive Line: Rear Axle Assembly")
+*   [Rear Axle Shafts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--rear-axle-shafts "Rear Wheel Drive; Differential and Drive Line: Rear Axle Shafts")
+*   [Rear Axle; Housing, Differential and Vent](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--rear-axle-housing-differential-and-vent "Rear Wheel Drive; Differential and Drive Line: Rear Axle; Housing, Differential and Vent")
+
+[Restraints](https://www.moparamerica.com/#cat-restraints-parts "Restraints")
+
+*   [Air Bags](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/restraints--air-bags "Restraints: Air  Bags")
+*   [Seat Belts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/restraints--seat-belts "Restraints: Seat Belts")
+
+[Steering](https://www.moparamerica.com/#cat-steering-parts "Steering")
+
+*   [Power Steering Hoses](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--power-steering-hoses "Steering: Power Steering Hoses")
+*   [Steering Column and Intermediate Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--steering-column-and-intermediate-shaft "Steering: Steering Column and Intermediate Shaft")
+*   [Steering Gear](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--steering-gear "Steering: Steering Gear")
+*   [Steering Wheel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--steering-wheel "Steering: Steering Wheel")
+
+[TR6060; 6-Speed; Manual Transmission](https://www.moparamerica.com/#cat-tr6060-6-speed-manual-transmission-parts "TR6060; 6-Speed; Manual Transmission")
+
+*   [Case, and Extension](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--case-and-extension "TR6060; 6-Speed; Manual Transmission: Case, and Extension")
+*   [Fork and Rails](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--fork-and-rails "TR6060; 6-Speed; Manual Transmission: Fork and Rails")
+*   [Gear Train](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--gear-train "TR6060; 6-Speed; Manual Transmission: Gear Train")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--gearshift-controls-and-related-parts "TR6060; 6-Speed; Manual Transmission: Gearshift Controls and Related Parts")
+*   [Manual Transmission / Transaxle](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--manual-transmission-transaxle "TR6060; 6-Speed; Manual Transmission: Manual Transmission / Transaxle")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--mounting-and-skid-plate "TR6060; 6-Speed; Manual Transmission: Mounting and Skid Plate")
+
+[Wheels](https://www.moparamerica.com/#cat-wheels-parts "Wheels")
+
+*   [Emergency Kit](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--emergency-kit "Wheels: Emergency Kit")
+*   [Jack Stowage](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--jack-stowage "Wheels: Jack Stowage")
+*   [Tire Monitoring System](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--tire-monitoring-system "Wheels: Tire Monitoring System")
+*   [Wheel Covers and Center Caps](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--wheel-covers-and-center-caps "Wheels: Wheel Covers and Center Caps")
+*   [Wheel Spare](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--wheel-spare "Wheels: Wheel Spare")
+*   [Wheels, Tires and Hardware](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--wheels-tires-and-hardware "Wheels: Wheels, Tires and Hardware")
+
+[Crate Engines](https://www.moparamerica.com/#cat-crate-engines-accessories "Crate Engines")
+
+*   [Engines](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-crate-engines--engines "Crate Engines: Engines")
+
+[Drag Pak](https://www.moparamerica.com/#cat-drag-pak-accessories "Drag Pak")
+
+*   [Race Kits](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-drag-pak--race-kits "Drag Pak: Race Kits")
+
+[Exterior Accessories](https://www.moparamerica.com/#cat-exterior-accessories-accessories "Exterior Accessories")
+
+*   [Covers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--covers "Exterior Accessories: Covers")
+*   [Exterior Appearance](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--exterior-appearance "Exterior Accessories: Exterior Appearance")
+*   [License Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--license-plate "Exterior Accessories: License Plate")
+*   [Locks](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--locks "Exterior Accessories: Locks")
+*   [Protective Guards](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--protective-guards "Exterior Accessories: Protective Guards")
+*   [Splash Guards](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--splash-guards "Exterior Accessories: Splash Guards")
+*   [Wheels](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--wheels "Exterior Accessories: Wheels")
+
+[Interior Accessories](https://www.moparamerica.com/#cat-interior-accessories-accessories "Interior Accessories")
+
+*   [Air Purification](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--air-purification "Interior Accessories: Air Purification")
+*   [Cargo Trays & Mats](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--cargo-trays-and-mats "Interior Accessories: Cargo Trays & Mats")
+*   [Floor Mats](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--floor-mats "Interior Accessories: Floor Mats")
+*   [Interior Appearance](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--interior-appearance "Interior Accessories: Interior Appearance")
+
+[Lifestyle & Off-Road Accessories](https://www.moparamerica.com/#cat-lifestyle-and-off-road-accessories-accessories "Lifestyle & Off-Road Accessories")
+
+*   [Safety Kits](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-lifestyle-and-off-road-accessories--safety-kits "Lifestyle & Off-Road Accessories: Safety Kits")
+
+[Modern Performance](https://www.moparamerica.com/#cat-modern-performance-accessories "Modern Performance")
+
+*   [Engine Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-modern-performance--engine-parts "Modern Performance: Engine Parts")
+*   [Intake & Air](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-modern-performance--intake-and-air "Modern Performance: Intake & Air")
+*   [Suspension](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-modern-performance--suspension "Modern Performance: Suspension")
+
+[Vehicle Care Products](https://www.moparamerica.com/#cat-vehicle-care-products-accessories "Vehicle Care Products")
+
+*   [Mopar](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-vehicle-care-products--mopar "Vehicle Care Products: Mopar")
+*   [Touch Up Paint](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-vehicle-care-products--touch-up-paint "Vehicle Care Products: Touch Up Paint")
+
+[Browse Categories](https://www.moparamerica.com/#mobile-sidebar-modal)
+
+×
+
+##### Select category
+
+*   [All](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas)
+*   [Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/auto-parts)
+*   [Accessories](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories)
+
+[3.6L Gas; Engine](https://www.moparamerica.com/#cat-3-6l-gas-engine-parts-m "3.6L Gas; Engine")
+
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/3-6l-gas-engine--engine-mounting "3.6L Gas; Engine: Engine Mounting")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/3-6l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "3.6L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+
+[5.7L Gas; Engine](https://www.moparamerica.com/#cat-5-7l-gas-engine-parts-m "5.7L Gas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--camshaft-and-valve "5.7L Gas; Engine: Camshaft and Valve")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "5.7L Gas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Cylinder Block](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--cylinder-block "5.7L Gas; Engine: Cylinder Block")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--engine-mounting "5.7L Gas; Engine: Engine Mounting")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "5.7L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--manifolds-and-vacuum-fittings "5.7L Gas; Engine: Manifolds and Vacuum Fittings")
+
+[5.7LGas; Engine](https://www.moparamerica.com/#cat-5-7lgas-engine-parts-m "5.7LGas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--camshaft-and-valve "5.7LGas; Engine: Camshaft and Valve")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "5.7LGas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--engine-mounting "5.7LGas; Engine: Engine Mounting")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--engine-oiling-oil-pan-and-indicator-dipstick "5.7LGas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--manifolds-and-vacuum-fittings "5.7LGas; Engine: Manifolds and Vacuum Fittings")
+
+[6.2L Gas; Engine](https://www.moparamerica.com/#cat-6-2l-gas-engine-parts-m "6.2L Gas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--camshaft-and-valve "6.2L Gas; Engine: Camshaft and Valve")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "6.2L Gas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--engine-mounting "6.2L Gas; Engine: Engine Mounting")
+*   [Engine Oil Cooler](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--engine-oil-cooler "6.2L Gas; Engine: Engine Oil Cooler")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "6.2L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--manifolds-and-vacuum-fittings "6.2L Gas; Engine: Manifolds and Vacuum Fittings")
+*   [Timing Belt/Chain and Cover and Balance Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--timing-belt-chain-and-cover-and-balance-shaft "6.2L Gas; Engine: Timing Belt/Chain and Cover and Balance Shaft")
+*   [Turbo and Super Chargers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--turbo-and-super-chargers "6.2L Gas; Engine: Turbo and Super Chargers")
+
+[6.4L Gas; Engine](https://www.moparamerica.com/#cat-6-4l-gas-engine-parts-m "6.4L Gas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--camshaft-and-valve "6.4L Gas; Engine: Camshaft and Valve")
+*   [Crankcase Ventilation](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--crankcase-ventilation "6.4L Gas; Engine: Crankcase Ventilation")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "6.4L Gas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Cylinder Block](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--cylinder-block "6.4L Gas; Engine: Cylinder Block")
+*   [Cylinder Head](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--cylinder-head "6.4L Gas; Engine: Cylinder Head")
+*   [Engine Identification, Service Engines & Engine Service Kits](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-identification-service-engines-and-engine-service-kits "6.4L Gas; Engine: Engine Identification, Service Engines & Engine Service Kits")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-mounting "6.4L Gas; Engine: Engine Mounting")
+*   [Engine Oil Cooler](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-oil-cooler "6.4L Gas; Engine: Engine Oil Cooler")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "6.4L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--manifolds-and-vacuum-fittings "6.4L Gas; Engine: Manifolds and Vacuum Fittings")
+*   [Timing Belt/Chain and Cover and Balance Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--timing-belt-chain-and-cover-and-balance-shaft "6.4L Gas; Engine: Timing Belt/Chain and Cover and Balance Shaft")
+
+[845RE; 8-Speed; Automatic Transmission](https://www.moparamerica.com/#cat-845re-8-speed-automatic-transmission-parts-m "845RE; 8-Speed; Automatic Transmission")
+
+*   [Automatic Transmission / Transaxle and Torque Converter](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--automatic-transmission-transaxle-and-torque-converter "845RE; 8-Speed; Automatic Transmission: Automatic Transmission / Transaxle and Torque Converter")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--gearshift-controls-and-related-parts "845RE; 8-Speed; Automatic Transmission: Gearshift Controls and Related Parts")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--mounting-and-skid-plate "845RE; 8-Speed; Automatic Transmission: Mounting and Skid Plate")
+*   [Oil Pump](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--oil-pump "845RE; 8-Speed; Automatic Transmission: Oil Pump")
+*   [Valve Body, Accumulator, Solenoid and Parking Sprag](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--valve-body-accumulator-solenoid-and-parking-sprag "845RE; 8-Speed; Automatic Transmission: Valve Body, Accumulator, Solenoid and Parking Sprag")
+
+[8HP70; 8-Speed; Automatic Transmission](https://www.moparamerica.com/#cat-8hp70-8-speed-automatic-transmission-parts-m "8HP70; 8-Speed; Automatic Transmission")
+
+*   [Automatic Transmission / Transaxle and Torque Converter](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--automatic-transmission-transaxle-and-torque-converter "8HP70; 8-Speed; Automatic Transmission: Automatic Transmission / Transaxle and Torque Converter")
+*   [Case, Extension, Oil Pan, and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--case-extension-oil-pan-and-indicator-dipstick "8HP70; 8-Speed; Automatic Transmission: Case, Extension, Oil Pan, and Indicator (Dipstick)")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--gearshift-controls-and-related-parts "8HP70; 8-Speed; Automatic Transmission: Gearshift Controls and Related Parts")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--mounting-and-skid-plate "8HP70; 8-Speed; Automatic Transmission: Mounting and Skid Plate")
+*   [Oil Pump](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--oil-pump "8HP70; 8-Speed; Automatic Transmission: Oil Pump")
+*   [Valve Body, Accumulator, Solenoid and Parking Sprag](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--valve-body-accumulator-solenoid-and-parking-sprag "8HP70; 8-Speed; Automatic Transmission: Valve Body, Accumulator, Solenoid and Parking Sprag")
+
+[8HP90; 8-Speed; Automatic Transmission](https://www.moparamerica.com/#cat-8hp90-8-speed-automatic-transmission-parts-m "8HP90; 8-Speed; Automatic Transmission")
+
+*   [Automatic Transmission / Transaxle and Torque Converter](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp90-8-speed-automatic-transmission--automatic-transmission-transaxle-and-torque-converter "8HP90; 8-Speed; Automatic Transmission: Automatic Transmission / Transaxle and Torque Converter")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp90-8-speed-automatic-transmission--gearshift-controls-and-related-parts "8HP90; 8-Speed; Automatic Transmission: Gearshift Controls and Related Parts")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp90-8-speed-automatic-transmission--mounting-and-skid-plate "8HP90; 8-Speed; Automatic Transmission: Mounting and Skid Plate")
+
+[Air Conditioners and Heaters](https://www.moparamerica.com/#cat-air-conditioners-and-heaters-parts-m "Air Conditioners and Heaters")
+
+*   [Air Conditioner and Heater Controls](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-and-heater-controls "Air Conditioners and Heaters: Air Conditioner and Heater Controls")
+*   [Air Conditioner and Heater Plumbing](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-and-heater-plumbing "Air Conditioners and Heaters: Air Conditioner and Heater Plumbing")
+*   [Air Conditioner and Heater Units](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-and-heater-units "Air Conditioners and Heaters: Air Conditioner and Heater Units")
+*   [Air Conditioner Compressor and Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-compressor-and-mounting "Air Conditioners and Heaters: Air Conditioner Compressor and Mounting")
+*   [Air Ducts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-ducts "Air Conditioners and Heaters: Air Ducts")
+
+[All Wheel Drive; Differential and Drive Line](https://www.moparamerica.com/#cat-all-wheel-drive-differential-and-drive-line-parts-m "All Wheel Drive; Differential and Drive Line")
+
+*   [Drive Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--drive-shaft "All Wheel Drive; Differential and Drive Line: Drive Shaft")
+*   [Front Axle Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--front-axle-assembly "All Wheel Drive; Differential and Drive Line: Front Axle Assembly")
+*   [Front Axle Drive Shafts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--front-axle-drive-shafts "All Wheel Drive; Differential and Drive Line: Front Axle Drive Shafts")
+*   [Rear Axle Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--rear-axle-assembly "All Wheel Drive; Differential and Drive Line: Rear Axle Assembly")
+*   [Rear Axle Shafts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--rear-axle-shafts "All Wheel Drive; Differential and Drive Line: Rear Axle Shafts")
+*   [Rear Axle; Housing, Differential and Vent](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--rear-axle-housing-differential-and-vent "All Wheel Drive; Differential and Drive Line: Rear Axle; Housing, Differential and Vent")
+
+[Body Sheet Metal Except Doors](https://www.moparamerica.com/#cat-body-sheet-metal-except-doors-parts-m "Body Sheet Metal Except Doors")
+
+*   [Aperture Panel and Pillar Supports](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--aperture-panel-and-pillar-supports "Body Sheet Metal Except Doors: Aperture Panel and Pillar Supports")
+*   [Body Structure Welds, Weatherstrips, Seals, Sealers and Adhesives](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--body-structure-welds-weatherstrips-seals-sealers-and-adhesives "Body Sheet Metal Except Doors: Body Structure Welds, Weatherstrips, Seals, Sealers and Adhesives")
+*   [Cowl and Dash Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--cowl-and-dash-panel "Body Sheet Metal Except Doors: Cowl and Dash Panel")
+*   [Deck Lid](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--deck-lid "Body Sheet Metal Except Doors: Deck Lid")
+*   [Fenders](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--fenders "Body Sheet Metal Except Doors: Fenders")
+*   [Floor Pans](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--floor-pans "Body Sheet Metal Except Doors: Floor Pans")
+*   [Hood and Hood Release](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--hood-and-hood-release "Body Sheet Metal Except Doors: Hood and Hood Release")
+*   [Plugs](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--plugs "Body Sheet Metal Except Doors: Plugs")
+*   [Roof](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--roof "Body Sheet Metal Except Doors: Roof")
+*   [Shelf Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--shelf-panel "Body Sheet Metal Except Doors: Shelf Panel")
+*   [Sunroof](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--sunroof "Body Sheet Metal Except Doors: Sunroof")
+
+[Brakes](https://www.moparamerica.com/#cat-brakes-parts-m "Brakes")
+
+*   [Brake Master Cylinder](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--brake-master-cylinder "Brakes: Brake Master Cylinder")
+*   [Brake Pedals](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--brake-pedals "Brakes: Brake Pedals")
+*   [Front Brakes](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--front-brakes "Brakes: Front Brakes")
+*   [Hydraulic Control Unit, Brake Tubes and Hoses](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--hydraulic-control-unit-brake-tubes-and-hoses "Brakes: Hydraulic Control Unit, Brake Tubes and Hoses")
+*   [Parking Brake Lever, Cables, and Rear Disc Park Brake Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--parking-brake-lever-cables-and-rear-disc-park-brake-assembly "Brakes: Parking Brake Lever, Cables, and Rear Disc Park Brake Assembly")
+*   [Power Brake Booster](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--power-brake-booster "Brakes: Power Brake Booster")
+*   [Rear Brakes](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--rear-brakes "Brakes: Rear Brakes")
+
+[Clutch](https://www.moparamerica.com/#cat-clutch-parts-m "Clutch")
+
+*   [Clutch](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch "Clutch: Clutch")
+*   [Clutch Controls](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch-controls "Clutch: Clutch Controls")
+*   [Clutch Housing](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch-housing "Clutch: Clutch Housing")
+*   [Clutch Pedals](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch-pedals "Clutch: Clutch Pedals")
+
+[Conversion and Upfit Packages](https://www.moparamerica.com/#cat-conversion-and-upfit-packages-parts-m "Conversion and Upfit Packages")
+
+*   [Exterior](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/conversion-and-upfit-packages--exterior "Conversion and Upfit Packages: Exterior")
+
+[Cooling](https://www.moparamerica.com/#cat-cooling-parts-m "Cooling")
+
+*   [Drive Belts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--drive-belts "Cooling: Drive Belts")
+*   [Engine Coolant Reservoir (Bottle)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--engine-coolant-reservoir-bottle "Cooling: Engine Coolant Reservoir (Bottle)")
+*   [Pulleys and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--pulleys-and-related-parts "Cooling: Pulleys and Related Parts")
+*   [Radiator and Related Parts; Charge Air Cooler](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--radiator-and-related-parts-charge-air-cooler "Cooling: Radiator and Related Parts; Charge Air Cooler")
+*   [Transmission Oil Cooler, and Lines](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--transmission-oil-cooler-and-lines "Cooling: Transmission Oil Cooler, and Lines")
+*   [Water Pump and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--water-pump-and-related-parts "Cooling: Water Pump and Related Parts")
+
+[Crate Engines](https://www.moparamerica.com/#cat-crate-engines-accessories-m "Crate Engines")
+
+*   [Engines](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-crate-engines--engines "Crate Engines: Engines")
+
+[Doors, Door Mirrors and Related Parts](https://www.moparamerica.com/#cat-doors-door-mirrors-and-related-parts-parts-m "Doors, Door Mirrors and Related Parts")
+
+*   [Exterior Mirror](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/doors-door-mirrors-and-related-parts--exterior-mirror "Doors, Door Mirrors and Related Parts: Exterior Mirror")
+*   [Front Door](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/doors-door-mirrors-and-related-parts--front-door "Doors, Door Mirrors and Related Parts: Front Door")
+*   [Weatherstrips and Seals](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/doors-door-mirrors-and-related-parts--weatherstrips-and-seals "Doors, Door Mirrors and Related Parts: Weatherstrips and Seals")
+
+[Drag Pak](https://www.moparamerica.com/#cat-drag-pak-accessories-m "Drag Pak")
+
+*   [Race Kits](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-drag-pak--race-kits "Drag Pak: Race Kits")
+
+[Electrical](https://www.moparamerica.com/#cat-electrical-parts-m "Electrical")
+
+*   [Battery, Battery Tray and Cables](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--battery-battery-tray-and-cables "Electrical: Battery, Battery Tray and Cables")
+*   [Generators / Alternators](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--generators-alternators "Electrical: Generators / Alternators")
+*   [Horns](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--horns "Electrical: Horns")
+*   [Ignition - Spark Plugs, Cables, Coils, and Glow Plugs](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--ignition-spark-plugs-cables-coils-and-glow-plugs "Electrical: Ignition - Spark Plugs, Cables, Coils, and Glow Plugs")
+*   [Instrument Panel Cluster](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--instrument-panel-cluster "Electrical: Instrument Panel Cluster")
+*   [Keys, Modules and Engine Controllers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--keys-modules-and-engine-controllers "Electrical: Keys, Modules and Engine Controllers")
+*   [Lamps-Interior and Exterior](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--lamps-interior-and-exterior "Electrical: Lamps-Interior and Exterior")
+*   [Park Assist](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--park-assist "Electrical: Park Assist")
+*   [Power Distribution Center, Fuse Block, Junction Block, Relays and Fuses](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--power-distribution-center-fuse-block-junction-block-relays-and-fuses "Electrical: Power Distribution Center, Fuse Block, Junction Block, Relays and Fuses")
+*   [Radio, Antenna, Speakers, DVD, and Video systems](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--radio-antenna-speakers-dvd-and-video-systems "Electrical: Radio, Antenna, Speakers, DVD, and Video systems")
+*   [Sensors](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--sensors "Electrical: Sensors")
+*   [Speed Control](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--speed-control "Electrical: Speed Control")
+*   [Starters](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--starters "Electrical: Starters")
+*   [Switches](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--switches "Electrical: Switches")
+*   [Wiper and Washer System](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiper-and-washer-system "Electrical: Wiper and Washer System")
+*   [Wiring-Body and Accessories](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-body-and-accessories "Electrical: Wiring-Body and Accessories")
+*   [Wiring-Headlamp to Dash](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-headlamp-to-dash "Electrical: Wiring-Headlamp to Dash")
+*   [Wiring-Instrument Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-instrument-panel "Electrical: Wiring-Instrument Panel")
+*   [Wiring-Powertrain](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-powertrain "Electrical: Wiring-Powertrain")
+
+[Emission Controls](https://www.moparamerica.com/#cat-emission-controls-parts-m "Emission Controls")
+
+*   [Emission Harness](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/emission-controls--emission-harness "Emission Controls: Emission Harness")
+*   [Vacuum Canister/Leak Detection Pump](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/emission-controls--vacuum-canister-leak-detection-pump "Emission Controls: Vacuum Canister/Leak Detection Pump")
+
+[Exhaust](https://www.moparamerica.com/#cat-exhaust-parts-m "Exhaust")
+
+*   [Exhaust System](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exhaust--exhaust-system "Exhaust: Exhaust System")
+
+[Exterior Accessories](https://www.moparamerica.com/#cat-exterior-accessories-accessories-m "Exterior Accessories")
+
+*   [Covers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--covers "Exterior Accessories: Covers")
+*   [Exterior Appearance](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--exterior-appearance "Exterior Accessories: Exterior Appearance")
+*   [License Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--license-plate "Exterior Accessories: License Plate")
+*   [Locks](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--locks "Exterior Accessories: Locks")
+*   [Protective Guards](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--protective-guards "Exterior Accessories: Protective Guards")
+*   [Splash Guards](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--splash-guards "Exterior Accessories: Splash Guards")
+*   [Wheels](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--wheels "Exterior Accessories: Wheels")
+
+[Exterior Ornamentation](https://www.moparamerica.com/#cat-exterior-ornamentation-parts-m "Exterior Ornamentation")
+
+*   [Decals and Tape stripes](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--decals-and-tape-stripes "Exterior Ornamentation: Decals and Tape stripes")
+*   [Grilles](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--grilles "Exterior Ornamentation: Grilles")
+*   [Moldings and Ornamentation](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--moldings-and-ornamentation "Exterior Ornamentation: Moldings and Ornamentation")
+*   [Nameplates](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--nameplates "Exterior Ornamentation: Nameplates")
+
+[Frame, Bumper and Fascia](https://www.moparamerica.com/#cat-frame-bumper-and-fascia-parts-m "Frame, Bumper and Fascia")
+
+*   [Frames](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/frame-bumper-and-fascia--frames "Frame, Bumper and Fascia: Frames")
+*   [Front Bumper and Fascia](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/frame-bumper-and-fascia--front-bumper-and-fascia "Frame, Bumper and Fascia: Front Bumper and Fascia")
+*   [Rear Bumper and Fascia](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/frame-bumper-and-fascia--rear-bumper-and-fascia "Frame, Bumper and Fascia: Rear Bumper and Fascia")
+
+[Front Suspension](https://www.moparamerica.com/#cat-front-suspension-parts-m "Front Suspension")
+
+*   [Front Stabilizer Bar](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/front-suspension--front-stabilizer-bar "Front Suspension: Front Stabilizer Bar")
+*   [Front Suspension, Strut and Cradle](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/front-suspension--front-suspension-strut-and-cradle "Front Suspension: Front Suspension, Strut and Cradle")
+
+[Fuel](https://www.moparamerica.com/#cat-fuel-parts-m "Fuel")
+
+*   [Accelerator Pedal](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--accelerator-pedal "Fuel: Accelerator Pedal")
+*   [Air Cleaner](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--air-cleaner "Fuel: Air Cleaner")
+*   [Fuel Lines](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-lines "Fuel: Fuel Lines")
+*   [Fuel Pump and Sending Unit](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-pump-and-sending-unit "Fuel: Fuel Pump and Sending Unit")
+*   [Fuel Rail and Injectors](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-rail-and-injectors "Fuel: Fuel Rail and Injectors")
+*   [Fuel Tank](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-tank "Fuel: Fuel Tank")
+*   [Fuel Tank Filler Tube](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-tank-filler-tube "Fuel: Fuel Tank Filler Tube")
+*   [Throttle Body](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--throttle-body "Fuel: Throttle Body")
+
+[Glass](https://www.moparamerica.com/#cat-glass-parts-m "Glass")
+
+*   [Glass and Interior Rear View Mirror](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/glass--glass-and-interior-rear-view-mirror "Glass: Glass and Interior Rear View Mirror")
+
+[Interior Accessories](https://www.moparamerica.com/#cat-interior-accessories-accessories-m "Interior Accessories")
+
+*   [Air Purification](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--air-purification "Interior Accessories: Air Purification")
+*   [Cargo Trays & Mats](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--cargo-trays-and-mats "Interior Accessories: Cargo Trays & Mats")
+*   [Floor Mats](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--floor-mats "Interior Accessories: Floor Mats")
+*   [Interior Appearance](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--interior-appearance "Interior Accessories: Interior Appearance")
+
+[Interior Trim](https://www.moparamerica.com/#cat-interior-trim-parts-m "Interior Trim")
+
+*   [Carpets, Floor Mats, Load Floor, and Silencers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--carpets-floor-mats-load-floor-and-silencers "Interior Trim: Carpets, Floor Mats, Load Floor, and Silencers")
+*   [Consoles](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--consoles "Interior Trim: Consoles")
+*   [Door Trim Panels-Front and Rear](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--door-trim-panels-front-and-rear "Interior Trim: Door Trim Panels-Front and Rear")
+*   [Front Seats - Adjusters, Recliners, Shields and Risers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--front-seats-adjusters-recliners-shields-and-risers "Interior Trim: Front Seats - Adjusters, Recliners, Shields and Risers")
+*   [Front Seats - First Row](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--front-seats-first-row "Interior Trim: Front Seats - First Row")
+*   [Headliners-Visors-Assist Straps](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--headliners-visors-assist-straps "Interior Trim: Headliners-Visors-Assist Straps")
+*   [Instrument Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--instrument-panel "Interior Trim: Instrument Panel")
+*   [Panels-Moldings-Scuff Plates, Pillar, Cowl, 1/4 Panel Trim and Cargo Covers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--panels-moldings-scuff-plates-pillar-cowl-1-4-panel-trim-and-cargo-covers "Interior Trim: Panels-Moldings-Scuff Plates, Pillar, Cowl, 1/4 Panel Trim and Cargo Covers")
+*   [Rear Seats - Second Row](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--rear-seats-second-row "Interior Trim: Rear Seats - Second Row")
+*   [Rear Seats - Second Row - Adjusters, Recliners, Shields and Risers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--rear-seats-second-row-adjusters-recliners-shields-and-risers "Interior Trim: Rear Seats - Second Row - Adjusters, Recliners, Shields and Risers")
+
+[Labels](https://www.moparamerica.com/#cat-labels-parts-m "Labels")
+
+*   [Under Hood](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/labels--under-hood "Labels: Under Hood")
+
+[Lifestyle & Off-Road Accessories](https://www.moparamerica.com/#cat-lifestyle-and-off-road-accessories-accessories-m "Lifestyle & Off-Road Accessories")
+
+*   [Safety Kits](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-lifestyle-and-off-road-accessories--safety-kits "Lifestyle & Off-Road Accessories: Safety Kits")
+
+[Modern Performance](https://www.moparamerica.com/#cat-modern-performance-accessories-m "Modern Performance")
+
+*   [Engine Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-modern-performance--engine-parts "Modern Performance: Engine Parts")
+*   [Intake & Air](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-modern-performance--intake-and-air "Modern Performance: Intake & Air")
+*   [Suspension](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-modern-performance--suspension "Modern Performance: Suspension")
+
+[Mopar Accessories - Component Parts](https://www.moparamerica.com/#cat-mopar-accessories-component-parts-parts-m "Mopar Accessories - Component Parts")
+
+*   [Driving Convenience](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--driving-convenience "Mopar Accessories - Component Parts: Driving Convenience")
+*   [Exterior Appearance](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--exterior-appearance "Mopar Accessories - Component Parts: Exterior Appearance")
+*   [Fog Lights & Electrical](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--fog-lights-and-electrical "Mopar Accessories - Component Parts: Fog Lights & Electrical")
+*   [Interior Protection](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--interior-protection "Mopar Accessories - Component Parts: Interior Protection")
+*   [Lighting and Electrical Accessories](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--lighting-and-electrical-accessories "Mopar Accessories - Component Parts: Lighting and Electrical Accessories")
+*   [Powertrain](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--powertrain "Mopar Accessories - Component Parts: Powertrain")
+
+[Rear Suspension](https://www.moparamerica.com/#cat-rear-suspension-parts-m "Rear Suspension")
+
+*   [Rear Stabilizer](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-suspension--rear-stabilizer "Rear Suspension: Rear Stabilizer")
+*   [Rear Suspension and Cradle](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-suspension--rear-suspension-and-cradle "Rear Suspension: Rear Suspension and Cradle")
+
+[Rear Wheel Drive; Differential and Drive Line](https://www.moparamerica.com/#cat-rear-wheel-drive-differential-and-drive-line-parts-m "Rear Wheel Drive; Differential and Drive Line")
+
+*   [Drive Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--drive-shaft "Rear Wheel Drive; Differential and Drive Line: Drive Shaft")
+*   [Rear Axle Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--rear-axle-assembly "Rear Wheel Drive; Differential and Drive Line: Rear Axle Assembly")
+*   [Rear Axle Shafts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--rear-axle-shafts "Rear Wheel Drive; Differential and Drive Line: Rear Axle Shafts")
+*   [Rear Axle; Housing, Differential and Vent](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--rear-axle-housing-differential-and-vent "Rear Wheel Drive; Differential and Drive Line: Rear Axle; Housing, Differential and Vent")
+
+[Restraints](https://www.moparamerica.com/#cat-restraints-parts-m "Restraints")
+
+*   [Air Bags](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/restraints--air-bags "Restraints: Air  Bags")
+*   [Seat Belts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/restraints--seat-belts "Restraints: Seat Belts")
+
+[Steering](https://www.moparamerica.com/#cat-steering-parts-m "Steering")
+
+*   [Power Steering Hoses](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--power-steering-hoses "Steering: Power Steering Hoses")
+*   [Steering Column and Intermediate Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--steering-column-and-intermediate-shaft "Steering: Steering Column and Intermediate Shaft")
+*   [Steering Gear](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--steering-gear "Steering: Steering Gear")
+*   [Steering Wheel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--steering-wheel "Steering: Steering Wheel")
+
+[TR6060; 6-Speed; Manual Transmission](https://www.moparamerica.com/#cat-tr6060-6-speed-manual-transmission-parts-m "TR6060; 6-Speed; Manual Transmission")
+
+*   [Case, and Extension](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--case-and-extension "TR6060; 6-Speed; Manual Transmission: Case, and Extension")
+*   [Fork and Rails](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--fork-and-rails "TR6060; 6-Speed; Manual Transmission: Fork and Rails")
+*   [Gear Train](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--gear-train "TR6060; 6-Speed; Manual Transmission: Gear Train")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--gearshift-controls-and-related-parts "TR6060; 6-Speed; Manual Transmission: Gearshift Controls and Related Parts")
+*   [Manual Transmission / Transaxle](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--manual-transmission-transaxle "TR6060; 6-Speed; Manual Transmission: Manual Transmission / Transaxle")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--mounting-and-skid-plate "TR6060; 6-Speed; Manual Transmission: Mounting and Skid Plate")
+
+[Vehicle Care Products](https://www.moparamerica.com/#cat-vehicle-care-products-accessories-m "Vehicle Care Products")
+
+*   [Mopar](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-vehicle-care-products--mopar "Vehicle Care Products: Mopar")
+*   [Touch Up Paint](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-vehicle-care-products--touch-up-paint "Vehicle Care Products: Touch Up Paint")
+
+[Wheels](https://www.moparamerica.com/#cat-wheels-parts-m "Wheels")
+
+*   [Emergency Kit](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--emergency-kit "Wheels: Emergency Kit")
+*   [Jack Stowage](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--jack-stowage "Wheels: Jack Stowage")
+*   [Tire Monitoring System](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--tire-monitoring-system "Wheels: Tire Monitoring System")
+*   [Wheel Covers and Center Caps](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--wheel-covers-and-center-caps "Wheels: Wheel Covers and Center Caps")
+*   [Wheel Spare](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--wheel-spare "Wheels: Wheel Spare")
+*   [Wheels, Tires and Hardware](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--wheels-tires-and-hardware "Wheels: Wheels, Tires and Hardware")
+
+[3.6L Gas; Engine](https://www.moparamerica.com/#cat-3-6l-gas-engine-parts-m "3.6L Gas; Engine")
+
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/3-6l-gas-engine--engine-mounting "3.6L Gas; Engine: Engine Mounting")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/3-6l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "3.6L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+
+[5.7L Gas; Engine](https://www.moparamerica.com/#cat-5-7l-gas-engine-parts-m "5.7L Gas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--camshaft-and-valve "5.7L Gas; Engine: Camshaft and Valve")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "5.7L Gas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Cylinder Block](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--cylinder-block "5.7L Gas; Engine: Cylinder Block")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--engine-mounting "5.7L Gas; Engine: Engine Mounting")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "5.7L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7l-gas-engine--manifolds-and-vacuum-fittings "5.7L Gas; Engine: Manifolds and Vacuum Fittings")
+
+[5.7LGas; Engine](https://www.moparamerica.com/#cat-5-7lgas-engine-parts-m "5.7LGas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--camshaft-and-valve "5.7LGas; Engine: Camshaft and Valve")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "5.7LGas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--engine-mounting "5.7LGas; Engine: Engine Mounting")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--engine-oiling-oil-pan-and-indicator-dipstick "5.7LGas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/5-7lgas-engine--manifolds-and-vacuum-fittings "5.7LGas; Engine: Manifolds and Vacuum Fittings")
+
+[6.2L Gas; Engine](https://www.moparamerica.com/#cat-6-2l-gas-engine-parts-m "6.2L Gas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--camshaft-and-valve "6.2L Gas; Engine: Camshaft and Valve")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "6.2L Gas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--engine-mounting "6.2L Gas; Engine: Engine Mounting")
+*   [Engine Oil Cooler](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--engine-oil-cooler "6.2L Gas; Engine: Engine Oil Cooler")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "6.2L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--manifolds-and-vacuum-fittings "6.2L Gas; Engine: Manifolds and Vacuum Fittings")
+*   [Timing Belt/Chain and Cover and Balance Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--timing-belt-chain-and-cover-and-balance-shaft "6.2L Gas; Engine: Timing Belt/Chain and Cover and Balance Shaft")
+*   [Turbo and Super Chargers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-2l-gas-engine--turbo-and-super-chargers "6.2L Gas; Engine: Turbo and Super Chargers")
+
+[6.4L Gas; Engine](https://www.moparamerica.com/#cat-6-4l-gas-engine-parts-m "6.4L Gas; Engine")
+
+*   [Camshaft and Valve](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--camshaft-and-valve "6.4L Gas; Engine: Camshaft and Valve")
+*   [Crankcase Ventilation](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--crankcase-ventilation "6.4L Gas; Engine: Crankcase Ventilation")
+*   [Crankshaft, Piston, Drive Plate, Flywheel, and Damper](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--crankshaft-piston-drive-plate-flywheel-and-damper "6.4L Gas; Engine: Crankshaft, Piston, Drive Plate, Flywheel, and Damper")
+*   [Cylinder Block](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--cylinder-block "6.4L Gas; Engine: Cylinder Block")
+*   [Cylinder Head](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--cylinder-head "6.4L Gas; Engine: Cylinder Head")
+*   [Engine Identification, Service Engines & Engine Service Kits](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-identification-service-engines-and-engine-service-kits "6.4L Gas; Engine: Engine Identification, Service Engines & Engine Service Kits")
+*   [Engine Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-mounting "6.4L Gas; Engine: Engine Mounting")
+*   [Engine Oil Cooler](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-oil-cooler "6.4L Gas; Engine: Engine Oil Cooler")
+*   [Engine Oiling, Oil Pan and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--engine-oiling-oil-pan-and-indicator-dipstick "6.4L Gas; Engine: Engine Oiling, Oil Pan and Indicator (Dipstick)")
+*   [Manifolds and Vacuum Fittings](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--manifolds-and-vacuum-fittings "6.4L Gas; Engine: Manifolds and Vacuum Fittings")
+*   [Timing Belt/Chain and Cover and Balance Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/6-4l-gas-engine--timing-belt-chain-and-cover-and-balance-shaft "6.4L Gas; Engine: Timing Belt/Chain and Cover and Balance Shaft")
+
+[845RE; 8-Speed; Automatic Transmission](https://www.moparamerica.com/#cat-845re-8-speed-automatic-transmission-parts-m "845RE; 8-Speed; Automatic Transmission")
+
+*   [Automatic Transmission / Transaxle and Torque Converter](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--automatic-transmission-transaxle-and-torque-converter "845RE; 8-Speed; Automatic Transmission: Automatic Transmission / Transaxle and Torque Converter")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--gearshift-controls-and-related-parts "845RE; 8-Speed; Automatic Transmission: Gearshift Controls and Related Parts")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--mounting-and-skid-plate "845RE; 8-Speed; Automatic Transmission: Mounting and Skid Plate")
+*   [Oil Pump](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--oil-pump "845RE; 8-Speed; Automatic Transmission: Oil Pump")
+*   [Valve Body, Accumulator, Solenoid and Parking Sprag](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/845re-8-speed-automatic-transmission--valve-body-accumulator-solenoid-and-parking-sprag "845RE; 8-Speed; Automatic Transmission: Valve Body, Accumulator, Solenoid and Parking Sprag")
+
+[8HP70; 8-Speed; Automatic Transmission](https://www.moparamerica.com/#cat-8hp70-8-speed-automatic-transmission-parts-m "8HP70; 8-Speed; Automatic Transmission")
+
+*   [Automatic Transmission / Transaxle and Torque Converter](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--automatic-transmission-transaxle-and-torque-converter "8HP70; 8-Speed; Automatic Transmission: Automatic Transmission / Transaxle and Torque Converter")
+*   [Case, Extension, Oil Pan, and Indicator (Dipstick)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--case-extension-oil-pan-and-indicator-dipstick "8HP70; 8-Speed; Automatic Transmission: Case, Extension, Oil Pan, and Indicator (Dipstick)")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--gearshift-controls-and-related-parts "8HP70; 8-Speed; Automatic Transmission: Gearshift Controls and Related Parts")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--mounting-and-skid-plate "8HP70; 8-Speed; Automatic Transmission: Mounting and Skid Plate")
+*   [Oil Pump](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--oil-pump "8HP70; 8-Speed; Automatic Transmission: Oil Pump")
+*   [Valve Body, Accumulator, Solenoid and Parking Sprag](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp70-8-speed-automatic-transmission--valve-body-accumulator-solenoid-and-parking-sprag "8HP70; 8-Speed; Automatic Transmission: Valve Body, Accumulator, Solenoid and Parking Sprag")
+
+[8HP90; 8-Speed; Automatic Transmission](https://www.moparamerica.com/#cat-8hp90-8-speed-automatic-transmission-parts-m "8HP90; 8-Speed; Automatic Transmission")
+
+*   [Automatic Transmission / Transaxle and Torque Converter](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp90-8-speed-automatic-transmission--automatic-transmission-transaxle-and-torque-converter "8HP90; 8-Speed; Automatic Transmission: Automatic Transmission / Transaxle and Torque Converter")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp90-8-speed-automatic-transmission--gearshift-controls-and-related-parts "8HP90; 8-Speed; Automatic Transmission: Gearshift Controls and Related Parts")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/8hp90-8-speed-automatic-transmission--mounting-and-skid-plate "8HP90; 8-Speed; Automatic Transmission: Mounting and Skid Plate")
+
+[Air Conditioners and Heaters](https://www.moparamerica.com/#cat-air-conditioners-and-heaters-parts-m "Air Conditioners and Heaters")
+
+*   [Air Conditioner and Heater Controls](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-and-heater-controls "Air Conditioners and Heaters: Air Conditioner and Heater Controls")
+*   [Air Conditioner and Heater Plumbing](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-and-heater-plumbing "Air Conditioners and Heaters: Air Conditioner and Heater Plumbing")
+*   [Air Conditioner and Heater Units](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-and-heater-units "Air Conditioners and Heaters: Air Conditioner and Heater Units")
+*   [Air Conditioner Compressor and Mounting](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-conditioner-compressor-and-mounting "Air Conditioners and Heaters: Air Conditioner Compressor and Mounting")
+*   [Air Ducts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/air-conditioners-and-heaters--air-ducts "Air Conditioners and Heaters: Air Ducts")
+
+[All Wheel Drive; Differential and Drive Line](https://www.moparamerica.com/#cat-all-wheel-drive-differential-and-drive-line-parts-m "All Wheel Drive; Differential and Drive Line")
+
+*   [Drive Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--drive-shaft "All Wheel Drive; Differential and Drive Line: Drive Shaft")
+*   [Front Axle Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--front-axle-assembly "All Wheel Drive; Differential and Drive Line: Front Axle Assembly")
+*   [Front Axle Drive Shafts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--front-axle-drive-shafts "All Wheel Drive; Differential and Drive Line: Front Axle Drive Shafts")
+*   [Rear Axle Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--rear-axle-assembly "All Wheel Drive; Differential and Drive Line: Rear Axle Assembly")
+*   [Rear Axle Shafts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--rear-axle-shafts "All Wheel Drive; Differential and Drive Line: Rear Axle Shafts")
+*   [Rear Axle; Housing, Differential and Vent](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/all-wheel-drive-differential-and-drive-line--rear-axle-housing-differential-and-vent "All Wheel Drive; Differential and Drive Line: Rear Axle; Housing, Differential and Vent")
+
+[Body Sheet Metal Except Doors](https://www.moparamerica.com/#cat-body-sheet-metal-except-doors-parts-m "Body Sheet Metal Except Doors")
+
+*   [Aperture Panel and Pillar Supports](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--aperture-panel-and-pillar-supports "Body Sheet Metal Except Doors: Aperture Panel and Pillar Supports")
+*   [Body Structure Welds, Weatherstrips, Seals, Sealers and Adhesives](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--body-structure-welds-weatherstrips-seals-sealers-and-adhesives "Body Sheet Metal Except Doors: Body Structure Welds, Weatherstrips, Seals, Sealers and Adhesives")
+*   [Cowl and Dash Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--cowl-and-dash-panel "Body Sheet Metal Except Doors: Cowl and Dash Panel")
+*   [Deck Lid](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--deck-lid "Body Sheet Metal Except Doors: Deck Lid")
+*   [Fenders](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--fenders "Body Sheet Metal Except Doors: Fenders")
+*   [Floor Pans](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--floor-pans "Body Sheet Metal Except Doors: Floor Pans")
+*   [Hood and Hood Release](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--hood-and-hood-release "Body Sheet Metal Except Doors: Hood and Hood Release")
+*   [Plugs](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--plugs "Body Sheet Metal Except Doors: Plugs")
+*   [Roof](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--roof "Body Sheet Metal Except Doors: Roof")
+*   [Shelf Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--shelf-panel "Body Sheet Metal Except Doors: Shelf Panel")
+*   [Sunroof](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/body-sheet-metal-except-doors--sunroof "Body Sheet Metal Except Doors: Sunroof")
+
+[Brakes](https://www.moparamerica.com/#cat-brakes-parts-m "Brakes")
+
+*   [Brake Master Cylinder](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--brake-master-cylinder "Brakes: Brake Master Cylinder")
+*   [Brake Pedals](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--brake-pedals "Brakes: Brake Pedals")
+*   [Front Brakes](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--front-brakes "Brakes: Front Brakes")
+*   [Hydraulic Control Unit, Brake Tubes and Hoses](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--hydraulic-control-unit-brake-tubes-and-hoses "Brakes: Hydraulic Control Unit, Brake Tubes and Hoses")
+*   [Parking Brake Lever, Cables, and Rear Disc Park Brake Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--parking-brake-lever-cables-and-rear-disc-park-brake-assembly "Brakes: Parking Brake Lever, Cables, and Rear Disc Park Brake Assembly")
+*   [Power Brake Booster](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--power-brake-booster "Brakes: Power Brake Booster")
+*   [Rear Brakes](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/brakes--rear-brakes "Brakes: Rear Brakes")
+
+[Clutch](https://www.moparamerica.com/#cat-clutch-parts-m "Clutch")
+
+*   [Clutch](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch "Clutch: Clutch")
+*   [Clutch Controls](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch-controls "Clutch: Clutch Controls")
+*   [Clutch Housing](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch-housing "Clutch: Clutch Housing")
+*   [Clutch Pedals](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/clutch--clutch-pedals "Clutch: Clutch Pedals")
+
+[Conversion and Upfit Packages](https://www.moparamerica.com/#cat-conversion-and-upfit-packages-parts-m "Conversion and Upfit Packages")
+
+*   [Exterior](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/conversion-and-upfit-packages--exterior "Conversion and Upfit Packages: Exterior")
+
+[Cooling](https://www.moparamerica.com/#cat-cooling-parts-m "Cooling")
+
+*   [Drive Belts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--drive-belts "Cooling: Drive Belts")
+*   [Engine Coolant Reservoir (Bottle)](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--engine-coolant-reservoir-bottle "Cooling: Engine Coolant Reservoir (Bottle)")
+*   [Pulleys and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--pulleys-and-related-parts "Cooling: Pulleys and Related Parts")
+*   [Radiator and Related Parts; Charge Air Cooler](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--radiator-and-related-parts-charge-air-cooler "Cooling: Radiator and Related Parts; Charge Air Cooler")
+*   [Transmission Oil Cooler, and Lines](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--transmission-oil-cooler-and-lines "Cooling: Transmission Oil Cooler, and Lines")
+*   [Water Pump and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/cooling--water-pump-and-related-parts "Cooling: Water Pump and Related Parts")
+
+[Doors, Door Mirrors and Related Parts](https://www.moparamerica.com/#cat-doors-door-mirrors-and-related-parts-parts-m "Doors, Door Mirrors and Related Parts")
+
+*   [Exterior Mirror](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/doors-door-mirrors-and-related-parts--exterior-mirror "Doors, Door Mirrors and Related Parts: Exterior Mirror")
+*   [Front Door](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/doors-door-mirrors-and-related-parts--front-door "Doors, Door Mirrors and Related Parts: Front Door")
+*   [Weatherstrips and Seals](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/doors-door-mirrors-and-related-parts--weatherstrips-and-seals "Doors, Door Mirrors and Related Parts: Weatherstrips and Seals")
+
+[Electrical](https://www.moparamerica.com/#cat-electrical-parts-m "Electrical")
+
+*   [Battery, Battery Tray and Cables](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--battery-battery-tray-and-cables "Electrical: Battery, Battery Tray and Cables")
+*   [Generators / Alternators](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--generators-alternators "Electrical: Generators / Alternators")
+*   [Horns](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--horns "Electrical: Horns")
+*   [Ignition - Spark Plugs, Cables, Coils, and Glow Plugs](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--ignition-spark-plugs-cables-coils-and-glow-plugs "Electrical: Ignition - Spark Plugs, Cables, Coils, and Glow Plugs")
+*   [Instrument Panel Cluster](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--instrument-panel-cluster "Electrical: Instrument Panel Cluster")
+*   [Keys, Modules and Engine Controllers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--keys-modules-and-engine-controllers "Electrical: Keys, Modules and Engine Controllers")
+*   [Lamps-Interior and Exterior](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--lamps-interior-and-exterior "Electrical: Lamps-Interior and Exterior")
+*   [Park Assist](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--park-assist "Electrical: Park Assist")
+*   [Power Distribution Center, Fuse Block, Junction Block, Relays and Fuses](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--power-distribution-center-fuse-block-junction-block-relays-and-fuses "Electrical: Power Distribution Center, Fuse Block, Junction Block, Relays and Fuses")
+*   [Radio, Antenna, Speakers, DVD, and Video systems](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--radio-antenna-speakers-dvd-and-video-systems "Electrical: Radio, Antenna, Speakers, DVD, and Video systems")
+*   [Sensors](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--sensors "Electrical: Sensors")
+*   [Speed Control](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--speed-control "Electrical: Speed Control")
+*   [Starters](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--starters "Electrical: Starters")
+*   [Switches](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--switches "Electrical: Switches")
+*   [Wiper and Washer System](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiper-and-washer-system "Electrical: Wiper and Washer System")
+*   [Wiring-Body and Accessories](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-body-and-accessories "Electrical: Wiring-Body and Accessories")
+*   [Wiring-Headlamp to Dash](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-headlamp-to-dash "Electrical: Wiring-Headlamp to Dash")
+*   [Wiring-Instrument Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-instrument-panel "Electrical: Wiring-Instrument Panel")
+*   [Wiring-Powertrain](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/electrical--wiring-powertrain "Electrical: Wiring-Powertrain")
+
+[Emission Controls](https://www.moparamerica.com/#cat-emission-controls-parts-m "Emission Controls")
+
+*   [Emission Harness](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/emission-controls--emission-harness "Emission Controls: Emission Harness")
+*   [Vacuum Canister/Leak Detection Pump](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/emission-controls--vacuum-canister-leak-detection-pump "Emission Controls: Vacuum Canister/Leak Detection Pump")
+
+[Exhaust](https://www.moparamerica.com/#cat-exhaust-parts-m "Exhaust")
+
+*   [Exhaust System](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exhaust--exhaust-system "Exhaust: Exhaust System")
+
+[Exterior Ornamentation](https://www.moparamerica.com/#cat-exterior-ornamentation-parts-m "Exterior Ornamentation")
+
+*   [Decals and Tape stripes](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--decals-and-tape-stripes "Exterior Ornamentation: Decals and Tape stripes")
+*   [Grilles](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--grilles "Exterior Ornamentation: Grilles")
+*   [Moldings and Ornamentation](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--moldings-and-ornamentation "Exterior Ornamentation: Moldings and Ornamentation")
+*   [Nameplates](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--nameplates "Exterior Ornamentation: Nameplates")
+
+[Frame, Bumper and Fascia](https://www.moparamerica.com/#cat-frame-bumper-and-fascia-parts-m "Frame, Bumper and Fascia")
+
+*   [Frames](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/frame-bumper-and-fascia--frames "Frame, Bumper and Fascia: Frames")
+*   [Front Bumper and Fascia](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/frame-bumper-and-fascia--front-bumper-and-fascia "Frame, Bumper and Fascia: Front Bumper and Fascia")
+*   [Rear Bumper and Fascia](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/frame-bumper-and-fascia--rear-bumper-and-fascia "Frame, Bumper and Fascia: Rear Bumper and Fascia")
+
+[Front Suspension](https://www.moparamerica.com/#cat-front-suspension-parts-m "Front Suspension")
+
+*   [Front Stabilizer Bar](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/front-suspension--front-stabilizer-bar "Front Suspension: Front Stabilizer Bar")
+*   [Front Suspension, Strut and Cradle](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/front-suspension--front-suspension-strut-and-cradle "Front Suspension: Front Suspension, Strut and Cradle")
+
+[Fuel](https://www.moparamerica.com/#cat-fuel-parts-m "Fuel")
+
+*   [Accelerator Pedal](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--accelerator-pedal "Fuel: Accelerator Pedal")
+*   [Air Cleaner](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--air-cleaner "Fuel: Air Cleaner")
+*   [Fuel Lines](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-lines "Fuel: Fuel Lines")
+*   [Fuel Pump and Sending Unit](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-pump-and-sending-unit "Fuel: Fuel Pump and Sending Unit")
+*   [Fuel Rail and Injectors](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-rail-and-injectors "Fuel: Fuel Rail and Injectors")
+*   [Fuel Tank](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-tank "Fuel: Fuel Tank")
+*   [Fuel Tank Filler Tube](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--fuel-tank-filler-tube "Fuel: Fuel Tank Filler Tube")
+*   [Throttle Body](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/fuel--throttle-body "Fuel: Throttle Body")
+
+[Glass](https://www.moparamerica.com/#cat-glass-parts-m "Glass")
+
+*   [Glass and Interior Rear View Mirror](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/glass--glass-and-interior-rear-view-mirror "Glass: Glass and Interior Rear View Mirror")
+
+[Interior Trim](https://www.moparamerica.com/#cat-interior-trim-parts-m "Interior Trim")
+
+*   [Carpets, Floor Mats, Load Floor, and Silencers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--carpets-floor-mats-load-floor-and-silencers "Interior Trim: Carpets, Floor Mats, Load Floor, and Silencers")
+*   [Consoles](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--consoles "Interior Trim: Consoles")
+*   [Door Trim Panels-Front and Rear](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--door-trim-panels-front-and-rear "Interior Trim: Door Trim Panels-Front and Rear")
+*   [Front Seats - Adjusters, Recliners, Shields and Risers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--front-seats-adjusters-recliners-shields-and-risers "Interior Trim: Front Seats - Adjusters, Recliners, Shields and Risers")
+*   [Front Seats - First Row](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--front-seats-first-row "Interior Trim: Front Seats - First Row")
+*   [Headliners-Visors-Assist Straps](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--headliners-visors-assist-straps "Interior Trim: Headliners-Visors-Assist Straps")
+*   [Instrument Panel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--instrument-panel "Interior Trim: Instrument Panel")
+*   [Panels-Moldings-Scuff Plates, Pillar, Cowl, 1/4 Panel Trim and Cargo Covers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--panels-moldings-scuff-plates-pillar-cowl-1-4-panel-trim-and-cargo-covers "Interior Trim: Panels-Moldings-Scuff Plates, Pillar, Cowl, 1/4 Panel Trim and Cargo Covers")
+*   [Rear Seats - Second Row](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--rear-seats-second-row "Interior Trim: Rear Seats - Second Row")
+*   [Rear Seats - Second Row - Adjusters, Recliners, Shields and Risers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/interior-trim--rear-seats-second-row-adjusters-recliners-shields-and-risers "Interior Trim: Rear Seats - Second Row - Adjusters, Recliners, Shields and Risers")
+
+[Labels](https://www.moparamerica.com/#cat-labels-parts-m "Labels")
+
+*   [Under Hood](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/labels--under-hood "Labels: Under Hood")
+
+[Mopar Accessories - Component Parts](https://www.moparamerica.com/#cat-mopar-accessories-component-parts-parts-m "Mopar Accessories - Component Parts")
+
+*   [Driving Convenience](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--driving-convenience "Mopar Accessories - Component Parts: Driving Convenience")
+*   [Exterior Appearance](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--exterior-appearance "Mopar Accessories - Component Parts: Exterior Appearance")
+*   [Fog Lights & Electrical](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--fog-lights-and-electrical "Mopar Accessories - Component Parts: Fog Lights & Electrical")
+*   [Interior Protection](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--interior-protection "Mopar Accessories - Component Parts: Interior Protection")
+*   [Lighting and Electrical Accessories](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--lighting-and-electrical-accessories "Mopar Accessories - Component Parts: Lighting and Electrical Accessories")
+*   [Powertrain](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/mopar-accessories-component-parts--powertrain "Mopar Accessories - Component Parts: Powertrain")
+
+[Rear Suspension](https://www.moparamerica.com/#cat-rear-suspension-parts-m "Rear Suspension")
+
+*   [Rear Stabilizer](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-suspension--rear-stabilizer "Rear Suspension: Rear Stabilizer")
+*   [Rear Suspension and Cradle](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-suspension--rear-suspension-and-cradle "Rear Suspension: Rear Suspension and Cradle")
+
+[Rear Wheel Drive; Differential and Drive Line](https://www.moparamerica.com/#cat-rear-wheel-drive-differential-and-drive-line-parts-m "Rear Wheel Drive; Differential and Drive Line")
+
+*   [Drive Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--drive-shaft "Rear Wheel Drive; Differential and Drive Line: Drive Shaft")
+*   [Rear Axle Assembly](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--rear-axle-assembly "Rear Wheel Drive; Differential and Drive Line: Rear Axle Assembly")
+*   [Rear Axle Shafts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--rear-axle-shafts "Rear Wheel Drive; Differential and Drive Line: Rear Axle Shafts")
+*   [Rear Axle; Housing, Differential and Vent](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/rear-wheel-drive-differential-and-drive-line--rear-axle-housing-differential-and-vent "Rear Wheel Drive; Differential and Drive Line: Rear Axle; Housing, Differential and Vent")
+
+[Restraints](https://www.moparamerica.com/#cat-restraints-parts-m "Restraints")
+
+*   [Air Bags](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/restraints--air-bags "Restraints: Air  Bags")
+*   [Seat Belts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/restraints--seat-belts "Restraints: Seat Belts")
+
+[Steering](https://www.moparamerica.com/#cat-steering-parts-m "Steering")
+
+*   [Power Steering Hoses](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--power-steering-hoses "Steering: Power Steering Hoses")
+*   [Steering Column and Intermediate Shaft](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--steering-column-and-intermediate-shaft "Steering: Steering Column and Intermediate Shaft")
+*   [Steering Gear](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--steering-gear "Steering: Steering Gear")
+*   [Steering Wheel](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/steering--steering-wheel "Steering: Steering Wheel")
+
+[TR6060; 6-Speed; Manual Transmission](https://www.moparamerica.com/#cat-tr6060-6-speed-manual-transmission-parts-m "TR6060; 6-Speed; Manual Transmission")
+
+*   [Case, and Extension](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--case-and-extension "TR6060; 6-Speed; Manual Transmission: Case, and Extension")
+*   [Fork and Rails](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--fork-and-rails "TR6060; 6-Speed; Manual Transmission: Fork and Rails")
+*   [Gear Train](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--gear-train "TR6060; 6-Speed; Manual Transmission: Gear Train")
+*   [Gearshift Controls and Related Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--gearshift-controls-and-related-parts "TR6060; 6-Speed; Manual Transmission: Gearshift Controls and Related Parts")
+*   [Manual Transmission / Transaxle](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--manual-transmission-transaxle "TR6060; 6-Speed; Manual Transmission: Manual Transmission / Transaxle")
+*   [Mounting and Skid Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/tr6060-6-speed-manual-transmission--mounting-and-skid-plate "TR6060; 6-Speed; Manual Transmission: Mounting and Skid Plate")
+
+[Wheels](https://www.moparamerica.com/#cat-wheels-parts-m "Wheels")
+
+*   [Emergency Kit](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--emergency-kit "Wheels: Emergency Kit")
+*   [Jack Stowage](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--jack-stowage "Wheels: Jack Stowage")
+*   [Tire Monitoring System](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--tire-monitoring-system "Wheels: Tire Monitoring System")
+*   [Wheel Covers and Center Caps](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--wheel-covers-and-center-caps "Wheels: Wheel Covers and Center Caps")
+*   [Wheel Spare](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--wheel-spare "Wheels: Wheel Spare")
+*   [Wheels, Tires and Hardware](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/wheels--wheels-tires-and-hardware "Wheels: Wheels, Tires and Hardware")
+
+[Crate Engines](https://www.moparamerica.com/#cat-crate-engines-accessories-m "Crate Engines")
+
+*   [Engines](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-crate-engines--engines "Crate Engines: Engines")
+
+[Drag Pak](https://www.moparamerica.com/#cat-drag-pak-accessories-m "Drag Pak")
+
+*   [Race Kits](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-drag-pak--race-kits "Drag Pak: Race Kits")
+
+[Exterior Accessories](https://www.moparamerica.com/#cat-exterior-accessories-accessories-m "Exterior Accessories")
+
+*   [Covers](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--covers "Exterior Accessories: Covers")
+*   [Exterior Appearance](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--exterior-appearance "Exterior Accessories: Exterior Appearance")
+*   [License Plate](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--license-plate "Exterior Accessories: License Plate")
+*   [Locks](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--locks "Exterior Accessories: Locks")
+*   [Protective Guards](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--protective-guards "Exterior Accessories: Protective Guards")
+*   [Splash Guards](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--splash-guards "Exterior Accessories: Splash Guards")
+*   [Wheels](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-exterior-accessories--wheels "Exterior Accessories: Wheels")
+
+[Interior Accessories](https://www.moparamerica.com/#cat-interior-accessories-accessories-m "Interior Accessories")
+
+*   [Air Purification](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--air-purification "Interior Accessories: Air Purification")
+*   [Cargo Trays & Mats](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--cargo-trays-and-mats "Interior Accessories: Cargo Trays & Mats")
+*   [Floor Mats](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--floor-mats "Interior Accessories: Floor Mats")
+*   [Interior Appearance](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-interior-accessories--interior-appearance "Interior Accessories: Interior Appearance")
+
+[Lifestyle & Off-Road Accessories](https://www.moparamerica.com/#cat-lifestyle-and-off-road-accessories-accessories-m "Lifestyle & Off-Road Accessories")
+
+*   [Safety Kits](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-lifestyle-and-off-road-accessories--safety-kits "Lifestyle & Off-Road Accessories: Safety Kits")
+
+[Modern Performance](https://www.moparamerica.com/#cat-modern-performance-accessories-m "Modern Performance")
+
+*   [Engine Parts](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-modern-performance--engine-parts "Modern Performance: Engine Parts")
+*   [Intake & Air](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-modern-performance--intake-and-air "Modern Performance: Intake & Air")
+*   [Suspension](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-modern-performance--suspension "Modern Performance: Suspension")
+
+[Vehicle Care Products](https://www.moparamerica.com/#cat-vehicle-care-products-accessories-m "Vehicle Care Products")
+
+*   [Mopar](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-vehicle-care-products--mopar "Vehicle Care Products: Mopar")
+*   [Touch Up Paint](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/accessories-vehicle-care-products--touch-up-paint "Vehicle Care Products: Touch Up Paint")
+
+# Moldings and Ornamentation for 2017 Dodge Challenger
+
+[![Image 37: Moldings and Ornamentation for 2017 Dodge Challenger #0](https://cdn-illustrations.revolutionparts.io/strapr1/4cd9d227fc6e4feed6714e6fa0efada6/2e6dbca34361cf167a3f38e901c5c3e3.png)1. Anti-chip Film, Right](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--moldings-and-ornamentation?assembly=1 "Diagram 1: Anti-chip Film, Right")[![Image 38: Diagram 2](https://cdn-illustrations.revolutionparts.io/strapr1/53183631268ab9a2790b6f132ee38b5a/8d53ae1194c75f6fff0663a6d5640633.png)2. Decal](https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas/exterior-ornamentation--moldings-and-ornamentation?assembly=2 "Diagram 2: Decal")
+
+Diagram 1: Anti-chip Film, Right 56
+
+![Image 39: Moldings and Ornamentation for 2017 Dodge Challenger #0](https://cdn-illustrations.revolutionparts.io/strapr1/4cd9d227fc6e4feed6714e6fa0efada6/2e6dbca34361cf167a3f38e901c5c3e3.png)
+
+[1](https://www.moparamerica.com/#part_row_0_1_0)
+
+*     [$46.81 Roof Molding, Left Mopar](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-left-1gd41nrvae)
+*     [$46.64 Roof Molding, Right Mopar](https://www.moparamerica.com/oem-parts/mopar-2013-2021-dodge-challenger-roof-molding-right-1gd40lauae)
+*     [$30.75 Roof Molding, Right Mopar](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-right-1gd40nrvae)
+*     [$68.92 Roof Molding, Left Mopar ROOF](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-68677623aa)
+*     [$68.92 Roof Molding, Right Mopar ROOF](https://www.moparamerica.com/oem-parts/mopar-roof-molding-right-68677622aa)
+*   [See more products](https://www.moparamerica.com/#part_row_0_1_0)
+
+[2](https://www.moparamerica.com/#part_row_0_2_0)
+
+*     [$300.30 Sill Cladding, Right Mopar SILL](https://www.moparamerica.com/oem-parts/mopar-2015-2021-dodge-challenger-sill-cladding-right-68185192ag)
+*     [$300.30 Sill Cladding, Left Mopar SILL](https://www.moparamerica.com/oem-parts/mopar-sill-cladding-left-68185193ag)
+
+[3](https://www.moparamerica.com/#part_row_0_3_0)
+
+*     [$2.48 Push Pin Mopar Sill Attaching.](https://www.moparamerica.com/oem-parts/mopar-push-pin-68257098aa)
+
+[3](https://www.moparamerica.com/#part_row_0_3_0)
+
+*     [$2.48 Push Pin Mopar Sill Attaching.](https://www.moparamerica.com/oem-parts/mopar-push-pin-68257098aa)
+
+[4](https://www.moparamerica.com/#part_row_0_4_0)
+
+*     [$5.67 Specialty Nut Mopar M4.2x1.4x40.75. Truck Bed Lamp. M4.2x1.41x36.0. Liner To Fascia. Lamp Mounting. Spat Attaching Push Nut With Screw. Bed Light To Truck Bed. Splash Shield To Sill.](https://www.moparamerica.com/oem-parts/mopar-specialty-nut-6510123aa)
+
+[5](https://www.moparamerica.com/#part_row_0_5_0)
+
+*     [$36.03 Front Fender Spat, Right Mopar](https://www.moparamerica.com/oem-parts/mopar-front-fender-spat-right-68204470ac)
+*     [$36.03 Front Fender Spat, Left Mopar](https://www.moparamerica.com/oem-parts/mopar-front-fender-spat-left-68204471ac)
+
+[6](https://www.moparamerica.com/#part_row_0_6_0)
+
+*     [$2.42 Push Pin Mopar M7.0x17.0. Wheelhouse Shield to Fascia. Wheel Liner attach. Fascia To Wheel Liner. Wheelhouse to Fender attach. Transmission Belly Pan to Rail. Shield to Fender. Torque attach. Front Splash Shield to Brake Duct.](https://www.moparamerica.com/oem-parts/mopar-push-pin-6510139aa)
+
+ No. 
+
+ Part # / Description / Price
+
+ Price 
+
+N/A
+
+[![Image 40: 68199802AC - Exterior Ornamentation: Anti-chip Film, Right for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/b4a11dfc1d6e56eb78a387ae592766a3.webp)](https://www.moparamerica.com/oem-parts/mopar-anti-chip-film-right-68199802ac "Anti-chip Film, Right - Part No 68199802AC")
+
+**[Anti-Chip Film, Right](https://www.moparamerica.com/oem-parts/mopar-anti-chip-film-right-68199802ac "Anti-Chip Film, Right")**
+
+[68199802AC](https://www.moparamerica.com/oem-parts/mopar-anti-chip-film-right-68199802ac "Body Side Aperture. Rear Door.")
+
+![Image 41: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+**Description:** Body Side Aperture. Rear Door. 
+
+ MSRP  $11.30 
+
+ $7.43 
+
+-+
+
+Add to Cart
+
+ MSRP  $11.30 
+
+ $7.43 
+
+-+
+
+Add to Cart
+
+N/A
+
+[![Image 42: 68199803AC - Exterior Ornamentation: Anti-chip Film, Left for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/90e0aa479d3b4890f9fc638713ab676e.webp)](https://www.moparamerica.com/oem-parts/mopar-anti-chip-film-left-68199803ac "Anti-chip Film, Left - Part No 68199803AC")
+
+**[Anti-Chip Film, Left](https://www.moparamerica.com/oem-parts/mopar-anti-chip-film-left-68199803ac "Anti-Chip Film, Left")**
+
+[68199803AC](https://www.moparamerica.com/oem-parts/mopar-anti-chip-film-left-68199803ac "Body Side Aperture. Rear Door.")
+
+![Image 43: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+**Description:** Body Side Aperture. Rear Door. 
+
+ MSRP  $11.30 
+
+ $7.43 
+
+-+
+
+Add to Cart
+
+ MSRP  $11.30 
+
+ $7.43 
+
+-+
+
+Add to Cart
+
+1
+
+[![Image 44: 1GD41NRVAE - Exterior Ornamentation: Roof Molding, Left for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/34e7388577ba320f9fc79309f0cf04bc.webp)](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-left-1gd41nrvae "Roof Molding, Left - Part No 1GD41NRVAE")
+
+**[2017-2019 Dodge Challenger - Roof Molding Left](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-left-1gd41nrvae "2017-2019 Dodge Challenger - Roof Molding Left")**
+
+[1GD41NRVAE](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-left-1gd41nrvae)
+
+![Image 45: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-left-1gd41nrvae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-left-1gd41nrvae)
+
+1
+
+[![Image 46: 1GD40ZR3AE - Exterior Ornamentation: Roof Molding, Right for Mopar Image](https://cdn-illustrations.revolutionparts.io/strapr1/4cd9d227fc6e4feed6714e6fa0efada6/ad0f49b81e99723ce33486f73636c142.png)](https://www.moparamerica.com/oem-parts/mopar-2013-2021-dodge-challenger-roof-molding-right-1gd40lauae "Roof Molding, Right - Part No 1GD40LAUAE")
+
+**[2013-2021 Dodge Challenger - Roof Molding Right](https://www.moparamerica.com/oem-parts/mopar-2013-2021-dodge-challenger-roof-molding-right-1gd40lauae "2013-2021 Dodge Challenger - Roof Molding Right")**
+
+[1GD40LAUAE](https://www.moparamerica.com/oem-parts/mopar-2013-2021-dodge-challenger-roof-molding-right-1gd40lauae)
+
+![Image 47: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2013-2021-dodge-challenger-roof-molding-right-1gd40lauae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2013-2021-dodge-challenger-roof-molding-right-1gd40lauae)
+
+1
+
+[![Image 48: 1GD40NRVAE - Exterior Ornamentation: Roof Molding, Right for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/3685b4d0cf195a58561fd07e428d1945.webp)](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-right-1gd40nrvae "Roof Molding, Right - Part No 1GD40NRVAE")
+
+**[2017-2019 Dodge Challenger - Roof Molding Right](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-right-1gd40nrvae "2017-2019 Dodge Challenger - Roof Molding Right")**
+
+[1GD40NRVAE](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-right-1gd40nrvae)
+
+![Image 49: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-right-1gd40nrvae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-right-1gd40nrvae)
+
+1
+
+[![Image 50: 1GD41GW7AE - Exterior Ornamentation: Roof Molding, Left for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/06280c88d8ad561fc9edc3e439a612b9.webp)](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-68677623aa "Roof Molding, Left - Part No 68677623AA")
+
+**[Roof Molding, Left](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-68677623aa "Roof Molding, Left")**
+
+[68677623AA](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-68677623aa "ROOF")
+
+![Image 51: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+**Description:** ROOF 
+
+ MSRP  $105.00 
+
+ $68.92 
+
+-+
+
+Add to Cart
+
+ MSRP  $105.00 
+
+ $68.92 
+
+-+
+
+Add to Cart
+
+1
+
+[![Image 52: 1GD40GW7AE - Exterior Ornamentation: Roof Molding, Right for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/042601881f4acd0f16246e7328efcd0f.webp)](https://www.moparamerica.com/oem-parts/mopar-roof-molding-right-68677622aa "Roof Molding, Right - Part No 68677622AA")
+
+**[Roof Molding, Right](https://www.moparamerica.com/oem-parts/mopar-roof-molding-right-68677622aa "Roof Molding, Right")**
+
+[68677622AA](https://www.moparamerica.com/oem-parts/mopar-roof-molding-right-68677622aa "ROOF")
+
+![Image 53: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+**Description:** ROOF 
+
+ MSRP  $105.00 
+
+ $68.92 
+
+-+
+
+Add to Cart
+
+ MSRP  $105.00 
+
+ $68.92 
+
+-+
+
+Add to Cart
+
+1
+
+[![Image 54: 1GD41RY4AE - Exterior Ornamentation: Roof Molding, Left for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/a58d9fe1fe8fc3923be388ebdd177751.webp)](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-left-1gd41ry4ae "Roof Molding, Left - Part No 1GD41RY4AE")
+
+**[2017-2019 Dodge Challenger - Roof Molding Left](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-left-1gd41ry4ae "2017-2019 Dodge Challenger - Roof Molding Left")**
+
+[1GD41RY4AE](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-left-1gd41ry4ae)
+
+![Image 55: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-left-1gd41ry4ae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2017-2019-dodge-challenger-roof-molding-left-1gd41ry4ae)
+
+1
+
+[![Image 56: 1GD40GW7AE - Exterior Ornamentation: Roof Molding, Right for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/042601881f4acd0f16246e7328efcd0f.webp)](https://www.moparamerica.com/oem-parts/mopar-2020-2021-dodge-challenger-roof-molding-right-1gd40gw7ae "Roof Molding, Right - Part No 1GD40GW7AE")
+
+**[2020 2021 Dodge Challenger - Roof Molding Right](https://www.moparamerica.com/oem-parts/mopar-2020-2021-dodge-challenger-roof-molding-right-1gd40gw7ae "2020 2021 Dodge Challenger - Roof Molding Right")**
+
+[1GD40GW7AE](https://www.moparamerica.com/oem-parts/mopar-2020-2021-dodge-challenger-roof-molding-right-1gd40gw7ae)
+
+![Image 57: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2020-2021-dodge-challenger-roof-molding-right-1gd40gw7ae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2020-2021-dodge-challenger-roof-molding-right-1gd40gw7ae)
+
+1
+
+[![Image 58: 68360012AA - Exterior Ornamentation: Roof Molding, Right for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/61f7a1f2d56b7208b55c9a48a9d8c5be.webp)](https://www.moparamerica.com/oem-parts/mopar-roof-molding-right-68360012aa "Roof Molding, Right - Part No 68360012AA")
+
+**[Roof Molding Right](https://www.moparamerica.com/oem-parts/mopar-roof-molding-right-68360012aa "Roof Molding Right")**
+
+[68360012AA](https://www.moparamerica.com/oem-parts/mopar-roof-molding-right-68360012aa)
+
+![Image 59: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+**Notes:****Engines:** 5.7L V8 HEMI MDS VVT Engine. 5.7L V8 HEMI VVT Engine. 
+
+ MSRP  $67.60 
+
+ $44.61 
+
+-+
+
+Add to Cart
+
+ MSRP  $67.60 
+
+ $44.61 
+
+-+
+
+Add to Cart
+
+1
+
+[![Image 60: 1GD40ZR3AE - Exterior Ornamentation: Roof Molding, Right for Mopar Image](https://cdn-illustrations.revolutionparts.io/strapr1/4cd9d227fc6e4feed6714e6fa0efada6/ad0f49b81e99723ce33486f73636c142.png)](https://www.moparamerica.com/oem-parts/mopar-roof-molding-right-1gd40karae "Roof Molding, Right - Part No 1GD40KARAE")
+
+**[Roof Molding Right](https://www.moparamerica.com/oem-parts/mopar-roof-molding-right-1gd40karae "Roof Molding Right")**
+
+[1GD40KARAE](https://www.moparamerica.com/oem-parts/mopar-roof-molding-right-1gd40karae)
+
+![Image 61: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-roof-molding-right-1gd40karae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-roof-molding-right-1gd40karae)
+
+1
+
+[![Image 62: 1GD40PDNAE - Exterior Ornamentation: Roof Molding, Right for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/15d2c38ad8d458d7b358b0f85b199525.webp)](https://www.moparamerica.com/oem-parts/mopar-2020-2021-dodge-challenger-roof-molding-right-1gd40pdnae "Roof Molding, Right - Part No 1GD40PDNAE")
+
+**[2020 2021 Dodge Challenger - Roof Molding Right](https://www.moparamerica.com/oem-parts/mopar-2020-2021-dodge-challenger-roof-molding-right-1gd40pdnae "2020 2021 Dodge Challenger - Roof Molding Right")**
+
+[1GD40PDNAE](https://www.moparamerica.com/oem-parts/mopar-2020-2021-dodge-challenger-roof-molding-right-1gd40pdnae)
+
+![Image 63: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2020-2021-dodge-challenger-roof-molding-right-1gd40pdnae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2020-2021-dodge-challenger-roof-molding-right-1gd40pdnae)
+
+1
+
+[![Image 64: 1GD40ZR3AE - Exterior Ornamentation: Roof Molding, Right for Mopar Image](https://cdn-illustrations.revolutionparts.io/strapr1/4cd9d227fc6e4feed6714e6fa0efada6/ad0f49b81e99723ce33486f73636c142.png)](https://www.moparamerica.com/oem-parts/mopar-2013-2019-dodge-challenger-roof-molding-left-1gd41lauae "Roof Molding, Left - Part No 1GD41LAUAE")
+
+**[2013-2019 Dodge Challenger - Roof Molding Left](https://www.moparamerica.com/oem-parts/mopar-2013-2019-dodge-challenger-roof-molding-left-1gd41lauae "2013-2019 Dodge Challenger - Roof Molding Left")**
+
+[1GD41LAUAE](https://www.moparamerica.com/oem-parts/mopar-2013-2019-dodge-challenger-roof-molding-left-1gd41lauae)
+
+![Image 65: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2013-2019-dodge-challenger-roof-molding-left-1gd41lauae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2013-2019-dodge-challenger-roof-molding-left-1gd41lauae)
+
+1
+
+[![Image 66: 1GD41PDNAE - Exterior Ornamentation: Roof Molding, Left for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/3fdf7bbec9b00801b14e2c745d4fb73c.webp)](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-1gd41pdnae "Roof Molding, Left - Part No 1GD41PDNAE")
+
+**[Roof Molding Left](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-1gd41pdnae "Roof Molding Left")**
+
+[1GD41PDNAE](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-1gd41pdnae)
+
+![Image 67: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-1gd41pdnae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-1gd41pdnae)
+
+1
+
+[![Image 68: 1GD40ZR3AE - Exterior Ornamentation: Roof Molding, Right for Mopar Image](https://cdn-illustrations.revolutionparts.io/strapr1/4cd9d227fc6e4feed6714e6fa0efada6/ad0f49b81e99723ce33486f73636c142.png)](https://www.moparamerica.com/oem-parts/mopar-2011-2013-2019-dodge-challenger-roof-molding-right-1gd40jscae "Roof Molding, Right - Part No 1GD40JSCAE")
+
+**[2011 2013-2019 Dodge Challenger - Roof Molding Right](https://www.moparamerica.com/oem-parts/mopar-2011-2013-2019-dodge-challenger-roof-molding-right-1gd40jscae "2011 2013-2019 Dodge Challenger - Roof Molding Right")**
+
+[1GD40JSCAE](https://www.moparamerica.com/oem-parts/mopar-2011-2013-2019-dodge-challenger-roof-molding-right-1gd40jscae)
+
+![Image 69: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2011-2013-2019-dodge-challenger-roof-molding-right-1gd40jscae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2011-2013-2019-dodge-challenger-roof-molding-right-1gd40jscae)
+
+1
+
+[![Image 70: 1GD40ZR3AE - Exterior Ornamentation: Roof Molding, Right for Mopar Image](https://cdn-illustrations.revolutionparts.io/strapr1/4cd9d227fc6e4feed6714e6fa0efada6/ad0f49b81e99723ce33486f73636c142.png)](https://www.moparamerica.com/oem-parts/mopar-2012-2018-dodge-challenger-roof-molding-left-1gd41jryae "Roof Molding, Left - Part No 1GD41JRYAE")
+
+**[2012-2018 Dodge Challenger - Roof Molding Left](https://www.moparamerica.com/oem-parts/mopar-2012-2018-dodge-challenger-roof-molding-left-1gd41jryae "2012-2018 Dodge Challenger - Roof Molding Left")**
+
+[1GD41JRYAE](https://www.moparamerica.com/oem-parts/mopar-2012-2018-dodge-challenger-roof-molding-left-1gd41jryae)
+
+![Image 71: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2012-2018-dodge-challenger-roof-molding-left-1gd41jryae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2012-2018-dodge-challenger-roof-molding-left-1gd41jryae)
+
+1
+
+[![Image 72: 1GD41GW7AE - Exterior Ornamentation: Roof Molding, Left for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/06280c88d8ad561fc9edc3e439a612b9.webp)](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-1gd41gw7ae "Roof Molding, Left - Part No 1GD41GW7AE")
+
+**[Roof Molding, Left](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-1gd41gw7ae "Roof Molding, Left")**
+
+[1GD41GW7AE](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-1gd41gw7ae)
+
+![Image 73: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-1gd41gw7ae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-1gd41gw7ae)
+
+1
+
+[![Image 74: 68360013AA - Exterior Ornamentation: Roof Molding, Left for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/d11926d476522b4531c2e821b561692f.webp)](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-68360013aa "Roof Molding, Left - Part No 68360013AA")
+
+**[Roof Molding Left](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-68360013aa "Roof Molding Left")**
+
+[68360013AA](https://www.moparamerica.com/oem-parts/mopar-roof-molding-left-68360013aa)
+
+![Image 75: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+**Notes:****Engines:** 5.7L V8 HEMI MDS VVT Engine. 5.7L V8 HEMI VVT Engine. 
+
+ MSRP  $67.60 
+
+ $44.61 
+
+-+
+
+Add to Cart
+
+ MSRP  $67.60 
+
+ $44.61 
+
+-+
+
+Add to Cart
+
+1
+
+[![Image 76: 1GD40ZR3AE - Exterior Ornamentation: Roof Molding, Right for Mopar Image](https://cdn-illustrations.revolutionparts.io/strapr1/4cd9d227fc6e4feed6714e6fa0efada6/ad0f49b81e99723ce33486f73636c142.png)](https://www.moparamerica.com/oem-parts/mopar-2013-2018-dodge-challenger-roof-molding-left-1gd41kbxae "Roof Molding, Left - Part No 1GD41KBXAE")
+
+**[2013-2018 Dodge Challenger - Roof Molding Left](https://www.moparamerica.com/oem-parts/mopar-2013-2018-dodge-challenger-roof-molding-left-1gd41kbxae "2013-2018 Dodge Challenger - Roof Molding Left")**
+
+[1GD41KBXAE](https://www.moparamerica.com/oem-parts/mopar-2013-2018-dodge-challenger-roof-molding-left-1gd41kbxae)
+
+![Image 77: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2013-2018-dodge-challenger-roof-molding-left-1gd41kbxae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2013-2018-dodge-challenger-roof-molding-left-1gd41kbxae)
+
+1
+
+[![Image 78: 1GD40ZR3AE - Exterior Ornamentation: Roof Molding, Right for Mopar Image](https://cdn-illustrations.revolutionparts.io/strapr1/4cd9d227fc6e4feed6714e6fa0efada6/ad0f49b81e99723ce33486f73636c142.png)](https://www.moparamerica.com/oem-parts/mopar-2009-2010-2013-2019-dodge-challenger-roof-molding-left-1gd41zr3ae "Roof Molding, Left - Part No 1GD41ZR3AE")
+
+**[2009 2010 2013-2019 Dodge Challenger - Roof Molding Left](https://www.moparamerica.com/oem-parts/mopar-2009-2010-2013-2019-dodge-challenger-roof-molding-left-1gd41zr3ae "2009 2010 2013-2019 Dodge Challenger - Roof Molding Left")**
+
+[1GD41ZR3AE](https://www.moparamerica.com/oem-parts/mopar-2009-2010-2013-2019-dodge-challenger-roof-molding-left-1gd41zr3ae "ROOF")
+
+![Image 79: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+**Description:** ROOF 
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2009-2010-2013-2019-dodge-challenger-roof-molding-left-1gd41zr3ae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2009-2010-2013-2019-dodge-challenger-roof-molding-left-1gd41zr3ae)
+
+1
+
+[![Image 80: 1GD40ZR3AE - Exterior Ornamentation: Roof Molding, Right for Mopar Image](https://cdn-illustrations.revolutionparts.io/strapr1/4cd9d227fc6e4feed6714e6fa0efada6/ad0f49b81e99723ce33486f73636c142.png)](https://www.moparamerica.com/oem-parts/mopar-2009-2010-2013-2021-dodge-challenger-roof-molding-right-1gd40zr3ae "Roof Molding, Right - Part No 1GD40ZR3AE")
+
+**[2009 2010 2013-2021 Dodge Challenger - Roof Molding Right](https://www.moparamerica.com/oem-parts/mopar-2009-2010-2013-2021-dodge-challenger-roof-molding-right-1gd40zr3ae "2009 2010 2013-2021 Dodge Challenger - Roof Molding Right")**
+
+[1GD40ZR3AE](https://www.moparamerica.com/oem-parts/mopar-2009-2010-2013-2021-dodge-challenger-roof-molding-right-1gd40zr3ae "ROOF")
+
+![Image 81: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+**Description:** ROOF 
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2009-2010-2013-2021-dodge-challenger-roof-molding-right-1gd40zr3ae)
+
+[View Details](https://www.moparamerica.com/oem-parts/mopar-2009-2010-2013-2021-dodge-challenger-roof-molding-right-1gd40zr3ae)
+
+2
+
+[![Image 82: 68185192AG - Exterior Ornamentation: Sill Cladding, Right for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/432fc6103fc262e2ed1d28283197f6d7.webp)](https://www.moparamerica.com/oem-parts/mopar-2015-2021-dodge-challenger-sill-cladding-right-68185192ag "Sill Cladding, Right - Part No 68185192AG")
+
+**[2015-2021 Dodge Challenger - Sill Cladding Right](https://www.moparamerica.com/oem-parts/mopar-2015-2021-dodge-challenger-sill-cladding-right-68185192ag "2015-2021 Dodge Challenger - Sill Cladding Right")**
+
+[68185192AG](https://www.moparamerica.com/oem-parts/mopar-2015-2021-dodge-challenger-sill-cladding-right-68185192ag "SILL")
+
+![Image 83: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+**Description:** SILL 
+
+ MSRP  $456.00 
+
+ $300.30 
+
+-+
+
+Add to Cart
+
+ MSRP  $456.00 
+
+ $300.30 
+
+-+
+
+Add to Cart
+
+2
+
+[![Image 84: 68185193AG - Exterior Ornamentation: Sill Cladding, Left for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/91f08ba957739afe824bac577e91371b.webp)](https://www.moparamerica.com/oem-parts/mopar-sill-cladding-left-68185193ag "Sill Cladding, Left - Part No 68185193AG")
+
+**[Sill Cladding Left](https://www.moparamerica.com/oem-parts/mopar-sill-cladding-left-68185193ag "Sill Cladding Left")**
+
+[68185193AG](https://www.moparamerica.com/oem-parts/mopar-sill-cladding-left-68185193ag "SILL")
+
+![Image 85: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+**Description:** SILL 
+
+ MSRP  $456.00 
+
+ $300.30 
+
+-+
+
+Add to Cart
+
+ MSRP  $456.00 
+
+ $300.30 
+
+-+
+
+Add to Cart
+
+3
+
+[![Image 86: 68257098AA - Exterior Ornamentation: Push Pin for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/47f3dce9c2cc48f371731eb6e69685d6.webp)](https://www.moparamerica.com/oem-parts/mopar-push-pin-68257098aa "Push Pin - Part No 68257098AA")
+
+**[Push Pin](https://www.moparamerica.com/oem-parts/mopar-push-pin-68257098aa "Push Pin")**
+
+[68257098AA](https://www.moparamerica.com/oem-parts/mopar-push-pin-68257098aa "Sill Attaching.")
+
+![Image 87: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+**Description:** Sill Attaching. 
+
+ MSRP  $3.80 
+
+ $2.48 
+
+-+
+
+Add to Cart
+
+ MSRP  $3.80 
+
+ $2.48 
+
+-+
+
+Add to Cart
+
+4
+
+[![Image 88: 6510123AA - Exterior Ornamentation: Specialty Nut for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/e798e4a6014e46638e9233933f0d70ad.webp)](https://www.moparamerica.com/oem-parts/mopar-specialty-nut-6510123aa "Specialty Nut - Part No 6510123AA")
+
+**[Specialty Nut](https://www.moparamerica.com/oem-parts/mopar-specialty-nut-6510123aa "Specialty Nut")**
+
+[6510123AA](https://www.moparamerica.com/oem-parts/mopar-specialty-nut-6510123aa "M4.2x1.4x40.75. Truck Bed Lamp. M4.2x1.41x36.0. Liner To Fascia. Lamp Mounting. Spat Attaching Push Nut With Screw. Bed Light To Truck Bed. Splash Shield To Sill.")
+
+![Image 89: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+**Description:** M4.2x1.4x40.75. Truck Bed Lamp. M4.2x1.41x36.0. Liner To Fascia. Lamp Mounting. Spat Attaching Push Nut With Screw. Bed Light To Truck Bed. Splash Shield To Sill. 
+
+ MSRP  $8.60 
+
+ $5.67 
+
+-+
+
+Add to Cart
+
+ MSRP  $8.60 
+
+ $5.67 
+
+-+
+
+Add to Cart
+
+5
+
+[![Image 90: 68204470AC - Exterior Ornamentation: Front Fender Spat, Right for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/53e678638ba6602c3f4060b0dcc6b472.webp)](https://www.moparamerica.com/oem-parts/mopar-front-fender-spat-right-68204470ac "Front Fender Spat, Right - Part No 68204470AC")
+
+**[Front Fender Spat, Right](https://www.moparamerica.com/oem-parts/mopar-front-fender-spat-right-68204470ac "Front Fender Spat, Right")**
+
+[68204470AC](https://www.moparamerica.com/oem-parts/mopar-front-fender-spat-right-68204470ac)
+
+![Image 91: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+ MSRP  $54.65 
+
+ $36.03 
+
+-+
+
+Add to Cart
+
+ MSRP  $54.65 
+
+ $36.03 
+
+-+
+
+Add to Cart
+
+5
+
+[![Image 92: 68204471AC - Exterior Ornamentation: Front Fender Spat, Left for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/f59661cfd72872473c9bc407a3decee7.webp)](https://www.moparamerica.com/oem-parts/mopar-front-fender-spat-left-68204471ac "Front Fender Spat, Left - Part No 68204471AC")
+
+**[Front Fender Spat, Left](https://www.moparamerica.com/oem-parts/mopar-front-fender-spat-left-68204471ac "Front Fender Spat, Left")**
+
+[68204471AC](https://www.moparamerica.com/oem-parts/mopar-front-fender-spat-left-68204471ac)
+
+![Image 93: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+ MSRP  $54.65 
+
+ $36.03 
+
+-+
+
+Add to Cart
+
+ MSRP  $54.65 
+
+ $36.03 
+
+-+
+
+Add to Cart
+
+6
+
+[![Image 94: 6510139AA - Exterior Ornamentation: Push Pin for Mopar Image](https://cdn-product-images.revolutionparts.io/assets/08e3e2ec655d84e04fd4dd5ebc8a421c.webp)](https://www.moparamerica.com/oem-parts/mopar-push-pin-6510139aa "Push Pin - Part No 6510139AA")
+
+**[Push Pin](https://www.moparamerica.com/oem-parts/mopar-push-pin-6510139aa "Push Pin")**
+
+[6510139AA](https://www.moparamerica.com/oem-parts/mopar-push-pin-6510139aa "M7.0x17.0. Wheelhouse Shield to Fascia. Wheel Liner attach. Fascia To Wheel Liner. Wheelhouse to Fender attach. Transmission Belly Pan to Rail. Shield to Fender. Torque attach. Front Splash Shield to Brake Duct.")
+
+![Image 95: Mopar](https://cdn-static.revolutionparts.io/assets/images/mopar.png)**Mopar**
+
+**Description:** M7.0x17.0. Wheelhouse Shield to Fascia. Wheel Liner attach. Fascia To Wheel Liner. Wheelhouse to Fender attach. Transmission Belly Pan to Rail. Shield to Fender. Torque attach. Front Splash Shield to Brake Duct. 
+
+ MSRP  $3.75 
+
+ $2.42 
+
+-+
+
+Add to Cart
+
+ MSRP  $3.75 
+
+ $2.42 
+
+-+
+
+Add to Cart
+
+Diagram 2: Decal 10
+
+**Navigation**
+*   [About Us](https://www.moparamerica.com/about)
+*   [Contact Us](https://www.moparamerica.com/contact-us)
+*   [My Account](https://www.moparamerica.com/account/login)
+*   [My Orders](https://www.moparamerica.com/account/order-status)
+*   [VIN Decoder](https://www.moparamerica.com/mopar-vin-decoder)
+*   [Sitemap](https://www.moparamerica.com/sitemap)
+*   [Official Mopar Parts Store](https://store.mopar.com/?partnerId=e02e9c39424529b2bb94003464842b57)
+
+**Shop by Model**
+
+*   [Dodge Parts](https://www.moparamerica.com/v-dodge)
+*   [Chrysler Parts](https://www.moparamerica.com/v-chrysler)
+*   [Jeep Parts](https://www.moparamerica.com/v-jeep)
+*   [Ram Parts](https://www.moparamerica.com/v-ram)
+
+**Policies**
+*   [Terms & Conditions](https://www.moparamerica.com/policies/terms-and-conditions)
+*   [FAQ](https://www.moparamerica.com/faq)
+*   [Returns](https://www.moparamerica.com/policies/returns)
+*   [Shipping](https://www.moparamerica.com/policies/shipping)
+*   [Privacy](https://www.moparamerica.com/policies/privacy)
+
+**Contact Us**
+
+MoparAmerica
+
+950 NC HIGHWAY 66 S
+
+KERNERSVILLE,NC 27284
+
+[888-610-4996](tel:888-610-4996)
+
+![Image 96: PayPal](https://cdn-static.revolutionparts.io/assets/payment/paypal.svg)![Image 97: Visa](https://cdn-static.revolutionparts.io/assets/payment/visa.svg)![Image 98: Master Card](https://cdn-static.revolutionparts.io/assets/payment/mc.svg)![Image 99: Amex](https://cdn-static.revolutionparts.io/assets/payment/amex.svg)![Image 100: Discover](https://cdn-static.revolutionparts.io/assets/payment/discover.svg)
+
+[Powered by ![Image 101](https://cdn-static.revolutionparts.io/assets/images/rp/r_square_sm_bnw.jpg) RevolutionParts © 2026](https://www.revolutionparts.com/)
+
+![Image 102: PayPal](https://cdn-static.revolutionparts.io/assets/payment/paypal.svg)![Image 103: Visa](https://cdn-static.revolutionparts.io/assets/payment/visa.svg)![Image 104: Master Card](https://cdn-static.revolutionparts.io/assets/payment/mc.svg)![Image 105: Amex](https://cdn-static.revolutionparts.io/assets/payment/amex.svg)![Image 106: Discover](https://cdn-static.revolutionparts.io/assets/payment/discover.svg)
+
+![Image 107](https://cdn.revolutionparts.io/1d71f6b12285516678a8e7ec31c8735c/design/authorize.net.gif)
+
+[Powered by ![Image 108](https://cdn-static.revolutionparts.io/assets/images/rp/r_square_26x26_red.jpg) RevolutionParts © 2026](https://www.revolutionparts.com/)

@@ -30,15 +30,18 @@ def run_id(stage):return f'{stage}-{dt.datetime.now(dt.timezone.utc).strftime("%
 def cache_entries():
  try:return json.loads(CACHE_INDEX.read_text(encoding='utf-8'))['entries']
  except Exception:return {}
-def throttled_get(url,timeout=180,no_cache=False):
+def retrieval_headers(no_cache=False,engine=None):
+ headers={'User-Agent':'Hermes-Mopar-Catalogue-Audit/3.1','Accept':'text/plain'}
+ if no_cache:headers['X-No-Cache']='true'
+ if engine:headers['X-Engine']=engine
+ return headers
+def throttled_get(url,timeout=180,no_cache=False,engine=None):
  global _last_request
  with _lock:
   wait=max(0,10-(time.time()-_last_request))
   if wait:time.sleep(wait)
-  headers={'User-Agent':'Hermes-Mopar-Catalogue-Audit/3.0'}
-  if no_cache:headers['X-No-Cache']='true'
-  r=requests.get(url,timeout=timeout,headers=headers);_last_request=time.time();return r
-def source_get(original,refresh=False,prefer_https=False):
+  r=requests.get(url,timeout=timeout,headers=retrieval_headers(no_cache,engine));_last_request=time.time();return r
+def source_get(original,refresh=False,prefer_https=False,engine=None):
  if not refresh:
   e=cache_entries().get(original)
   if e:
@@ -49,8 +52,8 @@ def source_get(original,refresh=False,prefer_https=False):
  errors=[]
  for renderer in candidates:
   for attempt in range(3):
-   r=throttled_get(renderer,no_cache=refresh);text=r.text;bad=any(x in text[:1500] for x in ('Page Not Found','Internal Server Error','Security Verification','Access Denied'))
-   if r.status_code==200 and len(text)>900 and not bad:return r.status_code,text,r.url,renderer,None
+   r=throttled_get(renderer,no_cache=refresh,engine=engine);text=r.text;bad=any(x in text[:1500] for x in ('Page Not Found','Internal Server Error','Security Verification','Access Denied'))
+   if r.status_code==200 and len(text)>900 and not bad:return r.status_code,text,r.url,renderer,{'engine':engine or 'default','no_cache':refresh}
    errors.append({'renderer':renderer,'attempt':attempt+1,'status':r.status_code,'bytes':len(r.content),'title':(re.search(r'^Title:\s*(.+)$',text,re.M).group(1) if re.search(r'^Title:\s*(.+)$',text,re.M) else '')});time.sleep(10*(attempt+1))
  raise RuntimeError('source retrieval failed '+json.dumps({'url':original,'errors':errors}))
 def snapshot(c,url,text,http,final,renderer,run,structure):
@@ -109,14 +112,21 @@ def discover(refresh=False):
   except Exception as e:c.rollback();c.execute("UPDATE variations SET validation_status='QA_FAILED' WHERE variation_id=?",(v['variation_id'],));c.commit();raise
  export_scope(c);c.close()
 def assembly_selectors(text):
- pat=re.compile(r'\[!\[Image\s+\d+:\s*([^\]]*)\]\((https?://[^)\s]+)\)([^\]]*)\]\((https://www\.moparamerica\.com/[^)\s"]+\?assembly=(\d+))(?:\s+"Diagram\s+\d+:\s*([^"]*)")?\)')
+ image_pat=re.compile(r'\[!\[Image\s+\d+:\s*([^\]]*)\]\((https?://[^)\s]+)\)([^\]]*)\]\((https?://www\.moparamerica\.com/[^)\s"]+\?assembly=(\d+))(?:\s+"Diagram\s+\d+:\s*([^"]*)")?\)')
+ no_image_pat=re.compile(r'\[no image\s+(\d+)\.\s*([^\]]+)\]\((https?://www\.moparamerica\.com/[^)\s"]+\?assembly=(\d+))(?:\s+"Related Parts:\s*([^"]*)")?\)',re.I)
+ candidates=[]
+ for m in image_pat.finditer(text):
+  url=re.sub(r'^http://www\.moparamerica\.com','https://www.moparamerica.com',m.group(4));candidates.append({'assembly':int(m.group(5)),'title':clean(m.group(6) or re.sub(r'^\s*\d+\.\s*','',m.group(3)) or m.group(1)),'image_url':m.group(2),'image_alt':m.group(1),'url':url,'locator':f'markdown:char:{m.start()}-{m.end()}','_pos':m.start()})
+ for m in no_image_pat.finditer(text):
+  url=re.sub(r'^http://www\.moparamerica\.com','https://www.moparamerica.com',m.group(3));candidates.append({'assembly':int(m.group(4)),'title':clean(m.group(5) or m.group(2)),'image_url':None,'image_alt':f'no image {m.group(1)}. {m.group(2)}','url':url,'locator':f'markdown:char:{m.start()}-{m.end()}','_pos':m.start()})
  out=[];seen=set()
- for m in pat.finditer(text):
-  n=int(m.group(5));key=(n,m.group(4))
+ for item in sorted(candidates,key=lambda x:x['_pos']):
+  key=(item['assembly'],item['url'])
   if key in seen:continue
-  seen.add(key);title=clean(m.group(6) or re.sub(r'^\s*\d+\.\s*','',m.group(3)) or m.group(1));out.append({'assembly':n,'title':title,'image_url':m.group(2),'image_alt':m.group(1),'url':m.group(4),'locator':f'markdown:char:{m.start()}-{m.end()}','ordinal':len(out)+1})
- total=len(re.findall(r'https://www\.moparamerica\.com/[^)\s"]+\?assembly=\d+',text))
- if total!=len(out):raise ValueError(f'assembly selector reconciliation failed parsed={len(out)} references={total}')
+  seen.add(key);item['ordinal']=len(out)+1;item.pop('_pos');out.append(item)
+ refs={(int(n),re.sub(r'^http://www\.moparamerica\.com','https://www.moparamerica.com',u)) for u,n in re.findall(r'(https?://www\.moparamerica\.com/[^)\s"]+\?assembly=(\d+))',text)}
+ parsed={(x['assembly'],x['url']) for x in out}
+ if refs!=parsed:raise ValueError(f'assembly selector reconciliation failed parsed={len(parsed)} references={len(refs)} missing={sorted(refs-parsed)[:5]} extra={sorted(parsed-refs)[:5]}')
  return out
 def table_rows(text):
  header=re.search(r'\n\s*No\.\s*\n\s*\n\s*Part\s*#\s*/\s*Description\s*/\s*Price',text,re.I)
@@ -201,6 +211,9 @@ def parse_leaf(text,leaf_type,requested_assembly=None):
  rows=table_rows(text)+accessory_rows(text)+markerless_card_rows(text)+related_rows(text)+callout_rows(text,active);heading=(re.search(r'(?m)^#\s+.+$',text).start() if re.search(r'(?m)^#\s+.+$',text) else 0);allurls=set(product_candidates(text,heading));accounted={r['url'] for r in rows if r['url'].startswith(('https://www.moparamerica.com/','http://www.moparamerica.com/'))}
  if allurls-accounted:raise ValueError('unaccounted product links '+json.dumps(sorted(allurls-accounted)[:20]))
  return {'selectors':selectors,'active':active,'rows':rows,'all_product_urls':allurls,'structural':{'detailed_rows':len([r for r in rows if r['section']=='DETAILED_TABLE']),'callout_rows':len([r for r in rows if r['section']=='CALLOUT_SUMMARY']),'callout_markers':len(re.findall(r'(?m)^\[[^\]]+\]\(https://www\.moparamerica\.com/#part_row_',active['body'])) if active else 0,'selectors':len(selectors)}}
+def reconciled_callout_count(parsed):
+ """Count source callout markers, not alternative part rows under them."""
+ return int(parsed['structural']['callout_markers'])
 def row_key(leaf,r):return sid('row',leaf,r['section'],r['anchor'],r['ordinal'])
 def insert_image(c,source_context,snapshot_id,page_sha,record_id,rowkey,img,target_notes=None):
  leaf,product=source_context;obs=sid('imgobs',snapshot_id,img['locator'],img['ordinal']);c.execute('''INSERT INTO image_observations(image_observation_id,catalogue_leaf_id,product_source_id,record_id,source_row_key,source_snapshot_id,source_page_sha256,source_locator,source_occurrence_ordinal,image_role,image_alt_source,image_source_url,association_basis,association_status,acquisition_status,verification_status,evidence_notes) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?, 'NOT_STARTED','NOT_STARTED',?)''',(obs,leaf,product,record_id,rowkey,snapshot_id,page_sha,img['locator'],img['ordinal'],img['role'],img.get('alt'),img['url'],img['association'],img['association'],json.dumps(target_notes or {})))
@@ -219,11 +232,12 @@ def leaf_context(c,leaf):
 def process_leaf(leaf_id,refresh=False):
  c=con();ctx=leaf_context(c,leaf_id);run=run_id(ctx['leaf_type'].lower());batch=sid('batch','category' if ctx['leaf_type']=='CATEGORY_INDEX' else 'diagram',leaf_id);c.execute("UPDATE catalogue_leaves SET status='IN_PROGRESS',processing_started_at=?,exception_code=NULL WHERE catalogue_leaf_id=?",(now(),leaf_id));c.execute("UPDATE batches SET status='IN_PROGRESS',attempt_count=attempt_count+1,started_at=?,last_error=NULL WHERE batch_id=?",(now(),batch));c.commit()
  try:
-  http,text,final,renderer,_=source_get(ctx['source_url'],refresh)
+  http,text,final,renderer,retrieval=source_get(ctx['source_url'],refresh)
   if not leaf_structure_complete(text,ctx['leaf_type'],ctx['assembly_number']):
-   http,text,final,renderer,_=source_get(ctx['source_url'],True,True)
-  if not leaf_structure_complete(text,ctx['leaf_type'],ctx['assembly_number']):raise ValueError('source structure incomplete after uncached re-fetch')
-  parsed=parse_leaf(text,ctx['leaf_type'],ctx['assembly_number']);c.execute('BEGIN IMMEDIATE');snap,page_sha,raw=snapshot(c,ctx['source_url'],text,http,final,renderer,run,'LEAF_STRUCTURE_VALIDATED')
+   http,text,final,renderer,retrieval=source_get(ctx['source_url'],True,True,'browser')
+  if not leaf_structure_complete(text,ctx['leaf_type'],ctx['assembly_number']):raise ValueError('source structure incomplete after uncached browser-engine re-fetch')
+  structure='LEAF_STRUCTURE_VALIDATED_BROWSER_ENGINE' if isinstance(retrieval,dict) and retrieval.get('engine')=='browser' else 'LEAF_STRUCTURE_VALIDATED'
+  parsed=parse_leaf(text,ctx['leaf_type'],ctx['assembly_number']);c.execute('BEGIN IMMEDIATE');snap,page_sha,raw=snapshot(c,ctx['source_url'],text,http,final,renderer,run,structure)
   c.execute('DELETE FROM image_observations WHERE catalogue_leaf_id=?',(leaf_id,));c.execute('DELETE FROM visible_source_rows WHERE catalogue_leaf_id=?',(leaf_id,))
   # Reconcile child diagrams from the complete selector set.
   if ctx['leaf_type']=='CATEGORY_INDEX':
@@ -234,13 +248,14 @@ def process_leaf(leaf_id,refresh=False):
    for old in c.execute("SELECT catalogue_leaf_id FROM catalogue_leaves WHERE parent_leaf_id=? AND leaf_type='DIAGRAM'",(leaf_id,)).fetchall():
     if old['catalogue_leaf_id'] not in wanted:c.execute("DELETE FROM image_observations WHERE catalogue_leaf_id=?",(old['catalogue_leaf_id'],));c.execute("DELETE FROM visible_source_rows WHERE catalogue_leaf_id=?",(old['catalogue_leaf_id'],));c.execute("UPDATE catalogue_leaves SET status='RETIRED_SOURCE',exception_code='ABSENT_FROM_REFRESHED_SELECTOR_SET' WHERE catalogue_leaf_id=?",(old['catalogue_leaf_id'],))
   for s in parsed['selectors']:
+   if not s['image_url']:continue
    target=sid('leaf',ctx['variation_id'],'DIAGRAM',s['url']);insert_image(c,(leaf_id,None),snap,page_sha,None,None,{'url':s['image_url'],'alt':s['image_alt'],'role':'DIAGRAM_SELECTOR_THUMBNAIL','locator':s['locator'],'ordinal':s['ordinal'],'association':'ASSOCIATION_FROM_ASSEMBLY_SELECTOR'},{'target_diagram_leaf_id':target,'assembly':s['assembly']})
   if parsed['active'] and parsed['active']['image']:insert_image(c,(leaf_id,None),snap,page_sha,None,None,parsed['active']['image'],{'assembly':parsed['active']['assembly']})
   ctx=leaf_context(c,leaf_id);leafdict=dict(ctx);leafdict['catalogue_page_url']=ctx['catalogue_page_url'] or ctx['source_url'];leafdict['diagram_page_url']=ctx['source_url'] if ctx['leaf_type']=='DIAGRAM' or parsed['active'] else None;leafdict['diagram_id']=ctx['diagram_id'] or (str(parsed['active']['assembly']) if parsed['active'] else None);leafdict['diagram_title_source']=ctx['diagram_title_source'] or (parsed['active']['title'] if parsed['active'] else None)
   for r in parsed['rows']:insert_row(c,leafdict,snap,page_sha,r,run)
   actual=c.execute('SELECT count(*) FROM visible_source_rows WHERE catalogue_leaf_id=?',(leaf_id,)).fetchone()[0];recs=c.execute('SELECT count(*) FROM part_records WHERE catalogue_leaf_id=?',(leaf_id,)).fetchone()[0];obs=c.execute('SELECT count(*) FROM image_observations WHERE catalogue_leaf_id=?',(leaf_id,)).fetchone()[0]
   if actual!=len(parsed['rows']) or recs!=actual:raise RuntimeError(f'committed row reconciliation failed expected={len(parsed["rows"])} staged={actual} records={recs}')
-  c.execute("""UPDATE catalogue_leaves SET current_snapshot_id=?,status='EXTRACTED',source_structure_status='LEAF_STRUCTURE_VALIDATED',expected_source_row_count=?,extracted_source_row_count=?,expected_callout_count=?,extracted_callout_count=?,expected_image_count=?,observed_image_count=?,processing_completed_at=?,evidence_notes=? WHERE catalogue_leaf_id=?""",(snap,len(parsed['rows']),recs,parsed['structural']['callout_markers'],len({(r['anchor'],r['ordinal']) for r in parsed['rows'] if r['section']=='CALLOUT_SUMMARY'}),obs,obs,now(),json.dumps({'structural':parsed['structural'],'raw_path':raw.relative_to(CAT).as_posix()}),leaf_id));c.execute("UPDATE batches SET status='EXTRACTED',completed_at=?,checkpoint_path=? WHERE batch_id=?",(now(),raw.relative_to(CAT).as_posix(),batch));c.commit()
+  c.execute("""UPDATE catalogue_leaves SET current_snapshot_id=?,status='EXTRACTED',source_structure_status=?,expected_source_row_count=?,extracted_source_row_count=?,expected_callout_count=?,extracted_callout_count=?,expected_image_count=?,observed_image_count=?,processing_completed_at=?,evidence_notes=? WHERE catalogue_leaf_id=?""",(snap,structure,len(parsed['rows']),recs,reconciled_callout_count(parsed),reconciled_callout_count(parsed),obs,obs,now(),json.dumps({'structural':parsed['structural'],'retrieval':retrieval,'raw_path':raw.relative_to(CAT).as_posix()}),leaf_id));c.execute("UPDATE batches SET status='EXTRACTED',completed_at=?,checkpoint_path=? WHERE batch_id=?",(now(),raw.relative_to(CAT).as_posix(),batch));c.commit()
  except Exception as e:c.rollback();c.execute("UPDATE catalogue_leaves SET status='QA_FAILED',exception_code='SOURCE_OR_PARSER_FAILURE',evidence_notes=? WHERE catalogue_leaf_id=?",(json.dumps({'error':repr(e)}),leaf_id));c.execute("UPDATE batches SET status='QA_FAILED',last_error=?,completed_at=? WHERE batch_id=?",(repr(e),now(),batch));c.commit();raise
  finally:c.close()
 def crawl(kind,limit=None,retry=False,refresh=False):
@@ -262,17 +277,23 @@ def parse_product_detail(text):
   u=m.group(2)
   if 'cdn-product-images.' in u or 'cdn-illustrations.' in u:images.append({'url':u,'alt':m.group(1),'role':'PRODUCT_GALLERY_IMAGE','locator':f'markdown:char:{m.start()}-{m.end()}','ordinal':i,'association':'ASSOCIATION_FROM_PRODUCT_GALLERY'})
  return {'complete':complete,'pn':clean(pm.group(1)) if pm else None,'name':clean(title.group(1)) if title else None,'description':fields['description'],'replaces':fields['replaces'],'other_names':fields['other_names'],'fitment':' || '.join(fitlines) if fitlines else None,'images':images,'marker':marker}
+def product_structure_states(complete,retrieval):
+ semantic='PRODUCT_DETAIL_COMPLETE' if complete else 'PRODUCT_DETAIL_PARTIAL'
+ snapshot=semantic+'_BROWSER_ENGINE' if isinstance(retrieval,dict) and retrieval.get('engine')=='browser' else semantic
+ return semantic,snapshot
+def finalize_product_batch(errors):
+ if errors:raise RuntimeError('product batch completed with failures '+json.dumps(errors))
 def crawl_products(limit=None,retry=False,refresh=False):
- init_db();c=con(True);states="('NOT_STARTED','QA_FAILED','SOURCE_RENDERER_PARTIAL')" if retry else "('NOT_STARTED')";q=f"SELECT product_source_id FROM product_sources WHERE status IN {states} ORDER BY product_source_id"+(" LIMIT ?" if limit else '');ids=[x[0] for x in c.execute(q,(limit,) if limit else ())];c.close()
+ init_db();c=con(True);states="('NOT_STARTED','QA_FAILED','SOURCE_RENDERER_PARTIAL')" if retry else "('NOT_STARTED')";q=f"SELECT product_source_id FROM product_sources WHERE status IN {states} ORDER BY product_source_id"+(" LIMIT ?" if limit else '');ids=[x[0] for x in c.execute(q,(limit,) if limit else ())];c.close();errors=[]
  for psid in ids:
   c=con();p=c.execute('SELECT * FROM product_sources WHERE product_source_id=?',(psid,)).fetchone();run=run_id('product');batch=sid('batch','product',psid);c.execute("UPDATE product_sources SET status='IN_PROGRESS',processing_started_at=? WHERE product_source_id=?",(now(),psid));c.execute("UPDATE batches SET status='IN_PROGRESS',attempt_count=attempt_count+1,started_at=?,last_error=NULL WHERE batch_id=?",(now(),batch));c.commit()
   try:
-   http,text,final,renderer,_=source_get(p['source_url'],refresh);d=parse_product_detail(text)
-   if not d['complete'] and renderer=='RECOVERY_CACHE':
-    http,text,final,renderer,_=source_get(p['source_url'],True);d=parse_product_detail(text)
-   structure='PRODUCT_DETAIL_COMPLETE' if d['complete'] else 'PRODUCT_DETAIL_PARTIAL';c.execute('BEGIN IMMEDIATE');snap,page_sha,raw=snapshot(c,p['source_url'],text,http,final,renderer,run,structure);c.execute('DELETE FROM image_observations WHERE product_source_id=?',(psid,));recs=c.execute('SELECT r.* FROM part_records r JOIN record_product_sources x ON x.record_id=r.record_id WHERE x.product_source_id=?',(psid,)).fetchall()
+   http,text,final,renderer,retrieval=source_get(p['source_url'],refresh);d=parse_product_detail(text)
    if not d['complete']:
-    c.execute("UPDATE product_sources SET current_snapshot_id=?,status='SOURCE_RENDERER_PARTIAL',structure_status=?,processing_completed_at=?,exception_code='IMAGE_ENUMERATION_INCOMPLETE',evidence_notes=? WHERE product_source_id=?",(snap,structure,now(),json.dumps({'raw_path':raw.relative_to(CAT).as_posix(),'reason':'required product-detail markers absent'}),psid));c.execute("UPDATE batches SET status='QA_FAILED',completed_at=?,last_error='IMAGE_ENUMERATION_INCOMPLETE',checkpoint_path=? WHERE batch_id=?",(now(),raw.relative_to(CAT).as_posix(),batch));c.commit();continue
+    http,text,final,renderer,retrieval=source_get(p['source_url'],True,True,'browser');d=parse_product_detail(text)
+   structure,snapshot_structure=product_structure_states(d['complete'],retrieval);c.execute('BEGIN IMMEDIATE');snap,page_sha,raw=snapshot(c,p['source_url'],text,http,final,renderer,run,snapshot_structure);c.execute('DELETE FROM image_observations WHERE product_source_id=?',(psid,));recs=c.execute('SELECT r.* FROM part_records r JOIN record_product_sources x ON x.record_id=r.record_id WHERE x.product_source_id=?',(psid,)).fetchall()
+   if not d['complete']:
+    c.execute("UPDATE product_sources SET current_snapshot_id=?,status='SOURCE_RENDERER_PARTIAL',structure_status=?,processing_completed_at=?,exception_code='IMAGE_ENUMERATION_INCOMPLETE',evidence_notes=? WHERE product_source_id=?",(snap,structure,now(),json.dumps({'retrieval':retrieval,'raw_path':raw.relative_to(CAT).as_posix(),'reason':'required product-detail markers absent'}),psid));c.execute("UPDATE batches SET status='QA_FAILED',completed_at=?,last_error='IMAGE_ENUMERATION_INCOMPLETE',checkpoint_path=? WHERE batch_id=?",(now(),raw.relative_to(CAT).as_posix(),batch));c.commit();errors.append({'product_source_id':psid,'error':'IMAGE_ENUMERATION_INCOMPLETE'});continue
    for r in recs:
     prov=json.loads(r['field_provenance_json']);pn=r['oem_part_number_source'];name=r['part_name_source'];exc=r['exception_code']
     if pn=='PART_NUMBER_NOT_DISPLAYED' and d['pn']:pn=d['pn'];prov['oem_part_number_source']='PRODUCT_DETAIL';exc=None if exc=='PART_NUMBER_NOT_DISPLAYED' else exc
@@ -281,10 +302,11 @@ def crawl_products(limit=None,retry=False,refresh=False):
    for img in d['images']:
     obs=insert_image(c,(None,psid),snap,page_sha,None,None,img)
     for r in recs:c.execute("INSERT OR IGNORE INTO image_observation_records VALUES(?,?,?)",(obs,r['record_id'],'EXACT_PRODUCT_SOURCE_ASSOCIATION'))
-   noimg='NO_OEM_IMAGE_AVAILABLE' if not d['images'] else None;c.execute("UPDATE product_sources SET current_snapshot_id=?,status='EXTRACTED_COMPLETE',structure_status=?,displayed_part_number_source=?,part_name_source=?,description_source=?,superseded_part_number_source=?,fitment_source=?,expected_image_count=?,observed_image_count=?,no_image_disposition=?,processing_completed_at=?,exception_code=NULL,evidence_notes=? WHERE product_source_id=?",(snap,structure,d['pn'],d['name'],d['description'],d['replaces'],d['fitment'],len(d['images']),len(d['images']),noimg,now(),json.dumps({'raw_path':raw.relative_to(CAT).as_posix(),'no_image_basis':'complete product structure with zero content image references' if noimg else None}),psid));c.execute("UPDATE batches SET status='EXTRACTED',completed_at=?,checkpoint_path=? WHERE batch_id=?",(now(),raw.relative_to(CAT).as_posix(),batch));c.commit()
-  except Exception as e:c.rollback();c.execute("UPDATE product_sources SET status='QA_FAILED',exception_code='SOURCE_OR_PARSER_FAILURE',evidence_notes=?,processing_completed_at=? WHERE product_source_id=?",(json.dumps({'error':repr(e)}),now(),psid));c.execute("UPDATE batches SET status='QA_FAILED',completed_at=?,last_error=? WHERE batch_id=?",(now(),repr(e),batch));c.commit();raise
+   noimg='NO_OEM_IMAGE_AVAILABLE' if not d['images'] else None;c.execute("UPDATE product_sources SET current_snapshot_id=?,status='EXTRACTED_COMPLETE',structure_status=?,displayed_part_number_source=?,part_name_source=?,description_source=?,superseded_part_number_source=?,fitment_source=?,expected_image_count=?,observed_image_count=?,no_image_disposition=?,processing_completed_at=?,exception_code=NULL,evidence_notes=? WHERE product_source_id=?",(snap,structure,d['pn'],d['name'],d['description'],d['replaces'],d['fitment'],len(d['images']),len(d['images']),noimg,now(),json.dumps({'retrieval':retrieval,'raw_path':raw.relative_to(CAT).as_posix(),'no_image_basis':'complete product structure with zero content image references' if noimg else None}),psid));c.execute("UPDATE batches SET status='EXTRACTED',completed_at=?,checkpoint_path=? WHERE batch_id=?",(now(),raw.relative_to(CAT).as_posix(),batch));c.commit()
+  except Exception as e:c.rollback();c.execute("UPDATE product_sources SET status='QA_FAILED',exception_code='SOURCE_OR_PARSER_FAILURE',evidence_notes=?,processing_completed_at=? WHERE product_source_id=?",(json.dumps({'error':repr(e)}),now(),psid));c.execute("UPDATE batches SET status='QA_FAILED',completed_at=?,last_error=? WHERE batch_id=?",(now(),repr(e),batch));c.commit();errors.append({'product_source_id':psid,'error':repr(e)})
   finally:c.close()
  export_scope()
+ finalize_product_batch(errors)
 def classify_image_bytes(data):
  if len(data)<100:raise ValueError('zero/tiny image payload')
  with Image.open(io.BytesIO(data)) as im:
@@ -329,8 +351,12 @@ def verify_images(limit=None,workers=4):
 def rebuild_fts(c=None):
  own=c is None;c=c or con();c.execute("INSERT INTO catalogue_fts(catalogue_fts) VALUES('delete-all')");c.execute('''INSERT INTO catalogue_fts(rowid,record_id,variation_source_label,category_source_label,subcategory_source_label,diagram_title_source,diagram_callout_source,part_name_source,part_description_source,oem_part_number_source,fitment_notes_source) SELECT row_number() OVER(ORDER BY record_id),record_id,variation_source_label,category_source_label,subcategory_source_label,diagram_title_source,diagram_callout_source,part_name_source,part_description_source,oem_part_number_source,fitment_notes_source FROM part_records''');c.commit();
  if own:c.close()
+def project_schema_version(c):
+ row=c.execute("SELECT value FROM project_meta WHERE key='schema_version'").fetchone()
+ if not row:raise RuntimeError('missing authoritative schema version')
+ return row[0]
 def export_scope(c=None):
- own=c is None;c=c or con();out=CAT/'v2'/'manifests';out.mkdir(parents=True,exist_ok=True);data={'generated_at':now(),'schema_version':3,'variations':[]}
+ own=c is None;c=c or con();out=CAT/'v2'/'manifests';out.mkdir(parents=True,exist_ok=True);data={'generated_at':now(),'schema_version':project_schema_version(c),'variations':[]}
  for v in c.execute('SELECT * FROM variations ORDER BY variation_id'):
   leaves=[dict(x) for x in c.execute("SELECT catalogue_leaf_id,leaf_type,diagram_id,diagram_title_source,assembly_number,source_url,status,expected_source_row_count,extracted_source_row_count,expected_callout_count,extracted_callout_count,expected_image_count,observed_image_count,exception_code FROM catalogue_leaves WHERE variation_id=? AND status!='RETIRED_SOURCE' ORDER BY leaf_type,source_url",(v['variation_id'],))];data['variations'].append({'variation':dict(v),'leaves':leaves})
  (out/'master_expected_scope.json').write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')

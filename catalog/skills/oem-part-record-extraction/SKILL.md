@@ -1,7 +1,7 @@
 ---
 name: oem-part-record-extraction
 description: Use when extracting every displayed Mopar part row/callout.
-version: 1.1.0
+version: 1.2.0
 author: Hermes Mopar Catalogue Project
 license: Project-controlled
 metadata:
@@ -12,7 +12,7 @@ metadata:
 # OEM Part Record Extraction
 
 ## Procedure
-1. Parse diagram callout summaries and detailed product cards separately.
+1. Parse numbered parts tables, diagram callout summaries, accessory result grids, bounded markerless product-card lists and `Related Parts` sections separately.
 2. Preserve source part number, name, description, quantity, fitment, supersession and punctuation as strings.
 3. Derive normalized fields separately; never infer an absent part number.
 4. Associate every visible callout with all displayed alternatives by product URL.
@@ -26,6 +26,8 @@ metadata:
 - Wrong callout association fails.
 - Missing number becomes the explicit exception, never a URL guess.
 - Seeded missing visible row fails completeness.
+- Accessory grids, markerless bounded cards and Related Parts fixtures independently reconcile their displayed row denominators.
+- `http://www.moparamerica.com` source links remain literal observations while product-source identity is canonical HTTPS.
 
 ## Completion Gate
 Every visible row/callout has one exact record or a source-supported exception.

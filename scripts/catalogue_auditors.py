@@ -54,8 +54,9 @@ def independent_leaf_counts(text):
  markers=list(re.finditer(r'(?m)^\[[^\]]+\]\(https?://www\.moparamerica\.com/#part_row_[^)]+\)',body));callrows=0
  for i,m in enumerate(markers):
   block=body[m.start():(markers[i+1].start() if i+1<len(markers) else len(body))];callrows+=max(1,len(re.findall(r'https?://www\.moparamerica\.com/oem-parts/[^)\s"]+',block)))
- selectors=len(set(re.findall(r'https?://www\.moparamerica\.com/[^)\s"]+\?assembly=\d+',text)));active_images=1 if active and re.search(r'!\[Image\s+\d+:[^\]]*\]\(https?://[^)\s]+\)',body) else 0
- return {'rows':detailed+accessory+markerless+related+callrows,'detailed':detailed,'accessory_rows':accessory,'markerless_rows':markerless,'related_rows':related,'callout_markers':len(markers),'callout_rows':callrows,'images':detailed+accessory_images+markerless_images+related+selectors+active_images,'selectors':selectors,'active_images':active_images}
+ selectors=len(set(re.findall(r'https?://www\.moparamerica\.com/[^)\s"]+\?assembly=\d+',text)));selector_images=len(set(re.findall(r'\[!\[Image\s+\d+:[^\]]*\]\([^)]*\)[^\]]*\]\((https?://www\.moparamerica\.com/[^)\s"]+\?assembly=\d+)',text)));active_images=1 if active and re.search(r'!\[Image\s+\d+:[^\]]*\]\(https?://[^)\s]+\)',body) else 0
+ return {'rows':detailed+accessory+markerless+related+callrows,'detailed':detailed,'accessory_rows':accessory,'markerless_rows':markerless,'related_rows':related,'callout_markers':len(markers),'callout_rows':callrows,'images':detailed+accessory_images+markerless_images+related+selector_images+active_images,'selectors':selectors,'selector_images':selector_images,'active_images':active_images}
+def complete_product_structure_status(value):return value=='PRODUCT_DETAIL_COMPLETE'
 def source_audit():
  run='source-audit-'+dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ');c=con();fails=[];executed={'ACTIVE_SCOPE_TERMINAL','SNAPSHOT_INTEGRITY','INDEPENDENT_ROW_RECONCILIATION','ROW_EVIDENCE_ASSOCIATION','INDEPENDENT_IMAGE_ENUMERATION','SELECTOR_CHILD_RECONCILIATION','PRODUCT_SOURCE_STRUCTURE'}
  active=c.execute("select * from catalogue_leaves where status!='RETIRED_SOURCE'").fetchall();bad=[dict(x) for x in active if x['status'] not in ('EXTRACTED','SOURCE_VERIFIED','IMAGE_VERIFIED','FITMENT_AUDITED','COMPLETENESS_CHECKED','INTEGRITY_CHECKED','QA_PASSED')]
@@ -83,7 +84,7 @@ def source_audit():
   if not local:passed.append(scope)
  products=c.execute('select * from product_sources').fetchall()
  for p in products:
-  if p['status'] not in ('EXTRACTED_COMPLETE','SOURCE_VERIFIED','IMAGE_VERIFIED','INTEGRITY_CHECKED','QA_PASSED') or p['structure_status']!='PRODUCT_DETAIL_COMPLETE':fails.append(fail('PRODUCT_SOURCE_STRUCTURE','MAJOR','AGENT_3_PART_RECORD_EXTRACTION',p['product_source_id'],{'status':p['status'],'structure':p['structure_status']},'complete product detail source',p['source_url']))
+  if p['status'] not in ('EXTRACTED_COMPLETE','SOURCE_VERIFIED','IMAGE_VERIFIED','INTEGRITY_CHECKED','QA_PASSED') or not complete_product_structure_status(p['structure_status']):fails.append(fail('PRODUCT_SOURCE_STRUCTURE','MAJOR','AGENT_3_PART_RECORD_EXTRACTION',p['product_source_id'],{'status':p['status'],'structure':p['structure_status']},'complete product detail source',p['source_url']))
   elif p['current_snapshot_id']:
    s,text,err=snapshot_text(c,p['current_snapshot_id']);
    if err:fails.append(fail('SNAPSHOT_INTEGRITY','CRITICAL','AGENT_8_REPOSITORY_INTEGRITY',p['product_source_id'],err,'literal hash-valid snapshot',p['source_url']))
@@ -92,6 +93,8 @@ def source_audit():
  c.close();persist('source',run,fails,executed);print(json.dumps({'run_id':run,'status':'PASS' if not fails else 'FAIL','failures':fails},indent=2));return not fails
 def decode_asset(path):
  b=path.read_bytes();im=Image.open(io.BytesIO(b));im.load();rgba=im.convert('RGBA');return b,im.size,sha(rgba.tobytes())
+def record_has_terminal_no_image(c,record_id):
+ return c.execute("""select count(*) from record_product_sources x join product_sources p on p.product_source_id=x.product_source_id where x.record_id=? and p.status in ('SOURCE_VERIFIED','IMAGE_VERIFIED','INTEGRITY_CHECKED','QA_PASSED') and p.no_image_disposition='NO_OEM_IMAGE_AVAILABLE' and p.structure_status='PRODUCT_DETAIL_COMPLETE'""",(record_id,)).fetchone()[0]
 def image_audit():
  run='image-audit-'+dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ');c=con();fails=[];executed={'IMAGE_BYTE_AND_PIXEL_INTEGRITY','IMAGE_ASSOCIATION','PLACEHOLDER_REJECTION','RECORD_IMAGE_DISPOSITION'}
  obs=c.execute('select o.*,a.* from image_observations o left join image_assets a on a.image_sha256=o.image_sha256').fetchall()
@@ -109,7 +112,7 @@ def image_audit():
   fails.extend(local)
  records=c.execute('select record_id from part_records').fetchall()
  for r in records:
-  linked=c.execute('''select o.verification_status,o.association_status from image_observation_records x join image_observations o on o.image_observation_id=x.image_observation_id where x.record_id=?''',(r['record_id'],)).fetchall();noimg=c.execute('''select count(*) from record_product_sources x join product_sources p on p.product_source_id=x.product_source_id where x.record_id=? and p.status in ('SOURCE_VERIFIED','IMAGE_VERIFIED','INTEGRITY_CHECKED','QA_PASSED') and p.no_image_disposition='NO_OEM_IMAGE_AVAILABLE' and p.structure_status='PRODUCT_DETAIL_COMPLETE' ''',(r['record_id'],)).fetchone()[0]
+  linked=c.execute('''select o.verification_status,o.association_status from image_observation_records x join image_observations o on o.image_observation_id=x.image_observation_id where x.record_id=?''',(r['record_id'],)).fetchall();noimg=record_has_terminal_no_image(c,r['record_id'])
   if not linked and not noimg:fails.append(fail('RECORD_IMAGE_DISPOSITION','MAJOR','AGENT_5_IMAGE_INTEGRITY',r['record_id'],'no verified image or source-supported no-image disposition','terminal image disposition',r['record_id']))
  if not fails:
   c.execute("update part_records set image_verification_status=case when exists(select 1 from image_observation_records x join image_observations o on o.image_observation_id=x.image_observation_id where x.record_id=part_records.record_id) then 'IMAGE_VERIFIED_BYTE_EXACT' else 'NO_OEM_IMAGE_AVAILABLE' end");c.execute("update catalogue_leaves set status='IMAGE_VERIFIED' where status='SOURCE_VERIFIED'");c.execute("update product_sources set status='IMAGE_VERIFIED' where status='SOURCE_VERIFIED'");c.execute("update batches set status='IMAGE_VERIFIED' where status='SOURCE_VERIFIED'");c.commit()

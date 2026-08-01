@@ -102,6 +102,28 @@
       "same_pattern_search_requirement": "Every cached page plus every future page through source-structure gating.",
       "retest": "ParserRegression accessory, markerless, HTTP and related-parts tests; full cached-page scan",
       "status": "RESOLVED_PREPRODUCTION_REGRESSION"
+    },
+    {
+      "defect_id": "PREPROD-010",
+      "severity": "MAJOR",
+      "responsible_agent": "AGENT_2_TAXONOMY",
+      "description": "Assembly discovery recognized only image-backed selectors and rejected source-displayed no-image assembly links.",
+      "observed_result": "Six category leaves reconciled only 0 or 2 of 5 displayed assembly references.",
+      "required_correction": "Parse no-image assembly selectors as diagram references, create no thumbnail observation, and independently distinguish selector count from selector-image count.",
+      "same_pattern_search_requirement": "Every category and diagram source snapshot containing assembly query links.",
+      "retest": "ParserRegression.test_no_image_assembly_selectors_remain_complete_diagram_references",
+      "status": "RESOLVED_PREPRODUCTION_REGRESSION"
+    },
+    {
+      "defect_id": "PREPROD-011",
+      "severity": "MAJOR",
+      "responsible_agent": "AGENT_2_TAXONOMY",
+      "description": "The default Jina reader engine returned correct-title route-navigation shells for valid category URLs.",
+      "observed_result": "Twenty-seven leaves remained structurally incomplete despite uncached inner-HTTPS retrieval; explicit browser-engine retrieval returned complete source tables.",
+      "required_correction": "After structural rejection, retry with inner HTTPS and exact Accept text/plain, X-No-Cache true, X-Engine browser headers; preserve retrieval metadata and fail closed if structure remains incomplete.",
+      "same_pattern_search_requirement": "Every structurally incomplete category, diagram and product-detail response.",
+      "retest": "ParserRegression.test_retrieval_headers_support_explicit_browser_renderer plus exact leaf replay and independent source reconciliation",
+      "status": "RESOLVED_PREPRODUCTION_REGRESSION"
     }
   ]
 }
