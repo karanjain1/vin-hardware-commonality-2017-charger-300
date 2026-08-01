@@ -1,13 +1,19 @@
 #!/usr/bin/env python
 """Independent deterministic and source-resampling QA for catalogue_v2."""
 from __future__ import annotations
-import argparse,datetime as dt,hashlib,importlib.util,json,random,sqlite3,sys
+import argparse,datetime as dt,hashlib,importlib.util,json,random,re,sqlite3,sys
 from pathlib import Path
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1];CAT=ROOT/'catalog';DB=CAT/'authoritative_catalogue.sqlite3';REPORTS=CAT/'quality'/'reports';REPORTS.mkdir(parents=True,exist_ok=True)
 spec=importlib.util.spec_from_file_location('catalogue_v2',ROOT/'scripts'/'catalogue_v2.py');cv2=importlib.util.module_from_spec(spec);spec.loader.exec_module(cv2)
 def now():return dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
 def sid(prefix,*parts):return prefix+'-'+hashlib.sha256('\x1f'.join(str(x or '') for x in parts).encode()).hexdigest()[:24]
+def fitment_decision(fitment,year,make,model,variation_label):
+ def n(s):return re.sub(r'[^a-z0-9]+','',str(s or '').lower())
+ expected=n(f'{year} {make} {model} {variation_label}');nf=n(fitment);model_key=n(f'{year} {make} {model}')
+ if expected and expected in nf:return 'APPLICABLE_CONFIRMED_PRODUCT_DETAIL','FITMENT_AUDITED'
+ if model_key and model_key in nf:return 'APPLICABILITY_CONFLICT','FITMENT_CONFLICT'
+ return 'APPLICABLE_CONFIGURED_ROUTE','FITMENT_AUDITED'
 def con(ro=False):
  u=f'file:{DB.as_posix()}?mode=ro' if ro else DB;c=sqlite3.connect(u,uri=ro,timeout=120);c.row_factory=sqlite3.Row
  if not ro:c.execute('PRAGMA foreign_keys=ON')
@@ -79,6 +85,8 @@ def run_checks(final=False):
  if noimg_unsupported:fails.append(failure('UNSUPPORTED_NO_IMAGE','MAJOR','AGENT_4_IMAGE_ACQUISITION','NO_OEM_IMAGE_AVAILABLE lacks matching source exception',len(noimg_unsupported),0))
  sentinel=[dict(x) for x in c.execute("SELECT record_id,variation_id,catalogue_leaf_id,part_detail_url FROM part_records WHERE oem_part_number_source='PART_NUMBER_NOT_DISPLAYED' AND exception_code NOT IN ('PART_NUMBER_NOT_DISPLAYED','CALLOUT_NO_DISPLAYED_PART')")];checks['unsupported_part_number_sentinels']=len(sentinel)
  if sentinel:fails.append(failure('UNSUPPORTED_PART_NUMBER_SENTINEL','MAJOR','AGENT_3_PART_RECORD_EXTRACTION','PART_NUMBER_NOT_DISPLAYED lacks explicit exception',len(sentinel),0))
+ fitconf=[dict(x) for x in c.execute("SELECT record_id,variation_id,catalogue_leaf_id,fitment_notes_source FROM part_records WHERE fitment_audit_status='FITMENT_CONFLICT'")];checks['fitment_conflicts']=len(fitconf)
+ if fitconf:fails.append(failure('FITMENT_CONFLICT','MAJOR','AGENT_6_FITMENT_PART_NUMBER_AUDITOR','Product-detail fitment contradicts the configured variation relationship',len(fitconf),0,evidence=json.dumps(fitconf[:20])))
  # Independent source association: URL and displayed part number must occur in leaf or product-detail evidence.
  assoc=[]
  for r in c.execute("SELECT record_id,variation_id,catalogue_leaf_id,part_detail_url,oem_part_number_source FROM part_records"):
@@ -111,8 +119,10 @@ def apply_audit_statuses():
  c=con();
  # Source/raw evidence verifier.
  c.execute("UPDATE part_records SET source_verification_status='SOURCE_VERIFIED' WHERE EXISTS(SELECT 1 FROM catalogue_leaves l WHERE l.catalogue_leaf_id=part_records.catalogue_leaf_id AND l.source_byte_sha256 IS NOT NULL)")
- # Fitment auditor: configured route display is valid applicability evidence; retain product-detail wording separately.
- c.execute("UPDATE part_records SET applicability_status=CASE WHEN fitment_notes_source IS NOT NULL THEN 'APPLICABLE_CONFIGURED_ROUTE_AND_DETAIL_SOURCE' ELSE 'APPLICABLE_CONFIGURED_ROUTE' END,fitment_audit_status='FITMENT_AUDITED'")
+ # Fitment auditor: exact product-detail lines are preferred; exact configured-route display remains evidence when no contradictory 2017 model fitment exists.
+ for r in c.execute('''SELECT pr.record_id,pr.fitment_notes_source,v.variation_source_label,ve.year,ve.make_source,ve.model_source FROM part_records pr JOIN variations v ON v.variation_id=pr.variation_id JOIN vehicles ve ON ve.vehicle_id=v.vehicle_id''').fetchall():
+  app,state=fitment_decision(r['fitment_notes_source'],r['year'],r['make_source'],r['model_source'],r['variation_source_label'])
+  c.execute('UPDATE part_records SET applicability_status=?,fitment_audit_status=? WHERE record_id=?',(app,state,r['record_id']))
  # Image status derives from independently verified observations, with source-supported no-image preserved.
  c.execute("""UPDATE part_records SET image_verification_status='IMAGE_VERIFIED_BYTE_EXACT' WHERE EXISTS(SELECT 1 FROM image_observations o WHERE o.record_id=part_records.record_id AND o.verification_status IN ('IMAGE_VERIFIED_BYTE_EXACT','DIAGRAM_VERIFIED_BYTE_EXACT'))""")
  c.execute("UPDATE part_records SET completeness_status='COMPLETENESS_CHECKED' WHERE EXISTS(SELECT 1 FROM catalogue_leaves l WHERE l.catalogue_leaf_id=part_records.catalogue_leaf_id AND l.visible_row_expected=l.extracted_record_count AND COALESCE(l.visible_callout_expected,0)=COALESCE(l.extracted_callout_count,0))")

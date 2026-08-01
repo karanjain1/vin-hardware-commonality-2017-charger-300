@@ -57,6 +57,14 @@ class SchemaTests(unittest.TestCase):
   self.assertEqual(cv2.sid('record','a','b'),cv2.sid('record','a','b'))
   self.assertNotEqual(cv2.sid('record','a','b'),cv2.sid('record','a','c'))
 
+class FitmentTests(unittest.TestCase):
+ def test_exact_variation_fitment_is_confirmed(self):
+  self.assertEqual(qa.fitment_decision('2017 Dodge Challenger R/T Scat Pack 6.4L V8 - Gas',2017,'Dodge','Challenger','R/T Scat Pack / 6.4L V8 / Gas')[1],'FITMENT_AUDITED')
+ def test_same_model_wrong_variation_is_conflict(self):
+  self.assertEqual(qa.fitment_decision('2017 Dodge Challenger SXT 3.6L V6 - Gas',2017,'Dodge','Challenger','R/T / 5.7L V8 / Gas')[1],'FITMENT_CONFLICT')
+ def test_configured_route_remains_evidence_without_contradiction(self):
+  self.assertEqual(qa.fitment_decision('Engines: 3.6L V6; 5.7L V8',2017,'Dodge','Challenger','R/T / 5.7L V8 / Gas')[0],'APPLICABLE_CONFIGURED_ROUTE')
+
 class IndependentQualitySeedTests(unittest.TestCase):
  def test_quality_gate_catches_seeded_major_failures(self):
   import shutil

@@ -23,10 +23,13 @@ scripts/*
 !scripts/mopar_catalog.py
 !scripts/catalogue_v2.py
 !scripts/catalogue_qa.py
+!scripts/catalogue_reports.py
+!scripts/reuse_legacy_raw.py
 __pycache__/
 *.pyc
 catalog/raw/
 catalog/logs/
+catalog/v2/logs/
 !catalog/v2/evidence/
 !catalog/v2/evidence/source/
 !catalog/v2/evidence/source/**
