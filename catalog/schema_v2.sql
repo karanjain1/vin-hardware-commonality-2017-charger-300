@@ -37,7 +37,7 @@ CREATE TABLE catalogue_leaves(
 );
 CREATE TRIGGER leaf_parent_context_insert BEFORE INSERT ON catalogue_leaves WHEN NEW.parent_leaf_id IS NOT NULL AND NOT EXISTS(SELECT 1 FROM catalogue_leaves p WHERE p.catalogue_leaf_id=NEW.parent_leaf_id AND p.variation_id=NEW.variation_id AND p.category_id=NEW.category_id AND p.subcategory_id=NEW.subcategory_id) BEGIN SELECT RAISE(ABORT,'leaf parent context mismatch');END;
 CREATE TABLE visible_source_rows(
- source_row_key TEXT PRIMARY KEY,catalogue_leaf_id TEXT NOT NULL REFERENCES catalogue_leaves(catalogue_leaf_id) ON DELETE CASCADE,source_section TEXT NOT NULL CHECK(source_section IN ('DETAILED_TABLE','CALLOUT_SUMMARY')),
+ source_row_key TEXT PRIMARY KEY,catalogue_leaf_id TEXT NOT NULL REFERENCES catalogue_leaves(catalogue_leaf_id) ON DELETE CASCADE,source_section TEXT NOT NULL CHECK(source_section IN ('DETAILED_TABLE','CALLOUT_SUMMARY','ACCESSORY_RESULTS','RELATED_PARTS','MARKERLESS_PRODUCT_CARDS')),
  source_row_anchor TEXT NOT NULL,source_occurrence_ordinal INTEGER NOT NULL CHECK(source_occurrence_ordinal>=1),source_locator TEXT NOT NULL,evidence_snippet_sha256 TEXT NOT NULL,evidence_snippet_source TEXT NOT NULL,
  diagram_callout_source TEXT,part_detail_url TEXT,displayed_part_number_source TEXT,displayed_part_name_source TEXT,displayed_quantity_source TEXT,displayed_fitment_source TEXT,
  expected_image_count INTEGER NOT NULL DEFAULT 0,extraction_status TEXT NOT NULL CHECK(extraction_status IN ('EXTRACTED','EXPLICIT_SOURCE_EXCEPTION')),

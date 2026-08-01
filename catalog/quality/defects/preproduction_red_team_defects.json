@@ -80,6 +80,28 @@
       "retest": "FailClosedQualityTests.test_current_scope_revalidation_is_stable_and_controls_1069_categories",
       "status": "RESOLVED_PREPRODUCTION_REGRESSION",
       "evidence": "catalog/v2/manifests/route_revalidation.json"
+    },
+    {
+      "defect_id": "PREPROD-008",
+      "severity": "MAJOR",
+      "responsible_agent": "AGENT_3_PART_RECORD_EXTRACTION",
+      "description": "Occurrence ordinals were keyed by anchor plus product URL while the schema uniqueness key was anchor plus ordinal.",
+      "observed_result": "Two alternative products under the same visible source anchor both received ordinal 1 and triggered a UNIQUE constraint.",
+      "required_correction": "Increment occurrence ordinals across every alternative under the source anchor, independent of product URL.",
+      "same_pattern_search_requirement": "All cached category pages and all future category/diagram pages.",
+      "retest": "ParserRegression.test_multiple_alternatives_under_one_row_anchor_get_unique_occurrence_ordinals",
+      "status": "RESOLVED_PREPRODUCTION_REGRESSION"
+    },
+    {
+      "defect_id": "PREPROD-009",
+      "severity": "CRITICAL",
+      "responsible_agent": "AGENT_3_PART_RECORD_EXTRACTION",
+      "description": "The producer and schema supported only numbered parts tables and callout summaries, excluding source-supported accessory grids, markerless bounded card lists and related-parts tables.",
+      "observed_result": "Cached same-pattern scan identified 58 initially unhandled pages; the first production encounter also hit a schema CHECK failure for a new source section.",
+      "required_correction": "Implement and independently count ACCESSORY_RESULTS, MARKERLESS_PRODUCT_CARDS and RELATED_PARTS; preserve HTTP source URLs while canonicalizing shared product-source retrieval; version the schema to 3.1.",
+      "same_pattern_search_requirement": "Every cached page plus every future page through source-structure gating.",
+      "retest": "ParserRegression accessory, markerless, HTTP and related-parts tests; full cached-page scan",
+      "status": "RESOLVED_PREPRODUCTION_REGRESSION"
     }
   ]
 }

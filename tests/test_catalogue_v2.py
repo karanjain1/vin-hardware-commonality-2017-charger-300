@@ -9,6 +9,12 @@ aud=load('catalogue_auditors',ROOT/'scripts'/'catalogue_auditors.py')
 qa=load('catalogue_qa',ROOT/'scripts'/'catalogue_qa.py')
 DIAGRAM=ROOT/'catalog'/'v2'/'evidence'/'source'/'challenger-rt-57-gas'/'diagram'/'82dca3b0735fd12996a6bb09ff1ab61849f453f00c409693302c1401c10381d3.md'
 PARTIAL=ROOT/'catalog'/'v2'/'evidence'/'source'/'product'/'37fc7ad3abdc781cf4769e95b39969895b417d29a2b44a4592fb67edb5b03f79.md'
+ALTERNATIVES=ROOT/'catalog'/'v2'/'evidence'/'snapshots'/'cb7d79f087b7b2aef41dc11e780cd4653d56878ba7233f07378aea50c21514fc.md'
+ACCESSORY=ROOT/'catalog'/'v2'/'evidence'/'source'/'chrysler300-c-36-flex'/'category_index'/'83f75b5c52b7155fc8297c1ec747826ccb63834088a01b9adac4263a984d9157.md'
+RELATED=ROOT/'catalog'/'v2'/'evidence'/'source'/'chrysler300-c-36-flex'/'category_index'/'98af8f64b9a3e53508c64bc936dce38658e42085afc85f2df694a022e558a74c.md'
+MARKERLESS_LICENSE=ROOT/'catalog'/'v2'/'evidence'/'source'/'challenger-rt-57-gas'/'category_index'/'b43dde09bd16fc3b081727b5c4bdc9c3000714ebc763fe5110694bf589652f05.md'
+MARKERLESS_INTAKE=ROOT/'catalog'/'v2'/'evidence'/'source'/'challenger-rt-57-gas'/'category_index'/'3c899ddf0591776e92902d0f7895cddf0e51928518a4a8cd518e739ab6cdb741.md'
+HTTP_ACCESSORY=ROOT/'catalog'/'v2'/'evidence'/'source'/'challenger-rt-57-gas'/'category_index'/'fdd3a7a9968bc861c39af3904cdc6bdefad4dfca23831f9ab0e952a16e655d40.md'
 class ManifestAndSkills(unittest.TestCase):
  def test_exact_six_variations(self):
   m=json.loads((ROOT/'catalog'/'manifests'/'variation_manifest.json').read_text());vs=[(v,x) for v in m['vehicles'] for x in v['variations']];self.assertEqual(len(vs),6);self.assertEqual({v['vehicle_id'] for v,x in vs},{'2017-chrysler-300c','2017-dodge-challenger'});self.assertEqual({v['vehicle_id']:len(v['variations']) for v in m['vehicles']},{'2017-chrysler-300c':3,'2017-dodge-challenger':3})
@@ -19,7 +25,18 @@ class ParserRegression(unittest.TestCase):
  @classmethod
  def setUpClass(cls):cls.text=DIAGRAM.read_text(encoding='utf-8')
  def test_duplicate_visible_callout_occurrences_are_preserved(self):
-  a=cv2.active_diagram(self.text,1);rows=cv2.callout_rows(self.text,a);self.assertEqual(len(rows),6);dup=[x for x in rows if x['anchor']=='#part_row_0_4_0'];self.assertEqual([x['ordinal'] for x in dup],[1,2])
+  rows=cv2.callout_rows(self.text,cv2.active_diagram(self.text,1));d=[r for r in rows if r['anchor']=='#part_row_0_4_0'];self.assertEqual(len(d),2);self.assertEqual([r['ordinal'] for r in d],[1,2])
+ def test_multiple_alternatives_under_one_row_anchor_get_unique_occurrence_ordinals(self):
+  x=cv2.parse_leaf(ALTERNATIVES.read_text(encoding='utf-8'), 'CATEGORY_INDEX');keys=[(r['section'],r['anchor'],r['ordinal']) for r in x['rows']];self.assertEqual(len(keys),len(set(keys)));self.assertEqual([r['ordinal'] for r in x['rows'] if r['section']=='DETAILED_TABLE' and r['anchor']=='table-row-7'],[1,2]);self.assertEqual([r['ordinal'] for r in x['rows'] if r['section']=='CALLOUT_SUMMARY' and r['anchor']=='#part_row_0_7_0'],[1,2])
+ def test_accessory_result_card_without_parts_table_is_captured(self):
+  x=cv2.parse_leaf(ACCESSORY.read_text(encoding='utf-8'),'CATEGORY_INDEX');self.assertEqual(len(x['rows']),1);r=x['rows'][0];self.assertEqual((r['section'],r['pn'],r['name'],len(r['images'])),('ACCESSORY_RESULTS','82215099AC','Remote Start',1));self.assertEqual(r['fitment'],'Fits Your Vehicle')
+ def test_related_parts_layout_is_captured(self):
+  x=cv2.parse_leaf(RELATED.read_text(encoding='utf-8'),'CATEGORY_INDEX');rows=[r for r in x['rows'] if r['section']=='RELATED_PARTS'];self.assertEqual(len(rows),5);self.assertEqual(rows[0]['pn'],'68085784AA');self.assertEqual(len({(r['anchor'],r['ordinal']) for r in rows}),5)
+ def test_markerless_complete_card_lists_are_bounded_by_content_and_footer(self):
+  for path,n in [(MARKERLESS_LICENSE,8),(MARKERLESS_INTAKE,5)]:
+   text=path.read_text(encoding='utf-8');self.assertTrue(cv2.leaf_structure_complete(text,'CATEGORY_INDEX'));rows=cv2.markerless_card_rows(text);self.assertEqual(len(rows),n);self.assertEqual(len({r['url'] for r in rows}),n);self.assertTrue(all(len(r['images'])==1 for r in rows))
+ def test_http_source_card_urls_are_preserved_and_parsed(self):
+  text=HTTP_ACCESSORY.read_text(encoding='utf-8');rows=cv2.accessory_rows(text);self.assertEqual(len(rows),3);self.assertTrue(all(r['url'].startswith('http://') for r in rows))
  def test_detailed_table_rows_are_bounded_and_exact(self):
   rows=cv2.table_rows(self.text);self.assertEqual(len(rows),5);self.assertEqual(rows[0]['pn'],'6101831');self.assertEqual(rows[1]['pn'],'5090026AA');self.assertNotIn('5090026AA',rows[0]['snippet'])
  def test_adjacent_product_cannot_supply_missing_number(self):

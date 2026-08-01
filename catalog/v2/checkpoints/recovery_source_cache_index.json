@@ -11,9 +11,11 @@
       "sha256": "fb35d8fcb2a7e96bb85ecdc106509c5fa7a6a589f0f4b82cacec313884685e74"
     },
     "https://www.moparamerica.com/v-2017-chrysler-300--c--3-6l-v6-flex": {
+      "path": "v2/evidence/snapshots/beb0c5a8a9724c3c22a3224d45a2681dc44828af0de2c18787f5fc0518ed3371.md",
+      "sha256": "beb0c5a8a9724c3c22a3224d45a2681dc44828af0de2c18787f5fc0518ed3371",
       "byte_size": 129837,
-      "path": "v2/evidence/source/chrysler300-c-36-flex/route.md",
-      "sha256": "beb0c5a8a9724c3c22a3224d45a2681dc44828af0de2c18787f5fc0518ed3371"
+      "source": "v3_current_snapshot",
+      "indexed_at": "2026-08-01T00:45:41+00:00"
     },
     "https://www.moparamerica.com/v-2017-chrysler-300--c--3-6l-v6-flex/3-0l-gas-engine--cylinder-block": {
       "byte_size": 158586,
@@ -871,9 +873,11 @@
       "sha256": "e85d7c5aa68d794178c422e6a4ce47d24e73a74c69163aea7b3f90ddaa11c800"
     },
     "https://www.moparamerica.com/v-2017-chrysler-300--c--3-6l-v6-gas": {
+      "path": "v2/evidence/snapshots/e48b69a51e65fb7397940d00cfc08ca61ac258f38281023b0647e4dfab740e8e.md",
+      "sha256": "e48b69a51e65fb7397940d00cfc08ca61ac258f38281023b0647e4dfab740e8e",
       "byte_size": 189359,
-      "path": "v2/evidence/source/chrysler300-c-36-gas/route.md",
-      "sha256": "e48b69a51e65fb7397940d00cfc08ca61ac258f38281023b0647e4dfab740e8e"
+      "source": "v3_current_snapshot",
+      "indexed_at": "2026-08-01T00:45:41+00:00"
     },
     "https://www.moparamerica.com/v-2017-chrysler-300--c--3-6l-v6-gas/3-0l-gas-engine--cylinder-block": {
       "byte_size": 157865,
@@ -1536,14 +1540,18 @@
       "sha256": "e3d756a841b9546e693976625bc113f566d0b05a4666d67798da5674cf71c013"
     },
     "https://www.moparamerica.com/v-2017-chrysler-300--c--5-7l-v8-gas": {
+      "path": "v2/evidence/snapshots/35c085a8ee9fe32aa13c91e99b10009692b314ffce62ecdb869bb357c27bc450.md",
+      "sha256": "35c085a8ee9fe32aa13c91e99b10009692b314ffce62ecdb869bb357c27bc450",
       "byte_size": 128137,
-      "path": "v2/evidence/source/chrysler300-c-57-gas/route.md",
-      "sha256": "35c085a8ee9fe32aa13c91e99b10009692b314ffce62ecdb869bb357c27bc450"
+      "source": "v3_current_snapshot",
+      "indexed_at": "2026-08-01T00:45:41+00:00"
     },
     "https://www.moparamerica.com/v-2017-dodge-challenger--r-t--5-7l-v8-gas": {
+      "path": "v2/evidence/snapshots/087738b7b1dd0c93366169f4cf45fa6d2043f1a5bcb0d5dacdbb572b98619592.md",
+      "sha256": "087738b7b1dd0c93366169f4cf45fa6d2043f1a5bcb0d5dacdbb572b98619592",
       "byte_size": 155541,
-      "path": "v2/evidence/source/challenger-rt-57-gas/route.md",
-      "sha256": "087738b7b1dd0c93366169f4cf45fa6d2043f1a5bcb0d5dacdbb572b98619592"
+      "source": "v3_current_snapshot",
+      "indexed_at": "2026-08-01T00:45:41+00:00"
     },
     "https://www.moparamerica.com/v-2017-dodge-challenger--r-t--5-7l-v8-gas/3-6l-gas-engine--engine-mounting": {
       "byte_size": 189380,
@@ -1960,16 +1968,51 @@
       "path": "v2/evidence/source/challenger-rt-57-gas/category_index/c9014b5dc6132f48c981b4772710627f0683aab0ed0ef12a0cdf08150a6799ee.md",
       "sha256": "f98431cbf42ef64dc88c76b87a19f664ec52b684fd36c32c647aea34cffa0a30"
     },
+    "https://www.moparamerica.com/v-2017-dodge-challenger--r-t--5-7l-v8-gas/brakes--brake-master-cylinder": {
+      "path": "v2/evidence/snapshots/4dfce41efc16c25733d870752c28b0095be04473547f3f87dec9164abcfc0c79.md",
+      "sha256": "4dfce41efc16c25733d870752c28b0095be04473547f3f87dec9164abcfc0c79",
+      "byte_size": 192108,
+      "source": "v3_current_snapshot",
+      "indexed_at": "2026-08-01T00:49:05+00:00"
+    },
+    "https://www.moparamerica.com/v-2017-dodge-challenger--r-t--5-7l-v8-gas/electrical--wiring-powertrain": {
+      "path": "v2/evidence/snapshots/e9a938739d213db5a10c2af205f287c788e1798deddc2e30a891f0a24e96c6a5.md",
+      "sha256": "e9a938739d213db5a10c2af205f287c788e1798deddc2e30a891f0a24e96c6a5",
+      "byte_size": 189867,
+      "source": "v3_current_snapshot",
+      "indexed_at": "2026-08-01T00:49:21+00:00"
+    },
+    "https://www.moparamerica.com/v-2017-dodge-challenger--r-t--5-7l-v8-gas/mopar-accessories-component-parts--fog-lights-and-electrical": {
+      "path": "v2/evidence/snapshots/cb7d79f087b7b2aef41dc11e780cd4653d56878ba7233f07378aea50c21514fc.md",
+      "sha256": "cb7d79f087b7b2aef41dc11e780cd4653d56878ba7233f07378aea50c21514fc",
+      "byte_size": 185767,
+      "source": "v3_current_snapshot",
+      "indexed_at": "2026-08-01T00:52:10+00:00"
+    },
+    "https://www.moparamerica.com/v-2017-dodge-challenger--r-t--5-7l-v8-gas/steering--steering-wheel": {
+      "path": "v2/evidence/snapshots/0729ce09e56686abec2f524c995cc4b0bcf727ea79c095afc1e8401656c30b05.md",
+      "sha256": "0729ce09e56686abec2f524c995cc4b0bcf727ea79c095afc1e8401656c30b05",
+      "byte_size": 207537,
+      "source": "v3_current_snapshot",
+      "indexed_at": "2026-08-01T00:48:50+00:00"
+    },
     "https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas": {
+      "path": "v2/evidence/snapshots/ea973f44a3f7a99e277d18974a2506340928febbec853386f475f4ba93ace62d.md",
+      "sha256": "ea973f44a3f7a99e277d18974a2506340928febbec853386f475f4ba93ace62d",
       "byte_size": 158138,
-      "path": "v2/evidence/source/challenger-rt-scat-pack-64-gas/route.md",
-      "sha256": "ea973f44a3f7a99e277d18974a2506340928febbec853386f475f4ba93ace62d"
+      "source": "v3_current_snapshot",
+      "indexed_at": "2026-08-01T00:45:41+00:00"
     },
     "https://www.moparamerica.com/v-2017-dodge-challenger--sxt--3-6l-v6-gas": {
+      "path": "v2/evidence/snapshots/a3a1b38232b6c7f3b8e6ae76b56c0cff74399233d2edcd171d6a2e5ab7ab5a2d.md",
+      "sha256": "a3a1b38232b6c7f3b8e6ae76b56c0cff74399233d2edcd171d6a2e5ab7ab5a2d",
       "byte_size": 206372,
-      "path": "v2/evidence/source/challenger-sxt-36-gas/route.md",
-      "sha256": "a3a1b38232b6c7f3b8e6ae76b56c0cff74399233d2edcd171d6a2e5ab7ab5a2d"
+      "source": "v3_current_snapshot",
+      "indexed_at": "2026-08-01T00:45:41+00:00"
     }
   },
-  "version": 1
+  "version": 1,
+  "entry_count": 398,
+  "updated_from_v3_current_snapshot": true,
+  "updated_at": "2026-08-01T11:05:00+10:00"
 }

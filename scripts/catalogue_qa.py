@@ -20,10 +20,21 @@ def con(ro=False):
  return c
 def failure(code,severity,agent,scope,observed,expected,evidence):return {'check_code':code,'severity':severity,'responsible_agent':agent,'scope':scope,'observed':observed,'expected':expected,'evidence':evidence}
 def independent_counts(text):
- header=re.search(r'\n\s*No\.\s*\n\s*\n\s*Part\s*#\s*/\s*Description\s*/\s*Price',text,re.I);table=text[header.end():] if header else '';detailed=len(re.findall(r'\[!\[Image\s+\d+:[^\]]*\]\([^)]*\)\]\(https://www\.moparamerica\.com/oem-parts/',table));cut=header.start() if header else len(text);pre=text[:cut];heads=list(re.finditer(r'(?m)^Diagram\s+(\d+):\s*[^\n]+?\s+\d+\s*$',pre));active=heads[-1] if heads else None;body=pre[active.end():] if active else '';marks=list(re.finditer(r'(?m)^\[[^\]]+\]\(https://www\.moparamerica\.com/#part_row_[^)]+\)',body));callrows=0
- for i,m in enumerate(marks):callrows+=max(1,len(re.findall(r'https://www\.moparamerica\.com/oem-parts/[^)\s"]+',body[m.start():(marks[i+1].start() if i+1<len(marks) else len(body))])))
- selectors=len(set(re.findall(r'https://www\.moparamerica\.com/[^)\s"]+\?assembly=\d+',text)));active_img=1 if active and re.search(r'!\[Image\s+\d+:[^\]]*\]\(https?://[^)\s]+\)',body) else 0
- return {'rows':detailed+callrows,'callouts':len(marks),'images':detailed+selectors+active_img,'selectors':selectors,'active_assembly':int(active.group(1)) if active else None}
+ header=re.search(r'\n\s*No\.\s*\n\s*\n\s*Part\s*#\s*/\s*Description\s*/\s*Price',text,re.I);table=text[header.end():] if header else '';detailed=len(re.findall(r'\[!\[Image\s+\d+:[^\]]*\]\([^)]*\)\]\(https?://www\.moparamerica\.com/oem-parts/',table))
+ result=re.search(r'###\s+(\d+)\s+Results?\s*\|\s*Showing\s+(\d+)\s*[–-]\s*(\d+)\s+of\s+(\d+)',text,re.I);accessory=(0 if int(result.group(4))==0 else int(result.group(3))-int(result.group(2))+1) if result else 0
+ markerless=markerless_images=0
+ if not result and 'Markdown Content:' in text and 'No results found.' in text:
+  section=text[text.find('Markdown Content:')+len('Markdown Content:'):text.find('No results found.',text.find('Markdown Content:'))];markerless=len(re.findall(r'(?m)^#{1,2}\s+\[[^\]]+\]\(https?://www\.moparamerica\.com/(?:oem-parts/|p-)',section));markerless_images=len(re.findall(r'\[!\[Image\s+\d+:[^\]]*\]\([^)]*\)\]\(https?://www\.moparamerica\.com/(?:oem-parts/|p-)',section))
+ accessory_images=0
+ if result:
+  end=re.search(r'(?m)^\*\*Navigation\*\*$',text[result.end():]);asection=text[result.end():result.end()+(end.start() if end else len(text)-result.end())];accessory_images=len(re.findall(r'\[!\[Image\s+\d+:[^\]]*\]\([^)]*\)\]\(https?://www\.moparamerica\.com/(?:oem-parts/|p-)',asection))
+ rel=re.search(r'(?m)^##\s+Related Parts\s*$',text);related=0
+ if rel:
+  end=re.search(r'(?m)^\*\*Navigation\*\*$',text[rel.end():]);rsection=text[rel.end():rel.end()+(end.start() if end else len(text)-rel.end())];related=len(re.findall(r'\[!\[Image\s+\d+:[^\]]*\]\([^)]*\)\]\(https?://www\.moparamerica\.com/oem-parts/',rsection))
+ cut=header.start() if header else len(text);pre=text[:cut];heads=list(re.finditer(r'(?m)^Diagram\s+(\d+):\s*[^\n]+?\s+\d+\s*$',pre));active=heads[-1] if heads else None;body=pre[active.end():] if active else '';marks=list(re.finditer(r'(?m)^\[[^\]]+\]\(https?://www\.moparamerica\.com/#part_row_[^)]+\)',body));callrows=0
+ for i,m in enumerate(marks):callrows+=max(1,len(re.findall(r'https?://www\.moparamerica\.com/oem-parts/[^)\s"]+',body[m.start():(marks[i+1].start() if i+1<len(marks) else len(body))])))
+ selectors=len(set(re.findall(r'https?://www\.moparamerica\.com/[^)\s"]+\?assembly=\d+',text)));active_img=1 if active and re.search(r'!\[Image\s+\d+:[^\]]*\]\(https?://[^)\s]+\)',body) else 0
+ return {'rows':detailed+accessory+markerless+related+callrows,'callouts':len(marks),'images':detailed+accessory_images+markerless_images+related+selectors+active_img,'selectors':selectors,'active_assembly':int(active.group(1)) if active else None}
 def read_snapshot(c,snapshot):
  r=c.execute('select * from source_snapshots where snapshot_id=?',(snapshot,)).fetchone();p=CAT/r['raw_path'] if r else None
  if not r or not p.exists():return None,None
@@ -33,7 +44,7 @@ def deterministic_checks():
  def check(code,severity,agent,scope,observed,expected,evidence=''):
   executed.add(code)
   if observed!=expected:fails.append(failure(code,severity,agent,scope,observed,expected,evidence))
- check('SCHEMA_VERSION','CRITICAL','AGENT_8_REPOSITORY_INTEGRITY','database',c.execute("select value from project_meta where key='schema_version'").fetchone()[0],'3',str(DB));check('SQLITE_INTEGRITY','CRITICAL','AGENT_8_REPOSITORY_INTEGRITY','database',c.execute('pragma integrity_check').fetchone()[0],'ok',str(DB));check('FOREIGN_KEYS','CRITICAL','AGENT_8_REPOSITORY_INTEGRITY','database',len(c.execute('pragma foreign_key_check').fetchall()),0,str(DB))
+ check('SCHEMA_VERSION','CRITICAL','AGENT_8_REPOSITORY_INTEGRITY','database',c.execute("select value from project_meta where key='schema_version'").fetchone()[0],'3.1',str(DB));check('SQLITE_INTEGRITY','CRITICAL','AGENT_8_REPOSITORY_INTEGRITY','database',c.execute('pragma integrity_check').fetchone()[0],'ok',str(DB));check('FOREIGN_KEYS','CRITICAL','AGENT_8_REPOSITORY_INTEGRITY','database',len(c.execute('pragma foreign_key_check').fetchall()),0,str(DB))
  vehicles={r['vehicle_id']:r['n'] for r in c.execute('select vehicle_id,count(*) n from variations group by vehicle_id')};check('EXACT_SIX_VARIATIONS','CRITICAL','AGENT_2_TAXONOMY','project',vehicles,{'2017-chrysler-300c':3,'2017-dodge-challenger':3},'variation_manifest.json')
  for v in c.execute('select * from variations'):
   n=c.execute("select count(*) from catalogue_leaves where variation_id=? and leaf_type='CATEGORY_INDEX' and status!='RETIRED_SOURCE'",(v['variation_id'],)).fetchone()[0];check('CATEGORY_DENOMINATOR','CRITICAL','AGENT_7_COMPLETENESS',v['variation_id'],n,v['expected_category_count'],v['evidence_url'])

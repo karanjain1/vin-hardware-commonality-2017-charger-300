@@ -1,16 +1,19 @@
 {
-  "generated_at": "2026-08-01T00:46:40+00:00",
-  "schema_version": "3",
+  "generated_at": "2026-08-01T01:12:44+00:00",
+  "schema_version": "3.1",
   "vehicles": 2,
   "variations": 6,
   "taxonomy_nodes": 1305,
   "leaves_by_type_status": {
-    "CATEGORY_INDEX:NOT_STARTED": 1069
+    "CATEGORY_INDEX:EXTRACTED": 4,
+    "CATEGORY_INDEX:NOT_STARTED": 1065
   },
-  "source_rows": 0,
-  "records": 0,
-  "product_sources_by_status": {},
-  "image_observations": 0,
+  "source_rows": 24,
+  "records": 24,
+  "product_sources_by_status": {
+    "NOT_STARTED": 20
+  },
+  "image_observations": 21,
   "image_assets": 0,
   "fts_rows": 0
 }

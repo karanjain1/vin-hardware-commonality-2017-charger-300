@@ -38,13 +38,24 @@ def snapshot_text(c,snapshot_id):
  return s,b.decode('utf-8',errors='replace'),None
 def independent_leaf_counts(text):
  header=re.search(r'\n\s*No\.\s*\n\s*\n\s*Part\s*#\s*/\s*Description\s*/\s*Price',text,re.I);table=text[header.end():] if header else ''
- detailed=len(re.findall(r'\[!\[Image\s+\d+:[^\]]*\]\([^)]*\)\]\(https://www\.moparamerica\.com/oem-parts/',table))
+ detailed=len(re.findall(r'\[!\[Image\s+\d+:[^\]]*\]\([^)]*\)\]\(https?://www\.moparamerica\.com/oem-parts/',table))
+ result=re.search(r'###\s+(\d+)\s+Results?\s*\|\s*Showing\s+(\d+)\s*[–-]\s*(\d+)\s+of\s+(\d+)',text,re.I);accessory=(0 if int(result.group(4))==0 else int(result.group(3))-int(result.group(2))+1) if result else 0
+ if result:
+  nav=re.search(r'(?m)^\*\*Navigation\*\*$',text[result.end():]);asection=text[result.end():result.end()+(nav.start() if nav else len(text)-result.end())];accessory_images=len(re.findall(r'\[!\[Image\s+\d+:[^\]]*\]\([^)]*\)\]\(https?://www\.moparamerica\.com/(?:oem-parts/|p-)',asection))
+ else:accessory_images=0
+ markerless=markerless_images=0
+ if not result and 'Markdown Content:' in text and 'No results found.' in text:
+  ms=text[text.find('Markdown Content:')+len('Markdown Content:'):text.find('No results found.',text.find('Markdown Content:'))];markerless=len(re.findall(r'(?m)^#{1,2}\s+\[[^\]]+\]\(https?://www\.moparamerica\.com/(?:oem-parts/|p-)',ms));markerless_images=len(re.findall(r'\[!\[Image\s+\d+:[^\]]*\]\([^)]*\)\]\(https?://www\.moparamerica\.com/(?:oem-parts/|p-)',ms))
+ relhead=re.search(r'(?m)^##\s+Related Parts\s*$',text)
+ if relhead:
+  relnav=re.search(r'(?m)^\*\*Navigation\*\*$',text[relhead.end():]);relsection=text[relhead.end():relhead.end()+(relnav.start() if relnav else len(text)-relhead.end())];related=len(re.findall(r'\[!\[Image\s+\d+:[^\]]*\]\([^)]*\)\]\(https?://www\.moparamerica\.com/oem-parts/',relsection))
+ else:related=0
  cut=header.start() if header else len(text);pre=text[:cut];heads=list(re.finditer(r'(?m)^Diagram\s+\d+:\s*[^\n]+?\s+\d+\s*$',pre));active=heads[-1] if heads else None;body=pre[active.end():] if active else ''
- markers=list(re.finditer(r'(?m)^\[[^\]]+\]\(https://www\.moparamerica\.com/#part_row_[^)]+\)',body));callrows=0
+ markers=list(re.finditer(r'(?m)^\[[^\]]+\]\(https?://www\.moparamerica\.com/#part_row_[^)]+\)',body));callrows=0
  for i,m in enumerate(markers):
-  block=body[m.start():(markers[i+1].start() if i+1<len(markers) else len(body))];callrows+=max(1,len(re.findall(r'https://www\.moparamerica\.com/oem-parts/[^)\s"]+',block)))
- selectors=len(set(re.findall(r'https://www\.moparamerica\.com/[^)\s"]+\?assembly=\d+',text)));active_images=1 if active and re.search(r'!\[Image\s+\d+:[^\]]*\]\(https?://[^)\s]+\)',body) else 0
- return {'rows':detailed+callrows,'detailed':detailed,'callout_markers':len(markers),'callout_rows':callrows,'images':detailed+selectors+active_images,'selectors':selectors,'active_images':active_images}
+  block=body[m.start():(markers[i+1].start() if i+1<len(markers) else len(body))];callrows+=max(1,len(re.findall(r'https?://www\.moparamerica\.com/oem-parts/[^)\s"]+',block)))
+ selectors=len(set(re.findall(r'https?://www\.moparamerica\.com/[^)\s"]+\?assembly=\d+',text)));active_images=1 if active and re.search(r'!\[Image\s+\d+:[^\]]*\]\(https?://[^)\s]+\)',body) else 0
+ return {'rows':detailed+accessory+markerless+related+callrows,'detailed':detailed,'accessory_rows':accessory,'markerless_rows':markerless,'related_rows':related,'callout_markers':len(markers),'callout_rows':callrows,'images':detailed+accessory_images+markerless_images+related+selectors+active_images,'selectors':selectors,'active_images':active_images}
 def source_audit():
  run='source-audit-'+dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ');c=con();fails=[];executed={'ACTIVE_SCOPE_TERMINAL','SNAPSHOT_INTEGRITY','INDEPENDENT_ROW_RECONCILIATION','ROW_EVIDENCE_ASSOCIATION','INDEPENDENT_IMAGE_ENUMERATION','SELECTOR_CHILD_RECONCILIATION','PRODUCT_SOURCE_STRUCTURE'}
  active=c.execute("select * from catalogue_leaves where status!='RETIRED_SOURCE'").fetchall();bad=[dict(x) for x in active if x['status'] not in ('EXTRACTED','SOURCE_VERIFIED','IMAGE_VERIFIED','FITMENT_AUDITED','COMPLETENESS_CHECKED','INTEGRITY_CHECKED','QA_PASSED')]
