@@ -24,6 +24,7 @@ scripts/*
 !scripts/catalogue_v2.py
 !scripts/catalogue_qa.py
 !scripts/catalogue_reports.py
+!scripts/catalogue_watchdog.py
 !scripts/reuse_legacy_raw.py
 __pycache__/
 *.pyc
