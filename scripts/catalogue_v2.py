@@ -245,8 +245,12 @@ def process_leaf(leaf_id,refresh=False):
  finally:c.close()
 def crawl(kind,limit=None,retry=False,refresh=False):
  init_db();c=con(True);types={'categories':'CATEGORY_INDEX','diagrams':'DIAGRAM'};lt=types[kind];states="('NOT_STARTED','QA_FAILED')" if retry else "('NOT_STARTED')";q=f"SELECT catalogue_leaf_id FROM catalogue_leaves WHERE leaf_type=? AND status IN {states} ORDER BY variation_id,catalogue_leaf_id"+(" LIMIT ?" if limit else '');rows=c.execute(q,(lt,limit) if limit else (lt,)).fetchall();c.close()
- for r in rows:process_leaf(r['catalogue_leaf_id'],refresh)
+ errors=[]
+ for r in rows:
+  try:process_leaf(r['catalogue_leaf_id'],refresh)
+  except Exception as e:errors.append({'catalogue_leaf_id':r['catalogue_leaf_id'],'error':repr(e)})
  export_scope()
+ if errors:raise RuntimeError(json.dumps({'phase':kind,'failed_leaves':len(errors),'failures':errors[:50]}))
 def parse_product_detail(text):
  pm=re.search(r'\*\s+Part Number:\s*([^\n]+)',text,re.I);title=re.search(r'^#{1,3}\s+(.+?)(?:\s+-\s+Mopar|\s*\()',text,re.M);marker='**Genuine Mopar Parts**' in text or 'Genuine Mopar Parts' in text
  complete=bool(pm and title and marker);body=text[:text.find('**Genuine Mopar Parts**')] if '**Genuine Mopar Parts**' in text else text
