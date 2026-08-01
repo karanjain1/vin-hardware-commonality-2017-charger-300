@@ -100,5 +100,16 @@
     "Raw text source hash semantics did not distinguish literal bytes from LF-normalized text.",
     "Published GitHub state was far behind unpublished local partial state."
   ],
+  "controlled_correction_supplement": {
+    "recorded_at": "2026-08-01T10:36:00+10:00",
+    "historical_invalid_database_checkpoint": "catalog/v2/checkpoints/pre_red_team_rebuild.sqlite3",
+    "authoritative_schema_version": "3",
+    "preproduction_defect_register": "catalog/quality/defects/preproduction_red_team_defects.json",
+    "route_revalidation_manifest": "catalog/v2/manifests/route_revalidation.json",
+    "baseline_category_total": 1081,
+    "current_source_revalidated_category_total": 1069,
+    "route_sets_reconciled_with_two_renderer_schemes": true,
+    "note": "All initial MISSING classifications above are preserved as point-in-time recovery findings; corrected artifacts now exist and remain subject to final Agent 9 QA."
+  },
   "preservation_rule": "Do not delete or overwrite legacy work. Treat it as non-authoritative recovery evidence; build the v2 authoritative dataset alongside it and migrate only independently reverified records."
 }

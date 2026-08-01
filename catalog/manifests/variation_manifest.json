@@ -28,7 +28,9 @@
           "source_url": "https://www.moparamerica.com/v-2017-chrysler-300--c--3-6l-v6-gas",
           "validation_title": "Select Parts Category - 2017 Chrysler 300",
           "expected_category_links_at_resolution": 172,
-          "derivation_status": "EVIDENCE_SUPPORTED"
+          "derivation_status": "EVIDENCE_SUPPORTED",
+          "current_expected_category_links": 170,
+          "current_scope_evidence": "catalog/v2/manifests/route_revalidation.json"
         },
         {
           "variation_id": "chrysler300-c-36-flex",
@@ -39,7 +41,9 @@
           "source_url": "https://www.moparamerica.com/v-2017-chrysler-300--c--3-6l-v6-flex",
           "validation_title": "Select Parts Category - 2017 Chrysler 300",
           "expected_category_links_at_resolution": 172,
-          "derivation_status": "EVIDENCE_SUPPORTED"
+          "derivation_status": "EVIDENCE_SUPPORTED",
+          "current_expected_category_links": 170,
+          "current_scope_evidence": "catalog/v2/manifests/route_revalidation.json"
         },
         {
           "variation_id": "chrysler300-c-57-gas",
@@ -50,7 +54,9 @@
           "source_url": "https://www.moparamerica.com/v-2017-chrysler-300--c--5-7l-v8-gas",
           "validation_title": "Select Parts Category - 2017 Chrysler 300",
           "expected_category_links_at_resolution": 170,
-          "derivation_status": "EVIDENCE_SUPPORTED"
+          "derivation_status": "EVIDENCE_SUPPORTED",
+          "current_expected_category_links": 168,
+          "current_scope_evidence": "catalog/v2/manifests/route_revalidation.json"
         }
       ]
     },
@@ -70,7 +76,9 @@
           "source_url": "https://www.moparamerica.com/v-2017-dodge-challenger--sxt--3-6l-v6-gas",
           "validation_title": "Select Parts Category - 2017 Dodge Challenger",
           "expected_category_links_at_resolution": 179,
-          "derivation_status": "EVIDENCE_SUPPORTED"
+          "derivation_status": "EVIDENCE_SUPPORTED",
+          "current_expected_category_links": 177,
+          "current_scope_evidence": "catalog/v2/manifests/route_revalidation.json"
         },
         {
           "variation_id": "challenger-rt-57-gas",
@@ -81,7 +89,9 @@
           "source_url": "https://www.moparamerica.com/v-2017-dodge-challenger--r-t--5-7l-v8-gas",
           "validation_title": "Select Parts Category - 2017 Dodge Challenger",
           "expected_category_links_at_resolution": 197,
-          "derivation_status": "EVIDENCE_SUPPORTED"
+          "derivation_status": "EVIDENCE_SUPPORTED",
+          "current_expected_category_links": 195,
+          "current_scope_evidence": "catalog/v2/manifests/route_revalidation.json"
         },
         {
           "variation_id": "challenger-rt-scat-pack-64-gas",
@@ -92,9 +102,14 @@
           "source_url": "https://www.moparamerica.com/v-2017-dodge-challenger--r-t-scat-pack--6-4l-v8-gas",
           "validation_title": "Select Parts Category - 2017 Dodge Challenger",
           "expected_category_links_at_resolution": 191,
-          "derivation_status": "EVIDENCE_SUPPORTED"
+          "derivation_status": "EVIDENCE_SUPPORTED",
+          "current_expected_category_links": 189,
+          "current_scope_evidence": "catalog/v2/manifests/route_revalidation.json"
         }
       ]
     }
-  ]
+  ],
+  "current_scope_revalidated_at": "2026-08-01T00:21:55.660863+00:00",
+  "current_scope_evidence": "catalog/v2/manifests/route_revalidation.json",
+  "source_change_note": "Every controlled route exposed exactly two fewer category leaves than at initial resolution; two independent renderer schemes produced identical current slug sets. Baseline counts are retained and current counts control active extraction."
 }

@@ -1,15 +1,16 @@
 {
-  "generated_at": "2026-07-31T23:49:35+00:00",
+  "generated_at": "2026-08-01T00:46:40+00:00",
+  "schema_version": "3",
   "vehicles": 2,
   "variations": 6,
-  "taxonomy_nodes": 1317,
-  "leaves": 1081,
+  "taxonomy_nodes": 1305,
+  "leaves_by_type_status": {
+    "CATEGORY_INDEX:NOT_STARTED": 1069
+  },
+  "source_rows": 0,
   "records": 0,
-  "unique_displayed_part_numbers": 0,
-  "part_number_not_displayed": 0,
+  "product_sources_by_status": {},
   "image_observations": 0,
-  "unique_images": 0,
-  "verified_images": 0,
-  "no_oem_image": 0,
+  "image_assets": 0,
   "fts_rows": 0
 }

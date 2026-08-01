@@ -1,6 +1,6 @@
 # Authoritative 2017 Mopar OEM Catalogue — Chrysler 300C / Dodge Challenger
 
-This directory contains the controlled v2 catalogue required by the Mopar master instruction. It is separate from, and supersedes for this mission, the partial legacy Charger/300 experiment in `catalog/mopar_catalog.sqlite3`.
+This directory contains the controlled schema-v3 authoritative catalogue required by the Mopar master instruction. It is separate from, and supersedes for this mission, the partial legacy Charger/300 experiment in `catalog/mopar_catalog.sqlite3`. The `v2/` path is retained for repository continuity; its authoritative database declares `schema_version=3`.
 
 ## Exact scope
 
@@ -49,8 +49,16 @@ python scripts/catalogue_v2.py crawl-products
 python scripts/catalogue_v2.py acquire-images
 python scripts/catalogue_v2.py verify-images
 python scripts/catalogue_v2.py export
-python scripts/catalogue_qa.py audit
-python scripts/catalogue_qa.py qa --resample-per-variation 1
+python scripts/catalogue_auditors.py source
+python scripts/catalogue_auditors.py image
+python scripts/catalogue_auditors.py fitment
+python scripts/catalogue_auditors.py completeness
+python scripts/catalogue_v2.py export
+python scripts/catalogue_auditors.py integrity
+python scripts/catalogue_v2.py export
+python scripts/catalogue_reports.py
+# Commit and push the clean extraction/integrity checkpoint before Agent 9:
+python scripts/catalogue_qa.py final
 ```
 
 Each source leaf is committed to SQLite transactionally. Existing raw evidence is reused unless `--refresh` is explicitly supplied. `--retry-failed` is for diagnosed and corrected failures; it is not a substitute for root-cause analysis.
@@ -61,7 +69,8 @@ Mopar page retrieval is serialized at the source's ten-second crawl delay. CDN i
 
 ```bash
 python -m unittest discover -s tests -p 'test_catalogue_v2.py' -v
-python scripts/catalogue_qa.py audit
+python scripts/catalogue_auditors.py all
+python scripts/catalogue_qa.py check
 ```
 
 The tests include parser fixtures and seeded failures for missing rows, false completion, wrong part numbers, broken image paths and wrong image associations.

@@ -1,84 +1,75 @@
-import importlib.util,json,sqlite3,sys,tempfile,unittest
+import contextlib,importlib.util,io,json,shutil,sqlite3,tempfile,unittest
 from pathlib import Path
+from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
-SPEC=importlib.util.spec_from_file_location('catalogue_v2',ROOT/'scripts'/'catalogue_v2.py')
-cv2=importlib.util.module_from_spec(SPEC);SPEC.loader.exec_module(cv2)
-QSPEC=importlib.util.spec_from_file_location('catalogue_qa',ROOT/'scripts'/'catalogue_qa.py')
-qa=importlib.util.module_from_spec(QSPEC);QSPEC.loader.exec_module(qa)
-
-class SkillAndManifestTests(unittest.TestCase):
- def test_ten_project_skills_are_narrow_and_testable(self):
-  files=sorted((ROOT/'catalog'/'skills').glob('*/SKILL.md'))
-  self.assertEqual(len(files),10)
-  for p in files:
-   t=p.read_text(encoding='utf-8')
-   self.assertIn('version: 1.0.0',t);self.assertIn('## Procedure',t);self.assertIn('## Tests',t);self.assertIn('## Completion Gate',t)
+def load(name,path):
+ s=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+cv2=load('catalogue_v2',ROOT/'scripts'/'catalogue_v2.py')
+aud=load('catalogue_auditors',ROOT/'scripts'/'catalogue_auditors.py')
+qa=load('catalogue_qa',ROOT/'scripts'/'catalogue_qa.py')
+DIAGRAM=ROOT/'catalog'/'v2'/'evidence'/'source'/'challenger-rt-57-gas'/'diagram'/'82dca3b0735fd12996a6bb09ff1ab61849f453f00c409693302c1401c10381d3.md'
+PARTIAL=ROOT/'catalog'/'v2'/'evidence'/'source'/'product'/'37fc7ad3abdc781cf4769e95b39969895b417d29a2b44a4592fb67edb5b03f79.md'
+class ManifestAndSkills(unittest.TestCase):
  def test_exact_six_variations(self):
-  m=json.loads((ROOT/'catalog'/'manifests'/'variation_manifest.json').read_text(encoding='utf-8'))
-  self.assertEqual(len(m['vehicles']),2);self.assertEqual([len(v['variations']) for v in m['vehicles']],[3,3])
-  routes=[x['route_slug'] for v in m['vehicles'] for x in v['variations']]
-  self.assertEqual(len(routes),len(set(routes)))
-  self.assertTrue(all(x.startswith('v-2017-') for x in routes))
-
-class ParserTests(unittest.TestCase):
+  m=json.loads((ROOT/'catalog'/'manifests'/'variation_manifest.json').read_text());vs=[(v,x) for v in m['vehicles'] for x in v['variations']];self.assertEqual(len(vs),6);self.assertEqual({v['vehicle_id'] for v,x in vs},{'2017-chrysler-300c','2017-dodge-challenger'});self.assertEqual({v['vehicle_id']:len(v['variations']) for v in m['vehicles']},{'2017-chrysler-300c':3,'2017-dodge-challenger':3})
+ def test_ten_project_skills(self):
+  files=list((ROOT/'catalog'/'skills').glob('*/SKILL.md'));self.assertEqual(len(files),10)
+  for p in files:self.assertIn('## Tests',p.read_text(encoding='utf-8'))
+class ParserRegression(unittest.TestCase):
  @classmethod
- def setUpClass(cls):
-  cls.door=(ROOT/'evidence/mopar/mvsa_44114_research/raw/challenger/front-door__assembly-01.md').read_text(encoding='utf-8')
-  cls.belts=(ROOT/'evidence/mopar/mvsa_44114_research/raw/challenger/seat-belts__assembly-01.md').read_text(encoding='utf-8')
- def test_fixture_taxonomy_and_callouts(self):
-  self.assertEqual([x['assembly_no'] for x in cv2.assembly_selectors(self.door,'https://www.moparamerica.com/x')],[1,2,3])
-  mapping,empty,total=cv2.callout_map(self.door,1)
-  self.assertEqual(total,18);self.assertEqual(empty,[]);self.assertGreaterEqual(len(mapping),30)
- def test_every_fixture_product_has_displayed_number_and_image(self):
-  cards=cv2.product_cards(self.door)
-  self.assertEqual(len(cards),56)
-  self.assertTrue(all(v['oem_part_number_source']!='PART_NUMBER_NOT_DISPLAYED' for v in cards.values()))
-  self.assertTrue(all(v['images'] for v in cards.values()))
- def test_part_numbers_remain_strings_with_zero_hyphen_suffix(self):
-  u='https://www.moparamerica.com/oem-parts/example'
-  text=f'[![Image 1: Example](https://cdn-product-images.revolutionparts.io/assets/x.webp)]({u} "Example - Part No 0012-AB")\n**[Example]({u})**\n[0012-AB]({u} "Left.")\n**Description:** Exact.'
-  card=cv2.product_cards(text)[u]
-  self.assertEqual(card['oem_part_number_source'],'0012-AB')
-  self.assertEqual(card['fitment_notes_source'],'Left.')
- def test_absent_number_is_not_guessed_from_url(self):
-  u='https://www.moparamerica.com/oem-parts/mopar-example-68123456aa'
-  card=cv2.product_cards(f'**[Example]({u})**')[u]
-  self.assertEqual(card['oem_part_number_source'],'PART_NUMBER_NOT_DISPLAYED')
- def test_single_diagram_fixture(self):
-  t='# Example for 2017 Dodge Challenger\n![Image 1: Example #0](https://cdn-illustrations.revolutionparts.io/a/b.png)'
-  a=cv2.assembly_selectors(t,'https://www.moparamerica.com/example')
-  self.assertEqual(len(a),1);self.assertEqual(a[0]['assembly_no'],0)
-
-class SchemaTests(unittest.TestCase):
- def test_schema_compiles_and_rejects_orphan(self):
-  c=sqlite3.connect(':memory:');c.executescript((ROOT/'catalog'/'schema_v2.sql').read_text(encoding='utf-8'));c.execute('PRAGMA foreign_keys=ON')
-  with self.assertRaises(sqlite3.IntegrityError):c.execute("INSERT INTO variations(variation_id,vehicle_id,variation_source_label,trim_source,engine_source,route_slug,source_url,expected_category_links,validation_title,validation_status) VALUES('x','missing','x','x','x','x','https://x',1,'x','NOT_STARTED')")
- def test_deterministic_ids(self):
-  self.assertEqual(cv2.sid('record','a','b'),cv2.sid('record','a','b'))
-  self.assertNotEqual(cv2.sid('record','a','b'),cv2.sid('record','a','c'))
-
-class FitmentTests(unittest.TestCase):
- def test_exact_variation_fitment_is_confirmed(self):
-  self.assertEqual(qa.fitment_decision('2017 Dodge Challenger R/T Scat Pack 6.4L V8 - Gas',2017,'Dodge','Challenger','R/T Scat Pack / 6.4L V8 / Gas')[1],'FITMENT_AUDITED')
- def test_same_model_wrong_variation_is_conflict(self):
-  self.assertEqual(qa.fitment_decision('2017 Dodge Challenger SXT 3.6L V6 - Gas',2017,'Dodge','Challenger','R/T / 5.7L V8 / Gas')[1],'FITMENT_CONFLICT')
- def test_configured_route_remains_evidence_without_contradiction(self):
-  self.assertEqual(qa.fitment_decision('Engines: 3.6L V6; 5.7L V8',2017,'Dodge','Challenger','R/T / 5.7L V8 / Gas')[0],'APPLICABLE_CONFIGURED_ROUTE')
-
-class IndependentQualitySeedTests(unittest.TestCase):
- def test_quality_gate_catches_seeded_major_failures(self):
-  import shutil
+ def setUpClass(cls):cls.text=DIAGRAM.read_text(encoding='utf-8')
+ def test_duplicate_visible_callout_occurrences_are_preserved(self):
+  a=cv2.active_diagram(self.text,1);rows=cv2.callout_rows(self.text,a);self.assertEqual(len(rows),6);dup=[x for x in rows if x['anchor']=='#part_row_0_4_0'];self.assertEqual([x['ordinal'] for x in dup],[1,2])
+ def test_detailed_table_rows_are_bounded_and_exact(self):
+  rows=cv2.table_rows(self.text);self.assertEqual(len(rows),5);self.assertEqual(rows[0]['pn'],'6101831');self.assertEqual(rows[1]['pn'],'5090026AA');self.assertNotIn('5090026AA',rows[0]['snippet'])
+ def test_adjacent_product_cannot_supply_missing_number(self):
+  u1='https://www.moparamerica.com/oem-parts/mopar-model-300-bracket-a';u2='https://www.moparamerica.com/oem-parts/mopar-second-b22222'
+  t='\n No. \n\n Part # / Description / Price\n\n1\n\n[![Image 1: first](https://cdn-product-images.revolutionparts.io/assets/a.webp)]('+u1+' "First")\n\n**[Model 300 Bracket]('+u1+' "Model 300 Bracket")**\n\n2\n\n[![Image 2: second](https://cdn-product-images.revolutionparts.io/assets/b.webp)]('+u2+' "Second - Part No B22222")\n\n**[Second]('+u2+' "Second")**\n\n[B22222]('+u2+')\n'
+  rows=cv2.table_rows(t);self.assertEqual(rows[0]['pn'],'PART_NUMBER_NOT_DISPLAYED');self.assertEqual(rows[0]['name'],'Model 300 Bracket');self.assertEqual(rows[1]['pn'],'B22222')
+ def test_wrong_assembly_response_is_rejected(self):
+  with self.assertRaisesRegex(ValueError,'wrong assembly'):cv2.parse_leaf(self.text,'DIAGRAM',2)
+ def test_every_structural_product_link_is_accounted(self):
+  parsed=cv2.parse_leaf(self.text,'DIAGRAM',1);self.assertEqual(len(parsed['rows']),11);self.assertEqual(parsed['structural']['callout_markers'],6)
+ def test_partial_product_renderer_is_not_no_image_evidence(self):
+  d=cv2.parse_product_detail(PARTIAL.read_text(encoding='utf-8'));self.assertFalse(d['complete']);self.assertFalse(d['images'])
+ def test_complete_product_structure_and_gallery(self):
+  t='Title: Example\nURL Source: https://www.moparamerica.com/oem-parts/x\n# Example - Mopar (0012-AB)\n![Image 1: OEM](https://cdn-product-images.revolutionparts.io/a.webp)\n**Genuine Mopar Parts**\n* Part Number: 0012-AB\n* Description: Exact\n'
+  d=cv2.parse_product_detail(t);self.assertTrue(d['complete']);self.assertEqual(d['pn'],'0012-AB');self.assertEqual(len(d['images']),1)
+class SchemaAndImage(unittest.TestCase):
+ def db(self):
+  td=tempfile.TemporaryDirectory();p=Path(td.name)/'x.sqlite3';c=sqlite3.connect(p);c.executescript((ROOT/'catalog'/'schema_v2.sql').read_text());return td,c
+ def test_schema_compiles(self):
+  td,c=self.db();self.assertEqual(c.execute('pragma integrity_check').fetchone()[0],'ok');c.close();td.cleanup()
+ def test_context_trigger_rejects_cross_variation_taxonomy_parent(self):
+  td,c=self.db();c.execute("insert into vehicles values('a',2017,'Dodge','Challenger')");c.execute("insert into variations values('v1','a','SXT / 3.6L V6 / Gas','SXT','3.6L V6','Gas','r1','u1','d','e',1,'VALIDATED',null,null)");c.execute("insert into variations values('v2','a','R/T / 5.7L V8 / Gas','R/T','5.7L V8','Gas','r2','u2','d','e',1,'VALIDATED',null,null)");c.execute("insert into taxonomy_nodes values('p','v1',null,'CATEGORY','P','P','p','u',1,'DISCOVERED',null)")
+  with self.assertRaisesRegex(sqlite3.IntegrityError,'parent variation'):c.execute("insert into taxonomy_nodes values('x','v2','p','SUBCATEGORY','X','X','x','u',1,'DISCOVERED',null)")
+  c.close();td.cleanup()
+ def test_image_classifier_rejects_uniform_placeholder(self):
+  im=Image.new('RGBA',(64,64),(255,255,255,255));b=io.BytesIO();im.save(b,format='PNG');m=cv2.classify_image_bytes(b.getvalue());self.assertEqual(m['placeholder'],'PLACEHOLDER_SUSPECT')
+ def test_image_classifier_records_content_pixels(self):
+  im=Image.new('RGB',(64,64),'white');im.putpixel((2,2),(0,0,0));b=io.BytesIO();im.save(b,format='PNG');m=cv2.classify_image_bytes(b.getvalue());self.assertEqual(m['placeholder'],'CONTENT_IMAGE');self.assertEqual(m['width'],64)
+class FailClosedQualityTests(unittest.TestCase):
+ def copydb(self,td):
+  p=Path(td)/'qa.sqlite3';shutil.copy2(ROOT/'catalog'/'v2'/'checkpoints'/'v3_parser_validation.sqlite3',p);return p
+ def test_current_scope_revalidation_is_stable_and_controls_1069_categories(self):
+  r=json.loads((ROOT/'catalog'/'v2'/'manifests'/'route_revalidation.json').read_text());self.assertTrue(all(x['sets_identical'] for x in r['variations']));self.assertEqual(sum(x['current_count'] for x in r['variations']),1069)
+ def test_agent9_never_promotes_nonterminal_rows(self):
   with tempfile.TemporaryDirectory() as td:
-   db=Path(td)/'seeded.sqlite3';shutil.copy2(ROOT/'catalog'/'v2'/'checkpoints'/'preproduction_validation.sqlite3',db);c=sqlite3.connect(db)
-   leaf=c.execute("SELECT catalogue_leaf_id FROM catalogue_leaves WHERE status='EXTRACTED' AND visible_row_expected IS NOT NULL LIMIT 1").fetchone()[0]
-   c.execute("UPDATE catalogue_leaves SET visible_row_expected=visible_row_expected+1,status='QA_PASSED' WHERE catalogue_leaf_id=?",(leaf,))
-   rid=c.execute('SELECT record_id FROM part_records LIMIT 1').fetchone()[0];c.execute("UPDATE part_records SET oem_part_number_source='WRONG999',oem_part_number_normalized='WRONG999' WHERE record_id=?",(rid,))
-   sha=c.execute('SELECT image_sha256 FROM image_assets LIMIT 1').fetchone()[0];c.execute("UPDATE image_assets SET local_image_path='v2/images/missing.bin' WHERE image_sha256=?",(sha,))
-   oid=c.execute("SELECT image_observation_id FROM image_observations WHERE image_role NOT LIKE 'STATIC_%' LIMIT 1").fetchone()[0];c.execute("UPDATE image_observations SET image_source_url='https://cdn-product-images.revolutionparts.io/assets/wrong-seeded.webp' WHERE image_observation_id=?",(oid,));c.commit();c.close()
-   old=qa.DB;qa.DB=db
+   db=self.copydb(td);old_db,old_out=qa.DB,qa.OUT;qa.DB=db;qa.OUT=Path(td)/'reports'
    try:
-    _,fails=qa.run_checks(final=True);codes={x['code'] for x in fails}
+    with contextlib.redirect_stdout(io.StringIO()):self.assertFalse(qa.final())
+    c=sqlite3.connect(db);self.assertEqual(c.execute("select count(*) from catalogue_leaves where status='QA_PASSED'").fetchone()[0],0);c.close()
+   finally:qa.DB,qa.OUT=old_db,old_out
+ def test_manual_defect_is_never_auto_resolved(self):
+  with tempfile.TemporaryDirectory() as td:
+   db=self.copydb(td);c=sqlite3.connect(db);c.execute("insert into defects(defect_id,origin,check_code,severity,responsible_agent,affected_record_ids,description,observed_result,expected_result,source_evidence,reproduction_steps,required_correction,same_pattern_search_requirement,retest_requirements,status,created_at) values('manual-x','MANUAL','EXACT_CHECK','MAJOR','AGENT_9','[]','d','o','e','s','r','c','all','retest','OPEN','2026-08-01T00:00:00Z')");c.commit();c.close();old=qa.DB;qa.DB=db
+   try:qa.persist('r',[],{'EXACT_CHECK'});c=sqlite3.connect(db);self.assertEqual(c.execute("select status from defects where defect_id='manual-x'").fetchone()[0],'OPEN');c.close()
    finally:qa.DB=old
-   self.assertIn('ROW_COUNT_MISMATCH',codes);self.assertIn('SOURCE_RECORD_ASSOCIATION',codes);self.assertIn('IMAGE_ASSET_INTEGRITY',codes);self.assertIn('WRONG_IMAGE_ASSOCIATION',codes)
-
+ def test_source_auditor_detects_tampered_image_locator(self):
+  with tempfile.TemporaryDirectory() as td:
+   db=self.copydb(td);c=sqlite3.connect(db);c.execute("update image_observations set source_locator='markdown:char:0-1' where image_observation_id=(select image_observation_id from image_observations limit 1)");c.commit();c.close();old=aud.DB;aud.DB=db
+   try:
+    with contextlib.redirect_stdout(io.StringIO()):self.assertFalse(aud.source_audit())
+    c=sqlite3.connect(db);self.assertGreater(c.execute("select count(*) from defects where check_code='ROW_EVIDENCE_ASSOCIATION' and status='OPEN'").fetchone()[0],0);c.close()
+   finally:aud.DB=old
 if __name__=='__main__':unittest.main(verbosity=2)

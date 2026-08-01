@@ -45,3 +45,11 @@ The legacy database and images are preserved in place. They will not be deleted 
 8. Published state and local partial state differ.
 
 The machine-readable controlling audit is `catalog/quality/recovery_audit.json`.
+
+## Controlled preproduction correction
+
+The first v2 validation crawl was halted after independent Agents 5, 7 and 9 found false-pass paths: duplicate visible callouts could collapse, adjacent product fields could contaminate a row, image byte verification could overclaim association, and final QA could promote nonterminal scopes. Its physical database was preserved as `catalog/v2/checkpoints/pre_red_team_rebuild.sqlite3`; it is historical, not authoritative.
+
+The active database was rebuilt as schema v3 from preserved immutable source evidence after root-cause correction and regression tests. The complete defect history is `catalog/quality/defects/preproduction_red_team_defects.json`.
+
+Repeated current route traversal through two independent renderer URL schemes also established a controlled source change: every one of the six routes exposes exactly two fewer category leaves than at initial resolution (baseline total 1,081; current total 1,069). Baselines remain in the Variation Manifest; `catalog/v2/manifests/route_revalidation.json` controls the active expected scope.

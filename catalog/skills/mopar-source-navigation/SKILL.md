@@ -1,7 +1,7 @@
 ---
 name: mopar-source-navigation
 description: Use when traversing configured MoparAmerica catalogue routes.
-version: 1.0.0
+version: 1.1.0
 author: Hermes Mopar Catalogue Project
 license: Project-controlled
 metadata:
@@ -16,11 +16,13 @@ Navigate only evidence-supported configured routes in `catalog/manifests/variati
 
 ## Procedure
 1. Confirm year, make, model, trim and engine against the variation manifest.
-2. Fetch the configured route and require the expected `Select Parts Category` title and at least 20 route-bound category links.
-3. Serialize Mopar page retrieval at the declared 10-second crawl delay. Treat short HTTP-200 interstitials as retryable transport blocks.
-4. Record selector state, source URL, renderer URL, final URL, HTTP status, access time and literal/canonical hashes.
-5. Detect pagination, assembly selectors, tabs and single-diagram `#0` pages before classifying content.
-6. Never classify zero records as empty until route state and page structure pass.
+2. Fetch the configured route and require the expected `Select Parts Category` title plus an exact route-bound category set reconciled by two independent renderer URL schemes.
+3. Preserve baseline category counts and, when the source changes, record a dated route-revalidation manifest instead of silently changing history.
+4. Serialize Mopar page retrieval at the declared 10-second crawl delay. Treat short HTTP-200 interstitials as retryable transport blocks.
+5. Prefer Jina's inner `http://` route for catalogue pages; for product details prefer inner `https://` and use `X-No-Cache: true` when a cached renderer omits the product structure/gallery.
+6. Record selector state, source URL, renderer URL, final URL, HTTP status, access time and literal/canonical hashes.
+7. Detect pagination, assembly selectors, tabs and single-diagram `#0` pages before classifying content.
+8. Never classify zero records as empty until route state and page structure pass.
 
 ## Tests
 - Wrong year/model route must fail.

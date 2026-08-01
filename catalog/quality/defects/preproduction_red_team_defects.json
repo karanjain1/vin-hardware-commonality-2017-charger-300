@@ -1,0 +1,85 @@
+{
+  "register_version": "1.0.0",
+  "created_at": "2026-08-01T10:36:00+10:00",
+  "purpose": "Preserve preproduction red-team defect history across the controlled v2-to-v3 authoritative database rebuild.",
+  "defects": [
+    {
+      "defect_id": "PREPROD-001",
+      "severity": "CRITICAL",
+      "responsible_agent": "AGENT_9_INDEPENDENT_QUALITY_RED_TEAM",
+      "description": "Final QA filtered nonterminal leaf/batch failures and could mass-promote untouched rows.",
+      "observed_result": "NOT_STARTED and IN_PROGRESS scopes were eligible for blanket QA_PASSED update.",
+      "required_correction": "Nonterminal states remain blocking; promote only exact INTEGRITY_CHECKED candidates after an eligible-versus-active guard.",
+      "same_pattern_search_requirement": "All promotion paths, product sources and batches.",
+      "retest": "FailClosedQualityTests.test_agent9_never_promotes_nonterminal_rows",
+      "status": "RESOLVED_PREPRODUCTION_REGRESSION"
+    },
+    {
+      "defect_id": "PREPROD-002",
+      "severity": "CRITICAL",
+      "responsible_agent": "AGENT_3_PART_RECORD_EXTRACTION",
+      "description": "Record identity collapsed repeated identical callout rows.",
+      "observed_result": "Two visible callout-4 occurrences became one record.",
+      "required_correction": "Stage every visible source-row occurrence with section, exact anchor and occurrence ordinal before one-to-one record creation.",
+      "same_pattern_search_requirement": "Every category and diagram page.",
+      "retest": "ParserRegression.test_duplicate_visible_callout_occurrences_are_preserved",
+      "status": "RESOLVED_PREPRODUCTION_REGRESSION"
+    },
+    {
+      "defect_id": "PREPROD-003",
+      "severity": "CRITICAL",
+      "responsible_agent": "AGENT_3_PART_RECORD_EXTRACTION",
+      "description": "Unbounded product-card context could copy a neighbouring row's part number into a missing-number row.",
+      "observed_result": "Model 300 Bracket could receive the next product's number.",
+      "required_correction": "Bound each card at the next structural row marker and hash the exact evidence snippet.",
+      "same_pattern_search_requirement": "Every source card and detail merge.",
+      "retest": "ParserRegression.test_adjacent_product_cannot_supply_missing_number",
+      "status": "RESOLVED_PREPRODUCTION_REGRESSION"
+    },
+    {
+      "defect_id": "PREPROD-004",
+      "severity": "CRITICAL",
+      "responsible_agent": "AGENT_5_IMAGE_INTEGRITY",
+      "description": "Byte verification could falsely set record association verified without rechecking the source occurrence.",
+      "observed_result": "Correct bytes attached to a wrong record could pass.",
+      "required_correction": "Store immutable source-page hash, exact occurrence locator and explicit many-to-many associations; audit association independently from bytes.",
+      "same_pattern_search_requirement": "All product, selector, active-diagram and gallery images.",
+      "retest": "FailClosedQualityTests.test_source_auditor_detects_tampered_image_locator",
+      "status": "RESOLVED_PREPRODUCTION_REGRESSION"
+    },
+    {
+      "defect_id": "PREPROD-005",
+      "severity": "MAJOR",
+      "responsible_agent": "AGENT_4_IMAGE_ACQUISITION",
+      "description": "Partial renderer output could be mislabeled NO_OEM_IMAGE_AVAILABLE.",
+      "observed_result": "A fitment-only page with no gallery markers appeared image-empty.",
+      "required_correction": "Require complete product markers before no-image disposition; retry product pages through inner HTTPS with X-No-Cache.",
+      "same_pattern_search_requirement": "All product sources with zero images.",
+      "retest": "ParserRegression.test_partial_product_renderer_is_not_no_image_evidence",
+      "status": "RESOLVED_PREPRODUCTION_REGRESSION"
+    },
+    {
+      "defect_id": "PREPROD-006",
+      "severity": "CRITICAL",
+      "responsible_agent": "AGENT_8_REPOSITORY_INTEGRITY",
+      "description": "Schema foreign keys proved existence but not variation/category/leaf context consistency.",
+      "observed_result": "Cross-variation taxonomy and record associations were schema-permitted.",
+      "required_correction": "Add composite candidate keys and fail-closed context triggers; rebuild from preserved source snapshots.",
+      "same_pattern_search_requirement": "Taxonomy parents, leaves, records and image associations.",
+      "retest": "SchemaAndImage.test_context_trigger_rejects_cross_variation_taxonomy_parent",
+      "status": "RESOLVED_PREPRODUCTION_REGRESSION"
+    },
+    {
+      "defect_id": "PREPROD-007",
+      "severity": "MAJOR",
+      "responsible_agent": "AGENT_2_TAXONOMY",
+      "description": "Initial route category counts changed by exactly two categories on every controlled route.",
+      "observed_result": "Baseline total 1081; two independent current renderer schemes agree on total 1069.",
+      "required_correction": "Preserve baseline counts and write a dated current route-revalidation manifest controlling active extraction.",
+      "same_pattern_search_requirement": "All six configured routes.",
+      "retest": "FailClosedQualityTests.test_current_scope_revalidation_is_stable_and_controls_1069_categories",
+      "status": "RESOLVED_PREPRODUCTION_REGRESSION",
+      "evidence": "catalog/v2/manifests/route_revalidation.json"
+    }
+  ]
+}

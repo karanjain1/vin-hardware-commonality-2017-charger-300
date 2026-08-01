@@ -1,329 +1,302 @@
 #!/usr/bin/env python
-"""Authoritative six-variation MoparAmerica catalogue builder.
+"""Fail-closed six-variation MoparAmerica catalogue producer.
 
-Scope is controlled by catalog/manifests/variation_manifest.json. Mopar page
-requests are serialized at ten seconds. Image CDN work may run concurrently.
-All writes are idempotent SQLite upserts and per-leaf checkpoints.
+Every visible row occurrence is staged before one-to-one record creation. Source
+snapshots and image occurrences are immutable evidence; retries transactionally
+replace the active projection for a leaf. Agent-9 QA is implemented separately.
 """
 from __future__ import annotations
-import argparse,csv,datetime as dt,hashlib,io,json,mimetypes,re,sqlite3,time,uuid
+import argparse,csv,datetime as dt,hashlib,io,json,mimetypes,re,sqlite3,sys,threading,time
+from collections import Counter,defaultdict
 from concurrent.futures import ThreadPoolExecutor,as_completed
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlsplit,urlunsplit,parse_qsl,urlencode
 import requests
-from PIL import Image
-
-ROOT=Path(__file__).resolve().parents[1]
-CAT=ROOT/'catalog'; DB=CAT/'authoritative_catalogue.sqlite3'; SCHEMA=CAT/'schema_v2.sql'
-MANIFEST=CAT/'manifests'/'variation_manifest.json'; EVIDENCE=CAT/'v2'/'evidence'; RAW=EVIDENCE/'source'
-IMAGES=CAT/'v2'/'images'; EXPORTS=CAT/'v2'/'exports'; CHECKPOINTS=CAT/'v2'/'checkpoints'; LOGS=CAT/'v2'/'logs'
-for p in (RAW,IMAGES,EXPORTS,CHECKPOINTS,LOGS):p.mkdir(parents=True,exist_ok=True)
-UA='HermesMoparCatalogue/2.0 (+auditable public OEM catalogue indexing)'; S=requests.Session();S.headers.update({'User-Agent':UA})
-LAST=[0.0]; CODE_VERSION='2.0.0'; SKILL_VERSION='1.0.0'; RENDERER='https://r.jina.ai/http://www.moparamerica.com/'
-TERMINAL={'EXTRACTED','SOURCE_VERIFIED','IMAGE_ACQUIRED','IMAGE_VERIFIED','FITMENT_AUDITED','COMPLETENESS_CHECKED','INTEGRITY_CHECKED','QA_PASSED'}
-
+from PIL import Image,ImageChops
+ROOT=Path(__file__).resolve().parents[1];CAT=ROOT/'catalog';DB=CAT/'authoritative_catalogue.sqlite3';SCHEMA=CAT/'schema_v2.sql';MANIFEST=CAT/'manifests'/'variation_manifest.json';CACHE_INDEX=CAT/'v2'/'checkpoints'/'recovery_source_cache_index.json'
+RUN_AGENT={'discover':'AGENT_2_TAXONOMY','category':'AGENT_3_PART_RECORD_EXTRACTION','diagram':'AGENT_3_PART_RECORD_EXTRACTION','product':'AGENT_3_PART_RECORD_EXTRACTION','image':'AGENT_4_IMAGE_ACQUISITION','verify':'AGENT_5_IMAGE_INTEGRITY'}
+STATUSES=('NOT_STARTED','IN_PROGRESS','EXTRACTED','SOURCE_VERIFIED','IMAGE_ACQUIRED','IMAGE_VERIFIED','FITMENT_AUDITED','COMPLETENESS_CHECKED','INTEGRITY_CHECKED','QA_FAILED','QA_PASSED','BLOCKED_EXTERNAL','RETIRED_SOURCE')
+_lock=threading.Lock();_last_request=0.0
 def now():return dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
-def h(b):return hashlib.sha256(b).hexdigest()
-def sid(prefix,*parts):return prefix+'-'+h('\x1f'.join(str(x or '') for x in parts).encode())[:24]
+def sid(prefix,*parts):return prefix+'-'+hashlib.sha256('\x1f'.join(str(x or '') for x in parts).encode()).hexdigest()[:24]
+def sha(b):return hashlib.sha256(b).hexdigest()
 def norm(s):return re.sub(r'[^A-Z0-9]','',str(s or '').upper())
-def clean_label(s):return re.sub(r'\s+',' ',re.sub(r'[*_`]+','',s or '')).strip()
-def slug_label(s):return s.replace('--',' / ').replace('-',' ').title()
-def lf_bytes(text):return text.replace('\r\n','\n').replace('\r','\n').encode('utf-8')
-def con():
- c=sqlite3.connect(DB,timeout=120);c.row_factory=sqlite3.Row;c.execute('PRAGMA foreign_keys=ON');return c
-
+def clean(s):return re.sub(r'\s+',' ',str(s or '')).strip()
+def con(ro=False):
+ u=f'file:{DB.as_posix()}?mode=ro' if ro else str(DB);c=sqlite3.connect(u,uri=ro,timeout=120);c.row_factory=sqlite3.Row
+ if not ro:c.execute('PRAGMA foreign_keys=ON');c.execute('PRAGMA busy_timeout=120000')
+ return c
+def run_id(stage):return f'{stage}-{dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")}-{hashlib.sha256(str(time.time_ns()).encode()).hexdigest()[:8]}'
+def cache_entries():
+ try:return json.loads(CACHE_INDEX.read_text(encoding='utf-8'))['entries']
+ except Exception:return {}
+def throttled_get(url,timeout=180,no_cache=False):
+ global _last_request
+ with _lock:
+  wait=max(0,10-(time.time()-_last_request))
+  if wait:time.sleep(wait)
+  headers={'User-Agent':'Hermes-Mopar-Catalogue-Audit/3.0'}
+  if no_cache:headers['X-No-Cache']='true'
+  r=requests.get(url,timeout=timeout,headers=headers);_last_request=time.time();return r
+def source_get(original,refresh=False):
+ if not refresh:
+  e=cache_entries().get(original)
+  if e:
+   p=CAT/e['path'];b=p.read_bytes()
+   if sha(b)==e['sha256'] and len(b)==e['byte_size']:return 200,b.decode('utf-8',errors='replace'),original,'RECOVERY_CACHE',e['path']
+ candidates=['https://r.jina.ai/https://'+original.split('://',1)[1],'https://r.jina.ai/http://'+original.split('://',1)[1]] if '/oem-parts/' in original else ['https://r.jina.ai/http://'+original.split('://',1)[1],'https://r.jina.ai/https://'+original.split('://',1)[1]]
+ errors=[]
+ for renderer in candidates:
+  for attempt in range(3):
+   r=throttled_get(renderer,no_cache=refresh);text=r.text;bad=any(x in text[:1500] for x in ('Page Not Found','Internal Server Error','Security Verification','Access Denied'))
+   if r.status_code==200 and len(text)>900 and not bad:return r.status_code,text,r.url,renderer,None
+   errors.append({'renderer':renderer,'attempt':attempt+1,'status':r.status_code,'bytes':len(r.content),'title':(re.search(r'^Title:\s*(.+)$',text,re.M).group(1) if re.search(r'^Title:\s*(.+)$',text,re.M) else '')});time.sleep(10*(attempt+1))
+ raise RuntimeError('source retrieval failed '+json.dumps({'url':original,'errors':errors}))
+def snapshot(c,url,text,http,final,renderer,run,structure):
+ b=text.encode('utf-8');h=sha(b);raw=CAT/'v2'/'evidence'/'snapshots'/f'{h}.md';raw.parent.mkdir(parents=True,exist_ok=True)
+ if raw.exists() and sha(raw.read_bytes())!=h:raise RuntimeError(f'immutable snapshot collision {raw}')
+ if not raw.exists():raw.write_bytes(b)
+ snap=sid('snapshot',url,h)
+ c.execute('''INSERT INTO source_snapshots(snapshot_id,source_url,renderer_url,source_accessed_at,http_status,final_url,byte_sha256,canonical_text_sha256,byte_size,raw_path,structure_status,retrieval_run_id) VALUES(?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(snapshot_id) DO NOTHING''',(snap,url,renderer,now(),http,final,h,sha(text.replace('\r\n','\n').replace('\r','\n').encode()),len(b),raw.relative_to(CAT).as_posix(),structure,run))
+ return snap,h,raw
 def init_db():
- c=con();c.executescript(SCHEMA.read_text(encoding='utf-8'));meta={'schema_version':'2','code_version':CODE_VERSION,'source':'MoparAmerica public OEM catalogue','scope':'2017 Chrysler 300C and Dodge Challenger; exactly three variations each','authoritative':'true'}
- for k,v in meta.items():c.execute('INSERT OR REPLACE INTO project_meta VALUES(?,?)',(k,v))
- m=json.loads(MANIFEST.read_text(encoding='utf-8'))
+ if DB.exists():
+  c=con(True)
+  try:v=c.execute("SELECT value FROM project_meta WHERE key='schema_version'").fetchone()
+  except sqlite3.Error:v=None
+  c.close()
+  if not v or v[0]!='3':raise RuntimeError('existing authoritative DB is not schema v3; archive it before controlled rebuild')
+  return
+ DB.parent.mkdir(parents=True,exist_ok=True);c=sqlite3.connect(DB);c.executescript(SCHEMA.read_text(encoding='utf-8'));c.execute("INSERT INTO project_meta VALUES('schema_version','3')");c.execute("INSERT INTO project_meta VALUES('scope','2017 Chrysler 300C and Dodge Challenger — exact six variations')");c.commit();c.close();load_manifest()
+def load_manifest():
+ m=json.loads(MANIFEST.read_text(encoding='utf-8'));c=con()
  for vehicle in m['vehicles']:
-  c.execute('INSERT INTO vehicles VALUES(?,?,?,?,?,?) ON CONFLICT(vehicle_id) DO UPDATE SET year=excluded.year,make_source=excluded.make_source,model_source=excluded.model_source,project_label=excluded.project_label,source_label_note=excluded.source_label_note',(vehicle['vehicle_id'],vehicle['year'],vehicle['make_source'],vehicle['model_source'],vehicle['project_label'],vehicle.get('source_label_note')))
+  vid=vehicle['vehicle_id'];c.execute('INSERT OR IGNORE INTO vehicles VALUES(?,?,?,?)',(vid,int(vehicle['year']),vehicle['make_source'],vehicle['model_source']))
   for v in vehicle['variations']:
-   c.execute('''INSERT INTO variations(variation_id,vehicle_id,variation_source_label,trim_source,engine_source,route_slug,source_url,expected_category_links,validation_title,validation_status,evidence_notes)
-    VALUES(?,?,?,?,?,?,?,?,?,'NOT_STARTED',?) ON CONFLICT(variation_id) DO UPDATE SET vehicle_id=excluded.vehicle_id,variation_source_label=excluded.variation_source_label,trim_source=excluded.trim_source,engine_source=excluded.engine_source,route_slug=excluded.route_slug,source_url=excluded.source_url,expected_category_links=excluded.expected_category_links,validation_title=excluded.validation_title''',(v['variation_id'],vehicle['vehicle_id'],v['variation_source_label'],v['trim_source'],v['engine_source'],v['route_slug'],v['source_url'],v['expected_category_links_at_resolution'],v['validation_title'],json.dumps({'derivation_status':v['derivation_status']})))
+   fuel=v['engine_source'].rsplit(' ',1)[-1];basis='; '.join(m.get('resolution_basis',[])+[v.get('derivation_status','')])
+   c.execute('''INSERT OR REPLACE INTO variations(variation_id,vehicle_id,variation_source_label,trim_source,engine_source,fuel_source,route_slug,route_url,derivation_basis,evidence_url,expected_category_count,validation_status,source_accessed_at,source_page_sha256) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)''',(v['variation_id'],vid,v['variation_source_label'],v['trim_source'],v['engine_source'],fuel,v['route_slug'],v['source_url'],basis,v['source_url'],v.get('current_expected_category_links',v['expected_category_links_at_resolution']),'NOT_STARTED',None,None))
  c.commit();c.close()
-
-def event(c,run,stage,status,variation=None,leaf=None,http=None,message=None):c.execute('INSERT INTO crawl_events(occurred_at,run_id,stage,variation_id,catalogue_leaf_id,status,http_status,message) VALUES(?,?,?,?,?,?,?,?)',(now(),run,stage,variation,leaf,status,http,message))
-def renderer_url(original):
- if not original.startswith('https://www.moparamerica.com/'):raise ValueError(original)
- return RENDERER+original.split('https://www.moparamerica.com/',1)[1]
-def source_get(original,tries=5):
- u=renderer_url(original);last=None
- for attempt in range(tries):
-  delay=max(0,10-(time.monotonic()-LAST[0]))
-  if delay:time.sleep(delay)
-  LAST[0]=time.monotonic();r=S.get(u,timeout=180);t=r.text;last=r
-  blocked='Just a moment' in t or len(t)<900 or 'Page Not Found' in t[:1000]
-  if r.status_code==200 and not blocked:return r,t,u
-  if r.status_code not in (200,429,503):break
-  time.sleep(10*(attempt+1))
- title_match=re.search(r'^Title:\s*(.+)$',last.text,re.M) if last else None
- title=title_match.group(1) if title_match else ''
- raise RuntimeError(f'source retrieval failed: {original} http={last.status_code if last else None} bytes={len(last.content) if last else 0} title={title}')
-def save_raw(path,text):path.parent.mkdir(parents=True,exist_ok=True);b=lf_bytes(text);path.write_bytes(b);return h(b),h(lf_bytes(text))
-
 def category_links(text,route):
- found={};rx=re.compile(r'\[([^\]]+)\]\(https://www\.moparamerica\.com/'+re.escape(route)+r'/([^\s)"?#/]+)(?:\s+"[^"]*")?\)')
- for label,slug in rx.findall(text):
-  if slug.startswith(('oem-parts','search','cart','account')):continue
-  found.setdefault(slug,clean_label(label) or slug_label(slug))
- # Nested links can hide labels; preserve every route-bound slug.
- for slug in re.findall(r'https://www\.moparamerica\.com/'+re.escape(route)+r'/([^\s)"?#/]+)',text):
-  if not slug.startswith(('oem-parts','search','cart','account')):found.setdefault(slug,slug_label(slug))
- return list(found.items())
-
-def split_taxonomy(slug,label):
- bits=slug.split('--',1)
- if len(bits)==2:
-  cat_slug,sub_slug=bits; cat_label=slug_label(cat_slug);sub_label=label if label and '/' not in label else slug_label(sub_slug)
- else:cat_slug=slug;sub_slug=None;cat_label=label or slug_label(slug);sub_label=None
- return cat_slug,cat_label,sub_slug,sub_label
-
+ pat=re.compile(r'\[([^\]\n]+)\]\((https://www\.moparamerica\.com/'+re.escape(route)+r'/([a-z0-9-]+--[a-z0-9-]+))(?:\s+"[^"]*")?\)')
+ out={}
+ for m in pat.finditer(text):out[m.group(3)]={'label':clean(m.group(1)),'url':m.group(2),'locator':f'markdown:char:{m.start()}-{m.end()}'}
+ return [dict(slug=k,**v) for k,v in sorted(out.items())]
+def validate_route(text,v):
+ title=re.search(r'^Title:\s*(.+)$',text,re.M);expected=f"2017 {v['make_source']} {v['model_source']} {v['variation_source_label'].replace(' / ',' ')}"
+ return bool(title and str(v['year']) in title.group(1) and v['make_source'] in title.group(1) and v['model_source'] in title.group(1)),title.group(1) if title else '',expected
 def discover(refresh=False):
- init_db();c=con();run=sid('run','discover',now())
- for v in c.execute('SELECT * FROM variations ORDER BY variation_id').fetchall():
-  raw=RAW/v['variation_id']/'route.md'
+ init_db();c=con();run=run_id('discover')
+ for v in c.execute('SELECT v.*,ve.year,ve.make_source,ve.model_source FROM variations v JOIN vehicles ve ON ve.vehicle_id=v.vehicle_id ORDER BY v.variation_id').fetchall():
   try:
-   if raw.exists() and not refresh and v['validation_status']=='VALIDATED':text=raw.read_text(encoding='utf-8');http=200;ru=renderer_url(v['source_url'])
-   else:
-    r,text,ru=source_get(v['source_url']);http=r.status_code;save_raw(raw,text)
-   links=category_links(text,v['route_slug']);title=(re.search(r'^Title:\s*(.+)$',text,re.M) or ['',''])[1]
-   if title!=v['validation_title'] or len(links)!=v['expected_category_links']:raise RuntimeError(f'route taxonomy mismatch title={title!r} categories={len(links)} expected={v["expected_category_links"]}')
-   b=raw.read_bytes();c.execute("UPDATE variations SET validation_status='VALIDATED',source_accessed_at=?,source_byte_sha256=?,source_lf_sha256=?,raw_path=?,evidence_notes=? WHERE variation_id=?",(now(),h(b),h(lf_bytes(b.decode('utf-8'))),raw.relative_to(CAT).as_posix(),json.dumps({'category_links':len(links),'title':title}),v['variation_id']))
-   for ordinal,(slug,label) in enumerate(links,1):
-    cat_slug,cat_label,sub_slug,sub_label=split_taxonomy(slug,label);cat_id=sid('cat',v['variation_id'],cat_slug);src=v['source_url']+'/'+slug
-    c.execute('''INSERT INTO taxonomy_nodes(node_id,variation_id,parent_node_id,node_type,source_label,normalized_label,source_slug,source_url,ordinal,discovery_status,source_accessed_at) VALUES(?,?,NULL,'CATEGORY',?,?,?,?,?,'DISCOVERED',?) ON CONFLICT(node_id) DO UPDATE SET source_label=excluded.source_label,source_url=excluded.source_url,ordinal=excluded.ordinal''',(cat_id,v['variation_id'],cat_label,clean_label(cat_label).lower(),cat_slug,v['source_url']+'/'+cat_slug,ordinal,now()))
-    sub_id=None
-    if sub_slug:
-     sub_id=sid('sub',v['variation_id'],slug);c.execute('''INSERT INTO taxonomy_nodes(node_id,variation_id,parent_node_id,node_type,source_label,normalized_label,source_slug,source_url,ordinal,discovery_status,source_accessed_at) VALUES(?,?,?,'SUBCATEGORY',?,?,?,?,?,'DISCOVERED',?) ON CONFLICT(node_id) DO UPDATE SET source_label=excluded.source_label,source_url=excluded.source_url,ordinal=excluded.ordinal''',(sub_id,v['variation_id'],cat_id,sub_label,clean_label(sub_label).lower(),slug,src,ordinal,now()))
-    leaf=sid('leaf',v['variation_id'],'CATEGORY_INDEX',src);c.execute('''INSERT INTO catalogue_leaves(catalogue_leaf_id,variation_id,category_id,subcategory_id,leaf_type,source_url,renderer_url,status,evidence_notes) VALUES(?,?,?,?, 'CATEGORY_INDEX',?,?, 'NOT_STARTED',?) ON CONFLICT(catalogue_leaf_id) DO UPDATE SET category_id=excluded.category_id,subcategory_id=excluded.subcategory_id,source_url=excluded.source_url''',(leaf,v['variation_id'],cat_id,sub_id,src,renderer_url(src),json.dumps({'ordinal':ordinal})))
-    batch=sid('batch',leaf,'category');c.execute("INSERT INTO batches(batch_id,variation_id,catalogue_leaf_id,stage,responsible_agent,allowed_output_prefix,status,code_version,skill_version) VALUES(?,?,?,'CATEGORY_EXTRACTION','AGENT_3_PART_RECORD_EXTRACTION','catalog/v2/','NOT_STARTED',?,?) ON CONFLICT(batch_id) DO NOTHING",(batch,v['variation_id'],leaf,CODE_VERSION,SKILL_VERSION))
-   event(c,run,'DISCOVER','VALIDATED',v['variation_id'],http=http,message=f'categories={len(links)}');c.commit()
-  except Exception as e:
-   c.execute("UPDATE variations SET validation_status='BLOCKED_RETRYABLE',evidence_notes=? WHERE variation_id=?",(json.dumps({'error':str(e)}),v['variation_id']));event(c,run,'DISCOVER','BLOCKED_RETRYABLE',v['variation_id'],message=str(e));c.commit();raise
- c.close();write_scope_manifest();return run
-
-def assembly_selectors(text,page_url):
- out={}
- rx=re.compile(r'\[!\[Image \d+: ([^\]]*)\]\((https?://[^)]+)\)([^\]]*)\]\((https://www\.moparamerica\.com/[^)\s]+\?assembly=(\d+))(?:\s+"Diagram\s+\d+:\s*([^"]+)")?\)')
- for alt,img,inside,url,num,title in rx.findall(text):
-  n=int(num);out[n]={'assembly_no':n,'title':clean_label(title or re.sub(r'^\s*\d+\.\s*','',inside) or alt),'source_url':url,'image_url':img}
- rx2=re.compile(r'\[([^\]]+)\]\((https://www\.moparamerica\.com/[^)]+\?assembly=(\d+))\)\s*\n\s*\[!\[Image \d+: ([^\]]*)\]\((https?://[^)]+)\)')
- for title,url,num,alt,img in rx2.findall(text):out.setdefault(int(num),{'assembly_no':int(num),'title':clean_label(title or alt),'source_url':url,'image_url':img})
- if not out:
-  # Direct #0 image not nested in a product link is the single full diagram.
-  m=re.search(r'(?m)^!\[Image \d+: ([^\]]*?#0)\]\((https://cdn-illustrations\.revolutionparts\.io/[^)]+)\)',text)
-  if m:
-   heading=(re.search(r'^#\s+(.+)$',text,re.M) or ['',m.group(1)])[1];out[0]={'assembly_no':0,'title':clean_label(heading),'source_url':page_url,'image_url':m.group(2)}
- return [out[k] for k in sorted(out)]
-
-def product_image_map(text):
- out={}
- rx=re.compile(r'\[!\[Image \d+: ([^\]]*)\]\((https?://[^)]+)\)\]\((https://www\.moparamerica\.com/oem-parts/[^)\s]+)(?:\s+"[^"]*")?\)')
- for alt,img,url in rx.findall(text):out.setdefault(url,[]).append((img,alt))
+   http,text,final,renderer,_=source_get(v['route_url'],refresh);ok,title,expected=validate_route(text,v);links=category_links(text,v['route_slug'])
+   if not ok or len(links)!=v['expected_category_count']:raise RuntimeError(json.dumps({'title':title,'expected_title':expected,'categories':len(links),'expected_categories':v['expected_category_count']}))
+   snap,h,_=snapshot(c,v['route_url'],text,http,final,renderer,run,'ROUTE_VALIDATED');c.execute("UPDATE variations SET validation_status='VALIDATED',source_accessed_at=?,source_page_sha256=? WHERE variation_id=?",(now(),h,v['variation_id']))
+   for ordinal,x in enumerate(links,1):
+    major,minor=x['slug'].split('--',1);cat=sid('tax',v['variation_id'],'category',major);sub=sid('tax',v['variation_id'],'subcategory',x['slug']);leaf=sid('leaf',v['variation_id'],'CATEGORY_INDEX',x['url'])
+    c.execute("INSERT INTO taxonomy_nodes VALUES(?,?,NULL,'CATEGORY',?,?,?,?,?,'DISCOVERED',?) ON CONFLICT(node_id) DO UPDATE SET source_label=excluded.source_label,source_url=excluded.source_url,ordinal=excluded.ordinal",(cat,v['variation_id'],major.replace('-',' ').title(),major.upper(),major,x['url'].rsplit('/',1)[0]+'/#cat-'+major,ordinal,now()))
+    c.execute("INSERT INTO taxonomy_nodes VALUES(?,?,?,'SUBCATEGORY',?,?,?,?,?,'DISCOVERED',?) ON CONFLICT(node_id) DO UPDATE SET source_label=excluded.source_label,source_url=excluded.source_url,ordinal=excluded.ordinal",(sub,v['variation_id'],cat,x['label'],norm(x['label']),x['slug'],x['url'],ordinal,now()))
+    c.execute("""INSERT INTO catalogue_leaves(catalogue_leaf_id,variation_id,category_id,subcategory_id,parent_leaf_id,leaf_type,source_url,status,evidence_notes) VALUES(?,?,?,?,NULL,'CATEGORY_INDEX',?,'NOT_STARTED',?) ON CONFLICT(catalogue_leaf_id) DO UPDATE SET evidence_notes=excluded.evidence_notes WHERE catalogue_leaves.status='NOT_STARTED'""",(leaf,v['variation_id'],cat,sub,x['url'],json.dumps({'route_snapshot_id':snap,'taxonomy_locator':x['locator']})))
+    c.execute("INSERT OR IGNORE INTO batches(batch_id,stage,scope_type,scope_id,responsible_agent,allowed_output_paths,expected_output,completion_test,status,code_version,skill_version) VALUES(?,?,?,?,?,?,?,?,?,?,?)",(sid('batch','category',leaf),'CATEGORY_EXTRACTION','LEAF',leaf,RUN_AGENT['category'],'catalog/v2/evidence;catalog/authoritative_catalogue.sqlite3','Complete visible-row and image-occurrence projection','source rows equal records; parser-independent structural counts reconcile','NOT_STARTED','3.0.0','S2-S4-v1'))
+   c.commit()
+  except Exception as e:c.rollback();c.execute("UPDATE variations SET validation_status='QA_FAILED' WHERE variation_id=?",(v['variation_id'],));c.commit();raise
+ export_scope(c);c.close()
+def assembly_selectors(text):
+ pat=re.compile(r'\[!\[Image\s+\d+:\s*([^\]]*)\]\((https?://[^)\s]+)\)([^\]]*)\]\((https://www\.moparamerica\.com/[^)\s"]+\?assembly=(\d+))(?:\s+"Diagram\s+\d+:\s*([^"]*)")?\)')
+ out=[];seen=set()
+ for m in pat.finditer(text):
+  n=int(m.group(5));key=(n,m.group(4))
+  if key in seen:continue
+  seen.add(key);title=clean(m.group(6) or re.sub(r'^\s*\d+\.\s*','',m.group(3)) or m.group(1));out.append({'assembly':n,'title':title,'image_url':m.group(2),'image_alt':m.group(1),'url':m.group(4),'locator':f'markdown:char:{m.start()}-{m.end()}','ordinal':len(out)+1})
+ total=len(re.findall(r'https://www\.moparamerica\.com/[^)\s"]+\?assembly=\d+',text))
+ if total!=len(out):raise ValueError(f'assembly selector reconciliation failed parsed={len(out)} references={total}')
  return out
-
-def all_product_urls(text):return list(dict.fromkeys(re.findall(r'https://www\.moparamerica\.com/oem-parts/[^\s)"<>]+',text)))
-def product_cards(text):
- urls=all_product_urls(text);images=product_image_map(text);cards={}
- bold={u:clean_label(name) for name,u in re.findall(r'\*\*\[([^\]]+)\]\((https://www\.moparamerica\.com/oem-parts/[^)\s]+)(?:\s+"[^"]*")?\)\*\*',text)}
- for url in urls:
-  poses=[m.start() for m in re.finditer(re.escape(url),text)];pos=poses[-1] if poses else 0;block=text[max(0,pos-700):min(len(text),pos+1800)]
-  pn='PART_NUMBER_NOT_DISPLAYED'
-  link_matches=list(re.finditer(r'\[([A-Za-z0-9][A-Za-z0-9 -]{4,29})\]\('+re.escape(url)+r'(?:\s+"([^"]*)")?\)',block))
-  pnlink=next((x for x in link_matches if re.fullmatch(r'[A-Za-z0-9-]{5,24}',x.group(1).replace(' ','')) and re.search(r'\d',x.group(1))),None)
-  if pnlink:pn=pnlink.group(1).strip()
-  if pn=='PART_NUMBER_NOT_DISPLAYED':
-   pnm=re.search(r'Part No\s+([A-Za-z0-9-]{5,24})',block,re.I)
-   if pnm:pn=pnm.group(1)
-  name=bold.get(url)
-  if not name:
-   names=[]
-   for m in re.finditer(r'\[([^\]]+)\]\('+re.escape(url),text):
-    x=clean_label(re.sub(r'^\$[\d,.]+\s*','',m.group(1)));x=re.sub(r'\s+Mopar.*$','',x).strip()
-    if x and not re.fullmatch(r'[A-Za-z0-9-]{5,24}',x):names.append(x)
-   name=max(names,key=len) if names else 'PART_NAME_NOT_DISPLAYED'
-  dm=re.search(r'\*\*Description:\*\*\s*([^\n]+)',block,re.I);desc=clean_label(dm.group(1)) if dm else None
-  fit=pnlink.group(2).strip() if pnlink and pnlink.lastindex and pnlink.lastindex>=2 and pnlink.group(2) else None
-  cards[url]={'part_detail_url':url,'part_name_source':name,'part_description_source':desc,'oem_part_number_source':pn,'fitment_notes_source':fit,'images':images.get(url,[])}
- return cards
-
-def callout_map(text,assembly_no):
- start=re.search(rf'Diagram\s+{assembly_no}:',text) if assembly_no is not None else None
- section=text[start.end():] if start else text
- end=re.search(r'\n\s*No\.\s*\n',section);section=section[:end.start()] if end else section
- marks=list(re.finditer(r'\n\[([^\]]+)\]\(https://www\.moparamerica\.com/#part_row_[^)]+\)',section));out={};empty=[]
- for i,m in enumerate(marks):
-  call=clean_label(m.group(1));block=section[m.end():marks[i+1].start() if i+1<len(marks) else len(section)];urls=all_product_urls(block)
-  if urls:
-   for u in urls:out.setdefault(u,[]).append(call)
-  else:empty.append(call)
- return out,empty,len(marks)
-
-def current_context(c,leaf):
- return c.execute('''SELECT l.*,v.vehicle_id,v.variation_source_label,v.route_slug,veh.year,veh.make_source,veh.model_source,t.source_label category_label,t.parent_node_id,st.source_label subcategory_label FROM catalogue_leaves l JOIN variations v ON v.variation_id=l.variation_id JOIN vehicles veh ON veh.vehicle_id=v.vehicle_id JOIN taxonomy_nodes t ON t.node_id=l.category_id LEFT JOIN taxonomy_nodes st ON st.node_id=l.subcategory_id WHERE l.catalogue_leaf_id=?''',(leaf,)).fetchone()
-def record_upsert(c,ctx,leaf,card,callout,run):
- pn=card['oem_part_number_source'];rid=sid('rec',ctx['variation_id'],leaf,callout or '',card['part_detail_url']);notes={'source_record_key':[callout,card['part_detail_url']]}
- c.execute('''INSERT INTO part_records(record_id,vehicle_id,year,make_source,model_source,variation_id,variation_source_label,category_id,category_source_label,subcategory_id,subcategory_source_label,catalogue_leaf_id,diagram_id,diagram_title_source,diagram_callout_source,part_name_source,part_name_normalized,part_description_source,oem_part_number_source,oem_part_number_normalized,fitment_notes_source,fitment_normalized,applicability_status,part_detail_url,catalogue_page_url,diagram_page_url,source_accessed_at,extractor_agent,extraction_run_id,extraction_status,source_verification_status,image_verification_status,fitment_audit_status,completeness_status,repository_integrity_status,qa_status,exception_code,evidence_notes)
- VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,'EXTRACTED','SOURCE_CAPTURED','NOT_STARTED','NOT_STARTED','NOT_STARTED','NOT_STARTED','NOT_STARTED',?,?) ON CONFLICT(record_id) DO UPDATE SET part_name_source=excluded.part_name_source,part_name_normalized=excluded.part_name_normalized,part_description_source=COALESCE(excluded.part_description_source,part_records.part_description_source),oem_part_number_source=excluded.oem_part_number_source,oem_part_number_normalized=excluded.oem_part_number_normalized,fitment_notes_source=COALESCE(excluded.fitment_notes_source,part_records.fitment_notes_source),source_accessed_at=excluded.source_accessed_at,extraction_run_id=excluded.extraction_run_id,exception_code=excluded.exception_code''',(rid,ctx['vehicle_id'],ctx['year'],ctx['make_source'],ctx['model_source'],ctx['variation_id'],ctx['variation_source_label'],ctx['category_id'],ctx['category_label'],ctx['subcategory_id'],ctx['subcategory_label'],leaf,ctx['diagram_id'],ctx['diagram_title_source'],callout,card['part_name_source'],clean_label(card['part_name_source']).lower(),card['part_description_source'],pn,norm(pn),card['fitment_notes_source'],clean_label(card['fitment_notes_source']).lower() if card['fitment_notes_source'] else None,'VEHICLE_FAMILY_CANDIDATE',card['part_detail_url'],ctx['source_url'] if ctx['leaf_type']=='CATEGORY_INDEX' else c.execute('SELECT source_url FROM catalogue_leaves WHERE catalogue_leaf_id=?',(ctx['parent_leaf_id'],)).fetchone()[0],ctx['source_url'] if ctx['leaf_type']=='DIAGRAM' else None,now(),'AGENT_3_PART_RECORD_EXTRACTION',run,'PART_NUMBER_NOT_DISPLAYED' if pn=='PART_NUMBER_NOT_DISPLAYED' else None,json.dumps(notes)))
+def table_rows(text):
+ header=re.search(r'\n\s*No\.\s*\n\s*\n\s*Part\s*#\s*/\s*Description\s*/\s*Price',text,re.I)
+ if not header:return []
+ section=text[header.end():];base=header.end()
+ pat=re.compile(r'\[!\[Image\s+\d+:\s*([^\]]*)\]\((https?://[^)\s]+)\)\]\((https://www\.moparamerica\.com/oem-parts/[^)\s"]+)(?:\s+"([^"]*)")?\)')
+ ms=list(pat.finditer(section));rows=[];occ=Counter()
+ for i,m in enumerate(ms):
+  start=m.start();end=ms[i+1].start() if i+1<len(ms) else len(section);block=section[start:end];prefix=section[(ms[i-1].end() if i else 0):start];nums=re.findall(r'(?m)^\s*([A-Za-z0-9.-]+)\s*$',prefix[-500:]);rowlabel=nums[-1] if nums else f'image-{i+1}';url=m.group(3)
+  nm=re.search(r'\*\*\[([^\]]+)\]\('+re.escape(url)+r'(?:\s+"[^"]*")?\)\*\*',block);name=clean(nm.group(1)) if nm else 'PART_NAME_NOT_DISPLAYED'
+  pnm=re.search(r'\[([A-Za-z0-9-]{5,30})\]\('+re.escape(url)+r'(?:\s+"[^"]*")?\)',block);titlepn=re.search(r'Part No\s+([A-Za-z0-9-]+)',m.group(4) or '',re.I);pn=(pnm.group(1) if pnm and re.search(r'\d',pnm.group(1)) else titlepn.group(1) if titlepn else 'PART_NUMBER_NOT_DISPLAYED')
+  descm=re.search(r'\*\*Description:\*\*\s*([^\n]+)',block,re.I);notesm=re.search(r'\*\*Notes:\*\*(.*?)(?:\n\s*MSRP|\n\s*\$|\Z)',block,re.I|re.S)
+  anchor='table-row-'+clean(rowlabel);occ[(anchor,url)]+=1;snippet=block.rstrip();loc=f'markdown:char:{base+start}-{base+end}'
+  rows.append({'section':'DETAILED_TABLE','anchor':anchor,'ordinal':occ[(anchor,url)],'locator':loc,'snippet':snippet,'callout':rowlabel,'url':url,'pn':pn,'name':name,'description':clean(descm.group(1)) if descm else None,'quantity':None,'fitment':clean(notesm.group(1)) if notesm else None,'images':[{'url':m.group(2),'alt':m.group(1),'role':'PRODUCT_IMAGE' if 'cdn-product-images.' in m.group(2) else 'ILLUSTRATION_THUMBNAIL' if 'cdn-illustrations.' in m.group(2) else 'UNKNOWN_CONTENT_IMAGE','locator':f'markdown:char:{base+m.start()}-{base+m.end()}','ordinal':1,'association':'ASSOCIATION_FROM_EXACT_SOURCE_WRAPPER'}]})
+ independent=len(re.findall(r'\[!\[Image\s+\d+:[^\]]*\]\([^)]*\)\]\(https://www\.moparamerica\.com/oem-parts/',section))
+ if independent!=len(rows):raise ValueError(f'detailed row structural count mismatch parsed={len(rows)} markers={independent}')
+ return rows
+def active_diagram(text,requested=None):
+ heads=[];table_header=re.search(r'\n\s*No\.\s*\n',text);cut=table_header.start() if table_header else len(text)
+ for m in re.finditer(r'(?m)^Diagram\s+(\d+):\s*([^\n]+?)\s+(\d+)\s*$',text):
+  if m.start()<cut:heads.append((int(m.group(1)),clean(m.group(2)),m))
+ if requested is not None:heads=[x for x in heads if x[0]==int(requested)]
+ if not heads:return None
+ n,title,m=heads[0];end=(re.search(r'\n\s*No\.\s*\n',text[m.end():]).start()+m.end()) if re.search(r'\n\s*No\.\s*\n',text[m.end():]) else len(text);body=text[m.end():end]
+ im=re.search(r'!\[Image\s+\d+:\s*([^\]]*)\]\((https?://[^)\s]+)\)',body)
+ return {'assembly':n,'title':title,'start':m.start(),'end':end,'body':body,'image':({'url':im.group(2),'alt':im.group(1),'role':'DIAGRAM','locator':f'markdown:char:{m.end()+im.start()}-{m.end()+im.end()}','ordinal':1,'association':'ASSOCIATION_FROM_ACTIVE_DIAGRAM'} if im else None)}
+def callout_rows(text,active):
+ if not active:return []
+ body=active['body'];base=text.find(body);pat=re.compile(r'(?m)^\[([^\]]+)\]\(https://www\.moparamerica\.com/#part_row_([^)]+)\)');ms=list(pat.finditer(body));rows=[];occ=Counter()
+ for i,m in enumerate(ms):
+  end=ms[i+1].start() if i+1<len(ms) else len(body);block=body[m.start():end];urls=re.findall(r'https://www\.moparamerica\.com/oem-parts/[^)\s"]+',block);callout=clean(m.group(1));anchor='#part_row_'+m.group(2)
+  if not urls:urls=[f'https://www.moparamerica.com/{anchor}-unmapped']
+  for u in urls:
+   occ[(anchor,u)]+=1;name_match=re.search(r'\[([^\]]+)\]\('+re.escape(u)+r'\)',block);name=clean(re.sub(r'^\$[0-9.,]+\s+|\s+Mopar.*$','',name_match.group(1))) if name_match else 'PART_NAME_NOT_DISPLAYED';snippet=block.rstrip();rows.append({'section':'CALLOUT_SUMMARY','anchor':anchor,'ordinal':occ[(anchor,u)],'locator':f'markdown:char:{base+m.start()}-{base+end}','snippet':snippet,'callout':callout,'url':u,'pn':'PART_NUMBER_NOT_DISPLAYED','name':name,'description':None,'quantity':None,'fitment':None,'images':[],'exception':'CALLOUT_NO_DISPLAYED_PART' if '-unmapped' in u else None})
+ return rows
+def product_candidates(text,heading_start=0):return sorted(set(re.findall(r'https://www\.moparamerica\.com/oem-parts/[^)\s"]+',text[heading_start:])))
+def parse_leaf(text,leaf_type,requested_assembly=None):
+ selectors=assembly_selectors(text);active=active_diagram(text,requested_assembly)
+ if leaf_type=='DIAGRAM' and (not active or active['assembly']!=int(requested_assembly)):raise ValueError(f'wrong assembly body requested={requested_assembly} active={active and active["assembly"]}')
+ rows=table_rows(text)+callout_rows(text,active);heading=(re.search(r'(?m)^#\s+.+$',text).start() if re.search(r'(?m)^#\s+.+$',text) else 0);allurls=set(product_candidates(text,heading));accounted={r['url'] for r in rows if '/oem-parts/' in r['url']}
+ if allurls-accounted:raise ValueError('unaccounted product links '+json.dumps(sorted(allurls-accounted)[:20]))
+ return {'selectors':selectors,'active':active,'rows':rows,'all_product_urls':allurls,'structural':{'detailed_rows':len([r for r in rows if r['section']=='DETAILED_TABLE']),'callout_rows':len([r for r in rows if r['section']=='CALLOUT_SUMMARY']),'callout_markers':len(re.findall(r'(?m)^\[[^\]]+\]\(https://www\.moparamerica\.com/#part_row_',active['body'])) if active else 0,'selectors':len(selectors)}}
+def row_key(leaf,r):return sid('row',leaf,r['section'],r['anchor'],r['ordinal'])
+def insert_image(c,source_context,snapshot_id,page_sha,record_id,rowkey,img,target_notes=None):
+ leaf,product=source_context;obs=sid('imgobs',snapshot_id,img['locator'],img['ordinal']);c.execute('''INSERT INTO image_observations(image_observation_id,catalogue_leaf_id,product_source_id,record_id,source_row_key,source_snapshot_id,source_page_sha256,source_locator,source_occurrence_ordinal,image_role,image_alt_source,image_source_url,association_basis,association_status,acquisition_status,verification_status,evidence_notes) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?, 'NOT_STARTED','NOT_STARTED',?)''',(obs,leaf,product,record_id,rowkey,snapshot_id,page_sha,img['locator'],img['ordinal'],img['role'],img.get('alt'),img['url'],img['association'],img['association'],json.dumps(target_notes or {})))
+ if record_id:c.execute("INSERT OR IGNORE INTO image_observation_records VALUES(?,?,?)",(obs,record_id,img['association']))
+ return obs
+def insert_row(c,leafctx,snapshot_id,page_sha,r,run):
+ key=row_key(leafctx['catalogue_leaf_id'],r);snippet_sha=sha(r['snippet'].encode());c.execute('''INSERT INTO visible_source_rows VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)''',(key,leafctx['catalogue_leaf_id'],r['section'],r['anchor'],r['ordinal'],r['locator'],snippet_sha,r['snippet'],r.get('callout'),r.get('url'),r.get('pn'),r.get('name'),r.get('quantity'),r.get('fitment'),len(r['images']),'EXPLICIT_SOURCE_EXCEPTION' if r.get('exception') else 'EXTRACTED'))
+ pn=r['pn'];name=r['name'];rid=sid('record',key);notes={'source_row_locator':r['locator'],'source_exception':r.get('exception')};provenance={'part_name_source':'VISIBLE_SOURCE_ROW','oem_part_number_source':'VISIBLE_SOURCE_ROW' if pn!='PART_NUMBER_NOT_DISPLAYED' else 'SOURCE_NOT_DISPLAYED','fitment_notes_source':'VISIBLE_SOURCE_ROW' if r.get('fitment') else None}
+ c.execute('''INSERT INTO part_records(record_id,source_row_key,vehicle_id,year,make_source,model_source,variation_id,variation_source_label,category_id,category_source_label,subcategory_id,subcategory_source_label,catalogue_leaf_id,diagram_id,diagram_title_source,diagram_callout_source,source_section,source_row_anchor,source_occurrence_ordinal,evidence_snippet_sha256,part_name_source,part_name_normalized,part_description_source,oem_part_number_source,oem_part_number_normalized,quantity_source,fitment_notes_source,fitment_normalized,applicability_status,part_detail_url,catalogue_page_url,diagram_page_url,source_accessed_at,extractor_agent,extraction_run_id,extraction_status,source_verification_status,image_verification_status,fitment_audit_status,completeness_status,repository_integrity_status,qa_status,exception_code,evidence_notes,field_provenance_json) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)''',(rid,key,leafctx['vehicle_id'],leafctx['year'],leafctx['make_source'],leafctx['model_source'],leafctx['variation_id'],leafctx['variation_source_label'],leafctx['category_id'],leafctx['category_label'],leafctx['subcategory_id'],leafctx['subcategory_label'],leafctx['catalogue_leaf_id'],leafctx['diagram_id'],leafctx['diagram_title_source'],r.get('callout'),r['section'],r['anchor'],r['ordinal'],snippet_sha,name,norm(name),r.get('description'),pn,norm(pn),r.get('quantity'),r.get('fitment'),norm(r.get('fitment')) if r.get('fitment') else None,'CATALOGUE_ROUTE_APPLICABLE',r['url'],leafctx['catalogue_page_url'],leafctx['diagram_page_url'],now(),RUN_AGENT['category'] if leafctx['leaf_type']=='CATEGORY_INDEX' else RUN_AGENT['diagram'],run,'EXTRACTED','NOT_STARTED','NOT_STARTED','NOT_STARTED','NOT_STARTED','NOT_STARTED','NOT_STARTED',r.get('exception') or ('PART_NUMBER_NOT_DISPLAYED' if pn=='PART_NUMBER_NOT_DISPLAYED' else None),json.dumps(notes),json.dumps(provenance)))
+ if '/oem-parts/' in r['url']:
+  ps=sid('product',r['url']);c.execute("INSERT INTO product_sources(product_source_id,source_url,status) VALUES(?,?,'NOT_STARTED') ON CONFLICT(product_source_id) DO NOTHING",(ps,r['url']));c.execute("INSERT OR IGNORE INTO record_product_sources VALUES(?,?,?)",(rid,ps,'EXACT_VISIBLE_SOURCE_ROW_URL'));c.execute("INSERT OR IGNORE INTO batches(batch_id,stage,scope_type,scope_id,responsible_agent,allowed_output_paths,expected_output,completion_test,status,code_version,skill_version) VALUES(?,?,?,?,?,?,?,?,?,?,?)",(sid('batch','product',ps),'PRODUCT_DETAIL_EXTRACTION','PRODUCT_SOURCE',ps,RUN_AGENT['product'],'catalog/v2/evidence;catalog/authoritative_catalogue.sqlite3','Complete product detail fields and image occurrence enumeration','required structural markers and all content images reconcile','NOT_STARTED','3.0.0','S3-S4-v1'))
+ for img in r['images']:insert_image(c,(leafctx['catalogue_leaf_id'],None),snapshot_id,page_sha,rid,key,img)
  return rid
-
-def image_observe(c,leaf,record,role,url,page):
- oid=sid('imgobs',leaf,record or '',role,url);static=role.startswith('STATIC_');c.execute('''INSERT INTO image_observations(image_observation_id,catalogue_leaf_id,record_id,image_role,image_source_url,source_page_url,source_accessed_at,acquisition_status,verification_status,association_status,exception_code,evidence_notes) VALUES(?,?,?,?,?,?,?, ?,?,?,?,?) ON CONFLICT(image_observation_id) DO NOTHING''',(oid,leaf,record,role,url,page,now(),'NOT_APPLICABLE' if static else 'NOT_STARTED','PLACEHOLDER_IMAGE' if role=='STATIC_PLACEHOLDER' else ('NOT_APPLICABLE' if static else 'NOT_STARTED'),'ASSOCIATED_FROM_SOURCE','STATIC_PLACEHOLDER' if role=='STATIC_PLACEHOLDER' else None,json.dumps({})))
-
-def ensure_product_leaf(c,ctx,url):
- leaf=sid('leaf',ctx['variation_id'],'PRODUCT_DETAIL',url);c.execute('''INSERT INTO catalogue_leaves(catalogue_leaf_id,variation_id,category_id,subcategory_id,parent_leaf_id,leaf_type,source_url,renderer_url,status,evidence_notes) VALUES(?,?,?,?,?,'PRODUCT_DETAIL',?,?,'NOT_STARTED',?) ON CONFLICT(catalogue_leaf_id) DO NOTHING''',(leaf,ctx['variation_id'],ctx['category_id'],ctx['subcategory_id'],ctx['catalogue_leaf_id'],url,renderer_url(url),json.dumps({'discovered_from':ctx['catalogue_leaf_id']})));batch=sid('batch',leaf,'product');c.execute("INSERT INTO batches(batch_id,variation_id,catalogue_leaf_id,stage,responsible_agent,allowed_output_prefix,status,code_version,skill_version) VALUES(?,?,?,'PRODUCT_DETAIL_EXTRACTION','AGENT_3_PART_RECORD_EXTRACTION','catalog/v2/','NOT_STARTED',?,?) ON CONFLICT(batch_id) DO NOTHING",(batch,ctx['variation_id'],leaf,CODE_VERSION,SKILL_VERSION))
-
-def process_leaf(c,row,text,raw,run,http):
- ctx=current_context(c,row['catalogue_leaf_id']);cards=product_cards(text);selectors=assembly_selectors(text,row['source_url']);callmap={};empty=[];expected_callouts=0
- if row['leaf_type']=='DIAGRAM':callmap,empty,expected_callouts=callout_map(text,int(row['diagram_id']))
- records=[]
- if row['leaf_type']=='DIAGRAM':
-  pairs=[]
-  for url,calls in callmap.items():
-   for call in calls:pairs.append((url,call))
-  # Detailed rows without a callout remain explicit diagram-page records.
-  seenurls={u for u,_ in pairs};pairs += [(u,None) for u in cards if u not in seenurls]
- else:pairs=[(u,None) for u in cards]
- for url,call in pairs:
-  card=cards[url];rid=record_upsert(c,ctx,row['catalogue_leaf_id'],card,call,run);records.append(rid);ensure_product_leaf(c,ctx,url)
-  for img,alt in card['images']:
-   role='PRODUCT_IMAGE' if 'cdn-product-images' in img else ('ILLUSTRATION_THUMBNAIL' if 'cdn-illustrations' in img else 'STATIC_PLACEHOLDER')
-   image_observe(c,row['catalogue_leaf_id'],rid,role,img,row['source_url'])
- # Visible callouts with no product become explicit source-supported exception records.
- for call in empty:
-  card={'part_detail_url':row['source_url']+f'#unmapped-callout-{call}','part_name_source':'PART_NAME_NOT_DISPLAYED','part_description_source':None,'oem_part_number_source':'PART_NUMBER_NOT_DISPLAYED','fitment_notes_source':None,'images':[]};records.append(record_upsert(c,ctx,row['catalogue_leaf_id'],card,call,run))
- if row['leaf_type']=='CATEGORY_INDEX':
-  for a in selectors:
-   leaf=sid('leaf',ctx['variation_id'],'DIAGRAM',a['source_url']);c.execute('''INSERT INTO catalogue_leaves(catalogue_leaf_id,variation_id,category_id,subcategory_id,parent_leaf_id,leaf_type,diagram_id,diagram_title_source,source_url,renderer_url,status,evidence_notes) VALUES(?,?,?,?,?,'DIAGRAM',?,?,?,?, 'NOT_STARTED',?) ON CONFLICT(catalogue_leaf_id) DO UPDATE SET diagram_title_source=excluded.diagram_title_source''',(leaf,ctx['variation_id'],ctx['category_id'],ctx['subcategory_id'],ctx['catalogue_leaf_id'],str(a['assembly_no']),a['title'],a['source_url'],renderer_url(a['source_url']),json.dumps({'selector_image_url':a['image_url']})));batch=sid('batch',leaf,'diagram');c.execute("INSERT INTO batches(batch_id,variation_id,catalogue_leaf_id,stage,responsible_agent,allowed_output_prefix,status,code_version,skill_version) VALUES(?,?,?,'DIAGRAM_EXTRACTION','AGENT_3_PART_RECORD_EXTRACTION','catalog/v2/','NOT_STARTED',?,?) ON CONFLICT(batch_id) DO NOTHING",(batch,ctx['variation_id'],leaf,CODE_VERSION,SKILL_VERSION));image_observe(c,leaf,None,'DIAGRAM',a['image_url'],a['source_url'])
-  expected=len(cards)
- else:expected=len(pairs)+len(empty)
- b=raw.read_bytes();obs=c.execute('SELECT count(*) FROM image_observations WHERE catalogue_leaf_id=?',(row['catalogue_leaf_id'],)).fetchone()[0]
- c.execute("UPDATE catalogue_leaves SET status='EXTRACTED',http_status=?,source_accessed_at=?,source_byte_sha256=?,source_lf_sha256=?,raw_path=?,visible_row_expected=?,extracted_record_count=?,visible_callout_expected=?,extracted_callout_count=?,image_observation_count=?,exception_code=NULL,evidence_notes=? WHERE catalogue_leaf_id=?",(http,now(),h(b),h(lf_bytes(b.decode('utf-8'))),raw.relative_to(CAT).as_posix(),expected,len(records),expected_callouts,expected_callouts-len(empty),obs,json.dumps({'assembly_selectors':len(selectors),'empty_callouts':empty}),row['catalogue_leaf_id']))
-
-def crawl_leaves(kind,limit=None,retry_failed=False,refresh=False):
- init_db();c=con();run=sid('run',kind,now());states="('NOT_STARTED','QA_FAILED')" if retry_failed else "('NOT_STARTED')";rows=c.execute(f"SELECT * FROM catalogue_leaves WHERE leaf_type=? AND status IN {states} ORDER BY variation_id,source_url",(kind,)).fetchall();rows=rows[:limit] if limit else rows
- for row in rows:
-  batch=sid('batch',row['catalogue_leaf_id'],'category' if kind=='CATEGORY_INDEX' else ('diagram' if kind=='DIAGRAM' else 'product'));raw=RAW/row['variation_id']/kind.lower()/f"{h(row['source_url'].encode())}.md"
-  try:
-   c.execute("UPDATE catalogue_leaves SET status='IN_PROGRESS' WHERE catalogue_leaf_id=?",(row['catalogue_leaf_id'],));c.execute("UPDATE batches SET status='IN_PROGRESS',attempt_count=attempt_count+1,started_at=?,last_error=NULL WHERE batch_id=?",(now(),batch));c.commit()
-   if raw.exists() and not refresh:text=raw.read_text(encoding='utf-8');http=200
-   else:r,text,_=source_get(row['source_url']);http=r.status_code;save_raw(raw,text)
-   process_leaf(c,row,text,raw,run,http);c.execute("UPDATE batches SET status='EXTRACTED',completed_at=?,checkpoint_json=? WHERE batch_id=?",(now(),json.dumps({'raw':raw.relative_to(CAT).as_posix()}),batch));event(c,run,kind,'EXTRACTED',row['variation_id'],row['catalogue_leaf_id'],http);c.commit()
-  except Exception as e:
-   c.execute("UPDATE catalogue_leaves SET status='QA_FAILED',exception_code='SOURCE_OR_PARSER_FAILURE',evidence_notes=? WHERE catalogue_leaf_id=?",(json.dumps({'error':str(e)}),row['catalogue_leaf_id']));c.execute("UPDATE batches SET status='QA_FAILED',last_error=? WHERE batch_id=?",(str(e),batch));event(c,run,kind,'QA_FAILED',row['variation_id'],row['catalogue_leaf_id'],message=str(e));c.commit()
- c.close();write_scope_manifest();return run
-
+def leaf_context(c,leaf):
+ return c.execute('''SELECT l.*,v.vehicle_id,v.variation_source_label,ve.year,ve.make_source,ve.model_source,tn.source_label category_label,sn.source_label subcategory_label,p.source_url catalogue_page_url FROM catalogue_leaves l JOIN variations v ON v.variation_id=l.variation_id JOIN vehicles ve ON ve.vehicle_id=v.vehicle_id JOIN taxonomy_nodes tn ON tn.node_id=l.category_id JOIN taxonomy_nodes sn ON sn.node_id=l.subcategory_id LEFT JOIN catalogue_leaves p ON p.catalogue_leaf_id=COALESCE(l.parent_leaf_id,l.catalogue_leaf_id) WHERE l.catalogue_leaf_id=?''',(leaf,)).fetchone()
+def process_leaf(leaf_id,refresh=False):
+ c=con();ctx=leaf_context(c,leaf_id);run=run_id(ctx['leaf_type'].lower());batch=sid('batch','category' if ctx['leaf_type']=='CATEGORY_INDEX' else 'diagram',leaf_id);c.execute("UPDATE catalogue_leaves SET status='IN_PROGRESS',processing_started_at=?,exception_code=NULL WHERE catalogue_leaf_id=?",(now(),leaf_id));c.execute("UPDATE batches SET status='IN_PROGRESS',attempt_count=attempt_count+1,started_at=?,last_error=NULL WHERE batch_id=?",(now(),batch));c.commit()
+ try:
+  http,text,final,renderer,_=source_get(ctx['source_url'],refresh);parsed=parse_leaf(text,ctx['leaf_type'],ctx['assembly_number']);c.execute('BEGIN IMMEDIATE');snap,page_sha,raw=snapshot(c,ctx['source_url'],text,http,final,renderer,run,'LEAF_STRUCTURE_VALIDATED')
+  c.execute('DELETE FROM image_observations WHERE catalogue_leaf_id=?',(leaf_id,));c.execute('DELETE FROM visible_source_rows WHERE catalogue_leaf_id=?',(leaf_id,))
+  # Reconcile child diagrams from the complete selector set.
+  if ctx['leaf_type']=='CATEGORY_INDEX':
+   wanted=set()
+   for s in parsed['selectors']:
+    child=sid('leaf',ctx['variation_id'],'DIAGRAM',s['url']);wanted.add(child);c.execute('''INSERT INTO catalogue_leaves(catalogue_leaf_id,variation_id,category_id,subcategory_id,parent_leaf_id,leaf_type,diagram_id,diagram_title_source,assembly_number,source_url,status,evidence_notes) VALUES(?,?,?,?,?,'DIAGRAM',?,?,?,?, 'NOT_STARTED',?) ON CONFLICT(catalogue_leaf_id) DO UPDATE SET diagram_title_source=excluded.diagram_title_source,evidence_notes=excluded.evidence_notes WHERE catalogue_leaves.status IN ('NOT_STARTED','QA_FAILED','RETIRED_SOURCE')''',(child,ctx['variation_id'],ctx['category_id'],ctx['subcategory_id'],leaf_id,str(s['assembly']),s['title'],s['assembly'],s['url'],json.dumps({'selector_locator':s['locator']})))
+    c.execute("INSERT OR IGNORE INTO batches(batch_id,stage,scope_type,scope_id,responsible_agent,allowed_output_paths,expected_output,completion_test,status,code_version,skill_version) VALUES(?,?,?,?,?,?,?,?,?,?,?)",(sid('batch','diagram',child),'DIAGRAM_EXTRACTION','LEAF',child,RUN_AGENT['diagram'],'catalog/v2/evidence;catalog/authoritative_catalogue.sqlite3','Exact active diagram and all visible source rows','requested assembly identity and row/callout/image counts reconcile','NOT_STARTED','3.0.0','S2-S4-v1'))
+   for old in c.execute("SELECT catalogue_leaf_id FROM catalogue_leaves WHERE parent_leaf_id=? AND leaf_type='DIAGRAM'",(leaf_id,)).fetchall():
+    if old['catalogue_leaf_id'] not in wanted:c.execute("DELETE FROM image_observations WHERE catalogue_leaf_id=?",(old['catalogue_leaf_id'],));c.execute("DELETE FROM visible_source_rows WHERE catalogue_leaf_id=?",(old['catalogue_leaf_id'],));c.execute("UPDATE catalogue_leaves SET status='RETIRED_SOURCE',exception_code='ABSENT_FROM_REFRESHED_SELECTOR_SET' WHERE catalogue_leaf_id=?",(old['catalogue_leaf_id'],))
+  for s in parsed['selectors']:
+   target=sid('leaf',ctx['variation_id'],'DIAGRAM',s['url']);insert_image(c,(leaf_id,None),snap,page_sha,None,None,{'url':s['image_url'],'alt':s['image_alt'],'role':'DIAGRAM_SELECTOR_THUMBNAIL','locator':s['locator'],'ordinal':s['ordinal'],'association':'ASSOCIATION_FROM_ASSEMBLY_SELECTOR'},{'target_diagram_leaf_id':target,'assembly':s['assembly']})
+  if parsed['active'] and parsed['active']['image']:insert_image(c,(leaf_id,None),snap,page_sha,None,None,parsed['active']['image'],{'assembly':parsed['active']['assembly']})
+  ctx=leaf_context(c,leaf_id);leafdict=dict(ctx);leafdict['catalogue_page_url']=ctx['catalogue_page_url'] or ctx['source_url'];leafdict['diagram_page_url']=ctx['source_url'] if ctx['leaf_type']=='DIAGRAM' or parsed['active'] else None;leafdict['diagram_id']=ctx['diagram_id'] or (str(parsed['active']['assembly']) if parsed['active'] else None);leafdict['diagram_title_source']=ctx['diagram_title_source'] or (parsed['active']['title'] if parsed['active'] else None)
+  for r in parsed['rows']:insert_row(c,leafdict,snap,page_sha,r,run)
+  actual=c.execute('SELECT count(*) FROM visible_source_rows WHERE catalogue_leaf_id=?',(leaf_id,)).fetchone()[0];recs=c.execute('SELECT count(*) FROM part_records WHERE catalogue_leaf_id=?',(leaf_id,)).fetchone()[0];obs=c.execute('SELECT count(*) FROM image_observations WHERE catalogue_leaf_id=?',(leaf_id,)).fetchone()[0]
+  if actual!=len(parsed['rows']) or recs!=actual:raise RuntimeError(f'committed row reconciliation failed expected={len(parsed["rows"])} staged={actual} records={recs}')
+  c.execute("""UPDATE catalogue_leaves SET current_snapshot_id=?,status='EXTRACTED',source_structure_status='LEAF_STRUCTURE_VALIDATED',expected_source_row_count=?,extracted_source_row_count=?,expected_callout_count=?,extracted_callout_count=?,expected_image_count=?,observed_image_count=?,processing_completed_at=?,evidence_notes=? WHERE catalogue_leaf_id=?""",(snap,len(parsed['rows']),recs,parsed['structural']['callout_markers'],len({(r['anchor'],r['ordinal']) for r in parsed['rows'] if r['section']=='CALLOUT_SUMMARY'}),obs,obs,now(),json.dumps({'structural':parsed['structural'],'raw_path':raw.relative_to(CAT).as_posix()}),leaf_id));c.execute("UPDATE batches SET status='EXTRACTED',completed_at=?,checkpoint_path=? WHERE batch_id=?",(now(),raw.relative_to(CAT).as_posix(),batch));c.commit()
+ except Exception as e:c.rollback();c.execute("UPDATE catalogue_leaves SET status='QA_FAILED',exception_code='SOURCE_OR_PARSER_FAILURE',evidence_notes=? WHERE catalogue_leaf_id=?",(json.dumps({'error':repr(e)}),leaf_id));c.execute("UPDATE batches SET status='QA_FAILED',last_error=?,completed_at=? WHERE batch_id=?",(repr(e),now(),batch));c.commit();raise
+ finally:c.close()
+def crawl(kind,limit=None,retry=False,refresh=False):
+ init_db();c=con(True);types={'categories':'CATEGORY_INDEX','diagrams':'DIAGRAM'};lt=types[kind];states="('NOT_STARTED','QA_FAILED')" if retry else "('NOT_STARTED')";q=f"SELECT catalogue_leaf_id FROM catalogue_leaves WHERE leaf_type=? AND status IN {states} ORDER BY variation_id,catalogue_leaf_id"+(" LIMIT ?" if limit else '');rows=c.execute(q,(lt,limit) if limit else (lt,)).fetchall();c.close()
+ for r in rows:process_leaf(r['catalogue_leaf_id'],refresh)
+ export_scope()
 def parse_product_detail(text):
- pm=re.search(r'\*\s+Part Number:\s*([^\n]+)',text,re.I);pn=clean_label(pm.group(1)) if pm else 'PART_NUMBER_NOT_DISPLAYED'
- hm=re.search(r'^#\s+(.+?)(?:\s+-\s+Mopar|\s*\()',text,re.M);tm=re.search(r'^Title:\s*(.+)$',text,re.M);title=hm.group(1) if hm else (tm.group(1) if tm else 'PART_NAME_NOT_DISPLAYED')
- desc=(re.search(r'\*\s+Description:\s*\n([^\n]+)',text,re.I) or ['',''])[1].strip() or None;repl=(re.search(r'\*\s+Replaces:\s*([^\n]+)',text,re.I) or ['',''])[1].strip() or None;apps=(re.search(r'\*\s+Applications:([^\n]+)',text,re.I) or ['',''])[1].strip() or None;pos=(re.search(r'\*\s+Positions:([^\n]+)',text,re.I) or ['',''])[1].strip() or None
- fit=' | '.join(x for x in (pos,apps) if x) or None
- if not fit:
-  fitlines=re.findall(r'^2017\s+(?:Chrysler|Dodge)\s+[^\r\n]+$',text,re.M)
-  fit=' || '.join(fitlines) or None
- # Gallery is the product image run before Genuine Mopar Parts; exclude site chrome.
- head=text[:text.find('**Genuine Mopar Parts**') if '**Genuine Mopar Parts**' in text else min(len(text),8000)];imgs=list(dict.fromkeys(re.findall(r'https://cdn-product-images\.revolutionparts\.io/[^\s)]+',head)))
- return {'pn':pn,'name':clean_label(title),'description':desc,'replaces':repl,'fitment':fit,'images':imgs}
-
-def crawl_products(limit=None,retry_failed=False,refresh=False):
- init_db();c=con();run=sid('run','product',now());states="('NOT_STARTED','QA_FAILED')" if retry_failed else "('NOT_STARTED')";rows=c.execute(f"SELECT source_url,min(catalogue_leaf_id) leaf FROM catalogue_leaves WHERE leaf_type='PRODUCT_DETAIL' AND status IN {states} GROUP BY source_url ORDER BY source_url").fetchall();rows=rows[:limit] if limit else rows
- for x in rows:
-  leaves=c.execute("SELECT * FROM catalogue_leaves WHERE leaf_type='PRODUCT_DETAIL' AND source_url=?",(x['source_url'],)).fetchall();raw=RAW/'product'/f"{h(x['source_url'].encode())}.md"
+ pm=re.search(r'\*\s+Part Number:\s*([^\n]+)',text,re.I);title=re.search(r'^#{1,3}\s+(.+?)(?:\s+-\s+Mopar|\s*\()',text,re.M);marker='**Genuine Mopar Parts**' in text or 'Genuine Mopar Parts' in text
+ complete=bool(pm and title and marker);body=text[:text.find('**Genuine Mopar Parts**')] if '**Genuine Mopar Parts**' in text else text
+ fields={}
+ for label,key in [('Description','description'),('Replaces','replaces'),('Other Names','other_names')]:
+  m=re.search(r'\*\s+'+label+r':\s*([^\n]+)',text,re.I);fields[key]=clean(m.group(1)) if m else None
+ fitlines=re.findall(r'(?m)^20\d{2}\s+(?:Chrysler|Dodge)\s+[^\n]+$',text);images=[]
+ for i,m in enumerate(re.finditer(r'!\[Image\s+\d+:\s*([^\]]*)\]\((https?://[^)\s]+)\)',body),1):
+  u=m.group(2)
+  if 'cdn-product-images.' in u or 'cdn-illustrations.' in u:images.append({'url':u,'alt':m.group(1),'role':'PRODUCT_GALLERY_IMAGE','locator':f'markdown:char:{m.start()}-{m.end()}','ordinal':i,'association':'ASSOCIATION_FROM_PRODUCT_GALLERY'})
+ return {'complete':complete,'pn':clean(pm.group(1)) if pm else None,'name':clean(title.group(1)) if title else None,'description':fields['description'],'replaces':fields['replaces'],'other_names':fields['other_names'],'fitment':' || '.join(fitlines) if fitlines else None,'images':images,'marker':marker}
+def crawl_products(limit=None,retry=False,refresh=False):
+ init_db();c=con(True);states="('NOT_STARTED','QA_FAILED','SOURCE_RENDERER_PARTIAL')" if retry else "('NOT_STARTED')";q=f"SELECT product_source_id FROM product_sources WHERE status IN {states} ORDER BY product_source_id"+(" LIMIT ?" if limit else '');ids=[x[0] for x in c.execute(q,(limit,) if limit else ())];c.close()
+ for psid in ids:
+  c=con();p=c.execute('SELECT * FROM product_sources WHERE product_source_id=?',(psid,)).fetchone();run=run_id('product');batch=sid('batch','product',psid);c.execute("UPDATE product_sources SET status='IN_PROGRESS',processing_started_at=? WHERE product_source_id=?",(now(),psid));c.execute("UPDATE batches SET status='IN_PROGRESS',attempt_count=attempt_count+1,started_at=?,last_error=NULL WHERE batch_id=?",(now(),batch));c.commit()
   try:
-   for row in leaves:
-    c.execute("UPDATE catalogue_leaves SET status='IN_PROGRESS' WHERE catalogue_leaf_id=?",(row['catalogue_leaf_id'],));c.execute("UPDATE batches SET status='IN_PROGRESS',attempt_count=attempt_count+1,started_at=?,last_error=NULL WHERE batch_id=?",(now(),sid('batch',row['catalogue_leaf_id'],'product')))
-   c.commit()
-   if raw.exists() and not refresh:text=raw.read_text(encoding='utf-8');http=200
-   else:r,text,_=source_get(x['source_url']);http=r.status_code;save_raw(raw,text)
-   d=parse_product_detail(text);b=raw.read_bytes()
-   recs=c.execute('SELECT * FROM part_records WHERE part_detail_url=?',(x['source_url'],)).fetchall()
-   for rec in recs:
-    oldid=rec['record_id'];newpn=rec['oem_part_number_source'] if d['pn']=='PART_NUMBER_NOT_DISPLAYED' else d['pn'];newname=rec['part_name_source'] if d['name']=='PART_NAME_NOT_DISPLAYED' else d['name'];exc=rec['exception_code']
-    if newpn!='PART_NUMBER_NOT_DISPLAYED' and exc=='PART_NUMBER_NOT_DISPLAYED':exc=None
-    c.execute('''UPDATE part_records SET part_name_source=?,part_name_normalized=?,part_description_source=COALESCE(?,part_description_source),oem_part_number_source=?,oem_part_number_normalized=?,superseded_part_number_source=COALESCE(?,superseded_part_number_source),fitment_notes_source=COALESCE(?,fitment_notes_source),fitment_normalized=COALESCE(?,fitment_normalized),source_verification_status='SOURCE_VERIFIED',fitment_audit_status='FITMENT_SOURCE_CAPTURED',exception_code=? WHERE record_id=?''',(newname,newname.lower(),d['description'],newpn,norm(newpn),d['replaces'],d['fitment'],clean_label(d['fitment']).lower() if d['fitment'] else None,exc,oldid))
-   for row in leaves:
-    relrecs=c.execute('SELECT record_id FROM part_records WHERE variation_id=? AND part_detail_url=?',(row['variation_id'],x['source_url'])).fetchall()
-    for rr in relrecs:
-     for img in d['images']:image_observe(c,row['catalogue_leaf_id'],rr['record_id'],'PRODUCT_IMAGE',img,x['source_url'])
-     if not d['images'] and c.execute("SELECT count(*) FROM image_observations WHERE record_id=? AND image_role NOT LIKE 'STATIC_%'",(rr['record_id'],)).fetchone()[0]==0:c.execute("UPDATE part_records SET image_verification_status='NO_OEM_IMAGE_AVAILABLE',exception_code=COALESCE(exception_code,'NO_OEM_IMAGE_AVAILABLE') WHERE record_id=?",(rr['record_id'],))
-    obs=c.execute('SELECT count(*) FROM image_observations WHERE catalogue_leaf_id=?',(row['catalogue_leaf_id'],)).fetchone()[0];c.execute("UPDATE catalogue_leaves SET status='EXTRACTED',http_status=?,source_accessed_at=?,source_byte_sha256=?,source_lf_sha256=?,raw_path=?,visible_row_expected=?,extracted_record_count=?,image_observation_count=?,evidence_notes=? WHERE catalogue_leaf_id=?",(http,now(),h(b),h(lf_bytes(b.decode('utf-8'))),raw.relative_to(CAT).as_posix(),len(relrecs),len(relrecs),obs,json.dumps({'product_detail':d}),row['catalogue_leaf_id']));c.execute("UPDATE batches SET status='EXTRACTED',completed_at=?,checkpoint_json=? WHERE batch_id=?",(now(),json.dumps({'raw':raw.relative_to(CAT).as_posix()}),sid('batch',row['catalogue_leaf_id'],'product')));event(c,run,'PRODUCT_DETAIL','EXTRACTED',row['variation_id'],row['catalogue_leaf_id'],http)
-   c.commit()
-  except Exception as e:
-   for row in leaves:
-    c.execute("UPDATE catalogue_leaves SET status='QA_FAILED',exception_code='SOURCE_OR_PARSER_FAILURE',evidence_notes=? WHERE catalogue_leaf_id=?",(json.dumps({'error':str(e)}),row['catalogue_leaf_id']));c.execute("UPDATE batches SET status='QA_FAILED',last_error=? WHERE batch_id=?",(str(e),sid('batch',row['catalogue_leaf_id'],'product')))
-   c.commit()
- c.close();write_scope_manifest();return run
-
-def image_download(url):
- r=S.get(url,timeout=120);r.raise_for_status();data=r.content;ct=(r.headers.get('content-type') or '').split(';')[0].lower()
- if 'html' in ct or len(data)<100:raise RuntimeError(f'invalid image content type={ct} bytes={len(data)}')
- with Image.open(io.BytesIO(data)) as im:im.verify()
- with Image.open(io.BytesIO(data)) as im:w,hh,fmt=im.width,im.height,im.format
- mime=Image.MIME.get(fmt,ct or 'application/octet-stream');sha=h(data);ext=Path(urlparse(r.url).path).suffix.lower() or mimetypes.guess_extension(mime) or '.bin';dst=IMAGES/sha[:2]/f'{sha}{ext}';dst.parent.mkdir(parents=True,exist_ok=True)
- if not dst.exists():dst.write_bytes(data)
- return {'sha':sha,'path':dst.relative_to(CAT).as_posix(),'mime':mime,'bytes':len(data),'width':w,'height':hh,'final':r.url}
-def acquire_images(limit=None):
- init_db();c=con();urls=[r[0] for r in c.execute("SELECT DISTINCT image_source_url FROM image_observations WHERE acquisition_status IN ('NOT_STARTED','FAILED') AND image_role NOT LIKE 'STATIC_%' ORDER BY image_source_url")];urls=urls[:limit] if limit else urls;c.close();results={}
- with ThreadPoolExecutor(max_workers=8) as ex:
-  fut={ex.submit(image_download,u):u for u in urls}
-  for f in as_completed(fut):
-   u=fut[f]
-   try:results[u]=(f.result(),None)
-   except Exception as e:results[u]=(None,str(e))
- c=con()
- for u,(d,err) in results.items():
-  if err:c.execute("UPDATE image_observations SET acquisition_status='FAILED',exception_code='INVALID_OR_UNAVAILABLE_IMAGE',evidence_notes=? WHERE image_source_url=?",(json.dumps({'error':err}),u));continue
-  c.execute('INSERT INTO image_assets VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(image_sha256) DO NOTHING',(d['sha'],d['path'],d['mime'],d['bytes'],d['width'],d['height'],'DECODED_OK',now()));c.execute("UPDATE image_observations SET image_final_resolved_url=?,image_sha256=?,acquisition_status='IMAGE_ACQUIRED' WHERE image_source_url=?",(d['final'],d['sha'],u));c.execute("UPDATE part_records SET image_source_url=COALESCE(image_source_url,?),image_final_resolved_url=COALESCE(image_final_resolved_url,?),local_image_path=COALESCE(local_image_path,?),image_mime_type=COALESCE(image_mime_type,?),image_byte_size=COALESCE(image_byte_size,?),image_width=COALESCE(image_width,?),image_height=COALESCE(image_height,?),image_sha256=COALESCE(image_sha256,?),image_verification_status='IMAGE_ACQUIRED' WHERE record_id IN (SELECT record_id FROM image_observations WHERE image_source_url=? AND record_id IS NOT NULL)",(u,d['final'],d['path'],d['mime'],d['bytes'],d['width'],d['height'],d['sha'],u))
- c.commit();c.close();return {'urls':len(urls),'failed':sum(bool(e) for _,e in results.values())}
-def verify_images(limit=None):
- init_db();c=con();rows=c.execute("SELECT DISTINCT image_source_url,image_sha256 FROM image_observations WHERE acquisition_status='IMAGE_ACQUIRED' ORDER BY image_source_url").fetchall();rows=rows[:limit] if limit else rows;c.close()
- def vf(row):
-  try:r=S.get(row['image_source_url'],timeout=120);r.raise_for_status();return row['image_source_url'],h(r.content)==row['image_sha256'],h(r.content)
-  except Exception as e:return row['image_source_url'],False,str(e)
- results=[]
- with ThreadPoolExecutor(max_workers=4) as ex:
-  for x in as_completed([ex.submit(vf,r) for r in rows]):results.append(x.result())
- c=con()
- for u,ok,actual in results:
-  st='IMAGE_VERIFIED_BYTE_EXACT' if ok else 'SOURCE_IMAGE_CHANGED';c.execute('UPDATE image_observations SET verification_status=?,association_status=? WHERE image_source_url=?',(st,'ASSOCIATION_VERIFIED' if ok else 'REQUIRES_MANUAL_REVIEW',u));c.execute("UPDATE part_records SET image_verification_status=? WHERE record_id IN (SELECT record_id FROM image_observations WHERE image_source_url=? AND record_id IS NOT NULL)",(st,u))
- c.commit();c.close();return {'verified':sum(ok for _,ok,_ in results),'failed':sum(not ok for _,ok,_ in results)}
-def rebuild_fts():
- c=con();c.execute('DELETE FROM catalogue_fts');c.execute('''INSERT INTO catalogue_fts SELECT r.record_id,veh.project_label,v.variation_source_label,r.category_source_label,COALESCE(r.subcategory_source_label,''),COALESCE(r.diagram_title_source,''),COALESCE(r.diagram_callout_source,''),r.oem_part_number_source,r.part_name_source,COALESCE(r.part_description_source,''),COALESCE(r.fitment_notes_source,''),r.part_detail_url FROM part_records r JOIN variations v ON v.variation_id=r.variation_id JOIN vehicles veh ON veh.vehicle_id=r.vehicle_id''');c.commit();c.close()
-def write_scope_manifest():
- if not DB.exists():return
- c=con();data={'generated_at':now(),'variations':[]}
+   http,text,final,renderer,_=source_get(p['source_url'],refresh);d=parse_product_detail(text)
+   if not d['complete'] and renderer=='RECOVERY_CACHE':
+    http,text,final,renderer,_=source_get(p['source_url'],True);d=parse_product_detail(text)
+   structure='PRODUCT_DETAIL_COMPLETE' if d['complete'] else 'PRODUCT_DETAIL_PARTIAL';c.execute('BEGIN IMMEDIATE');snap,page_sha,raw=snapshot(c,p['source_url'],text,http,final,renderer,run,structure);c.execute('DELETE FROM image_observations WHERE product_source_id=?',(psid,));recs=c.execute('SELECT r.* FROM part_records r JOIN record_product_sources x ON x.record_id=r.record_id WHERE x.product_source_id=?',(psid,)).fetchall()
+   if not d['complete']:
+    c.execute("UPDATE product_sources SET current_snapshot_id=?,status='SOURCE_RENDERER_PARTIAL',structure_status=?,processing_completed_at=?,exception_code='IMAGE_ENUMERATION_INCOMPLETE',evidence_notes=? WHERE product_source_id=?",(snap,structure,now(),json.dumps({'raw_path':raw.relative_to(CAT).as_posix(),'reason':'required product-detail markers absent'}),psid));c.execute("UPDATE batches SET status='QA_FAILED',completed_at=?,last_error='IMAGE_ENUMERATION_INCOMPLETE',checkpoint_path=? WHERE batch_id=?",(now(),raw.relative_to(CAT).as_posix(),batch));c.commit();continue
+   for r in recs:
+    prov=json.loads(r['field_provenance_json']);pn=r['oem_part_number_source'];name=r['part_name_source'];exc=r['exception_code']
+    if pn=='PART_NUMBER_NOT_DISPLAYED' and d['pn']:pn=d['pn'];prov['oem_part_number_source']='PRODUCT_DETAIL';exc=None if exc=='PART_NUMBER_NOT_DISPLAYED' else exc
+    if name=='PART_NAME_NOT_DISPLAYED' and d['name']:name=d['name'];prov['part_name_source']='PRODUCT_DETAIL'
+    c.execute("UPDATE part_records SET oem_part_number_source=?,oem_part_number_normalized=?,part_name_source=?,part_name_normalized=?,part_description_source=COALESCE(part_description_source,?),superseded_part_number_source=COALESCE(?,superseded_part_number_source),fitment_notes_source=COALESCE(?,fitment_notes_source),fitment_normalized=COALESCE(?,fitment_normalized),exception_code=?,field_provenance_json=? WHERE record_id=?",(pn,norm(pn),name,norm(name),d['description'],d['replaces'],d['fitment'],norm(d['fitment']) if d['fitment'] else None,exc,json.dumps(prov),r['record_id']))
+   for img in d['images']:
+    obs=insert_image(c,(None,psid),snap,page_sha,None,None,img)
+    for r in recs:c.execute("INSERT OR IGNORE INTO image_observation_records VALUES(?,?,?)",(obs,r['record_id'],'EXACT_PRODUCT_SOURCE_ASSOCIATION'))
+   noimg='NO_OEM_IMAGE_AVAILABLE' if not d['images'] else None;c.execute("UPDATE product_sources SET current_snapshot_id=?,status='EXTRACTED_COMPLETE',structure_status=?,displayed_part_number_source=?,part_name_source=?,description_source=?,superseded_part_number_source=?,fitment_source=?,expected_image_count=?,observed_image_count=?,no_image_disposition=?,processing_completed_at=?,exception_code=NULL,evidence_notes=? WHERE product_source_id=?",(snap,structure,d['pn'],d['name'],d['description'],d['replaces'],d['fitment'],len(d['images']),len(d['images']),noimg,now(),json.dumps({'raw_path':raw.relative_to(CAT).as_posix(),'no_image_basis':'complete product structure with zero content image references' if noimg else None}),psid));c.execute("UPDATE batches SET status='EXTRACTED',completed_at=?,checkpoint_path=? WHERE batch_id=?",(now(),raw.relative_to(CAT).as_posix(),batch));c.commit()
+  except Exception as e:c.rollback();c.execute("UPDATE product_sources SET status='QA_FAILED',exception_code='SOURCE_OR_PARSER_FAILURE',evidence_notes=?,processing_completed_at=? WHERE product_source_id=?",(json.dumps({'error':repr(e)}),now(),psid));c.execute("UPDATE batches SET status='QA_FAILED',completed_at=?,last_error=? WHERE batch_id=?",(now(),repr(e),batch));c.commit();raise
+  finally:c.close()
+ export_scope()
+def classify_image_bytes(data):
+ if len(data)<100:raise ValueError('zero/tiny image payload')
+ with Image.open(io.BytesIO(data)) as im:
+  im.load();fmt=im.format or 'UNKNOWN';mime=Image.MIME.get(fmt) or mimetypes.guess_type('x.'+fmt.lower())[0] or 'application/octet-stream';w,h=im.size;rgba=im.convert('RGBA');alpha=rgba.getchannel('A');alpha_present=1 if alpha.getextrema()!=(255,255) else 0;rgb=rgba.convert('RGB');bbox=ImageChops.difference(rgb,Image.new('RGB',rgb.size,rgb.getpixel((0,0)))).getbbox();pixel=sha(rgba.tobytes());placeholder=[]
+  if w<32 or h<32:placeholder.append('TINY_DIMENSIONS')
+  if bbox is None:placeholder.append('UNIFORM_PIXELS')
+  if alpha.getbbox() is None:placeholder.append('FULLY_TRANSPARENT')
+  return {'format':fmt,'mime':mime,'width':w,'height':h,'pixel_sha256':pixel,'alpha':alpha_present,'placeholder':'PLACEHOLDER_SUSPECT' if placeholder else 'CONTENT_IMAGE','placeholder_evidence':placeholder}
+def download_image(url):
+ r=requests.get(url,timeout=180,headers={'User-Agent':'Hermes-Mopar-Catalogue-Audit/3.0'});r.raise_for_status();data=r.content;meta=classify_image_bytes(data);return data,meta,r
+def acquire_images(limit=None,workers=6):
+ c=con(True);q="SELECT DISTINCT image_source_url FROM image_observations WHERE acquisition_status='NOT_STARTED' ORDER BY image_source_url"+(" LIMIT ?" if limit else '');urls=[x[0] for x in c.execute(q,(limit,) if limit else ())];c.close();run=run_id('image')
+ def one(url):return url,*download_image(url)
+ with ThreadPoolExecutor(max_workers=workers) as ex:
+  futs={ex.submit(one,u):u for u in urls}
+  for f in as_completed(futs):
+   url=futs[f];c=con()
+   try:
+    _,data,m,r=f.result();h=sha(data);ext={'PNG':'png','WEBP':'webp','JPEG':'jpg','GIF':'gif'}.get(m['format'],m['format'].lower());path=CAT/'v2'/'images'/h[:2]/f'{h}.{ext}';path.parent.mkdir(parents=True,exist_ok=True)
+    if path.exists():
+     existing=path.read_bytes()
+     if sha(existing)!=h or classify_image_bytes(existing)['pixel_sha256']!=m['pixel_sha256']:raise ValueError('existing content-addressed asset corrupt')
+    else:path.write_bytes(data)
+    c.execute('''INSERT INTO image_assets VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(image_sha256) DO UPDATE SET local_image_path=excluded.local_image_path''',(h,path.relative_to(CAT).as_posix(),m['mime'],m['format'],len(data),m['width'],m['height'],m['pixel_sha256'],m['alpha'],'DECODE_OK',m['placeholder'],json.dumps(m['placeholder_evidence']),now(),run))
+    c.execute("UPDATE image_observations SET image_final_resolved_url=?,acquisition_status='ACQUIRED',image_sha256=?,http_status=?,http_content_type=?,response_etag=?,response_last_modified=?,acquired_at=?,acquisition_run_id=?,exception_code=NULL WHERE image_source_url=?",(r.url,h,r.status_code,r.headers.get('Content-Type'),r.headers.get('ETag'),r.headers.get('Last-Modified'),now(),run,url));c.commit()
+   except Exception as e:c.execute("UPDATE image_observations SET acquisition_status='FAILED',exception_code='IMAGE_ACQUISITION_FAILURE',evidence_notes=? WHERE image_source_url=?",(json.dumps({'error':repr(e)}),url));c.commit()
+   finally:c.close()
+def verify_images(limit=None,workers=4):
+ c=con(True);q="""SELECT DISTINCT o.image_source_url,o.image_sha256,a.local_image_path,a.image_byte_size,a.image_width,a.image_height,a.pixel_sha256,a.placeholder_classification FROM image_observations o JOIN image_assets a ON a.image_sha256=o.image_sha256 WHERE o.acquisition_status='ACQUIRED' AND o.verification_status='NOT_STARTED' ORDER BY o.image_source_url"""+(" LIMIT ?" if limit else '');rows=c.execute(q,(limit,) if limit else ()).fetchall();c.close();run=run_id('verify')
+ def one(row):
+  path=CAT/row['local_image_path'];local=path.read_bytes();lm=classify_image_bytes(local)
+  if sha(local)!=row['image_sha256'] or len(local)!=row['image_byte_size'] or lm['width']!=row['image_width'] or lm['height']!=row['image_height'] or lm['pixel_sha256']!=row['pixel_sha256']:raise ValueError('local asset integrity mismatch')
+  data,rm,r=download_image(row['image_source_url']);return sha(data),rm,r
+ with ThreadPoolExecutor(max_workers=workers) as ex:
+  futs={ex.submit(one,r):r for r in rows}
+  for f in as_completed(futs):
+   row=futs[f];c=con()
+   try:
+    h,m,r=f.result();ok=h==row['image_sha256'];role=c.execute('SELECT image_role FROM image_observations WHERE image_source_url=? LIMIT 1',(row['image_source_url'],)).fetchone()[0];state=('DIAGRAM_VERIFIED_BYTE_EXACT' if 'DIAGRAM' in role else 'IMAGE_VERIFIED_BYTE_EXACT') if ok else 'SOURCE_IMAGE_CHANGED';exc=None if ok else 'SOURCE_IMAGE_CHANGED';c.execute("UPDATE image_observations SET verification_status=?,verified_at=?,verification_run_id=?,exception_code=? WHERE image_source_url=?",(state,now(),run,exc,row['image_source_url']));c.commit()
+   except Exception as e:c.execute("UPDATE image_observations SET verification_status='SOURCE_LINK_BROKEN',verified_at=?,verification_run_id=?,exception_code='IMAGE_VERIFICATION_FAILURE',evidence_notes=? WHERE image_source_url=?",(now(),run,json.dumps({'error':repr(e)}),row['image_source_url']));c.commit()
+   finally:c.close()
+def rebuild_fts(c=None):
+ own=c is None;c=c or con();c.execute("INSERT INTO catalogue_fts(catalogue_fts) VALUES('delete-all')");c.execute('''INSERT INTO catalogue_fts(rowid,record_id,variation_source_label,category_source_label,subcategory_source_label,diagram_title_source,diagram_callout_source,part_name_source,part_description_source,oem_part_number_source,fitment_notes_source) SELECT row_number() OVER(ORDER BY record_id),record_id,variation_source_label,category_source_label,subcategory_source_label,diagram_title_source,diagram_callout_source,part_name_source,part_description_source,oem_part_number_source,fitment_notes_source FROM part_records''');c.commit();
+ if own:c.close()
+def export_scope(c=None):
+ own=c is None;c=c or con();out=CAT/'v2'/'manifests';out.mkdir(parents=True,exist_ok=True);data={'generated_at':now(),'schema_version':3,'variations':[]}
  for v in c.execute('SELECT * FROM variations ORDER BY variation_id'):
-  counts={k:c.execute('SELECT count(*) FROM catalogue_leaves WHERE variation_id=? AND '+q,(v['variation_id'],)).fetchone()[0] for k,q in {'categories':"leaf_type='CATEGORY_INDEX'",'diagrams':"leaf_type='DIAGRAM'",'products':"leaf_type='PRODUCT_DETAIL'",'qa_passed':"status='QA_PASSED'",'blocked':"status='BLOCKED_EXTERNAL'",'nonterminal':"status NOT IN ('QA_PASSED','BLOCKED_EXTERNAL')"}.items()};data['variations'].append({'variation_id':v['variation_id'],'source_label':v['variation_source_label'],'route':v['source_url'],'validation_status':v['validation_status'],**counts})
- data['totals']={'leaves':c.execute('SELECT count(*) FROM catalogue_leaves').fetchone()[0],'records':c.execute('SELECT count(*) FROM part_records').fetchone()[0],'image_observations':c.execute('SELECT count(*) FROM image_observations').fetchone()[0],'image_assets':c.execute('SELECT count(*) FROM image_assets').fetchone()[0],'open_critical':c.execute("SELECT count(*) FROM defects WHERE severity='CRITICAL' AND status!='RESOLVED'").fetchone()[0],'open_major':c.execute("SELECT count(*) FROM defects WHERE severity='MAJOR' AND status!='RESOLVED'").fetchone()[0]};c.close();(CAT/'manifests'/'master_expected_scope.json').write_text(json.dumps(data,indent=2),encoding='utf-8')
+  leaves=[dict(x) for x in c.execute("SELECT catalogue_leaf_id,leaf_type,diagram_id,diagram_title_source,assembly_number,source_url,status,expected_source_row_count,extracted_source_row_count,expected_callout_count,extracted_callout_count,expected_image_count,observed_image_count,exception_code FROM catalogue_leaves WHERE variation_id=? AND status!='RETIRED_SOURCE' ORDER BY leaf_type,source_url",(v['variation_id'],))];data['variations'].append({'variation':dict(v),'leaves':leaves})
+ (out/'master_expected_scope.json').write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+ if own:c.close()
 def export_all():
- init_db();rebuild_fts();c=con();EXPORTS.mkdir(parents=True,exist_ok=True)
- queries={'variations.csv':'SELECT * FROM variations ORDER BY variation_id','taxonomy.csv':'SELECT * FROM taxonomy_nodes ORDER BY variation_id,ordinal,node_type','leaves.csv':'SELECT * FROM catalogue_leaves ORDER BY variation_id,leaf_type,source_url','part_records.csv':'SELECT * FROM part_records ORDER BY variation_id,category_source_label,diagram_title_source,diagram_callout_source,oem_part_number_normalized','image_provenance.csv':'SELECT o.*,a.local_image_path,a.image_mime_type,a.image_byte_size,a.image_width,a.image_height FROM image_observations o LEFT JOIN image_assets a ON a.image_sha256=o.image_sha256 ORDER BY o.catalogue_leaf_id,o.record_id,o.image_role','defects.csv':'SELECT * FROM defects ORDER BY severity,created_at'}
- for name,sql in queries.items():
-  rows=c.execute(sql).fetchall();p=EXPORTS/name
-  with p.open('w',encoding='utf-8-sig',newline='') as f:
-   if rows:w=csv.DictWriter(f,fieldnames=rows[0].keys());w.writeheader();w.writerows([dict(r) for r in rows])
- status={'generated_at':now(),'vehicles':c.execute('SELECT count(*) FROM vehicles').fetchone()[0],'variations':c.execute('SELECT count(*) FROM variations').fetchone()[0],'taxonomy_nodes':c.execute('SELECT count(*) FROM taxonomy_nodes').fetchone()[0],'leaves':c.execute('SELECT count(*) FROM catalogue_leaves').fetchone()[0],'records':c.execute('SELECT count(*) FROM part_records').fetchone()[0],'unique_displayed_part_numbers':c.execute("SELECT count(DISTINCT oem_part_number_normalized) FROM part_records WHERE oem_part_number_source!='PART_NUMBER_NOT_DISPLAYED'").fetchone()[0],'part_number_not_displayed':c.execute("SELECT count(*) FROM part_records WHERE oem_part_number_source='PART_NUMBER_NOT_DISPLAYED'").fetchone()[0],'image_observations':c.execute('SELECT count(*) FROM image_observations').fetchone()[0],'unique_images':c.execute('SELECT count(*) FROM image_assets').fetchone()[0],'verified_images':c.execute("SELECT count(*) FROM image_observations WHERE verification_status='IMAGE_VERIFIED_BYTE_EXACT'").fetchone()[0],'no_oem_image':c.execute("SELECT count(*) FROM part_records WHERE image_verification_status='NO_OEM_IMAGE_AVAILABLE'").fetchone()[0],'fts_rows':c.execute('SELECT count(*) FROM catalogue_fts').fetchone()[0]};(EXPORTS/'status.json').write_text(json.dumps(status,indent=2),encoding='utf-8');c.close();write_scope_manifest();return status
-def search(q,limit=20):
- rebuild_fts();c=con();rows=c.execute('SELECT *,bm25(catalogue_fts) rank FROM catalogue_fts WHERE catalogue_fts MATCH ? ORDER BY rank LIMIT ?',(q,limit)).fetchall();print(json.dumps([dict(r) for r in rows],indent=2));c.close()
-def status():print(json.dumps(export_all(),indent=2))
-
+ c=con();rebuild_fts(c);out=CAT/'v2'/'exports';out.mkdir(parents=True,exist_ok=True)
+ specs={'variations.csv':'SELECT * FROM variations ORDER BY variation_id','taxonomy_nodes.csv':'SELECT * FROM taxonomy_nodes ORDER BY variation_id,node_type,ordinal,node_id','leaves.csv':"SELECT * FROM catalogue_leaves WHERE status!='RETIRED_SOURCE' ORDER BY variation_id,leaf_type,source_url",'part_records.csv':'SELECT * FROM part_records ORDER BY variation_id,catalogue_leaf_id,source_section,source_row_anchor,source_occurrence_ordinal','visible_source_rows.csv':'SELECT * FROM visible_source_rows ORDER BY catalogue_leaf_id,source_section,source_row_anchor,source_occurrence_ordinal','image_provenance.csv':'SELECT o.*,a.local_image_path,a.image_mime_type,a.image_format,a.image_byte_size,a.image_width,a.image_height,a.pixel_sha256,a.placeholder_classification FROM image_observations o LEFT JOIN image_assets a ON a.image_sha256=o.image_sha256 ORDER BY o.image_observation_id','product_sources.csv':'SELECT * FROM product_sources ORDER BY product_source_id','defects.csv':'SELECT * FROM defects ORDER BY created_at,defect_id'}
+ for fn,q in specs.items():
+  rows=c.execute(q);cols=[d[0] for d in rows.description]
+  with (out/fn).open('w',newline='',encoding='utf-8') as f:w=csv.writer(f);w.writerow(cols);w.writerows(rows)
+ export_scope(c);c.commit();c.close();status()
+def status():
+ c=con(True);d={'generated_at':now(),'schema_version':c.execute("SELECT value FROM project_meta WHERE key='schema_version'").fetchone()[0],'vehicles':c.execute('SELECT count(*) FROM vehicles').fetchone()[0],'variations':c.execute('SELECT count(*) FROM variations').fetchone()[0],'taxonomy_nodes':c.execute('SELECT count(*) FROM taxonomy_nodes').fetchone()[0],'leaves_by_type_status':{f'{x[0]}:{x[1]}':x[2] for x in c.execute('SELECT leaf_type,status,count(*) FROM catalogue_leaves GROUP BY leaf_type,status')},'source_rows':c.execute('SELECT count(*) FROM visible_source_rows').fetchone()[0],'records':c.execute('SELECT count(*) FROM part_records').fetchone()[0],'product_sources_by_status':{x[0]:x[1] for x in c.execute('SELECT status,count(*) FROM product_sources GROUP BY status')},'image_observations':c.execute('SELECT count(*) FROM image_observations').fetchone()[0],'image_assets':c.execute('SELECT count(*) FROM image_assets').fetchone()[0],'fts_rows':c.execute('SELECT count(*) FROM catalogue_fts').fetchone()[0]};c.close();(CAT/'v2'/'exports').mkdir(parents=True,exist_ok=True);(CAT/'v2'/'exports'/'status.json').write_text(json.dumps(d,indent=2)+'\n',encoding='utf-8');print(json.dumps(d,indent=2))
 def main():
- p=argparse.ArgumentParser();sp=p.add_subparsers(dest='cmd',required=True);sp.add_parser('init');d=sp.add_parser('discover');d.add_argument('--refresh',action='store_true')
- for cmd in ('crawl-categories','crawl-diagrams','crawl-products'):
-  x=sp.add_parser(cmd);x.add_argument('--limit',type=int);x.add_argument('--retry-failed',action='store_true');x.add_argument('--refresh',action='store_true')
- for cmd in ('acquire-images','verify-images'):
-  x=sp.add_parser(cmd);x.add_argument('--limit',type=int)
- sp.add_parser('export');sp.add_parser('status');s=sp.add_parser('search');s.add_argument('query');s.add_argument('--limit',type=int,default=20)
+ p=argparse.ArgumentParser();sp=p.add_subparsers(dest='cmd',required=True)
+ for n in ('init','discover','crawl-categories','crawl-diagrams','crawl-products','acquire-images','verify-images','export','status'):q=sp.add_parser(n);q.add_argument('--limit',type=int);q.add_argument('--refresh',action='store_true');q.add_argument('--retry-failed',action='store_true')
  a=p.parse_args()
- if a.cmd=='init':init_db();write_scope_manifest();print(DB)
- elif a.cmd=='discover':print(discover(a.refresh))
- elif a.cmd=='crawl-categories':print(crawl_leaves('CATEGORY_INDEX',a.limit,a.retry_failed,a.refresh))
- elif a.cmd=='crawl-diagrams':print(crawl_leaves('DIAGRAM',a.limit,a.retry_failed,a.refresh))
- elif a.cmd=='crawl-products':print(crawl_products(a.limit,a.retry_failed,a.refresh))
- elif a.cmd=='acquire-images':print(json.dumps(acquire_images(a.limit)))
- elif a.cmd=='verify-images':print(json.dumps(verify_images(a.limit)))
- elif a.cmd=='export':print(json.dumps(export_all(),indent=2))
+ if a.cmd=='init':init_db()
+ elif a.cmd=='discover':discover(a.refresh)
+ elif a.cmd=='crawl-categories':crawl('categories',a.limit,a.retry_failed,a.refresh)
+ elif a.cmd=='crawl-diagrams':crawl('diagrams',a.limit,a.retry_failed,a.refresh)
+ elif a.cmd=='crawl-products':crawl_products(a.limit,a.retry_failed,a.refresh)
+ elif a.cmd=='acquire-images':acquire_images(a.limit)
+ elif a.cmd=='verify-images':verify_images(a.limit)
+ elif a.cmd=='export':export_all()
  elif a.cmd=='status':status()
- elif a.cmd=='search':search(a.query,a.limit)
 if __name__=='__main__':main()

@@ -1,7 +1,7 @@
 ---
 name: oem-part-record-extraction
 description: Use when extracting every displayed Mopar part row/callout.
-version: 1.0.0
+version: 1.1.0
 author: Hermes Mopar Catalogue Project
 license: Project-controlled
 metadata:
@@ -16,8 +16,10 @@ metadata:
 2. Preserve source part number, name, description, quantity, fitment, supersession and punctuation as strings.
 3. Derive normalized fields separately; never infer an absent part number.
 4. Associate every visible callout with all displayed alternatives by product URL.
-5. Emit `PART_NUMBER_NOT_DISPLAYED` only when the source row lacks a displayed number and retain evidence.
-6. Capture product-page URLs and prevent reruns from multiplying records.
+5. Materialize one immutable `visible_source_rows` occurrence per displayed table row and per displayed callout occurrence; repeated identical callouts remain separate through an occurrence ordinal.
+6. Bound each detailed-card parse at the next card marker. Never let an adjacent product supply a name or part number.
+7. Emit `PART_NUMBER_NOT_DISPLAYED` only when the exact bounded source row lacks a displayed number and retain the snippet hash.
+8. Capture product-page URLs and make the source-row key the idempotent logical key.
 
 ## Tests
 - Leading zero, suffix and hyphen fixtures round-trip unchanged.

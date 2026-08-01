@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T23:49:35+00:00",
+  "generated_at": "2026-08-01T00:08:47+00:00",
   "variations": [
     {
       "variation_id": "challenger-rt-57-gas",
@@ -7,11 +7,11 @@
       "route": "https://www.moparamerica.com/v-2017-dodge-challenger--r-t--5-7l-v8-gas",
       "validation_status": "VALIDATED",
       "categories": 197,
-      "diagrams": 0,
-      "products": 0,
+      "diagrams": 111,
+      "products": 315,
       "qa_passed": 0,
       "blocked": 0,
-      "nonterminal": 197
+      "nonterminal": 623
     },
     {
       "variation_id": "challenger-rt-scat-pack-64-gas",
@@ -75,9 +75,9 @@
     }
   ],
   "totals": {
-    "leaves": 1081,
-    "records": 0,
-    "image_observations": 0,
+    "leaves": 1507,
+    "records": 548,
+    "image_observations": 659,
     "image_assets": 0,
     "open_critical": 0,
     "open_major": 0
